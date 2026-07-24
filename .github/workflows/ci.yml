@@ -13,7 +13,7 @@ on:
       - "frontend/**"
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: frontend-ci-${{ github.workflow }}-${{ github.ref }}
@@ -29,8 +29,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
@@ -41,41 +39,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: pnpm
+          cache-dependency-path: frontend/pnpm-lock.yaml
 
       - name: Install dependencies
-        id: install
-        shell: bash
-        run: |
-          set +e
-          pnpm --dir frontend install --no-frozen-lockfile > frontend/install.log 2>&1
-          status=$?
-          if [[ "$status" -ne 0 ]]; then
-            echo "Dependency installation failed; raw output is attached as a workflow artifact."
-          fi
-          exit "$status"
-
-      - name: Upload dependency installation log
-        if: failure() && steps.install.outcome == 'failure'
-        uses: actions/upload-artifact@v4
-        with:
-          name: frontend-install-log
-          path: frontend/install.log
-          if-no-files-found: error
-          retention-days: 3
-
-      - name: Normalize scaffold and lock dependencies
-        if: github.event_name == 'pull_request' && github.head_ref == 'agent/scaffold-nextjs-foundation'
-        shell: bash
-        run: |
-          pnpm --dir frontend format
-          git add frontend
-          if git diff --cached --quiet; then
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: normalize frontend scaffold"
-          git push origin "HEAD:${GITHUB_HEAD_REF}"
+        run: pnpm --dir frontend install --frozen-lockfile
 
       - name: Check formatting
         run: pnpm --dir frontend format:check
