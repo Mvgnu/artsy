@@ -17,7 +17,7 @@ import styles from "./romantik.module.css";
 export const metadata: Metadata = {
   title: "Romantik: Als die Landschaft zurückblickte",
   description:
-    "Eine visuelle Reise durch Maßstab, Atmosphäre und das Erhabene in der Kunst der Romantik.",
+    "Eine visuelle Reise durch Maßstab, Atmosphäre, Revolution und das Erhabene in der Kunst der Romantik.",
   alternates: {
     canonical: "/epochen/romantik/",
   },
@@ -82,6 +82,11 @@ const visualConnections = [
     thesis: "Landschaft wird zur Grenze der Wahrnehmung.",
     text: "Gischt, Rauch und Licht lösen feste Konturen auf. Das Erhabene liegt nicht nur im großen Motiv, sondern im Moment, in dem das Bild kaum noch Halt bietet.",
   },
+  {
+    work: "Delacroix",
+    thesis: "Geschichte wird zum Konflikt bewegter Körper.",
+    text: "Fahne, Barrikade, Tote und soziale Mischung übersetzen politische Ideen in körperliche Nähe. Der Betrachter wird nicht nur informiert, sondern in eine Richtung gezogen.",
+  },
 ] as const;
 
 const deepDives = [
@@ -139,6 +144,24 @@ const deepDives = [
     text: "Wie Panoramen, Wildnis, sichtbare Nutzung und politische Leerstelle Land zu einer nationalen Erzählung machen.",
     href: "/begriffe/landschaft-und-nation/",
   },
+  {
+    eyebrow: "Werk lesen",
+    title: "Freiheit führt das Volk",
+    text: "Allegorie, Barrikade, soziale Mischung und Tote: wie Delacroix Revolution in eine starke, aber widersprüchliche Ikone verdichtet.",
+    href: "/werke/freiheit-fuehrt-das-volk/",
+  },
+  {
+    eyebrow: "Künstlerprofil",
+    title: "Eugène Delacroix",
+    text: "Farbe, Literatur, politische Historie und kolonialer Blick in einer Malerei, die den Körper zum Träger von Konflikt macht.",
+    href: "/kuenstler/eugene-delacroix/",
+  },
+  {
+    eyebrow: "Begriff verstehen",
+    title: "Revolution und Körper",
+    text: "Wie Menge, Verletzung, Allegorie und Blickrichtung politische Ideen verkörpern und zugleich neue Ausschlüsse erzeugen.",
+    href: "/begriffe/revolution-und-koerper/",
+  },
 ] as const;
 
 export default function RomanticismPage() {
@@ -168,7 +191,9 @@ export default function RomanticismPage() {
           <p className={styles.intro}>
             Die Romantik machte Natur nicht bloß zum Motiv. Sie machte sie zum
             Gegenüber: größer als der Mensch, unberechenbar, tröstlich, bedrohlich und
-            voller Räume, in denen sich das Innere plötzlich außen wiederfand.
+            voller Räume, in denen sich das Innere plötzlich außen wiederfand. Zugleich
+            machte sie Geschichte körperlich: als Revolution, Katastrophe und kollektive
+            Bewegung.
           </p>
         </div>
       </header>
@@ -192,12 +217,12 @@ export default function RomanticismPage() {
               <p className={styles.bodyCopy}>
                 Das war keine einheitliche Stilrevolution. In Deutschland konnte eine
                 stille Landschaft zum spirituellen Denkraum werden. In Großbritannien
-                zerfiel die Welt in Wetter und Licht. In Frankreich traten Katastrophe,
-                Revolution und extreme Emotion in die Historienmalerei. In den
-                Vereinigten Staaten wurde Landschaft zugleich zur nationalen Zukunfts-
-                und Besitzfrage. Gemeinsam war diesen Bildern weniger ein Look als eine
-                Spannung: Das vernünftige Subjekt entdeckt, dass es nicht im Mittelpunkt
-                von allem steht.
+                zerfiel die Welt in Wetter und Licht. In Frankreich wurden Revolution,
+                Katastrophe und soziale Konflikte über bewegte und verletzliche Körper
+                sichtbar. In den Vereinigten Staaten wurde Landschaft zugleich zur
+                nationalen Zukunfts- und Besitzfrage. Gemeinsam war diesen Bildern
+                weniger ein Look als eine Spannung: Das vernünftige Subjekt entdeckt,
+                dass es weder Natur noch Geschichte vollständig beherrscht.
               </p>
             </div>
           </div>
@@ -346,12 +371,14 @@ export default function RomanticismPage() {
         <div className={styles.section}>
           <p className={styles.sectionKicker}>Die Fäden zusammenziehen</p>
           <h2 className={styles.connectionTitle} id="drei-funktionen">
-            Natur ist in diesen Bildern nie bloß dieselbe Kulisse.
+            Romantik organisiert nicht eine Stimmung, sondern verschiedene
+            Grenzerfahrungen.
           </h2>
           <p className={styles.connectionLead}>
-            Die drei Werke teilen Nacht, Wetter, Weite und kleine menschliche Figuren.
-            Doch sie setzen diese Mittel für verschiedene Probleme ein. Erst im
-            Vergleich wird sichtbar, wie weit der Begriff Romantik reicht.
+            Friedrich, Cole, Turner und Delacroix teilen dramatische Kontraste, kleine
+            oder gefährdete Menschen und eine unsichere Zuschauerposition. Doch sie
+            setzen diese Mittel für verschiedene Probleme ein: inneres Sehen, nationale
+            Ordnung, Wahrnehmungsverlust und politische Mobilisierung.
           </p>
 
           <div className={styles.connectionGrid}>
@@ -390,6 +417,19 @@ export default function RomanticismPage() {
                 <p className={styles.place}>{romanticism.place}</p>
                 <h3 className={styles.placeTitle}>{romanticism.title}</h3>
                 <p className={styles.placeText}>{romanticism.text}</p>
+                {romanticism.place === "Frankreich" ? (
+                  <div className={styles.inlineLinks}>
+                    <Link href="/werke/freiheit-fuehrt-das-volk/">
+                      Freiheit führt das Volk lesen →
+                    </Link>
+                    <Link href="/kuenstler/eugene-delacroix/">
+                      Delacroix kennenlernen →
+                    </Link>
+                    <Link href="/begriffe/revolution-und-koerper/">
+                      Revolution und Körper verstehen →
+                    </Link>
+                  </div>
+                ) : null}
               </section>
             ))}
           </div>
@@ -400,16 +440,16 @@ export default function RomanticismPage() {
         <div className={styles.section}>
           <p className={styles.sectionKicker}>Was bleibt</p>
           <h2 className={styles.closingQuote} id="schluss">
-            Die romantische Landschaft zeigt nicht nur, wo wir sind. Sie fragt, wer wir
-            dort werden.
+            Romantische Bilder zeigen nicht nur, wo wir sind. Sie fragen, wie wir sehen,
+            handeln und Geschichte verkörpern.
           </h2>
           <div className={styles.closingCopy}>
             <p>
               Deshalb wirken diese Bilder weiterhin erstaunlich gegenwärtig. Sie geben
-              der Natur eine Eigenmacht, lassen Wahrnehmung unsicher werden und
-              verbinden äußere Räume mit inneren Zuständen. Die Romantik ist weniger
-              eine Flucht aus der Welt als ein Versuch, ihre nicht berechenbaren Teile
-              wieder sichtbar zu machen.
+              Natur eine Eigenmacht, lassen Wahrnehmung unsicher werden, machen
+              politische Ideen körperlich und verbinden äußere Räume mit inneren
+              Zuständen. Die Romantik ist weniger eine Flucht aus der Welt als ein
+              Versuch, ihre nicht berechenbaren Teile wieder sichtbar zu machen.
             </p>
             <p>
               Eine Epochenreise kann diese Felder nur öffnen. Das eigentliche Verstehen
