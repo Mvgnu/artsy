@@ -14,13 +14,7 @@ const eslintConfig = defineConfig([
       "@typescript-eslint/no-explicit-any": "error",
     },
   },
-  globalIgnores([
-    ".next/**",
-    "coverage/**",
-    "out/**",
-    "build/**",
-    "next-env.d.ts",
-  ]),
+  globalIgnores([".next/**", "coverage/**", "out/**", "build/**", "next-env.d.ts"]),
 ]);
 
 export default eslintConfig;

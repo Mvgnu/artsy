@@ -2,16 +2,9 @@ import { z } from "zod";
 
 export const EnvironmentSchema = z
   .object({
-    NODE_ENV: z
-      .enum(["development", "test", "production"])
-      .default("development"),
-    NEXT_PUBLIC_SITE_URL: z
-      .string()
-      .url()
-      .default("https://leerraum.ch"),
-    VERCEL_ENV: z
-      .enum(["development", "preview", "production"])
-      .optional(),
+    NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
+    NEXT_PUBLIC_SITE_URL: z.string().url().default("https://leerraum.ch"),
+    VERCEL_ENV: z.enum(["development", "preview", "production"]).optional(),
   })
   .strict();
 

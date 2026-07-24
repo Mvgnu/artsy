@@ -12,5 +12,5 @@ Planned route families include:
 - `techniken/`
 - `vergleichen/`
 
-Do not add placeholder `page.tsx` files. A route becomes public only when its
-owning domain specification and publication gates are satisfied.
+Do not add placeholder `page.tsx` files. A route becomes public only when its owning
+domain specification and publication gates are satisfied.

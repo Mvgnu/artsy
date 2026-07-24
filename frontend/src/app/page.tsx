@@ -83,9 +83,9 @@ export default function HomePage() {
           Aktueller Stand
         </p>
         <p className="mt-4 font-serif text-2xl leading-9">
-          Die technische Grundlage wird aufgebaut. Noch sind keine dünnen
-          Epochen-, Künstler- oder Werkseiten öffentlich erreichbar oder für
-          Suchmaschinen freigegeben.
+          Die technische Grundlage wird aufgebaut. Noch sind keine dünnen Epochen-,
+          Künstler- oder Werkseiten öffentlich erreichbar oder für Suchmaschinen
+          freigegeben.
         </p>
       </aside>
     </div>

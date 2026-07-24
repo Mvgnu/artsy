@@ -29,10 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang={foundationAccessibility.documentLanguage}>
       <body className="min-h-screen antialiased">
-        <a
-          className="skip-link"
-          href={`#${foundationAccessibility.mainContentId}`}
-        >
+        <a className="skip-link" href={`#${foundationAccessibility.mainContentId}`}>
           {foundationAccessibility.skipLinkLabel}
         </a>
 
@@ -68,8 +65,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <div className="mx-auto flex w-full max-w-[var(--content-width)] flex-col gap-2 px-5 py-8 text-sm text-muted sm:px-8">
               <p>Leerraum · Visuelle Kunstgeschichte aus der Schweiz.</p>
               <p>
-                Bilder, Quellen und Rechte werden vor jeder Veröffentlichung
-                geprüft.
+                Bilder, Quellen und Rechte werden vor jeder Veröffentlichung geprüft.
               </p>
             </div>
           </footer>
