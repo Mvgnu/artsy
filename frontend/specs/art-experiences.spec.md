@@ -1,174 +1,130 @@
 ---
 name: art-experiences
-description: "Bespoke period and movement journeys composed from structured content and shared primitives"
+description: "Bespoke period and movement journeys built around real editorial material"
 paths:
   routes: frontend/src/app/(experiences)/epochen/
   components: frontend/src/components/experiences/
   themes: frontend/src/styles/experiences/
   tests: frontend/tests/art-experiences/
-exports:
-  - MovementExperienceShell
-  - MovementSectionNavigation
-  - MovementEntityRail
-  - MovementExperienceTheme
+exports: []
 consumes:
-  - platform.buildPageMetadata
-  - platform.JsonLd
-  - design-system.primitives
-  - design-system.editorial-primitives
-  - rights.assertPublishableMedia
-  - content-model.MovementRecord
-  - content-model.ArtworkRecord
-  - content-model.ArtistRecord
-  - content-model.getRelatedEntities
+  - platform.root-layout
+  - design-system.foundation-tokens
 verification:
   typecheck: "pnpm --dir frontend typecheck"
-  test: "pnpm --dir frontend test -- art-experiences"
-  lint: "pnpm --dir frontend lint -- 'src/app/(experiences)/epochen' src/components/experiences src/styles/experiences"
+  lint: "pnpm --dir frontend lint -- 'src/app/(experiences)/epochen'"
   build: "pnpm --dir frontend build"
-  accessibility: "pnpm --dir frontend test:a11y -- art-experiences"
 ---
 
 # Art-experiences domain
 
 ## Mission
 
-Create memorable, movement-specific editorial journeys while preserving factual consistency, accessibility, performance, and graph connectivity.
+Create memorable, movement-specific editorial journeys. The experience and its content are the product; shared infrastructure exists only to make repeated work easier.
 
 ## Route strategy
 
-Flagship launch movements receive explicit route files rather than one dynamic universal renderer.
-
-Examples:
+Flagship movements receive explicit routes rather than one universal article renderer:
 
 ```text
 frontend/src/app/(experiences)/epochen/romantik/page.tsx
 frontend/src/app/(experiences)/epochen/impressionismus/page.tsx
-frontend/src/app/(experiences)/epochen/barock/page.tsx
 ```
 
-The public URLs remain `/epochen/<slug>/`; route groups do not appear in URLs.
+The public URL remains `/epochen/<slug>/`.
 
-A future generic fallback for minor movements requires a separate PM decision. It must not replace bespoke flagship pages.
+## Content-first rule
 
-## Experience contract
+Build the first coherent version of a page before inventing general systems around it.
 
-Every movement experience must:
+For an early movement route it is acceptable to:
 
-- load one published movement record;
-- use structured entity references rather than duplicate factual metadata;
+- keep authored copy directly in the route;
+- keep a small typed artwork list beside the route;
+- create local CSS and local section components;
+- publish a useful static experience before every planned child page exists;
+- refactor only when a second real use case demonstrates repetition.
+
+The route does **not** need a universal entity registry, graph engine, approval workflow, provider policy engine, or generic movement schema before it can exist.
+
+## Minimum useful artwork note
+
+Every rendered artwork needs enough nearby information for readers to understand what they are seeing and where the image came from:
+
+- title and artist;
+- date and medium where verified;
+- institution or collection;
+- source page;
+- the source's stated rights label;
+- visible credit;
+- useful alt text.
+
+This may be represented by a small route-local typed object. More elaborate records require demonstrated reuse.
+
+## Experience principles
+
+Every movement experience should:
+
 - establish a clear editorial thesis;
-- teach users how to recognise the movement visually;
-- situate the movement against predecessors, reactions, and influences;
-- feature approved artworks and artists with reasons for inclusion;
-- deep-link into complete child pages;
-- present uncertainty and disputed boundaries honestly;
-- provide source notes and image credits;
-- remain useful with reduced motion and without pointer input;
-- pass the route-level performance budget.
+- teach users how to recognise or think through the movement visually;
+- use real sourced works for concrete analysis;
+- acknowledge that movements vary across places and artists;
+- keep image credits and sources visible;
+- remain useful without client-side JavaScript;
+- work with keyboard navigation and reduced motion;
+- stay within the normal site performance budget.
 
 ## Bespoke composition boundary
 
 Experience-owned files may define:
 
-- section order;
-- narrative pacing;
-- movement-specific colour and type accents;
-- scroll or transition behaviour;
+- section order and narrative pacing;
+- movement-specific palette and typography accents;
 - spatial composition;
-- local illustration and annotation arrangements;
-- custom combinations of shared primitives.
+- local artwork layouts and annotations;
+- small decorative effects.
 
-They may not redefine:
+They must not compromise global navigation, focus visibility, text readability, source visibility, or responsive behaviour.
 
-- canonical artwork or artist facts;
-- rights eligibility;
-- global navigation semantics;
-- source record formats;
-- accessibility fundamentals;
-- route metadata contracts.
+## Romanticism direction
 
-## Recommended Romanticism journey
+The first Romanticism slice should prioritise a coherent journey over catalogue completeness:
 
-This is a direction, not a frozen wireframe.
+1. an atmosphere-led threshold;
+2. the break from rational order;
+3. visual cues such as scale, weather, solitude and the sublime;
+4. close looking at a few strong works;
+5. evidence that Romanticism was not one uniform look;
+6. a conclusion that gives the movement contemporary resonance.
 
-1. **Threshold** — atmosphere-led introduction using an approved open-access work.
-2. **The rupture** — what Romanticism reacted against and why the change mattered.
-3. **How to see it** — visual cues such as scale, nature, ruins, weather, solitude, the sublime, and the Rückenfigur.
-4. **Enter the landscape** — guided artwork detail sequence.
-5. **Not one Romanticism** — geographic and ideological variation.
-6. **Artists in tension** — selected artists and differing approaches.
-7. **Motif constellation** — moon, ruin, storm, mountain, sea, window, wanderer.
-8. **Afterlife** — influence on Symbolism, cinema, fantasy, environmental imagination, or later visual culture where sourced.
-9. **Continue** — artwork decoders, artist pages, motifs, comparison, and discovery collection.
+Artwork decoders, artists, motifs and comparisons can be added after the flagship route establishes which branches are genuinely valuable.
 
-## Shared experience components
+## Abstraction gate
 
-Only genuinely repeated mechanics should be exported:
+Keep a component local unless at least two concrete pages or sections need the same behaviour.
 
-- route-level experience shell;
-- sticky or sectional navigation;
-- entity rails;
-- artwork detail transitions;
-- citation and credit integration;
-- reduced-motion wrappers;
-- theme contract.
+Before exporting a shared component, answer:
 
-A component should remain local until a second movement proves the abstraction.
+1. What repeated problem does it solve?
+2. Which behaviour is actually invariant?
+3. Does the abstraction make the next page faster to author?
+4. Is the shared version easier to understand than two local implementations?
 
-## Theming
+If not, leave it local.
 
-Movement themes may extend documented CSS custom properties or typed theme contracts.
+## Testing
 
-They must preserve:
+Do not write tests for prose, obvious static markup, or every source field.
 
-- contrast requirements;
-- focus visibility;
-- readable prose widths;
-- reduced-motion support;
-- print and text-selection usability;
-- global navigation legibility.
+Add tests when they protect behaviour that could realistically regress, such as:
 
-A movement theme must not mutate global styles outside its route boundary.
+- keyboard interaction;
+- a non-trivial responsive component;
+- reduced-motion behaviour;
+- metadata or image rendering logic shared across routes.
 
-## Performance rules
+Typecheck, lint and production build remain the baseline checks for a static first slice.
 
-- Prioritise one clear hero asset, not a preload cascade.
-- Below-fold media is lazy-loaded.
-- Large images use responsive sizes and intrinsic dimensions.
-- Avoid shipping animation libraries for effects achievable with CSS or platform APIs.
-- Interactive sections are isolated client components.
-- The core narrative and links render on the server.
-- Decorative effects degrade without blocking content.
+## Publication
 
-## Content readiness gate
-
-A movement route must not be publicly reachable until its silo includes:
-
-- the flagship experience;
-- at least four approved artwork pages;
-- at least two linked artist pages;
-- at least two motif or technique pages;
-- one approved comparison or discovery collection;
-- complete source and media records;
-- no dead-end child pages.
-
-## Non-responsibilities
-
-- generic entity route rendering;
-- search and filter implementation;
-- canonical content schemas;
-- rights review decisions;
-- homepage ownership;
-- automated movement-page generation.
-
-## Test expectations
-
-- one route-level test per movement;
-- no duplicate canonical entity metadata inside route fixtures;
-- keyboard access to all interactive sections;
-- reduced-motion rendering;
-- image-credit completeness;
-- route metadata and structured-data validation;
-- mobile overflow and text scaling checks;
-- performance measurement for the heaviest representative route.
+A coherent and responsibly sourced movement page may be reachable while its wider silo is still growing. It should clearly avoid links to nonexistent routes, but it does not need four artwork pages, two artist pages and a complete graph before publication.

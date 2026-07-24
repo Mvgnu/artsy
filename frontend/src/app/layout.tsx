@@ -42,12 +42,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
               >
                 Leerraum
               </Link>
-              <nav aria-label="Hauptnavigation">
+              <nav aria-label="Hauptnavigation" className="flex items-center gap-5">
                 <Link
                   className="text-sm font-semibold underline decoration-line decoration-1 hover:decoration-ink"
                   href="/"
                 >
                   Startseite
+                </Link>
+                <Link
+                  className="text-sm font-semibold underline decoration-line decoration-1 hover:decoration-ink"
+                  href="/epochen/romantik/"
+                >
+                  Romantik
                 </Link>
               </nav>
             </div>
@@ -64,9 +70,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <footer className="border-t border-line/80">
             <div className="mx-auto flex w-full max-w-[var(--content-width)] flex-col gap-2 px-5 py-8 text-sm text-muted sm:px-8">
               <p>Leerraum · Visuelle Kunstgeschichte aus der Schweiz.</p>
-              <p>
-                Bilder, Quellen und Rechte werden vor jeder Veröffentlichung geprüft.
-              </p>
+              <p>Werkangaben, Bildquellen und Credits stehen direkt bei den Bildern.</p>
             </div>
           </footer>
         </div>

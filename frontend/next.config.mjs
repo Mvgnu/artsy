@@ -3,6 +3,15 @@ const nextConfig = {
   output: "standalone",
   poweredByHeader: false,
   reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "collectionapi.metmuseum.org",
+        pathname: "/api/collection/v1/iiif/**",
+      },
+    ],
+  },
   async headers() {
     return [
       {

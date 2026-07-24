@@ -1,0 +1,431 @@
+.experience {
+  --romantic-night: #101719;
+  --romantic-deep: #1b2728;
+  --romantic-mist: #d8d8cd;
+  --romantic-paper: #eee9dc;
+  --romantic-gold: #c6a96b;
+  --romantic-rust: #9b5f42;
+  overflow: hidden;
+  background: var(--romantic-night);
+  color: var(--romantic-paper);
+}
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  min-height: min(88rem, 92svh);
+  place-items: end start;
+  overflow: hidden;
+  padding: clamp(7rem, 14vw, 12rem) max(1.25rem, calc((100vw - 82rem) / 2));
+}
+
+.hero::before {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background:
+    radial-gradient(circle at 72% 34%, rgb(223 217 190 / 0.18), transparent 18rem),
+    radial-gradient(circle at 50% 88%, rgb(183 170 137 / 0.16), transparent 35rem),
+    linear-gradient(180deg, #0d1518 0%, #172224 48%, #101719 100%);
+  content: "";
+}
+
+.hero::after {
+  position: absolute;
+  right: -14vw;
+  bottom: -9rem;
+  left: -14vw;
+  z-index: -2;
+  height: 39%;
+  border-radius: 50% 50% 0 0;
+  background:
+    radial-gradient(ellipse at center, rgb(204 206 190 / 0.2), transparent 55%),
+    linear-gradient(180deg, transparent, rgb(9 14 15 / 0.9));
+  filter: blur(10px);
+  content: "";
+  transform: rotate(-2deg);
+}
+
+.mountain,
+.mountainFar {
+  position: absolute;
+  z-index: -1;
+  right: -8vw;
+  bottom: 10%;
+  width: min(68rem, 78vw);
+  height: 38%;
+  background: linear-gradient(145deg, transparent 48%, rgb(3 8 9 / 0.82) 49%);
+  clip-path: polygon(0 100%, 21% 66%, 35% 72%, 53% 22%, 68% 61%, 82% 46%, 100% 100%);
+}
+
+.mountainFar {
+  right: 24vw;
+  bottom: 18%;
+  width: min(55rem, 68vw);
+  height: 29%;
+  opacity: 0.38;
+  filter: blur(3px);
+  transform: scaleX(-1);
+}
+
+.heroContent {
+  width: min(64rem, 100%);
+}
+
+.kicker,
+.sectionKicker {
+  margin: 0 0 1.25rem;
+  color: var(--romantic-gold);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 9ch;
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(5.4rem, 18vw, 13rem);
+  font-weight: 500;
+  letter-spacing: -0.065em;
+  line-height: 0.72;
+}
+
+.title span {
+  display: block;
+  margin-top: 0.18em;
+  margin-left: 0.72em;
+  color: var(--romantic-mist);
+  font-size: 0.33em;
+  font-style: italic;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+
+.intro {
+  max-width: 36rem;
+  margin: clamp(3rem, 8vw, 6rem) 0 0 auto;
+  color: rgb(238 233 220 / 0.82);
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  line-height: 1.65;
+}
+
+.lightSection {
+  background: var(--romantic-paper);
+  color: #192123;
+}
+
+.section {
+  width: min(82rem, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: clamp(6rem, 12vw, 11rem) 0;
+}
+
+.ruptureGrid {
+  display: grid;
+  gap: 3rem;
+}
+
+.sectionTitle {
+  max-width: 12ch;
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(3.25rem, 8vw, 7.5rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 0.93;
+}
+
+.sectionLead {
+  max-width: 41rem;
+  margin: 0;
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  line-height: 1.72;
+}
+
+.bodyCopy {
+  max-width: 42rem;
+  margin: 1.75rem 0 0;
+  color: rgb(25 33 35 / 0.72);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.seeingGrid {
+  display: grid;
+  gap: 1px;
+  margin-top: 5rem;
+  overflow: hidden;
+  border: 1px solid rgb(25 33 35 / 0.18);
+  background: rgb(25 33 35 / 0.18);
+}
+
+.seeingCard {
+  min-height: 21rem;
+  padding: clamp(1.75rem, 4vw, 3rem);
+  background: var(--romantic-paper);
+}
+
+.cardNumber {
+  color: var(--romantic-rust);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.cardTitle {
+  margin: 5rem 0 1.5rem;
+  font-family: var(--font-serif);
+  font-size: 2.65rem;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.cardText {
+  margin: 0;
+  color: rgb(25 33 35 / 0.72);
+  line-height: 1.75;
+}
+
+.artworkSection {
+  padding: clamp(5rem, 10vw, 9rem) 0;
+  background: var(--romantic-deep);
+}
+
+.artworkLayout {
+  display: grid;
+  width: min(92rem, calc(100% - 2.5rem));
+  margin: 0 auto;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.imageFrame {
+  position: relative;
+  aspect-ratio: 1.47;
+  overflow: hidden;
+  border: 1px solid rgb(238 233 220 / 0.2);
+  background: #0a1011;
+  box-shadow: 0 2rem 5rem rgb(0 0 0 / 0.25);
+}
+
+.imageFrame img {
+  object-fit: cover;
+}
+
+.artworkCopy {
+  max-width: 38rem;
+}
+
+.artworkTitle {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 0.96;
+}
+
+.artworkText {
+  margin: 2rem 0 0;
+  color: rgb(238 233 220 / 0.76);
+  font-size: 1.08rem;
+  line-height: 1.82;
+}
+
+.credit {
+  margin: 1.25rem 0 0;
+  color: rgb(238 233 220 / 0.58);
+  font-size: 0.76rem;
+  line-height: 1.65;
+}
+
+.credit a {
+  text-decoration-color: rgb(198 169 107 / 0.7);
+}
+
+.termNote {
+  margin: 2rem 0 0;
+  padding: 1.1rem 1.25rem;
+  border-left: 2px solid var(--romantic-gold);
+  background: rgb(238 233 220 / 0.06);
+  color: rgb(238 233 220 / 0.7);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+.termNote strong {
+  color: var(--romantic-paper);
+}
+
+.friedrichSection {
+  background:
+    radial-gradient(circle at 78% 18%, rgb(222 213 178 / 0.16), transparent 18rem),
+    linear-gradient(145deg, #101718, #222a28 58%, #12191a);
+}
+
+.friedrichSection .imageFrame {
+  aspect-ratio: 1.255;
+}
+
+.friedrichSection .imageFrame img {
+  object-fit: contain;
+}
+
+.turnerSection {
+  background:
+    radial-gradient(circle at 64% 42%, rgb(241 225 183 / 0.2), transparent 25rem),
+    #c8c2ad;
+  color: #172022;
+}
+
+.turnerSection .artworkText,
+.turnerSection .credit {
+  color: rgb(23 32 34 / 0.7);
+}
+
+.turnerSection .imageFrame {
+  border-color: rgb(23 32 34 / 0.16);
+  box-shadow: 0 2rem 5rem rgb(47 48 42 / 0.2);
+}
+
+.mapSection {
+  background: #151d1e;
+}
+
+.mapIntro {
+  display: grid;
+  gap: 2rem;
+}
+
+.romanticismGrid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 4.5rem;
+}
+
+.placeCard {
+  padding: 2rem;
+  border: 1px solid rgb(238 233 220 / 0.16);
+  background: rgb(238 233 220 / 0.035);
+}
+
+.place {
+  color: var(--romantic-gold);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.placeTitle {
+  margin: 2.75rem 0 1rem;
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.placeText {
+  margin: 0;
+  color: rgb(238 233 220 / 0.65);
+  line-height: 1.7;
+}
+
+.closing {
+  background: var(--romantic-paper);
+  color: #192123;
+}
+
+.closingQuote {
+  max-width: 19ch;
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(3.2rem, 8vw, 7rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.closingText {
+  max-width: 39rem;
+  margin: 3rem 0 0 auto;
+  color: rgb(25 33 35 / 0.72);
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.sources {
+  margin-top: 6rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgb(25 33 35 / 0.18);
+}
+
+.sourceList {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sourceList a {
+  font-weight: 700;
+}
+
+@media (min-width: 48rem) {
+  .ruptureGrid,
+  .mapIntro {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .seeingGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .romanticismGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  .artworkLayout {
+    grid-template-columns: minmax(0, 1.35fr) minmax(22rem, 0.65fr);
+    gap: clamp(4rem, 8vw, 9rem);
+  }
+
+  .turnerSection .imageFrame {
+    order: 2;
+  }
+
+  .turnerSection .artworkCopy {
+    order: 1;
+  }
+
+  .romanticismGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .heroContent {
+    animation: arrive 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @keyframes arrive {
+    from {
+      opacity: 0;
+      transform: translateY(1.5rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
