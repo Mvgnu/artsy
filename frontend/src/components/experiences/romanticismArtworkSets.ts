@@ -130,7 +130,7 @@ export const revolutionBodyArtworks = [
   ),
 ] as const;
 
-export const rueckenfigurArtworks = [
+export const ruckenfigurArtworks = [
   artwork(
     "Caspar David Friedrich - Wanderer above the sea of fog.jpg",
     "Caspar David Friedrich",
@@ -157,7 +157,7 @@ export const rueckenfigurArtworks = [
   ),
 ] as const;
 
-export const friedrichArtworks = [
+export const friedrichProfileArtworks = [
   artwork(
     "Caspar David Friedrich - Der Mönch am Meer - Google Art Project.jpg",
     "Caspar David Friedrich",
@@ -192,7 +192,7 @@ export const friedrichArtworks = [
   ),
 ] as const;
 
-export const turnerArtworks = [
+export const turnerProfileArtworks = [
   artwork(
     "Turner, J. M. W. - The Shipwreck - 1805.jpg",
     "J. M. W. Turner",
@@ -227,7 +227,7 @@ export const turnerArtworks = [
   ),
 ] as const;
 
-export const coleArtworks = [
+export const coleProfileArtworks = [
   artwork(
     "Thomas Cole - The Falls of Kaaterskill.jpg",
     "Thomas Cole",
@@ -262,7 +262,7 @@ export const coleArtworks = [
   ),
 ] as const;
 
-export const delacroixArtworks = [
+export const delacroixProfileArtworks = [
   artwork(
     "Eugène Delacroix - The Barque of Dante.jpg",
     "Eugène Delacroix",
