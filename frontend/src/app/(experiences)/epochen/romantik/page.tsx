@@ -81,9 +81,9 @@ export default function RomanticismPage() {
             <span>als die Landschaft zurückblickte</span>
           </h1>
           <p className={styles.intro}>
-            Die Romantik machte Natur nicht bloß zum Motiv. Sie machte sie zum Gegenüber:
-            größer als der Mensch, unberechenbar, tröstlich, bedrohlich und voller Räume,
-            in denen sich das Innere plötzlich außen wiederfand.
+            Die Romantik machte Natur nicht bloß zum Motiv. Sie machte sie zum
+            Gegenüber: größer als der Mensch, unberechenbar, tröstlich, bedrohlich und
+            voller Räume, in denen sich das Innere plötzlich außen wiederfand.
           </p>
         </div>
       </header>
@@ -99,18 +99,18 @@ export default function RomanticismPage() {
             </div>
             <div>
               <p className={styles.sectionLead}>
-                Die Aufklärung hatte die Welt vermessen, geordnet und erklärbar gemacht. Die
-                Romantik fragte, was in diesem Bild fehlte: Gefühl, Erinnerung, Schrecken,
-                Glauben, Traum und die Erfahrung, dass nicht alles Beherrschbare auch
-                bedeutsam ist.
+                Die Aufklärung hatte die Welt vermessen, geordnet und erklärbar gemacht.
+                Die Romantik fragte, was in diesem Bild fehlte: Gefühl, Erinnerung,
+                Schrecken, Glauben, Traum und die Erfahrung, dass nicht alles
+                Beherrschbare auch bedeutsam ist.
               </p>
               <p className={styles.bodyCopy}>
-                Das war keine einheitliche Stilrevolution. In Deutschland konnte eine stille
-                Landschaft zum spirituellen Denkraum werden. In Großbritannien zerfiel die
-                Welt in Wetter und Licht. In Frankreich traten Katastrophe, Revolution und
-                extreme Emotion in die Historienmalerei. Gemeinsam war diesen Bildern weniger
-                ein Look als eine Spannung: Das vernünftige Subjekt entdeckt, dass es nicht im
-                Mittelpunkt von allem steht.
+                Das war keine einheitliche Stilrevolution. In Deutschland konnte eine
+                stille Landschaft zum spirituellen Denkraum werden. In Großbritannien
+                zerfiel die Welt in Wetter und Licht. In Frankreich traten Katastrophe,
+                Revolution und extreme Emotion in die Historienmalerei. Gemeinsam war
+                diesen Bildern weniger ein Look als eine Spannung: Das vernünftige
+                Subjekt entdeckt, dass es nicht im Mittelpunkt von allem steht.
               </p>
             </div>
           </div>
@@ -137,16 +137,17 @@ export default function RomanticismPage() {
             preload
           >
             <p>
-              Links hängt das Gewitter noch über gebrochenen Bäumen und dichtem Wald. Rechts
-              öffnet sich eine helle, bewirtschaftete Ebene. Der Connecticut River schneidet
-              als große Schleife durch beide Zustände. Cole malt keine neutrale Aussicht,
-              sondern eine Entscheidung, deren Ausgang offenbleibt.
+              Links hängt das Gewitter noch über gebrochenen Bäumen und dichtem Wald.
+              Rechts öffnet sich eine helle, bewirtschaftete Ebene. Der Connecticut
+              River schneidet als große Schleife durch beide Zustände. Cole malt keine
+              neutrale Aussicht, sondern eine Entscheidung, deren Ausgang offenbleibt.
             </p>
             <p>
-              Selbst der Maler ist im Vordergrund versteckt: winzig zwischen Fels, Staffelei
-              und Regenschirm. Seine erhöhte Position verspricht Überblick, doch das Bild
-              entzieht ihm die Eindeutigkeit. Ist die helle Ordnung Fortschritt oder Verlust?
-              Ist die Wildnis Ursprung, Gefahr oder eine bereits verschwindende Vorstellung?
+              Selbst der Maler ist im Vordergrund versteckt: winzig zwischen Fels,
+              Staffelei und Regenschirm. Seine erhöhte Position verspricht Überblick,
+              doch das Bild entzieht ihm die Eindeutigkeit. Ist die helle Ordnung
+              Fortschritt oder Verlust? Ist die Wildnis Ursprung, Gefahr oder eine
+              bereits verschwindende Vorstellung?
             </p>
           </ArtworkFeature>
         </div>
@@ -164,15 +165,16 @@ export default function RomanticismPage() {
             kicker="J. M. W. Turner · um 1845"
           >
             <p>
-              Bei Turner ist die Natur nicht sauber in zwei Hälften geteilt. Sie dringt in die
-              Malerei ein. Schiff, Boote, Wal, Gischt und Rauch sind noch erkennbar, aber ihre
-              Grenzen lösen sich auf. Das Auge muss arbeiten und bleibt trotzdem unsicher.
+              Bei Turner ist die Natur nicht sauber in zwei Hälften geteilt. Sie dringt
+              in die Malerei ein. Schiff, Boote, Wal, Gischt und Rauch sind noch
+              erkennbar, aber ihre Grenzen lösen sich auf. Das Auge muss arbeiten und
+              bleibt trotzdem unsicher.
             </p>
             <p>
               Genau darin liegt die Erfahrung des Erhabenen: Anziehung und Überforderung
-              gleichzeitig. Die See ist nicht Hintergrund für menschliches Handeln. Sie ist
-              eine Kraft, die Maßstab, Orientierung und sogar die Lesbarkeit des Bildes
-              bestimmt.
+              gleichzeitig. Die See ist nicht Hintergrund für menschliches Handeln. Sie
+              ist eine Kraft, die Maßstab, Orientierung und sogar die Lesbarkeit des
+              Bildes bestimmt.
             </p>
           </ArtworkFeature>
         </div>
@@ -188,11 +190,11 @@ export default function RomanticismPage() {
               </h2>
             </div>
             <p className={styles.sectionLead}>
-              Nebelberge und einsame Rückenfiguren prägen heute das populäre Bild der Epoche.
-              Doch Romantik entstand in mehreren Ländern, Medien und politischen Situationen.
-              Ihre Formen widersprechen einander, gerade weil sie dieselbe Frage verschieden
-              beantworten: Was geschieht, wenn Gefühl und Vorstellungskraft mehr sein sollen
-              als Störungen der Vernunft?
+              Nebelberge und einsame Rückenfiguren prägen heute das populäre Bild der
+              Epoche. Doch Romantik entstand in mehreren Ländern, Medien und politischen
+              Situationen. Ihre Formen widersprechen einander, gerade weil sie dieselbe
+              Frage verschieden beantworten: Was geschieht, wenn Gefühl und
+              Vorstellungskraft mehr sein sollen als Störungen der Vernunft?
             </p>
           </div>
 
@@ -216,10 +218,11 @@ export default function RomanticismPage() {
             werden.
           </h2>
           <p className={styles.closingText}>
-            Deshalb wirken diese Bilder weiterhin erstaunlich gegenwärtig. Sie geben der Natur
-            eine Eigenmacht, lassen Wahrnehmung unsicher werden und verbinden äußere Räume mit
-            inneren Zuständen. Die Romantik ist weniger eine Flucht aus der Welt als ein
-            Versuch, ihre nicht berechenbaren Teile wieder sichtbar zu machen.
+            Deshalb wirken diese Bilder weiterhin erstaunlich gegenwärtig. Sie geben der
+            Natur eine Eigenmacht, lassen Wahrnehmung unsicher werden und verbinden
+            äußere Räume mit inneren Zuständen. Die Romantik ist weniger eine Flucht aus
+            der Welt als ein Versuch, ihre nicht berechenbaren Teile wieder sichtbar zu
+            machen.
           </p>
 
           <aside aria-labelledby="quellen" className={styles.sources}>
