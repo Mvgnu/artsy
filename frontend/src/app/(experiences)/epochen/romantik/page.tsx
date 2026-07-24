@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import type { ReactNode } from "react";
 
 import {
   oxbow,
@@ -22,17 +23,19 @@ export const metadata: Metadata = {
 
 interface ArtworkFeatureProps {
   artwork: RomanticismArtwork;
+  children: ReactNode;
   heading: string;
+  headingId: string;
   kicker: string;
-  children: React.ReactNode;
   preload?: boolean;
 }
 
 function ArtworkFeature({
   artwork,
-  heading,
-  kicker,
   children,
+  heading,
+  headingId,
+  kicker,
   preload = false,
 }: ArtworkFeatureProps) {
   return (
@@ -49,7 +52,9 @@ function ArtworkFeature({
 
       <div className={styles.artworkCopy}>
         <p className={styles.sectionKicker}>{kicker}</p>
-        <h2 className={styles.artworkTitle}>{heading}</h2>
+        <h2 className={styles.artworkTitle} id={headingId}>
+          {heading}
+        </h2>
         <div className={styles.artworkText}>{children}</div>
         <p className={styles.credit}>
           <em>{artwork.title}</em> ({artwork.originalTitle}), {artwork.artist},{" "}
@@ -127,6 +132,7 @@ export default function RomanticismPage() {
           <ArtworkFeature
             artwork={oxbow}
             heading="Ein Bild, zwei Welten"
+            headingId="geteilte-welt"
             kicker="Thomas Cole · 1836"
             preload
           >
@@ -154,6 +160,7 @@ export default function RomanticismPage() {
           <ArtworkFeature
             artwork={whalers}
             heading="Wenn das Bild selbst den Halt verliert"
+            headingId="aufloesung"
             kicker="J. M. W. Turner · um 1845"
           >
             <p>
