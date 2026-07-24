@@ -193,7 +193,9 @@ export default function EugeneDelacroixPage() {
             Moderne Geschichte ohne sicheren Mittelpunkt
           </h2>
 
-          <div style={{ display: "grid", gap: "1px", background: "rgb(33 25 22 / .18)" }}>
+          <div
+            style={{ display: "grid", gap: "1px", background: "rgb(33 25 22 / .18)" }}
+          >
             {phases.map((phase) => (
               <section
                 key={phase.period}
@@ -356,16 +358,17 @@ export default function EugeneDelacroixPage() {
           >
             <p>
               Delacroix wird häufig als Befreier der Farbe gefeiert. Das ist formal
-              nachvollziehbar, kann aber politische und koloniale Zusammenhänge unsichtbar
-              machen. Seine Malerei erzeugt starke emotionale Beteiligung; gerade deshalb
-              muss gefragt werden, wessen Leid sichtbar wird, wer als handelndes Subjekt
-              erscheint und welche Räume als fremd oder verfügbar inszeniert werden.
+              nachvollziehbar, kann aber politische und koloniale Zusammenhänge
+              unsichtbar machen. Seine Malerei erzeugt starke emotionale Beteiligung;
+              gerade deshalb muss gefragt werden, wessen Leid sichtbar wird, wer als
+              handelndes Subjekt erscheint und welche Räume als fremd oder verfügbar
+              inszeniert werden.
             </p>
             <p>
-              Seine Bedeutung liegt nicht darin, eindeutige Antworten zu liefern. Sie liegt
-              darin, dass seine Bilder politische Ideen in Körper, Stoffe, Verletzungen und
-              Blickrichtungen übersetzen und dabei ihre Widersprüche nicht vollständig
-              beruhigen.
+              Seine Bedeutung liegt nicht darin, eindeutige Antworten zu liefern. Sie
+              liegt darin, dass seine Bilder politische Ideen in Körper, Stoffe,
+              Verletzungen und Blickrichtungen übersetzen und dabei ihre Widersprüche
+              nicht vollständig beruhigen.
             </p>
           </div>
         </div>

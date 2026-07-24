@@ -220,9 +220,9 @@ export default function RomanticismPage() {
                 zerfiel die Welt in Wetter und Licht. In Frankreich wurden Revolution,
                 Katastrophe und soziale Konflikte über bewegte und verletzliche Körper
                 sichtbar. In den Vereinigten Staaten wurde Landschaft zugleich zur
-                nationalen Zukunfts- und Besitzfrage. Gemeinsam war diesen Bildern weniger
-                ein Look als eine Spannung: Das vernünftige Subjekt entdeckt, dass es weder
-                Natur noch Geschichte vollständig beherrscht.
+                nationalen Zukunfts- und Besitzfrage. Gemeinsam war diesen Bildern
+                weniger ein Look als eine Spannung: Das vernünftige Subjekt entdeckt,
+                dass es weder Natur noch Geschichte vollständig beherrscht.
               </p>
             </div>
           </div>
@@ -371,13 +371,14 @@ export default function RomanticismPage() {
         <div className={styles.section}>
           <p className={styles.sectionKicker}>Die Fäden zusammenziehen</p>
           <h2 className={styles.connectionTitle} id="drei-funktionen">
-            Romantik organisiert nicht eine Stimmung, sondern verschiedene Grenzerfahrungen.
+            Romantik organisiert nicht eine Stimmung, sondern verschiedene
+            Grenzerfahrungen.
           </h2>
           <p className={styles.connectionLead}>
-            Friedrich, Cole, Turner und Delacroix teilen dramatische Kontraste, kleine oder
-            gefährdete Menschen und eine unsichere Zuschauerposition. Doch sie setzen diese
-            Mittel für verschiedene Probleme ein: inneres Sehen, nationale Ordnung,
-            Wahrnehmungsverlust und politische Mobilisierung.
+            Friedrich, Cole, Turner und Delacroix teilen dramatische Kontraste, kleine
+            oder gefährdete Menschen und eine unsichere Zuschauerposition. Doch sie
+            setzen diese Mittel für verschiedene Probleme ein: inneres Sehen, nationale
+            Ordnung, Wahrnehmungsverlust und politische Mobilisierung.
           </p>
 
           <div className={styles.connectionGrid}>
@@ -445,10 +446,10 @@ export default function RomanticismPage() {
           <div className={styles.closingCopy}>
             <p>
               Deshalb wirken diese Bilder weiterhin erstaunlich gegenwärtig. Sie geben
-              Natur eine Eigenmacht, lassen Wahrnehmung unsicher werden, machen politische
-              Ideen körperlich und verbinden äußere Räume mit inneren Zuständen. Die
-              Romantik ist weniger eine Flucht aus der Welt als ein Versuch, ihre nicht
-              berechenbaren Teile wieder sichtbar zu machen.
+              Natur eine Eigenmacht, lassen Wahrnehmung unsicher werden, machen
+              politische Ideen körperlich und verbinden äußere Räume mit inneren
+              Zuständen. Die Romantik ist weniger eine Flucht aus der Welt als ein
+              Versuch, ihre nicht berechenbaren Teile wieder sichtbar zu machen.
             </p>
             <p>
               Eine Epochenreise kann diese Felder nur öffnen. Das eigentliche Verstehen

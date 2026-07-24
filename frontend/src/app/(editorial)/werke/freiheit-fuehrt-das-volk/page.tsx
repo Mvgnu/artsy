@@ -108,9 +108,9 @@ export default function LibertyLeadingThePeoplePage() {
               maxWidth: "38rem",
             }}
           >
-            Delacroix verbindet Straßenkampf und Allegorie so eng, dass das Bild zugleich
-            historische Szene, politisches Versprechen und nachträglich geglätteter Mythos
-            wird.
+            Delacroix verbindet Straßenkampf und Allegorie so eng, dass das Bild
+            zugleich historische Szene, politisches Versprechen und nachträglich
+            geglätteter Mythos wird.
           </p>
         </div>
 
@@ -136,8 +136,8 @@ export default function LibertyLeadingThePeoplePage() {
               right: 0,
             }}
           >
-            Eugène Delacroix, <em>La Liberté guidant le peuple</em>, 1830, Öl auf Leinwand,
-            Musée du Louvre. Public Domain.
+            Eugène Delacroix, <em>La Liberté guidant le peuple</em>, 1830, Öl auf
+            Leinwand, Musée du Louvre. Public Domain.
           </figcaption>
         </figure>
       </header>
@@ -184,14 +184,14 @@ export default function LibertyLeadingThePeoplePage() {
             </div>
             <div style={{ fontSize: "1.1rem", lineHeight: 1.82 }}>
               <p>
-                Der Blick trifft zuerst auf Tote und Barrikadenschutt. Erst darüber erhebt
-                sich die vorwärtsdrängende Gruppe. Die Bewegung ist eindeutig nach vorn
-                gerichtet, aber der Weg bleibt materiell und moralisch unrein.
+                Der Blick trifft zuerst auf Tote und Barrikadenschutt. Erst darüber
+                erhebt sich die vorwärtsdrängende Gruppe. Die Bewegung ist eindeutig
+                nach vorn gerichtet, aber der Weg bleibt materiell und moralisch unrein.
               </p>
               <p>
-                Liberty blickt zurück, während sie vorangeht. Diese Drehung verbindet Führung
-                und Kontrolle: Sie ruft die Menge, überprüft ihre Gefolgschaft und zieht den
-                Betrachter in dieselbe Bewegungsrichtung hinein.
+                Liberty blickt zurück, während sie vorangeht. Diese Drehung verbindet
+                Führung und Kontrolle: Sie ruft die Menge, überprüft ihre Gefolgschaft
+                und zieht den Betrachter in dieselbe Bewegungsrichtung hinein.
               </p>
             </div>
           </div>
@@ -210,7 +210,9 @@ export default function LibertyLeadingThePeoplePage() {
                 key={observation.number}
                 style={{ background: "#efe2cf", minHeight: "24rem", padding: "2rem" }}
               >
-                <p style={{ color: "#994a31", fontWeight: 800 }}>{observation.number}</p>
+                <p style={{ color: "#994a31", fontWeight: 800 }}>
+                  {observation.number}
+                </p>
                 <h3
                   style={{
                     fontFamily: "var(--font-serif)",
@@ -340,14 +342,14 @@ export default function LibertyLeadingThePeoplePage() {
           <div style={{ fontSize: "1.08rem", lineHeight: 1.82 }}>
             <p>
               Das Bild wurde in republikanischen, revolutionären, kommerziellen und
-              popkulturellen Zusammenhängen wiederverwendet. Dabei lässt sich die zentrale
-              Figur leicht aus ihrer historischen Umgebung lösen. Übrig bleibt eine sofort
-              erkennbare Formel: Fahne, Vorwärtsbewegung, Volk.
+              popkulturellen Zusammenhängen wiederverwendet. Dabei lässt sich die
+              zentrale Figur leicht aus ihrer historischen Umgebung lösen. Übrig bleibt
+              eine sofort erkennbare Formel: Fahne, Vorwärtsbewegung, Volk.
             </p>
             <p>
               Eine genaue Betrachtung führt die verlorenen Elemente zurück: tote Körper,
-              Klassenunterschiede, Rauch, bewaffnete Gewalt und einen politischen Sieg, der
-              keineswegs alle Hoffnungen der Straße erfüllte.
+              Klassenunterschiede, Rauch, bewaffnete Gewalt und einen politischen Sieg,
+              der keineswegs alle Hoffnungen der Straße erfüllte.
             </p>
           </div>
         </div>

@@ -336,8 +336,9 @@ export default function RevolutionAndBodyPage() {
           <p style={{ fontSize: "1.12rem", lineHeight: 1.85, maxWidth: "47rem" }}>
             Ein Bild kann Bewegung, Mut und Empörung stark organisieren und dennoch eine
             begrenzte Vorstellung des Volkes zeigen. Gerade die stärksten politischen
-            Bilder verdienen deshalb eine doppelte Lektüre: Wie erzeugen sie Beteiligung,
-            und welche Widersprüche werden in dieser Beteiligung vereinfacht?
+            Bilder verdienen deshalb eine doppelte Lektüre: Wie erzeugen sie
+            Beteiligung, und welche Widersprüche werden in dieser Beteiligung
+            vereinfacht?
           </p>
         </div>
       </section>
