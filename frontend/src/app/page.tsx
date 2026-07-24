@@ -60,8 +60,8 @@ export default function HomePage() {
           <div>
             <p className="text-lg leading-8 text-canvas/75">
               Eine erste visuelle Reise durch Maßstab, Atmosphäre, innere Landschaft und
-              das Erhabene. Mit Thomas Cole und J. M. W. Turner als zwei sehr verschiedenen
-              Antworten auf dieselbe Unruhe.
+              das Erhabene. Mit Thomas Cole und J. M. W. Turner als zwei sehr
+              verschiedenen Antworten auf dieselbe Unruhe.
             </p>
             <Link
               className="mt-8 inline-flex rounded-full border border-canvas/30 px-5 py-3 font-bold no-underline transition hover:border-canvas hover:bg-canvas hover:text-ink"
