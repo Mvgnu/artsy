@@ -14,6 +14,24 @@ export interface RomanticismArtwork {
   creditLine: string;
 }
 
+export const moonwatchers: RomanticismArtwork = {
+  id: "two-men-contemplating-the-moon",
+  title: "Zwei Männer in Betrachtung des Mondes",
+  originalTitle: "Two Men Contemplating the Moon",
+  artist: "Caspar David Friedrich",
+  date: "ca. 1825–30",
+  medium: "Öl auf Leinwand",
+  dimensions: "34,9 × 43,8 cm",
+  institution: "The Metropolitan Museum of Art, New York",
+  imageUrl:
+    "https://collectionapi.metmuseum.org/api/collection/v1/iiif/438417/2291693/main-image",
+  imageAlt:
+    "Zwei Männer stehen mit dem Rücken zum Betrachter vor einer knorrigen Eiche und blicken in der Abenddämmerung auf eine schmale Mondsichel.",
+  sourceUrl: "https://www.metmuseum.org/de/art/collection/search/438417",
+  rightsLabel: "Public Domain · The Met Open Access",
+  creditLine: "Wrightsman Fund, 2000",
+};
+
 export const oxbow: RomanticismArtwork = {
   id: "the-oxbow",
   title: "Die Flussbiegung",
@@ -100,6 +118,10 @@ export const sources = [
   {
     label: "The Met: Caspar David Friedrich – The Soul of Nature",
     url: "https://www.metmuseum.org/exhibitions/caspar-david-friedrich-the-soul-of-nature",
+  },
+  {
+    label: "The Met: Caspar David Friedrich – Moonwatchers",
+    url: "https://www.metmuseum.org/exhibitions/listings/2001/caspar-david-friedrich",
   },
   {
     label: "The Met: The Hudson River School",
