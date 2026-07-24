@@ -103,6 +103,24 @@ const deepDives = [
     text: "Warum eine abgewandte Figur den Betrachter nicht ausschließt, sondern ihm erst einen Platz im Bild gibt.",
     href: "/motive/rueckenfigur/",
   },
+  {
+    eyebrow: "Werk lesen",
+    title: "Whalers",
+    text: "Wal, Boote, Mutterschiff und ein instabiler Horizont: wie Turner Walfang, Arbeit und Wahrnehmungsverlust in dieselbe Atmosphäre zwingt.",
+    href: "/werke/whalers-turner/",
+  },
+  {
+    eyebrow: "Künstlerprofil",
+    title: "J. M. W. Turner",
+    text: "Vom topografischen Zeichner zu einer Malerei, in der Licht, Wetter, Technik und Geschichte den festen Bildraum auflösen.",
+    href: "/kuenstler/j-m-w-turner/",
+  },
+  {
+    eyebrow: "Begriff verstehen",
+    title: "Das Erhabene",
+    text: "Warum Größe allein nicht genügt und wie Maßstab, Unbestimmtheit, Distanz und Gefahr romantische Überforderung organisieren.",
+    href: "/begriffe/das-erhabene/",
+  },
 ] as const;
 
 export default function RomanticismPage() {
@@ -288,6 +306,11 @@ export default function RomanticismPage() {
               ist eine Kraft, die Maßstab, Orientierung und sogar die Lesbarkeit des
               Bildes bestimmt.
             </p>
+            <div className={styles.inlineLinks}>
+              <Link href="/werke/whalers-turner/">Whalers im Detail lesen →</Link>
+              <Link href="/kuenstler/j-m-w-turner/">Turners Malerei verstehen →</Link>
+              <Link href="/begriffe/das-erhabene/">Das Erhabene verstehen →</Link>
+            </div>
           </ArtworkFeature>
         </div>
       </section>
@@ -372,7 +395,7 @@ export default function RomanticismPage() {
 
           <div className={styles.deepDiveHeading}>
             <p className={styles.sectionKicker}>Tiefer in den Silo</p>
-            <h3>Weitersehen statt am Seitenende stehen bleiben.</h3>
+            <h3>Zwei Künstler, zwei Werke und zwei Arten, romantische Bilder zu lesen.</h3>
           </div>
           <div className={styles.deepDiveGrid}>
             {deepDives.map((deepDive) => (
