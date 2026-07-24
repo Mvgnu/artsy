@@ -5,8 +5,12 @@ Tailwind CSS, pnpm, ESLint, Prettier, and Vitest.
 
 ## Requirements
 
-- Node.js 20.9 or newer; Node.js 22 LTS is used in CI.
-- pnpm 11.
+- Node.js 22 or newer.
+- pnpm 11.4 or newer.
+
+The repository's `pnpm-workspace.yaml` records the dependency-build allowlist and
+strict package-manager policy. Do not bypass that policy with
+`--dangerously-allow-all-builds` or by disabling dependency scripts globally.
 
 ## Setup
 
