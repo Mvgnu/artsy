@@ -31,7 +31,12 @@
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgb(4 7 8 / 0.78) 0%, rgb(4 7 8 / 0.48) 42%, rgb(4 7 8 / 0.08) 72%),
+    linear-gradient(
+      90deg,
+      rgb(4 7 8 / 0.78) 0%,
+      rgb(4 7 8 / 0.48) 42%,
+      rgb(4 7 8 / 0.08) 72%
+    ),
     linear-gradient(0deg, rgb(4 7 8 / 0.82) 0%, transparent 46%);
 }
 
@@ -666,7 +671,12 @@
 @media (min-width: 64rem) {
   .heroShade {
     background:
-      linear-gradient(90deg, rgb(4 7 8 / 0.82) 0%, rgb(4 7 8 / 0.46) 38%, transparent 68%),
+      linear-gradient(
+        90deg,
+        rgb(4 7 8 / 0.82) 0%,
+        rgb(4 7 8 / 0.46) 38%,
+        transparent 68%
+      ),
       linear-gradient(0deg, rgb(4 7 8 / 0.72) 0%, transparent 40%);
   }
 

@@ -229,9 +229,9 @@ export default function RomanticismPage() {
             <p className={styles.intro}>
               Die Romantik machte Natur nicht bloß zum Motiv. Sie machte sie zum
               Gegenüber: größer als der Mensch, unberechenbar, tröstlich, bedrohlich und
-              voller Räume, in denen sich das Innere plötzlich außen wiederfand. Zugleich
-              machte sie Geschichte körperlich: als Revolution, Katastrophe und kollektive
-              Bewegung.
+              voller Räume, in denen sich das Innere plötzlich außen wiederfand.
+              Zugleich machte sie Geschichte körperlich: als Revolution, Katastrophe und
+              kollektive Bewegung.
             </p>
           </div>
           <p className={styles.heroCredit}>
@@ -290,10 +290,10 @@ export default function RomanticismPage() {
               </h2>
             </div>
             <p className={styles.sectionLead}>
-              Einsamkeit, Geschwindigkeit, Ruine und verletzter Körper gehören zur selben
-              Epoche, weil sie unterschiedliche Grenzen moderner Selbstgewissheit sichtbar
-              machen. Die Bilder unten ersetzen kein genaues Lesen; sie zeigen, wie breit
-              der visuelle Raum der Romantik tatsächlich ist.
+              Einsamkeit, Geschwindigkeit, Ruine und verletzter Körper gehören zur
+              selben Epoche, weil sie unterschiedliche Grenzen moderner Selbstgewissheit
+              sichtbar machen. Die Bilder unten ersetzen kein genaues Lesen; sie zeigen,
+              wie breit der visuelle Raum der Romantik tatsächlich ist.
             </p>
           </div>
           <div className={styles.atlasGrid}>
@@ -343,8 +343,8 @@ export default function RomanticismPage() {
               <h3>Wir sehen mit, aber nicht in die Figuren hinein.</h3>
               <span>
                 Die Rückenansicht verweigert Psychologie aus dem Gesicht. Sie gibt dem
-                Betrachter stattdessen eine räumliche und gedankliche Position hinter den
-                beiden Männern.
+                Betrachter stattdessen eine räumliche und gedankliche Position hinter
+                den beiden Männern.
               </span>
             </article>
             <article>
@@ -457,8 +457,8 @@ export default function RomanticismPage() {
           </h2>
           <p className={styles.connectionLead}>
             Friedrich, Cole, Turner und Delacroix teilen Pathos, Unsicherheit und starke
-            Bildräume. Doch sie setzen diese Mittel für verschiedene Probleme ein. Erst im
-            Vergleich wird sichtbar, wie weit der Begriff Romantik reicht.
+            Bildräume. Doch sie setzen diese Mittel für verschiedene Probleme ein. Erst
+            im Vergleich wird sichtbar, wie weit der Begriff Romantik reicht.
           </p>
 
           <div className={styles.connectionGrid}>
@@ -516,16 +516,16 @@ export default function RomanticismPage() {
         <div className={styles.section}>
           <p className={styles.sectionKicker}>Was bleibt</p>
           <h2 className={styles.closingQuote} id="schluss">
-            Die Romantik fragt nicht nur, wo wir stehen. Sie fragt, wie wir sehen, handeln
-            und Geschichte verkörpern.
+            Die Romantik fragt nicht nur, wo wir stehen. Sie fragt, wie wir sehen,
+            handeln und Geschichte verkörpern.
           </h2>
           <div className={styles.closingCopy}>
             <p>
               Deshalb wirken diese Bilder weiterhin erstaunlich gegenwärtig. Sie geben
-              der Natur eine Eigenmacht, lassen Wahrnehmung unsicher werden und verbinden
-              äußere Räume mit inneren Zuständen. Zugleich zeigen sie politische Geschichte
-              nicht als abstrakten Ablauf, sondern als Bewegung, Verletzung, Begehren und
-              kollektive Handlung.
+              der Natur eine Eigenmacht, lassen Wahrnehmung unsicher werden und
+              verbinden äußere Räume mit inneren Zuständen. Zugleich zeigen sie
+              politische Geschichte nicht als abstrakten Ablauf, sondern als Bewegung,
+              Verletzung, Begehren und kollektive Handlung.
             </p>
             <p>
               Eine Epochenreise kann diese Felder nur öffnen. Das eigentliche Verstehen
