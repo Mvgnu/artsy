@@ -1,4 +1,0 @@
-$ tsc --noEmit
-src/components/experiences/romanticismArtworkSets.ts(115,3): error TS2554: Expected 6 arguments, but got 5.
-src/components/experiences/romanticismArtworkSets.ts(397,3): error TS2554: Expected 6 arguments, but got 5.
-[ELIFECYCLE] Command failed with exit code 2.
