@@ -46,7 +46,28 @@ jobs:
         run: pnpm --dir frontend install --frozen-lockfile
 
       - name: Check formatting
-        run: pnpm --dir frontend format:check
+        id: format
+        shell: bash
+        run: |
+          set +e
+          pnpm --dir frontend format:check > frontend/format.log 2>&1
+          status=$?
+          if [[ "$status" -ne 0 ]]; then
+            pnpm --dir frontend format > /dev/null 2>&1
+            git diff -- frontend > frontend/format.patch
+          fi
+          exit "$status"
+
+      - name: Upload formatting patch
+        if: failure() && steps.format.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: romanticism-format-patch
+          path: |
+            frontend/format.log
+            frontend/format.patch
+          if-no-files-found: error
+          retention-days: 1
 
       - name: Typecheck
         run: pnpm --dir frontend typecheck
