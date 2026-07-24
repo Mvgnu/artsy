@@ -1,0 +1,7 @@
+$ tsc --noEmit
+src/app/(editorial)/kuenstler/caspar-david-friedrich/layout.tsx(4,10): error TS2724: '"@/components/experiences/romanticismArtworkSets"' has no exported member named 'friedrichProfileArtworks'. Did you mean 'friedrichArtworks'?
+src/app/(editorial)/kuenstler/eugene-delacroix/layout.tsx(4,10): error TS2724: '"@/components/experiences/romanticismArtworkSets"' has no exported member named 'delacroixProfileArtworks'. Did you mean 'delacroixArtworks'?
+src/app/(editorial)/kuenstler/j-m-w-turner/layout.tsx(4,10): error TS2724: '"@/components/experiences/romanticismArtworkSets"' has no exported member named 'turnerProfileArtworks'. Did you mean 'turnerArtworks'?
+src/app/(editorial)/kuenstler/thomas-cole/layout.tsx(4,10): error TS2305: Module '"@/components/experiences/romanticismArtworkSets"' has no exported member 'coleProfileArtworks'.
+src/app/(editorial)/motive/rueckenfigur/layout.tsx(4,10): error TS2724: '"@/components/experiences/romanticismArtworkSets"' has no exported member named 'ruckenfigurArtworks'. Did you mean 'rueckenfigurArtworks'?
+[ELIFECYCLE] Command failed with exit code 2.
