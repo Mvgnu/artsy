@@ -148,14 +148,14 @@ export default function RomanticismPage() {
             <p>
               Der Mond ist klein, doch alles richtet sich auf ihn aus. Äste, Felsen und
               Körper bilden keinen freien Ausblick, sondern einen engen, dunklen Rahmen.
-              Friedrich verwandelt Landschaft so in eine Form gemeinsamer Versenkung. Die
-              Szene kann religiös, freundschaftlich, politisch oder melancholisch gelesen
-              werden, ohne sich in einer einzigen Deutung zu schließen.
+              Friedrich verwandelt Landschaft so in eine Form gemeinsamer Versenkung.
+              Die Szene kann religiös, freundschaftlich, politisch oder melancholisch
+              gelesen werden, ohne sich in einer einzigen Deutung zu schließen.
             </p>
             <p className={styles.termNote}>
               <strong>Rückenfigur:</strong> Eine Figur, die dem Betrachter den Rücken
-              zuwendet. Sie zeigt nicht einfach Gefühle, sondern lenkt den Blick und macht
-              das Sehen selbst zum Thema.
+              zuwendet. Sie zeigt nicht einfach Gefühle, sondern lenkt den Blick und
+              macht das Sehen selbst zum Thema.
             </p>
           </ArtworkFeature>
         </div>
