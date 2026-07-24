@@ -121,6 +121,24 @@ const deepDives = [
     text: "Warum Größe allein nicht genügt und wie Maßstab, Unbestimmtheit, Distanz und Gefahr romantische Überforderung organisieren.",
     href: "/begriffe/das-erhabene/",
   },
+  {
+    eyebrow: "Werk lesen",
+    title: "The Oxbow",
+    text: "Gewitter, Flussschleife, Landwirtschaft und der versteckte Maler: wie Cole Landschaft in eine politische Entscheidung verwandelt.",
+    href: "/werke/the-oxbow-thomas-cole/",
+  },
+  {
+    eyebrow: "Künstlerprofil",
+    title: "Thomas Cole",
+    text: "Hudson River School, nationale Zukunftsbilder und die Spannung zwischen Natursorge, Expansion und historischem Mythos.",
+    href: "/kuenstler/thomas-cole/",
+  },
+  {
+    eyebrow: "Begriff verstehen",
+    title: "Landschaft und Nation",
+    text: "Wie Panoramen, Wildnis, sichtbare Nutzung und politische Leerstelle Land zu einer nationalen Erzählung machen.",
+    href: "/begriffe/landschaft-und-nation/",
+  },
 ] as const;
 
 export default function RomanticismPage() {
@@ -175,9 +193,11 @@ export default function RomanticismPage() {
                 Das war keine einheitliche Stilrevolution. In Deutschland konnte eine
                 stille Landschaft zum spirituellen Denkraum werden. In Großbritannien
                 zerfiel die Welt in Wetter und Licht. In Frankreich traten Katastrophe,
-                Revolution und extreme Emotion in die Historienmalerei. Gemeinsam war
-                diesen Bildern weniger ein Look als eine Spannung: Das vernünftige
-                Subjekt entdeckt, dass es nicht im Mittelpunkt von allem steht.
+                Revolution und extreme Emotion in die Historienmalerei. In den
+                Vereinigten Staaten wurde Landschaft zugleich zur nationalen Zukunfts-
+                und Besitzfrage. Gemeinsam war diesen Bildern weniger ein Look als eine
+                Spannung: Das vernünftige Subjekt entdeckt, dass es nicht im Mittelpunkt
+                von allem steht.
               </p>
             </div>
           </div>
@@ -279,6 +299,13 @@ export default function RomanticismPage() {
               Fortschritt oder Verlust? Ist die Wildnis Ursprung, Gefahr oder eine
               bereits verschwindende Vorstellung?
             </p>
+            <div className={styles.inlineLinks}>
+              <Link href="/werke/the-oxbow-thomas-cole/">The Oxbow genau lesen →</Link>
+              <Link href="/kuenstler/thomas-cole/">Thomas Cole kennenlernen →</Link>
+              <Link href="/begriffe/landschaft-und-nation/">
+                Landschaft und Nation verstehen →
+              </Link>
+            </div>
           </ArtworkFeature>
         </div>
       </section>
@@ -307,8 +334,8 @@ export default function RomanticismPage() {
               Bildes bestimmt.
             </p>
             <div className={styles.inlineLinks}>
-              <Link href="/werke/whalers-turner/">Whalers im Detail lesen →</Link>
-              <Link href="/kuenstler/j-m-w-turner/">Turners Malerei verstehen →</Link>
+              <Link href="/werke/whalers-turner/">Whalers genau lesen →</Link>
+              <Link href="/kuenstler/j-m-w-turner/">Turner kennenlernen →</Link>
               <Link href="/begriffe/das-erhabene/">Das Erhabene verstehen →</Link>
             </div>
           </ArtworkFeature>
@@ -395,9 +422,7 @@ export default function RomanticismPage() {
 
           <div className={styles.deepDiveHeading}>
             <p className={styles.sectionKicker}>Tiefer in den Silo</p>
-            <h3>
-              Zwei Künstler, zwei Werke und zwei Arten, romantische Bilder zu lesen.
-            </h3>
+            <h3>Weitersehen statt am Seitenende stehen bleiben.</h3>
           </div>
           <div className={styles.deepDiveGrid}>
             {deepDives.map((deepDive) => (
