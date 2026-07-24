@@ -61,6 +61,19 @@ Every rendered artwork needs enough nearby information for readers to understand
 
 This may be represented by a small route-local typed object. More elaborate records require demonstrated reuse.
 
+## Visual depth and artwork selection
+
+Art history pages should not become long text pages decorated by one repeated hero image.
+
+- A movement pillar should normally show several distinct works across its full narrative, not recycle the same artwork as hero, section image and card art.
+- Artist profiles and broad concept pages should generally contain a deliberate sequence of three to four relevant works when suitable public-domain or openly licensed material is available.
+- Focused artwork decoders should keep the primary work dominant, but add one to three contextual images when comparisons, studies, alternate versions or related works materially sharpen the reading.
+- Every image must earn its place by supporting the nearby argument. Do not add unrelated gallery filler merely to satisfy a count.
+- Prefer direct museum or collection source pages and their stated public-domain or open-access images. Wikimedia Commons may be used when the file page clearly identifies the work, source and rights status.
+- Avoid showing the same small set of works across many routes. Repetition is acceptable only when the repeated image is itself the subject of analysis and the page also supplies distinct contextual material.
+- Image sequences should vary scale and role: hero, full-width close looking, comparison pair, study sheet, detail or compact reference image.
+- Preserve artwork proportions unless a crop is editorially intentional and does not remove the feature being discussed.
+
 ## Experience principles
 
 Every movement experience should:
