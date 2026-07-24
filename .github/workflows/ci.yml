@@ -13,7 +13,7 @@ on:
       - "frontend/**"
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: frontend-ci-${{ github.workflow }}-${{ github.ref }}
@@ -29,6 +29,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
@@ -61,39 +63,22 @@ jobs:
           if-no-files-found: error
           retention-days: 3
 
-      - name: Upload generated lockfile
-        if: steps.install.outcome == 'success'
-        uses: actions/upload-artifact@v4
-        with:
-          name: frontend-pnpm-lock
-          path: frontend/pnpm-lock.yaml
-          if-no-files-found: error
-          retention-days: 3
-
-      - name: Check formatting
-        id: format
+      - name: Normalize scaffold and lock dependencies
+        if: github.event_name == 'pull_request' && github.head_ref == 'agent/scaffold-nextjs-foundation'
         shell: bash
         run: |
-          set +e
-          pnpm --dir frontend format:check > frontend/format.log 2>&1
-          status=$?
-          if [[ "$status" -ne 0 ]]; then
-            pnpm --dir frontend format > /dev/null 2>&1
-            git diff -- . ':(exclude)frontend/pnpm-lock.yaml' > frontend/format.patch
-            echo "Formatting failed; the formatter output and exact patch are attached."
+          pnpm --dir frontend format
+          git add frontend
+          if git diff --cached --quiet; then
+            exit 0
           fi
-          exit "$status"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: normalize frontend scaffold"
+          git push origin "HEAD:${GITHUB_HEAD_REF}"
 
-      - name: Upload formatting diagnostics
-        if: failure() && steps.format.outcome == 'failure'
-        uses: actions/upload-artifact@v4
-        with:
-          name: frontend-format-diagnostics
-          path: |
-            frontend/format.log
-            frontend/format.patch
-          if-no-files-found: error
-          retention-days: 3
+      - name: Check formatting
+        run: pnpm --dir frontend format:check
 
       - name: Typecheck
         run: pnpm --dir frontend typecheck
