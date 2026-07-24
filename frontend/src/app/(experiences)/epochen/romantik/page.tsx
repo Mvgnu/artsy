@@ -89,6 +89,49 @@ const visualConnections = [
   },
 ] as const;
 
+const visualAtlas = [
+  {
+    title: "Der Mönch am Meer",
+    artist: "Caspar David Friedrich",
+    date: "1808–10",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7e/Caspar_David_Friedrich_-_Der_M%C3%B6nch_am_Meer_-_Google_Art_Project.jpg",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Der_M%C3%B6nch_am_Meer_-_Google_Art_Project.jpg",
+    note: "Fast leere Fläche macht Maßstab und Einsamkeit zu einer Wahrnehmungsfrage.",
+  },
+  {
+    title: "Rain, Steam and Speed",
+    artist: "J. M. W. Turner",
+    date: "1844",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/9/96/Rain_Steam_and_Speed_the_Great_Western_Railway.jpg",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Rain_Steam_and_Speed_the_Great_Western_Railway.jpg",
+    note: "Industrie erscheint nicht außerhalb der Natur, sondern als neue Kraft in Wetter und Bewegung.",
+  },
+  {
+    title: "The Course of Empire: Desolation",
+    artist: "Thomas Cole",
+    date: "1836",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/3/3f/Cole_Thomas_The_Course_of_Empire_Desolation_1836.jpg",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Cole_Thomas_The_Course_of_Empire_Desolation_1836.jpg",
+    note: "Ruinen machen nationale Größe zu einem zeitlichen und moralischen Problem.",
+  },
+  {
+    title: "Das Massaker von Chios",
+    artist: "Eugène Delacroix",
+    date: "1824",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/7/74/Eug%C3%A8ne_Delacroix_-_Le_Massacre_de_Scio.jpg",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_Le_Massacre_de_Scio.jpg",
+    note: "Historie wird über verletzte Körper, Blickkontakt und moralisch unsichere Nähe erzählt.",
+  },
+] as const;
+
 const deepDives = [
   {
     eyebrow: "Werk lesen",
@@ -173,27 +216,27 @@ export default function RomanticismPage() {
             alt={moonwatchers.imageAlt}
             fill
             preload
-            sizes="(min-width: 1024px) 62vw, 100vw"
+            sizes="100vw"
             src={moonwatchers.imageUrl}
           />
+          <div className={styles.heroShade} />
+          <div className={styles.heroContent}>
+            <p className={styles.kicker}>Eine visuelle Epochenreise · ca. 1790–1850</p>
+            <h1 className={styles.title}>
+              Romantik
+              <span>als die Landschaft zurückblickte</span>
+            </h1>
+            <p className={styles.intro}>
+              Die Romantik machte Natur nicht bloß zum Motiv. Sie machte sie zum
+              Gegenüber: größer als der Mensch, unberechenbar, tröstlich, bedrohlich und
+              voller Räume, in denen sich das Innere plötzlich außen wiederfand.
+              Zugleich machte sie Geschichte körperlich: als Revolution, Katastrophe und
+              kollektive Bewegung.
+            </p>
+          </div>
           <p className={styles.heroCredit}>
             Caspar David Friedrich, <em>{moonwatchers.title}</em>, {moonwatchers.date}.{" "}
             <a href={moonwatchers.sourceUrl}>The Met · Public Domain</a>
-          </p>
-        </div>
-
-        <div className={styles.heroContent}>
-          <p className={styles.kicker}>Eine visuelle Epochenreise · ca. 1790–1850</p>
-          <h1 className={styles.title}>
-            Romantik
-            <span>als die Landschaft zurückblickte</span>
-          </h1>
-          <p className={styles.intro}>
-            Die Romantik machte Natur nicht bloß zum Motiv. Sie machte sie zum
-            Gegenüber: größer als der Mensch, unberechenbar, tröstlich, bedrohlich und
-            voller Räume, in denen sich das Innere plötzlich außen wiederfand. Zugleich
-            machte sie Geschichte körperlich: als Revolution, Katastrophe und kollektive
-            Bewegung.
           </p>
         </div>
       </header>
@@ -234,6 +277,45 @@ export default function RomanticismPage() {
                 <h3 className={styles.cardTitle}>{way.title}</h3>
                 <p className={styles.cardText}>{way.text}</p>
               </section>
+            ))}
+          </div>
+        </section>
+
+        <section aria-labelledby="atlas" className={styles.atlasSection}>
+          <div className={styles.atlasIntro}>
+            <div>
+              <p className={styles.sectionKicker}>Vier Richtungen, vier Bilder</p>
+              <h2 className={styles.sectionTitle} id="atlas">
+                Romantik erkennt man nicht an einem einzigen Look.
+              </h2>
+            </div>
+            <p className={styles.sectionLead}>
+              Einsamkeit, Geschwindigkeit, Ruine und verletzter Körper gehören zur
+              selben Epoche, weil sie unterschiedliche Grenzen moderner Selbstgewissheit
+              sichtbar machen. Die Bilder unten ersetzen kein genaues Lesen; sie zeigen,
+              wie breit der visuelle Raum der Romantik tatsächlich ist.
+            </p>
+          </div>
+          <div className={styles.atlasGrid}>
+            {visualAtlas.map((work) => (
+              <figure className={styles.atlasCard} key={work.title}>
+                <div className={styles.atlasImage}>
+                  <Image
+                    alt={`${work.title} von ${work.artist}`}
+                    fill
+                    sizes="(min-width: 900px) 25vw, (min-width: 600px) 50vw, 100vw"
+                    src={work.image}
+                  />
+                </div>
+                <figcaption>
+                  <p>
+                    {work.artist} · {work.date}
+                  </p>
+                  <h3>{work.title}</h3>
+                  <span>{work.note}</span>
+                  <a href={work.source}>Bildquelle · Public Domain</a>
+                </figcaption>
+              </figure>
             ))}
           </div>
         </section>
@@ -367,18 +449,16 @@ export default function RomanticismPage() {
         </div>
       </section>
 
-      <section aria-labelledby="drei-funktionen" className={styles.connectionSection}>
+      <section aria-labelledby="vier-funktionen" className={styles.connectionSection}>
         <div className={styles.section}>
           <p className={styles.sectionKicker}>Die Fäden zusammenziehen</p>
-          <h2 className={styles.connectionTitle} id="drei-funktionen">
-            Romantik organisiert nicht eine Stimmung, sondern verschiedene
-            Grenzerfahrungen.
+          <h2 className={styles.connectionTitle} id="vier-funktionen">
+            Romantik macht Grenzen sichtbar: im Blick, im Raum, im Bild und im Körper.
           </h2>
           <p className={styles.connectionLead}>
-            Friedrich, Cole, Turner und Delacroix teilen dramatische Kontraste, kleine
-            oder gefährdete Menschen und eine unsichere Zuschauerposition. Doch sie
-            setzen diese Mittel für verschiedene Probleme ein: inneres Sehen, nationale
-            Ordnung, Wahrnehmungsverlust und politische Mobilisierung.
+            Friedrich, Cole, Turner und Delacroix teilen Pathos, Unsicherheit und starke
+            Bildräume. Doch sie setzen diese Mittel für verschiedene Probleme ein. Erst
+            im Vergleich wird sichtbar, wie weit der Begriff Romantik reicht.
           </p>
 
           <div className={styles.connectionGrid}>
@@ -418,15 +498,11 @@ export default function RomanticismPage() {
                 <h3 className={styles.placeTitle}>{romanticism.title}</h3>
                 <p className={styles.placeText}>{romanticism.text}</p>
                 {romanticism.place === "Frankreich" ? (
-                  <div className={styles.inlineLinks}>
-                    <Link href="/werke/freiheit-fuehrt-das-volk/">
-                      Freiheit führt das Volk lesen →
-                    </Link>
-                    <Link href="/kuenstler/eugene-delacroix/">
-                      Delacroix kennenlernen →
-                    </Link>
+                  <div className={styles.placeLinks}>
+                    <Link href="/werke/freiheit-fuehrt-das-volk/">Werk lesen →</Link>
+                    <Link href="/kuenstler/eugene-delacroix/">Delacroix →</Link>
                     <Link href="/begriffe/revolution-und-koerper/">
-                      Revolution und Körper verstehen →
+                      Revolution und Körper →
                     </Link>
                   </div>
                 ) : null}
@@ -440,16 +516,16 @@ export default function RomanticismPage() {
         <div className={styles.section}>
           <p className={styles.sectionKicker}>Was bleibt</p>
           <h2 className={styles.closingQuote} id="schluss">
-            Romantische Bilder zeigen nicht nur, wo wir sind. Sie fragen, wie wir sehen,
+            Die Romantik fragt nicht nur, wo wir stehen. Sie fragt, wie wir sehen,
             handeln und Geschichte verkörpern.
           </h2>
           <div className={styles.closingCopy}>
             <p>
               Deshalb wirken diese Bilder weiterhin erstaunlich gegenwärtig. Sie geben
-              Natur eine Eigenmacht, lassen Wahrnehmung unsicher werden, machen
-              politische Ideen körperlich und verbinden äußere Räume mit inneren
-              Zuständen. Die Romantik ist weniger eine Flucht aus der Welt als ein
-              Versuch, ihre nicht berechenbaren Teile wieder sichtbar zu machen.
+              der Natur eine Eigenmacht, lassen Wahrnehmung unsicher werden und
+              verbinden äußere Räume mit inneren Zuständen. Zugleich zeigen sie
+              politische Geschichte nicht als abstrakten Ablauf, sondern als Bewegung,
+              Verletzung, Begehren und kollektive Handlung.
             </p>
             <p>
               Eine Epochenreise kann diese Felder nur öffnen. Das eigentliche Verstehen
