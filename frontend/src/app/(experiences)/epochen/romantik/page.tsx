@@ -17,7 +17,7 @@ import styles from "./romantik.module.css";
 export const metadata: Metadata = {
   title: "Romantik: Als die Landschaft zurückblickte",
   description:
-    "Eine visuelle Reise durch Maßstab, Atmosphäre, Revolution und das Erhabene in der Kunst der Romantik.",
+    "Eine visuelle Reise durch Maßstab, Atmosphäre, Revolution, Katastrophe und das Erhabene in der Kunst der Romantik.",
   alternates: {
     canonical: "/epochen/romantik/",
   },
@@ -86,6 +86,11 @@ const visualConnections = [
     work: "Delacroix",
     thesis: "Geschichte wird zum Konflikt bewegter Körper.",
     text: "Fahne, Barrikade, Tote und soziale Mischung übersetzen politische Ideen in körperliche Nähe. Der Betrachter wird nicht nur informiert, sondern in eine Richtung gezogen.",
+  },
+  {
+    work: "Géricault",
+    thesis: "Katastrophe wird zum Test politischer Verantwortung.",
+    text: "Das Floß verbindet staatliches Versagen, körperliche Zeugenschaft und prekäre Hoffnung. Geschichte erscheint nicht als Sieg, sondern als Frage danach, wer gerettet, verlassen und sichtbar gemacht wird.",
   },
 ] as const;
 
@@ -205,6 +210,24 @@ const deepDives = [
     text: "Wie Menge, Verletzung, Allegorie und Blickrichtung politische Ideen verkörpern und zugleich neue Ausschlüsse erzeugen.",
     href: "/begriffe/revolution-und-koerper/",
   },
+  {
+    eyebrow: "Werk lesen",
+    title: "Das Floß der Medusa",
+    text: "Zwei Körperpyramiden, ein kaum sichtbares Rettungsschiff und die Frage, wie staatliches Versagen zur öffentlichen Anklage wird.",
+    href: "/werke/das-floss-der-medusa/",
+  },
+  {
+    eyebrow: "Künstlerprofil",
+    title: "Théodore Géricault",
+    text: "Von militärischer Energie über anatomische Recherche bis zu stillen Porträts verletzlicher Individualität.",
+    href: "/kuenstler/theodore-gericault/",
+  },
+  {
+    eyebrow: "Begriff verstehen",
+    title: "Katastrophe und Zeugenschaft",
+    text: "Wie Ursache, Körper, Monumentalität, Rettung und Nachwirkung aus Leid eine umkämpfte öffentliche Geschichte machen.",
+    href: "/begriffe/katastrophe-und-zeugenschaft/",
+  },
 ] as const;
 
 export default function RomanticismPage() {
@@ -230,8 +253,8 @@ export default function RomanticismPage() {
               Die Romantik machte Natur nicht bloß zum Motiv. Sie machte sie zum
               Gegenüber: größer als der Mensch, unberechenbar, tröstlich, bedrohlich und
               voller Räume, in denen sich das Innere plötzlich außen wiederfand.
-              Zugleich machte sie Geschichte körperlich: als Revolution, Katastrophe und
-              kollektive Bewegung.
+              Zugleich machte sie Geschichte körperlich: als Revolution, Katastrophe,
+              gescheiterte Rettung und kollektive Bewegung.
             </p>
           </div>
           <p className={styles.heroCredit}>
@@ -261,11 +284,11 @@ export default function RomanticismPage() {
                 Das war keine einheitliche Stilrevolution. In Deutschland konnte eine
                 stille Landschaft zum spirituellen Denkraum werden. In Großbritannien
                 zerfiel die Welt in Wetter und Licht. In Frankreich wurden Revolution,
-                Katastrophe und soziale Konflikte über bewegte und verletzliche Körper
-                sichtbar. In den Vereinigten Staaten wurde Landschaft zugleich zur
-                nationalen Zukunfts- und Besitzfrage. Gemeinsam war diesen Bildern
-                weniger ein Look als eine Spannung: Das vernünftige Subjekt entdeckt,
-                dass es weder Natur noch Geschichte vollständig beherrscht.
+                Katastrophe, Staatsversagen und soziale Konflikte über bewegte und
+                verletzliche Körper sichtbar. In den Vereinigten Staaten wurde Landschaft
+                zugleich zur nationalen Zukunfts- und Besitzfrage. Gemeinsam war diesen
+                Bildern weniger ein Look als eine Spannung: Das vernünftige Subjekt
+                entdeckt, dass es weder Natur noch Geschichte vollständig beherrscht.
               </p>
             </div>
           </div>
@@ -449,16 +472,17 @@ export default function RomanticismPage() {
         </div>
       </section>
 
-      <section aria-labelledby="vier-funktionen" className={styles.connectionSection}>
+      <section aria-labelledby="fuenf-funktionen" className={styles.connectionSection}>
         <div className={styles.section}>
           <p className={styles.sectionKicker}>Die Fäden zusammenziehen</p>
-          <h2 className={styles.connectionTitle} id="vier-funktionen">
-            Romantik macht Grenzen sichtbar: im Blick, im Raum, im Bild und im Körper.
+          <h2 className={styles.connectionTitle} id="fuenf-funktionen">
+            Romantik macht Grenzen sichtbar: im Blick, im Raum, im Bild, im Körper und in
+            politischer Verantwortung.
           </h2>
           <p className={styles.connectionLead}>
-            Friedrich, Cole, Turner und Delacroix teilen Pathos, Unsicherheit und starke
-            Bildräume. Doch sie setzen diese Mittel für verschiedene Probleme ein. Erst
-            im Vergleich wird sichtbar, wie weit der Begriff Romantik reicht.
+            Friedrich, Cole, Turner, Delacroix und Géricault teilen Pathos, Unsicherheit
+            und starke Bildräume. Doch sie setzen diese Mittel für verschiedene Probleme
+            ein. Erst im Vergleich wird sichtbar, wie weit der Begriff Romantik reicht.
           </p>
 
           <div className={styles.connectionGrid}>
@@ -499,10 +523,17 @@ export default function RomanticismPage() {
                 <p className={styles.placeText}>{romanticism.text}</p>
                 {romanticism.place === "Frankreich" ? (
                   <div className={styles.placeLinks}>
-                    <Link href="/werke/freiheit-fuehrt-das-volk/">Werk lesen →</Link>
+                    <Link href="/werke/freiheit-fuehrt-das-volk/">
+                      Freiheit führt das Volk →
+                    </Link>
+                    <Link href="/werke/das-floss-der-medusa/">Das Floß der Medusa →</Link>
                     <Link href="/kuenstler/eugene-delacroix/">Delacroix →</Link>
+                    <Link href="/kuenstler/theodore-gericault/">Géricault →</Link>
                     <Link href="/begriffe/revolution-und-koerper/">
                       Revolution und Körper →
+                    </Link>
+                    <Link href="/begriffe/katastrophe-und-zeugenschaft/">
+                      Katastrophe und Zeugenschaft →
                     </Link>
                   </div>
                 ) : null}
@@ -517,7 +548,7 @@ export default function RomanticismPage() {
           <p className={styles.sectionKicker}>Was bleibt</p>
           <h2 className={styles.closingQuote} id="schluss">
             Die Romantik fragt nicht nur, wo wir stehen. Sie fragt, wie wir sehen,
-            handeln und Geschichte verkörpern.
+            handeln, scheitern und Geschichte verkörpern.
           </h2>
           <div className={styles.closingCopy}>
             <p>
@@ -525,7 +556,7 @@ export default function RomanticismPage() {
               der Natur eine Eigenmacht, lassen Wahrnehmung unsicher werden und
               verbinden äußere Räume mit inneren Zuständen. Zugleich zeigen sie
               politische Geschichte nicht als abstrakten Ablauf, sondern als Bewegung,
-              Verletzung, Begehren und kollektive Handlung.
+              Verletzung, Begehren, institutionelles Versagen und kollektive Handlung.
             </p>
             <p>
               Eine Epochenreise kann diese Felder nur öffnen. Das eigentliche Verstehen
