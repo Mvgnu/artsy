@@ -285,10 +285,11 @@ export default function RomanticismPage() {
                 stille Landschaft zum spirituellen Denkraum werden. In Großbritannien
                 zerfiel die Welt in Wetter und Licht. In Frankreich wurden Revolution,
                 Katastrophe, Staatsversagen und soziale Konflikte über bewegte und
-                verletzliche Körper sichtbar. In den Vereinigten Staaten wurde Landschaft
-                zugleich zur nationalen Zukunfts- und Besitzfrage. Gemeinsam war diesen
-                Bildern weniger ein Look als eine Spannung: Das vernünftige Subjekt
-                entdeckt, dass es weder Natur noch Geschichte vollständig beherrscht.
+                verletzliche Körper sichtbar. In den Vereinigten Staaten wurde
+                Landschaft zugleich zur nationalen Zukunfts- und Besitzfrage. Gemeinsam
+                war diesen Bildern weniger ein Look als eine Spannung: Das vernünftige
+                Subjekt entdeckt, dass es weder Natur noch Geschichte vollständig
+                beherrscht.
               </p>
             </div>
           </div>
@@ -476,8 +477,8 @@ export default function RomanticismPage() {
         <div className={styles.section}>
           <p className={styles.sectionKicker}>Die Fäden zusammenziehen</p>
           <h2 className={styles.connectionTitle} id="fuenf-funktionen">
-            Romantik macht Grenzen sichtbar: im Blick, im Raum, im Bild, im Körper und in
-            politischer Verantwortung.
+            Romantik macht Grenzen sichtbar: im Blick, im Raum, im Bild, im Körper und
+            in politischer Verantwortung.
           </h2>
           <p className={styles.connectionLead}>
             Friedrich, Cole, Turner, Delacroix und Géricault teilen Pathos, Unsicherheit
@@ -526,7 +527,9 @@ export default function RomanticismPage() {
                     <Link href="/werke/freiheit-fuehrt-das-volk/">
                       Freiheit führt das Volk →
                     </Link>
-                    <Link href="/werke/das-floss-der-medusa/">Das Floß der Medusa →</Link>
+                    <Link href="/werke/das-floss-der-medusa/">
+                      Das Floß der Medusa →
+                    </Link>
                     <Link href="/kuenstler/eugene-delacroix/">Delacroix →</Link>
                     <Link href="/kuenstler/theodore-gericault/">Géricault →</Link>
                     <Link href="/begriffe/revolution-und-koerper/">

@@ -116,12 +116,19 @@ export default function RaftOfTheMedusaPage() {
           >
             Géricault machte aus einem aktuellen Skandal ein monumentales Historienbild.
             Das Werk zeigt nicht nur Schiffbruch, sondern die Frage, wie politisches
-            Versagen als körperliche Erfahrung, öffentliche Anklage und visuelles Spektakel
-            zugleich erscheinen kann.
+            Versagen als körperliche Erfahrung, öffentliche Anklage und visuelles
+            Spektakel zugleich erscheinen kann.
           </p>
         </div>
 
-        <figure style={{ background: "#171311", margin: 0, minHeight: "36rem", position: "relative" }}>
+        <figure
+          style={{
+            background: "#171311",
+            margin: 0,
+            minHeight: "36rem",
+            position: "relative",
+          }}
+        >
           <Image
             alt="Théodore Géricaults Das Floß der Medusa: Tote, Sterbende und winkende Überlebende auf einem notdürftigen Floß im offenen Meer."
             fill
@@ -198,10 +205,10 @@ export default function RaftOfTheMedusaPage() {
               </p>
               <p>
                 Der Kapitän hatte seine Stellung politischen Beziehungen während der
-                Bourbonen-Restauration zu verdanken. Das Unglück wurde deshalb zum Symbol
-                inkompetenter und privilegierter Staatsführung. Géricaults Bild benennt
-                diesen Zusammenhang nicht durch Text, baut ihn aber in die Körper und die
-                verweigerte Rettung ein.
+                Bourbonen-Restauration zu verdanken. Das Unglück wurde deshalb zum
+                Symbol inkompetenter und privilegierter Staatsführung. Géricaults Bild
+                benennt diesen Zusammenhang nicht durch Text, baut ihn aber in die
+                Körper und die verweigerte Rettung ein.
               </p>
             </div>
           </div>
@@ -220,7 +227,9 @@ export default function RaftOfTheMedusaPage() {
                 key={observation.number}
                 style={{ background: "#e8dfd0", minHeight: "24rem", padding: "2rem" }}
               >
-                <p style={{ color: "#914f34", fontWeight: 800 }}>{observation.number}</p>
+                <p style={{ color: "#914f34", fontWeight: 800 }}>
+                  {observation.number}
+                </p>
                 <h3
                   style={{
                     fontFamily: "var(--font-serif)",
@@ -273,7 +282,10 @@ export default function RaftOfTheMedusaPage() {
           >
             Recherche, Modell und individuelle Präsenz
           </h2>
-          <ArtworkStrip items={raftContextArtworks} title="Studien und Modelle zum Floß der Medusa" />
+          <ArtworkStrip
+            items={raftContextArtworks}
+            title="Studien und Modelle zum Floß der Medusa"
+          />
         </div>
       </section>
 
@@ -345,13 +357,28 @@ export default function RaftOfTheMedusaPage() {
           >
             Das Bild klagt an, ohne ein Urteil zu illustrieren.
           </h2>
-          <p style={{ fontSize: "1.15rem", lineHeight: 1.82, margin: "2rem 0 0", maxWidth: "48rem" }}>
+          <p
+            style={{
+              fontSize: "1.15rem",
+              lineHeight: 1.82,
+              margin: "2rem 0 0",
+              maxWidth: "48rem",
+            }}
+          >
             Seine politische Kraft liegt gerade darin, dass Verantwortung, Körper und
-            Rettung nicht in eine einfache Botschaft zerfallen. Die Überlebenden handeln,
-            die Toten bleiben sichtbar, der Staat fehlt und die Hoffnung steht am Rand der
-            Wahrnehmbarkeit. Der Betrachter muss diese Ebenen zusammenhalten.
+            Rettung nicht in eine einfache Botschaft zerfallen. Die Überlebenden
+            handeln, die Toten bleiben sichtbar, der Staat fehlt und die Hoffnung steht
+            am Rand der Wahrnehmbarkeit. Der Betrachter muss diese Ebenen
+            zusammenhalten.
           </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem 2rem", marginTop: "2.5rem" }}>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "1rem 2rem",
+              marginTop: "2.5rem",
+            }}
+          >
             <Link href="/kuenstler/theodore-gericault/">Géricault kennenlernen →</Link>
             <Link href="/begriffe/katastrophe-und-zeugenschaft/">
               Katastrophe und Zeugenschaft verstehen →

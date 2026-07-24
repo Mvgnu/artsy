@@ -121,9 +121,9 @@ export default function CatastropheAndTestimonyPage() {
           }}
         >
           Katastrophenbilder zeigen nicht einfach, dass etwas Schreckliches geschah. Sie
-          ordnen Ursache, Sichtbarkeit, Verantwortung und Nähe. Dadurch können sie Zeugnis
-          ablegen, Öffentlichkeit herstellen – oder Leid in eine konsumierbare Form
-          verwandeln.
+          ordnen Ursache, Sichtbarkeit, Verantwortung und Nähe. Dadurch können sie
+          Zeugnis ablegen, Öffentlichkeit herstellen – oder Leid in eine konsumierbare
+          Form verwandeln.
         </p>
       </header>
 
@@ -353,15 +353,24 @@ export default function CatastropheAndTestimonyPage() {
               maxWidth: "49rem",
             }}
           >
-            Bilder können Verdrängtes öffentlich machen. Sie wählen aber immer aus, ordnen
-            und ästhetisieren. Zeugenschaft wird deshalb nicht durch Schock garantiert,
-            sondern durch die Aufmerksamkeit für Ursache, Position, Person und das, was
-            außerhalb des Rahmens bleibt.
+            Bilder können Verdrängtes öffentlich machen. Sie wählen aber immer aus,
+            ordnen und ästhetisieren. Zeugenschaft wird deshalb nicht durch Schock
+            garantiert, sondern durch die Aufmerksamkeit für Ursache, Position, Person
+            und das, was außerhalb des Rahmens bleibt.
           </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem 2rem", marginTop: "2.5rem" }}>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "1rem 2rem",
+              marginTop: "2.5rem",
+            }}
+          >
             <Link href="/werke/das-floss-der-medusa/">Das Floß der Medusa lesen →</Link>
             <Link href="/kuenstler/theodore-gericault/">Géricault kennenlernen →</Link>
-            <Link href="/begriffe/revolution-und-koerper/">Revolution und Körper →</Link>
+            <Link href="/begriffe/revolution-und-koerper/">
+              Revolution und Körper →
+            </Link>
             <Link href="/epochen/romantik/">Zur Romantik →</Link>
           </div>
         </div>

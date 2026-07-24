@@ -140,7 +140,11 @@ export default function TheodoreGericaultPage() {
           >
             Vom militärischen Impuls zur stillen Person
           </h2>
-          <ArtworkStrip items={gericaultArtworks} light title="Werke von Théodore Géricault" />
+          <ArtworkStrip
+            items={gericaultArtworks}
+            light
+            title="Werke von Théodore Géricault"
+          />
         </div>
       </section>
 
@@ -176,7 +180,13 @@ export default function TheodoreGericaultPage() {
           >
             Eine kurze Karriere ohne ruhigen Mittelpunkt
           </h2>
-          <div style={{ display: "grid", gap: "1px", background: "rgb(240 230 215 / .16)" }}>
+          <div
+            style={{
+              display: "grid",
+              gap: "1px",
+              background: "rgb(240 230 215 / .16)",
+            }}
+          >
             {phases.map((phase) => (
               <section
                 key={phase.period}
@@ -188,7 +198,9 @@ export default function TheodoreGericaultPage() {
                   padding: "clamp(1.5rem, 4vw, 3rem)",
                 }}
               >
-                <p style={{ color: "#ca9b5d", fontWeight: 800, margin: 0 }}>{phase.period}</p>
+                <p style={{ color: "#ca9b5d", fontWeight: 800, margin: 0 }}>
+                  {phase.period}
+                </p>
                 <div>
                   <h3
                     style={{
@@ -288,15 +300,31 @@ export default function TheodoreGericaultPage() {
           >
             Nicht nur der Maler eines Schiffbruchs
           </h2>
-          <p style={{ fontSize: "1.15rem", lineHeight: 1.82, margin: "2rem 0 0", maxWidth: "48rem" }}>
+          <p
+            style={{
+              fontSize: "1.15rem",
+              lineHeight: 1.82,
+              margin: "2rem 0 0",
+              maxWidth: "48rem",
+            }}
+          >
             Das Floß der Medusa bündelt Géricaults Fragen, aber es erschöpft sie nicht.
             Seine Reiterbilder untersuchen beschädigte Handlungsmacht; die anatomischen
             Studien prüfen, wie Tod materiell aussieht; die späten Porträts verlagern
-            historische Unsicherheit in einzelne Gesichter. Zusammen zeigen sie eine Kunst,
-            die weder Heldentum noch Diagnose unbefragt übernimmt.
+            historische Unsicherheit in einzelne Gesichter. Zusammen zeigen sie eine
+            Kunst, die weder Heldentum noch Diagnose unbefragt übernimmt.
           </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem 2rem", marginTop: "2.5rem" }}>
-            <Link href="/werke/das-floss-der-medusa/">Das Floß der Medusa genau lesen →</Link>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "1rem 2rem",
+              marginTop: "2.5rem",
+            }}
+          >
+            <Link href="/werke/das-floss-der-medusa/">
+              Das Floß der Medusa genau lesen →
+            </Link>
             <Link href="/begriffe/katastrophe-und-zeugenschaft/">
               Katastrophe und Zeugenschaft verstehen →
             </Link>
