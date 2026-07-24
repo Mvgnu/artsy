@@ -111,21 +111,23 @@ export default function MoonwatchersArtworkPage() {
           <div className="space-y-7 text-lg leading-9 text-[#182022]/75">
             <p>
               Zwei Männer unterbrechen einen Abendspaziergang im spätherbstlichen Wald.
-              Sie sprechen nicht, gestikulieren nicht und führen keine sichtbare Handlung
-              aus. Der eigentliche Vorgang ist das Schauen selbst. Weil ihre Gesichter
-              verborgen bleiben, kann das Bild keine fertige Emotion an uns ausliefern.
+              Sie sprechen nicht, gestikulieren nicht und führen keine sichtbare
+              Handlung aus. Der eigentliche Vorgang ist das Schauen selbst. Weil ihre
+              Gesichter verborgen bleiben, kann das Bild keine fertige Emotion an uns
+              ausliefern.
             </p>
             <p>
               Stattdessen stellt es uns hinter die Figuren. Wir erhalten fast denselben
-              Blick auf die Mondsichel, die dunklen Wurzeln und den schmalen hellen Himmel.
-              Diese Nähe bleibt jedoch unvollständig: Wir gehören nicht ganz zu den Männern,
-              wissen nicht, was sie denken, und können den Wald nicht einfach durchqueren.
+              Blick auf die Mondsichel, die dunklen Wurzeln und den schmalen hellen
+              Himmel. Diese Nähe bleibt jedoch unvollständig: Wir gehören nicht ganz zu
+              den Männern, wissen nicht, was sie denken, und können den Wald nicht
+              einfach durchqueren.
             </p>
             <p>
-              Friedrich macht die Landschaft deshalb weder zur topografischen Ansicht noch
-              zur Illustration eines klaren Textes. Sie wird zu einer Versuchsanordnung für
-              Aufmerksamkeit, Gemeinschaft und die Erfahrung einer Ferne, die sichtbar,
-              aber nicht verfügbar ist.
+              Friedrich macht die Landschaft deshalb weder zur topografischen Ansicht
+              noch zur Illustration eines klaren Textes. Sie wird zu einer
+              Versuchsanordnung für Aufmerksamkeit, Gemeinschaft und die Erfahrung einer
+              Ferne, die sichtbar, aber nicht verfügbar ist.
             </p>
           </div>
         </div>
@@ -169,16 +171,21 @@ export default function MoonwatchersArtworkPage() {
             <p>
               Künstler nutzten abgewandte Figuren schon vor Friedrich, um den Blick des
               Publikums in eine Landschaft hineinzuziehen. Friedrich machte aus diesem
-              Mittel jedoch ein zentrales Problem seiner Kunst. Die Figur zeigt, dass jemand
-              sieht, ohne uns zu verraten, wie dieses Sehen vollständig zu verstehen ist.
+              Mittel jedoch ein zentrales Problem seiner Kunst. Die Figur zeigt, dass
+              jemand sieht, ohne uns zu verraten, wie dieses Sehen vollständig zu
+              verstehen ist.
             </p>
             <p>
-              In den <em>Mondbetrachtern</em> entsteht daraus keine einsame Identifikationsfigur,
-              sondern ein Paar. Das Bild handelt ebenso von geteilter Wahrnehmung wie von
-              individueller Versenkung. Der eine Mann legt seine Hand auf die Schulter des
-              anderen; Nähe und unerreichbare Ferne existieren gleichzeitig.
+              In den <em>Mondbetrachtern</em> entsteht daraus keine einsame
+              Identifikationsfigur, sondern ein Paar. Das Bild handelt ebenso von
+              geteilter Wahrnehmung wie von individueller Versenkung. Der eine Mann legt
+              seine Hand auf die Schulter des anderen; Nähe und unerreichbare Ferne
+              existieren gleichzeitig.
             </p>
-            <Link className="inline-block font-bold underline" href="/motive/rueckenfigur/">
+            <Link
+              className="inline-block font-bold underline"
+              href="/motive/rueckenfigur/"
+            >
               Das Motiv der Rückenfigur weiterverfolgen →
             </Link>
           </div>
@@ -202,10 +209,10 @@ export default function MoonwatchersArtworkPage() {
             </p>
             <p>
               Auch die Kleidung der Männer wurde politisch gedeutet, weil sie mit der
-              deutschen Nationalbewegung der Restaurationszeit verbunden werden kann. Das
-              Entscheidende ist nicht, eine einzige Übersetzung zu wählen. Friedrich hält
-              seine Elemente so aufeinander bezogen, dass mehrere Deutungen plausibel
-              bleiben und keine das Bild restlos verbraucht.
+              deutschen Nationalbewegung der Restaurationszeit verbunden werden kann.
+              Das Entscheidende ist nicht, eine einzige Übersetzung zu wählen. Friedrich
+              hält seine Elemente so aufeinander bezogen, dass mehrere Deutungen
+              plausibel bleiben und keine das Bild restlos verbraucht.
             </p>
           </div>
         </div>
@@ -220,7 +227,10 @@ export default function MoonwatchersArtworkPage() {
         </h2>
         <div className="mt-16 grid gap-6 md:grid-cols-3">
           {versions.map((version) => (
-            <article className="border border-[#182022]/18 bg-[#e7dfd0] p-7" key={version.date}>
+            <article
+              className="border border-[#182022]/18 bg-[#e7dfd0] p-7"
+              key={version.date}
+            >
               <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#8b5139]">
                 {version.date} · {version.place}
               </p>
@@ -250,7 +260,8 @@ export default function MoonwatchersArtworkPage() {
                 Caspar David Friedrich
               </strong>
               <p className="mt-4 leading-7 text-[#eee9dc]/65">
-                Biografie, Arbeitsweise und die Themen hinter dem bekannten Bildrepertoire.
+                Biografie, Arbeitsweise und die Themen hinter dem bekannten
+                Bildrepertoire.
               </p>
             </Link>
             <Link
@@ -278,7 +289,8 @@ export default function MoonwatchersArtworkPage() {
                 Zurück zur Romantik
               </strong>
               <p className="mt-4 leading-7 text-[#eee9dc]/65">
-                Das Bild mit Cole und Turner in eine größere visuelle Bewegung einordnen.
+                Das Bild mit Cole und Turner in eine größere visuelle Bewegung
+                einordnen.
               </p>
             </Link>
           </div>

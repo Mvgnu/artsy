@@ -55,8 +55,8 @@ export default function RueckenfigurPage() {
               Die Rückenfigur
             </h1>
             <p className="mt-8 max-w-xl text-lg leading-8 text-[#eee9dc]/70">
-              Eine Figur zeigt uns den Rücken – und öffnet gerade dadurch einen Platz, von
-              dem aus wir selbst sehen können.
+              Eine Figur zeigt uns den Rücken – und öffnet gerade dadurch einen Platz,
+              von dem aus wir selbst sehen können.
             </p>
           </div>
           <div className="relative aspect-[1.255] overflow-hidden bg-[#080c0d] shadow-2xl">
@@ -84,21 +84,24 @@ export default function RueckenfigurPage() {
           </div>
           <div className="space-y-7 text-lg leading-9 text-[#182022]/75">
             <p>
-              Als Rückenfigur bezeichnet man eine Person, die im Bild von hinten oder stark
-              abgewandt erscheint. Das Motiv ist älter als die Romantik. Künstler nutzten es,
-              um den Blick in eine Landschaft zu führen oder räumliche Tiefe zu erzeugen.
+              Als Rückenfigur bezeichnet man eine Person, die im Bild von hinten oder
+              stark abgewandt erscheint. Das Motiv ist älter als die Romantik. Künstler
+              nutzten es, um den Blick in eine Landschaft zu führen oder räumliche Tiefe
+              zu erzeugen.
             </p>
             <p>
-              Bei Caspar David Friedrich erhält diese Figur jedoch ein besonderes Gewicht.
-              Sie steht oft nicht einfach am Rand einer Szene, sondern zwischen uns und
-              einem Horizont, Meer, Mond, Gebirge oder Fenster. Wir sehen, dass sie sieht,
-              doch ihr Gesicht bleibt verborgen. Dadurch wird Wahrnehmung selbst zum Inhalt.
+              Bei Caspar David Friedrich erhält diese Figur jedoch ein besonderes
+              Gewicht. Sie steht oft nicht einfach am Rand einer Szene, sondern zwischen
+              uns und einem Horizont, Meer, Mond, Gebirge oder Fenster. Wir sehen, dass
+              sie sieht, doch ihr Gesicht bleibt verborgen. Dadurch wird Wahrnehmung
+              selbst zum Inhalt.
             </p>
             <p>
-              Diese Offenheit erklärt, warum die Rückenfigur so leicht zur Identifikationsfigur
-              wird – und warum der Begriff dennoch vorsichtig verwendet werden sollte. Die
-              Figur ist kein leerer Avatar. Kleidung, Körperhaltung, Abstand, Begleitung und
-              Umgebung geben ihr eine konkrete soziale und historische Position.
+              Diese Offenheit erklärt, warum die Rückenfigur so leicht zur
+              Identifikationsfigur wird – und warum der Begriff dennoch vorsichtig
+              verwendet werden sollte. Die Figur ist kein leerer Avatar. Kleidung,
+              Körperhaltung, Abstand, Begleitung und Umgebung geben ihr eine konkrete
+              soziale und historische Position.
             </p>
           </div>
         </div>
@@ -149,15 +152,15 @@ export default function RueckenfigurPage() {
             <div className="mt-7 space-y-6 text-lg leading-9 text-[#182022]/72">
               <p>
                 In Friedrichs <em>Zwei Männer in Betrachtung des Mondes</em> teilen zwei
-                Figuren denselben Blick. Eine Hand ruht auf der Schulter des anderen. Die
-                Szene ist daher nicht nur ein Bild von Innerlichkeit, sondern auch von
-                Begleitung und gemeinsamem Staunen.
+                Figuren denselben Blick. Eine Hand ruht auf der Schulter des anderen.
+                Die Szene ist daher nicht nur ein Bild von Innerlichkeit, sondern auch
+                von Begleitung und gemeinsamem Staunen.
               </p>
               <p>
-                Wir stehen hinter diesem Paar, aber nicht an seiner Stelle. Das Bild gibt uns
-                eine Richtung, ohne die soziale Beziehung der Männer auszulöschen. Gerade
-                diese Differenz verhindert, dass die Rückenfigur zur völlig beliebigen
-                Projektionsfläche wird.
+                Wir stehen hinter diesem Paar, aber nicht an seiner Stelle. Das Bild
+                gibt uns eine Richtung, ohne die soziale Beziehung der Männer
+                auszulöschen. Gerade diese Differenz verhindert, dass die Rückenfigur
+                zur völlig beliebigen Projektionsfläche wird.
               </p>
             </div>
             <Link
@@ -181,28 +184,30 @@ export default function RueckenfigurPage() {
           <div className="mt-12 grid gap-8 text-lg leading-9 text-[#182022]/75 lg:grid-cols-2 lg:gap-16">
             <div className="space-y-7">
               <p>
-                Die populärste Lesart setzt die Figur direkt mit uns gleich: Wir sollen sehen,
-                was sie sieht, und fühlen, was sie fühlt. Das kann eine Wirkung des Motivs
-                sein, ist aber nicht automatisch die einzige. Alter, Kleidung, Geschlecht,
-                Tätigkeit und Begleitung bleiben Teil der Darstellung.
+                Die populärste Lesart setzt die Figur direkt mit uns gleich: Wir sollen
+                sehen, was sie sieht, und fühlen, was sie fühlt. Das kann eine Wirkung
+                des Motivs sein, ist aber nicht automatisch die einzige. Alter,
+                Kleidung, Geschlecht, Tätigkeit und Begleitung bleiben Teil der
+                Darstellung.
               </p>
               <p>
-                Auch Einsamkeit ist keine feste Bedeutung. Eine einzelne Figur kann Ruhe,
-                Trauer, Herrschaft, Gefahr oder konzentrierte Beobachtung ausdrücken. Zwei
-                oder mehrere Rückenfiguren können Gemeinschaft gerade zum Thema machen.
+                Auch Einsamkeit ist keine feste Bedeutung. Eine einzelne Figur kann
+                Ruhe, Trauer, Herrschaft, Gefahr oder konzentrierte Beobachtung
+                ausdrücken. Zwei oder mehrere Rückenfiguren können Gemeinschaft gerade
+                zum Thema machen.
               </p>
             </div>
             <div className="space-y-7">
               <p>
-                Schließlich ist die Landschaft nicht bloß das Objekt hinter der Figur. Ihre
-                räumliche Ordnung entscheidet, ob der Blick offen, blockiert, erhöht,
-                gefährdet oder fragmentiert erscheint. Motiv und Umgebung müssen zusammen
-                gelesen werden.
+                Schließlich ist die Landschaft nicht bloß das Objekt hinter der Figur.
+                Ihre räumliche Ordnung entscheidet, ob der Blick offen, blockiert,
+                erhöht, gefährdet oder fragmentiert erscheint. Motiv und Umgebung müssen
+                zusammen gelesen werden.
               </p>
               <p>
-                Eine gute Analyse fragt daher nicht nur: „Wofür steht die Rückenfigur?“ Sie
-                fragt: Wo steht sie? Was kann sie sehen? Was bleibt ihr verborgen? Wer steht
-                neben ihr? Und welche Position bleibt für uns übrig?
+                Eine gute Analyse fragt daher nicht nur: „Wofür steht die Rückenfigur?“
+                Sie fragt: Wo steht sie? Was kann sie sehen? Was bleibt ihr verborgen?
+                Wer steht neben ihr? Und welche Position bleibt für uns übrig?
               </p>
             </div>
           </div>
@@ -273,7 +278,9 @@ export default function RueckenfigurPage() {
                 </a>
               </li>
               <li>
-                <a href={moonwatchers.sourceUrl}>The Met: Zwei Männer in Betrachtung des Mondes</a>
+                <a href={moonwatchers.sourceUrl}>
+                  The Met: Zwei Männer in Betrachtung des Mondes
+                </a>
               </li>
               <li>
                 <a href="https://www.metmuseum.org/exhibitions/listings/2001/caspar-david-friedrich">

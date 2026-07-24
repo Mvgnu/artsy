@@ -63,14 +63,14 @@ export default function CasparDavidFriedrichPage() {
           </div>
           <div className="max-w-2xl lg:pb-3">
             <p className="font-serif text-3xl leading-tight tracking-[-0.035em] text-[#eee9dc]/90 sm:text-4xl">
-              Er malte keine Flucht aus der Wirklichkeit. Er baute Landschaften, in denen
-              Wirklichkeit, Erinnerung und Vorstellung untrennbar werden.
+              Er malte keine Flucht aus der Wirklichkeit. Er baute Landschaften, in
+              denen Wirklichkeit, Erinnerung und Vorstellung untrennbar werden.
             </p>
             <p className="mt-7 text-lg leading-8 text-[#eee9dc]/68">
-              Friedrich wurde zum bekanntesten Gesicht der deutschen Romantik, obwohl seine
-              Bilder Gesichter häufig verbergen. Seine Kunst lebt von genauen Beobachtungen,
-              radikaler Verdichtung und der Weigerung, Natur auf Hintergrund oder Symbolcode
-              zu reduzieren.
+              Friedrich wurde zum bekanntesten Gesicht der deutschen Romantik, obwohl
+              seine Bilder Gesichter häufig verbergen. Seine Kunst lebt von genauen
+              Beobachtungen, radikaler Verdichtung und der Weigerung, Natur auf
+              Hintergrund oder Symbolcode zu reduzieren.
             </p>
           </div>
         </div>
@@ -86,24 +86,25 @@ export default function CasparDavidFriedrichPage() {
           </h2>
           <div className="space-y-7 text-lg leading-9 text-[#182022]/75">
             <p>
-              Friedrich wurde 1774 in Greifswald geboren, damals Teil Schwedisch-Pommerns.
-              Nach erster Ausbildung in seiner Heimat studierte er von 1794 bis 1798 an der
-              Kunstakademie in Kopenhagen. Noch 1798 ließ er sich in Dresden nieder, wo er
-              den größten Teil seines Lebens verbrachte und in ein Umfeld romantischer
-              Schriftsteller, Gelehrter und Landschaftskünstler geriet.
+              Friedrich wurde 1774 in Greifswald geboren, damals Teil
+              Schwedisch-Pommerns. Nach erster Ausbildung in seiner Heimat studierte er
+              von 1794 bis 1798 an der Kunstakademie in Kopenhagen. Noch 1798 ließ er
+              sich in Dresden nieder, wo er den größten Teil seines Lebens verbrachte
+              und in ein Umfeld romantischer Schriftsteller, Gelehrter und
+              Landschaftskünstler geriet.
             </p>
             <p>
               Seine Karriere begann nicht mit den heute berühmten Ölgemälden. Friedrich
-              arbeitete zunächst vor allem als Zeichner und Druckgrafiker. Erst 1808 trat er
-              öffentlich als Ölmaler hervor. 1810 wurde er Mitglied der Berliner Akademie,
-              1816 der Dresdner Akademie; 1824 erhielt er dort eine außerordentliche
-              Professur für Landschaftsmalerei.
+              arbeitete zunächst vor allem als Zeichner und Druckgrafiker. Erst 1808
+              trat er öffentlich als Ölmaler hervor. 1810 wurde er Mitglied der Berliner
+              Akademie, 1816 der Dresdner Akademie; 1824 erhielt er dort eine
+              außerordentliche Professur für Landschaftsmalerei.
             </p>
             <p>
               Trotz seines Dresdner Lebensmittelpunkts blieb die nördliche Landschaft
-              zentral. Friedrich unternahm über Jahrzehnte Zeichenreisen an die Ostseeküste
-              sowie in die Umgebung Dresdens und in die Berge. Nach einem Schlaganfall 1835
-              malte er nur noch wenig; er starb 1840 in Dresden.
+              zentral. Friedrich unternahm über Jahrzehnte Zeichenreisen an die
+              Ostseeküste sowie in die Umgebung Dresdens und in die Berge. Nach einem
+              Schlaganfall 1835 malte er nur noch wenig; er starb 1840 in Dresden.
             </p>
           </div>
         </div>
@@ -132,7 +133,10 @@ export default function CasparDavidFriedrichPage() {
           </h2>
           <div className="mt-16 grid gap-px overflow-hidden border border-[#eee9dc]/15 bg-[#eee9dc]/15 md:grid-cols-2">
             {workingPrinciples.map((principle) => (
-              <article className="min-h-80 bg-[#182325] p-7 sm:p-10" key={principle.title}>
+              <article
+                className="min-h-80 bg-[#182325] p-7 sm:p-10"
+                key={principle.title}
+              >
                 <h3 className="font-serif text-3xl leading-tight font-medium tracking-[-0.035em] sm:text-4xl">
                   {principle.title}
                 </h3>
@@ -162,16 +166,17 @@ export default function CasparDavidFriedrichPage() {
           </h2>
           <div className="mt-7 space-y-6 text-lg leading-9 text-[#182022]/72">
             <p>
-              In <em>Zwei Männer in Betrachtung des Mondes</em> stehen zwei Menschen dicht
-              beieinander. Die Landschaft trennt sie nicht voneinander, sondern gibt ihrer
-              Gemeinschaft eine Richtung. Das Unendliche wird gemeinsam gesehen, ohne
-              dadurch verfügbar zu werden.
+              In <em>Zwei Männer in Betrachtung des Mondes</em> stehen zwei Menschen
+              dicht beieinander. Die Landschaft trennt sie nicht voneinander, sondern
+              gibt ihrer Gemeinschaft eine Richtung. Das Unendliche wird gemeinsam
+              gesehen, ohne dadurch verfügbar zu werden.
             </p>
             <p>
-              Dieses Motiv passt zu Friedrichs tatsächlicher Praxis. Sein Werk entstand in
-              Austausch mit Freunden, Schülern, seiner Frau Caroline und anderen
-              Landschaftskünstlern in Dresden. Die Vorstellung des isolierten Genies erklärt
-              daher weniger als das Spannungsverhältnis von Einsamkeit und Verbundenheit.
+              Dieses Motiv passt zu Friedrichs tatsächlicher Praxis. Sein Werk entstand
+              in Austausch mit Freunden, Schülern, seiner Frau Caroline und anderen
+              Landschaftskünstlern in Dresden. Die Vorstellung des isolierten Genies
+              erklärt daher weniger als das Spannungsverhältnis von Einsamkeit und
+              Verbundenheit.
             </p>
           </div>
           <Link
@@ -210,7 +215,10 @@ export default function CasparDavidFriedrichPage() {
                 "Friedrich hält Trost und Bedrohung zusammen. Natur kann beruhigen, überwältigen, erinnern oder die Grenze des Bekannten markieren.",
               ],
             ].map(([title, text]) => (
-              <article className="border border-[#182022]/18 bg-[#d8ccb0] p-7" key={title}>
+              <article
+                className="border border-[#182022]/18 bg-[#d8ccb0] p-7"
+                key={title}
+              >
                 <h3 className="font-serif text-3xl leading-tight font-medium tracking-[-0.035em]">
                   {title}
                 </h3>
@@ -269,7 +277,8 @@ export default function CasparDavidFriedrichPage() {
                 Romantik
               </strong>
               <p className="mt-4 leading-7 text-[#eee9dc]/65">
-                Friedrich mit Cole und Turner vergleichen und die Bewegung weiter öffnen.
+                Friedrich mit Cole und Turner vergleichen und die Bewegung weiter
+                öffnen.
               </p>
             </Link>
           </div>

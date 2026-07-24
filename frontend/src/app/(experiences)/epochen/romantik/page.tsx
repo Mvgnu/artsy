@@ -130,9 +130,9 @@ export default function RomanticismPage() {
             <span>als die Landschaft zurückblickte</span>
           </h1>
           <p className={styles.intro}>
-            Die Romantik machte Natur nicht bloß zum Motiv. Sie machte sie zum Gegenüber:
-            größer als der Mensch, unberechenbar, tröstlich, bedrohlich und voller Räume,
-            in denen sich das Innere plötzlich außen wiederfand.
+            Die Romantik machte Natur nicht bloß zum Motiv. Sie machte sie zum
+            Gegenüber: größer als der Mensch, unberechenbar, tröstlich, bedrohlich und
+            voller Räume, in denen sich das Innere plötzlich außen wiederfand.
           </p>
         </div>
       </header>
@@ -184,10 +184,11 @@ export default function RomanticismPage() {
               </h2>
             </div>
             <p className={styles.sectionLead}>
-              Friedrichs zwei Mondbetrachter stehen nicht vor einer spektakulären Aussicht.
-              Der Blick ist versperrt, der Wald eng, der Mond klein. Gerade dadurch wird
-              sichtbar, dass romantische Landschaft nicht vom Panorama allein lebt, sondern
-              davon, wie ein Mensch sich zu etwas Unverfügbarem verhält.
+              Friedrichs zwei Mondbetrachter stehen nicht vor einer spektakulären
+              Aussicht. Der Blick ist versperrt, der Wald eng, der Mond klein. Gerade
+              dadurch wird sichtbar, dass romantische Landschaft nicht vom Panorama
+              allein lebt, sondern davon, wie ein Mensch sich zu etwas Unverfügbarem
+              verhält.
             </p>
           </div>
 
@@ -197,8 +198,8 @@ export default function RomanticismPage() {
               <h3>Wir sehen mit, aber nicht in die Figuren hinein.</h3>
               <span>
                 Die Rückenansicht verweigert Psychologie aus dem Gesicht. Sie gibt dem
-                Betrachter stattdessen eine räumliche und gedankliche Position hinter den
-                beiden Männern.
+                Betrachter stattdessen eine räumliche und gedankliche Position hinter
+                den beiden Männern.
               </span>
             </article>
             <article>
@@ -206,24 +207,26 @@ export default function RomanticismPage() {
               <h3>Die Landschaft öffnet und verschließt sich zugleich.</h3>
               <span>
                 Felsen, Wurzeln und die schräge tote Eiche bilden eine dunkle Bühne. Die
-                Mondsichel ist sichtbar, aber nicht erreichbar; der Weg endet nicht in einer
-                klaren Lösung.
+                Mondsichel ist sichtbar, aber nicht erreichbar; der Weg endet nicht in
+                einer klaren Lösung.
               </span>
             </article>
             <article>
               <p>03 · Gemeinschaft</p>
               <h3>Romantische Versenkung muss nicht einsam sein.</h3>
               <span>
-                Die Männer schauen gemeinsam. Friedrich verbindet das Unendliche nicht nur
-                mit Isolation, sondern auch mit Freundschaft, Austausch und geteiltem Staunen.
+                Die Männer schauen gemeinsam. Friedrich verbindet das Unendliche nicht
+                nur mit Isolation, sondern auch mit Freundschaft, Austausch und
+                geteiltem Staunen.
               </span>
             </article>
             <article>
               <p>04 · Offenheit</p>
               <h3>Ein Symbol ist noch keine eindeutige Botschaft.</h3>
               <span>
-                Christliche, mystische, politische und biografische Lesarten überlagern sich.
-                Das Bild bleibt stark, weil keine davon alle Elemente endgültig stilllegt.
+                Christliche, mystische, politische und biografische Lesarten überlagern
+                sich. Das Bild bleibt stark, weil keine davon alle Elemente endgültig
+                stilllegt.
               </span>
             </article>
           </div>
@@ -247,16 +250,16 @@ export default function RomanticismPage() {
           >
             <p>
               Links hängt das Gewitter noch über gebrochenen Bäumen und dichtem Wald.
-              Rechts öffnet sich eine helle, bewirtschaftete Ebene. Der Connecticut River
-              schneidet als große Schleife durch beide Zustände. Cole malt keine neutrale
-              Aussicht, sondern eine Entscheidung, deren Ausgang offenbleibt.
+              Rechts öffnet sich eine helle, bewirtschaftete Ebene. Der Connecticut
+              River schneidet als große Schleife durch beide Zustände. Cole malt keine
+              neutrale Aussicht, sondern eine Entscheidung, deren Ausgang offenbleibt.
             </p>
             <p>
               Selbst der Maler ist im Vordergrund versteckt: winzig zwischen Fels,
-              Staffelei und Regenschirm. Seine erhöhte Position verspricht Überblick, doch
-              das Bild entzieht ihm die Eindeutigkeit. Ist die helle Ordnung Fortschritt
-              oder Verlust? Ist die Wildnis Ursprung, Gefahr oder eine bereits
-              verschwindende Vorstellung?
+              Staffelei und Regenschirm. Seine erhöhte Position verspricht Überblick,
+              doch das Bild entzieht ihm die Eindeutigkeit. Ist die helle Ordnung
+              Fortschritt oder Verlust? Ist die Wildnis Ursprung, Gefahr oder eine
+              bereits verschwindende Vorstellung?
             </p>
           </ArtworkFeature>
         </div>
@@ -274,16 +277,16 @@ export default function RomanticismPage() {
             kicker="J. M. W. Turner · um 1845"
           >
             <p>
-              Bei Turner ist die Natur nicht sauber in zwei Hälften geteilt. Sie dringt in
-              die Malerei ein. Schiff, Boote, Wal, Gischt und Rauch sind noch erkennbar,
-              aber ihre Grenzen lösen sich auf. Das Auge muss arbeiten und bleibt trotzdem
-              unsicher.
+              Bei Turner ist die Natur nicht sauber in zwei Hälften geteilt. Sie dringt
+              in die Malerei ein. Schiff, Boote, Wal, Gischt und Rauch sind noch
+              erkennbar, aber ihre Grenzen lösen sich auf. Das Auge muss arbeiten und
+              bleibt trotzdem unsicher.
             </p>
             <p>
               Genau darin liegt die Erfahrung des Erhabenen: Anziehung und Überforderung
-              gleichzeitig. Die See ist nicht Hintergrund für menschliches Handeln. Sie ist
-              eine Kraft, die Maßstab, Orientierung und sogar die Lesbarkeit des Bildes
-              bestimmt.
+              gleichzeitig. Die See ist nicht Hintergrund für menschliches Handeln. Sie
+              ist eine Kraft, die Maßstab, Orientierung und sogar die Lesbarkeit des
+              Bildes bestimmt.
             </p>
           </ArtworkFeature>
         </div>
@@ -296,9 +299,9 @@ export default function RomanticismPage() {
             Natur ist in diesen Bildern nie bloß dieselbe Kulisse.
           </h2>
           <p className={styles.connectionLead}>
-            Die drei Werke teilen Nacht, Wetter, Weite und kleine menschliche Figuren. Doch
-            sie setzen diese Mittel für verschiedene Probleme ein. Erst im Vergleich wird
-            sichtbar, wie weit der Begriff Romantik reicht.
+            Die drei Werke teilen Nacht, Wetter, Weite und kleine menschliche Figuren.
+            Doch sie setzen diese Mittel für verschiedene Probleme ein. Erst im
+            Vergleich wird sichtbar, wie weit der Begriff Romantik reicht.
           </p>
 
           <div className={styles.connectionGrid}>
@@ -352,16 +355,18 @@ export default function RomanticismPage() {
           </h2>
           <div className={styles.closingCopy}>
             <p>
-              Deshalb wirken diese Bilder weiterhin erstaunlich gegenwärtig. Sie geben der
-              Natur eine Eigenmacht, lassen Wahrnehmung unsicher werden und verbinden äußere
-              Räume mit inneren Zuständen. Die Romantik ist weniger eine Flucht aus der Welt
-              als ein Versuch, ihre nicht berechenbaren Teile wieder sichtbar zu machen.
+              Deshalb wirken diese Bilder weiterhin erstaunlich gegenwärtig. Sie geben
+              der Natur eine Eigenmacht, lassen Wahrnehmung unsicher werden und
+              verbinden äußere Räume mit inneren Zuständen. Die Romantik ist weniger
+              eine Flucht aus der Welt als ein Versuch, ihre nicht berechenbaren Teile
+              wieder sichtbar zu machen.
             </p>
             <p>
               Eine Epochenreise kann diese Felder nur öffnen. Das eigentliche Verstehen
-              beginnt dort, wo ein Werk, ein Künstler oder ein Motiv lange genug betrachtet
-              wird, um seine Widersprüche auszuhalten. Von hier aus wächst der Romantik-Silo
-              deshalb nicht als Lexikon, sondern als Netz aus konkreten Blickwegen weiter.
+              beginnt dort, wo ein Werk, ein Künstler oder ein Motiv lange genug
+              betrachtet wird, um seine Widersprüche auszuhalten. Von hier aus wächst
+              der Romantik-Silo deshalb nicht als Lexikon, sondern als Netz aus
+              konkreten Blickwegen weiter.
             </p>
           </div>
 
@@ -371,7 +376,11 @@ export default function RomanticismPage() {
           </div>
           <div className={styles.deepDiveGrid}>
             {deepDives.map((deepDive) => (
-              <Link className={styles.deepDiveCard} href={deepDive.href} key={deepDive.href}>
+              <Link
+                className={styles.deepDiveCard}
+                href={deepDive.href}
+                key={deepDive.href}
+              >
                 <span>{deepDive.eyebrow}</span>
                 <strong>{deepDive.title}</strong>
                 <p>{deepDive.text}</p>
