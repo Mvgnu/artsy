@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { ReactNode } from "react";
 
 import {
+  moonwatchers,
   oxbow,
   romanticisms,
   sources,
@@ -126,6 +127,39 @@ export default function RomanticismPage() {
           </div>
         </section>
       </div>
+
+      <section
+        aria-labelledby="mondbetrachter"
+        className={`${styles.artworkSection} ${styles.friedrichSection}`}
+      >
+        <div className={styles.artworkLayout}>
+          <ArtworkFeature
+            artwork={moonwatchers}
+            heading="Nicht allein vor dem Unendlichen"
+            headingId="mondbetrachter"
+            kicker="Caspar David Friedrich · ca. 1825–30"
+          >
+            <p>
+              Zwei Männer bleiben auf ihrem Abendspaziergang stehen. Wir sehen ihre
+              Gesichter nicht, nur dieselbe Richtung ihres Blicks. Die Rückenansicht
+              entzieht uns die fertige Emotion und gibt uns stattdessen eine Position im
+              Bild: Wir stehen fast hinter ihnen und sehen mit ihnen in die Dämmerung.
+            </p>
+            <p>
+              Der Mond ist klein, doch alles richtet sich auf ihn aus. Äste, Felsen und
+              Körper bilden keinen freien Ausblick, sondern einen engen, dunklen Rahmen.
+              Friedrich verwandelt Landschaft so in eine Form gemeinsamer Versenkung. Die
+              Szene kann religiös, freundschaftlich, politisch oder melancholisch gelesen
+              werden, ohne sich in einer einzigen Deutung zu schließen.
+            </p>
+            <p className={styles.termNote}>
+              <strong>Rückenfigur:</strong> Eine Figur, die dem Betrachter den Rücken
+              zuwendet. Sie zeigt nicht einfach Gefühle, sondern lenkt den Blick und macht
+              das Sehen selbst zum Thema.
+            </p>
+          </ArtworkFeature>
+        </div>
+      </section>
 
       <section aria-labelledby="geteilte-welt" className={styles.artworkSection}>
         <div className={styles.artworkLayout}>
