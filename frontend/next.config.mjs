@@ -10,6 +10,11 @@ const nextConfig = {
         hostname: "collectionapi.metmuseum.org",
         pathname: "/api/collection/v1/iiif/**",
       },
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+        pathname: "/wikipedia/commons/**",
+      },
     ],
   },
   async headers() {
