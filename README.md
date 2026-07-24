@@ -18,19 +18,19 @@ Each major period, movement, or editorial topic is treated as a deliberately com
 
 ## Current phase
 
-The repository is in **PM bootstrap mode**. No application implementation exists yet.
+The project is in **Phase 1 — Foundation**.
 
-The first deliverables are:
+The PM bootstrap is complete. Implementation is now establishing:
 
-- product brief and success criteria;
-- content and information architecture;
-- image-rights policy;
-- domain specs following the repository's Løp governance model;
-- sequenced implementation backlog.
+- the strict Next.js application and deployment shell;
+- automated type, lint, format, test, accessibility, performance, and build gates;
+- validated content and artwork-media contracts;
+- global platform and editorial primitives;
+- an empty route structure that does not expose thin editorial pages.
 
 Implementation must not begin in a domain until its spec exists and the owning paths, exports, dependencies, and verification commands are understood.
 
-## Proposed stack
+## Stack
 
 - Next.js App Router
 - React Server Components by default
@@ -39,6 +39,7 @@ Implementation must not begin in a domain until its spec exists and the owning p
 - Zod validation at authored-content and external-data boundaries
 - Static generation for evergreen editorial pages; server rendering only where request-time behaviour is genuinely required
 - First-party content stored in the repository for the MVP
+- pnpm, ESLint, Prettier, Vitest, and GitHub Actions release checks
 
 The stack is deliberately database-free until a validated feature requires mutable user or editorial state.
 
@@ -49,6 +50,7 @@ The stack is deliberately database-free until a validated feature requires mutab
 - [`docs/product/content-rights-policy.md`](docs/product/content-rights-policy.md)
 - [`docs/product/roadmap.md`](docs/product/roadmap.md)
 - [`frontend/specs/`](frontend/specs/)
+- [`frontend/README.md`](frontend/README.md)
 
 ## Working rules
 
