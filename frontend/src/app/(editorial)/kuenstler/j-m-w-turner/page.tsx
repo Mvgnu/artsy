@@ -70,16 +70,22 @@ export default function TurnerPage() {
               J. M. W. Turner
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-8 text-[#f1eadb]/75 sm:text-xl">
-              Turner malte nicht einfach Licht. Er malte den Moment, in dem Licht, Wetter und
-              Bewegung unsere Fähigkeit verlieren lassen, die Welt als stabile Ordnung zu
-              erkennen.
+              Turner malte nicht einfach Licht. Er malte den Moment, in dem Licht,
+              Wetter und Bewegung unsere Fähigkeit verlieren lassen, die Welt als
+              stabile Ordnung zu erkennen.
             </p>
           </div>
 
           <figure className="relative aspect-[1.34] overflow-hidden border border-white/15 bg-black shadow-2xl">
-            <Image alt={whalers.alt} fill preload sizes="(min-width: 1024px) 58vw, 100vw" src={whalers.imageUrl} />
+            <Image
+              alt={whalers.alt}
+              fill
+              preload
+              sizes="(min-width: 1024px) 58vw, 100vw"
+              src={whalers.imageUrl}
+            />
             <figcaption className="absolute right-3 bottom-3 left-3 bg-[#111717]/88 px-3 py-2 text-xs leading-5 text-white/75 backdrop-blur-sm">
-              J. M. W. Turner, <em>{whalers.title}</em>, {whalers.date}. {" "}
+              J. M. W. Turner, <em>{whalers.title}</em>, {whalers.date}.{" "}
               <a className="font-semibold underline" href={whalers.sourceUrl}>
                 The Met · Public Domain
               </a>
@@ -100,16 +106,16 @@ export default function TurnerPage() {
           </div>
           <div className="max-w-2xl space-y-6 text-lg leading-8 text-[#192123]/75">
             <p>
-              Turner wird gern als überraschend moderner Maler gefeiert, dessen späte Werke
-              beinahe abstrakt wirken. Das stimmt optisch, kann aber in die Irre führen. Seine
-              Bilder handeln weiterhin von Schiffen, Katastrophen, Geschichte, Arbeit,
-              Industrie und konkreten Orten.
+              Turner wird gern als überraschend moderner Maler gefeiert, dessen späte
+              Werke beinahe abstrakt wirken. Das stimmt optisch, kann aber in die Irre
+              führen. Seine Bilder handeln weiterhin von Schiffen, Katastrophen,
+              Geschichte, Arbeit, Industrie und konkreten Orten.
             </p>
             <p>
-              Entscheidend ist nicht, dass der Gegenstand verschwindet. Entscheidend ist,
-              dass er unter Druck gerät. Ein Schiff bleibt ein Schiff, doch Wind, Gischt,
-              Rauch und blendendes Licht machen es schwer, seine Lage sicher zu bestimmen.
-              Wahrnehmung wird selbst zum Thema.
+              Entscheidend ist nicht, dass der Gegenstand verschwindet. Entscheidend
+              ist, dass er unter Druck gerät. Ein Schiff bleibt ein Schiff, doch Wind,
+              Gischt, Rauch und blendendes Licht machen es schwer, seine Lage sicher zu
+              bestimmen. Wahrnehmung wird selbst zum Thema.
             </p>
           </div>
         </div>
@@ -148,7 +154,10 @@ export default function TurnerPage() {
 
         <div className="mt-12 grid gap-5 md:grid-cols-2">
           {strategies.map((strategy, index) => (
-            <article className="border border-[#192123]/15 bg-white/35 p-7 sm:p-9" key={strategy.title}>
+            <article
+              className="border border-[#192123]/15 bg-white/35 p-7 sm:p-9"
+              key={strategy.title}
+            >
               <p className="text-xs font-bold tracking-[0.18em] text-[#8a4f35] uppercase">
                 0{index + 1}
               </p>
@@ -173,16 +182,19 @@ export default function TurnerPage() {
           </div>
           <div className="space-y-6 text-lg leading-8 text-[#251f18]/75">
             <p>
-              <em>Whalers</em> verbindet wirtschaftliche Gewalt, Tierkörper, maritime Arbeit
-              und atmosphärische Überforderung. Der Wal, die Boote und das Mutterschiff sind
-              sichtbar, aber nie sauber voneinander getrennt.
+              <em>Whalers</em> verbindet wirtschaftliche Gewalt, Tierkörper, maritime
+              Arbeit und atmosphärische Überforderung. Der Wal, die Boote und das
+              Mutterschiff sind sichtbar, aber nie sauber voneinander getrennt.
             </p>
             <p>
-              Das Bild ist deshalb mehr als eine spektakuläre Meeresansicht. Es zeigt, wie
-              menschliche Technik und organisierte Jagd in eine Natur eintreten, deren Kräfte
-              weder optisch noch praktisch vollständig kontrollierbar sind.
+              Das Bild ist deshalb mehr als eine spektakuläre Meeresansicht. Es zeigt,
+              wie menschliche Technik und organisierte Jagd in eine Natur eintreten,
+              deren Kräfte weder optisch noch praktisch vollständig kontrollierbar sind.
             </p>
-            <Link className="inline-block font-bold underline" href="/werke/whalers-turner/">
+            <Link
+              className="inline-block font-bold underline"
+              href="/werke/whalers-turner/"
+            >
               Whalers Schritt für Schritt lesen →
             </Link>
           </div>
@@ -194,17 +206,36 @@ export default function TurnerPage() {
           Weiter im Silo
         </p>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
-          <Link className="border border-[#192123]/15 p-6 no-underline" href="/werke/whalers-turner/">
-            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#8a4f35]">Werk</span>
+          <Link
+            className="border border-[#192123]/15 p-6 no-underline"
+            href="/werke/whalers-turner/"
+          >
+            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#8a4f35]">
+              Werk
+            </span>
             <strong className="mt-4 block font-serif text-2xl">Whalers lesen</strong>
           </Link>
-          <Link className="border border-[#192123]/15 p-6 no-underline" href="/begriffe/das-erhabene/">
-            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#8a4f35]">Begriff</span>
-            <strong className="mt-4 block font-serif text-2xl">Das Erhabene verstehen</strong>
+          <Link
+            className="border border-[#192123]/15 p-6 no-underline"
+            href="/begriffe/das-erhabene/"
+          >
+            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#8a4f35]">
+              Begriff
+            </span>
+            <strong className="mt-4 block font-serif text-2xl">
+              Das Erhabene verstehen
+            </strong>
           </Link>
-          <Link className="border border-[#192123]/15 p-6 no-underline" href="/epochen/romantik/">
-            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#8a4f35]">Epoche</span>
-            <strong className="mt-4 block font-serif text-2xl">Zurück zur Romantik</strong>
+          <Link
+            className="border border-[#192123]/15 p-6 no-underline"
+            href="/epochen/romantik/"
+          >
+            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#8a4f35]">
+              Epoche
+            </span>
+            <strong className="mt-4 block font-serif text-2xl">
+              Zurück zur Romantik
+            </strong>
           </Link>
         </div>
       </section>

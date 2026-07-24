@@ -83,11 +83,17 @@ export default function WhalersPage() {
 
         <figure className="mx-auto w-full max-w-[110rem]">
           <div className="relative aspect-[1.335] bg-black">
-            <Image alt={artwork.alt} fill preload sizes="100vw" src={artwork.imageUrl} />
+            <Image
+              alt={artwork.alt}
+              fill
+              preload
+              sizes="100vw"
+              src={artwork.imageUrl}
+            />
           </div>
           <figcaption className="px-5 py-4 text-xs leading-5 text-[#f0eadc]/60 sm:px-8">
-            {artwork.artist}, <em>{artwork.title}</em>, {artwork.date}. {artwork.medium},{" "}
-            {artwork.dimensions}. {artwork.institution}. {artwork.creditLine}. {" "}
+            {artwork.artist}, <em>{artwork.title}</em>, {artwork.date}. {artwork.medium}
+            , {artwork.dimensions}. {artwork.institution}. {artwork.creditLine}.{" "}
             <a className="font-semibold underline" href={artwork.sourceUrl}>
               Public Domain · The Met Open Access
             </a>
@@ -106,15 +112,15 @@ export default function WhalersPage() {
         </div>
         <div className="max-w-2xl space-y-6 text-lg leading-8 text-[#241f18]/74">
           <p>
-            Aus der Entfernung scheint alles in einer hellen, gelblich-grauen Bewegung zu
-            schweben. Erst nach und nach werden Wal, Boote, Schiff, Masten und Menschen
-            unterscheidbar. Turner baut die Komposition nicht um eine klare Hauptfigur,
-            sondern um ein gestörtes Sucherlebnis.
+            Aus der Entfernung scheint alles in einer hellen, gelblich-grauen Bewegung
+            zu schweben. Erst nach und nach werden Wal, Boote, Schiff, Masten und
+            Menschen unterscheidbar. Turner baut die Komposition nicht um eine klare
+            Hauptfigur, sondern um ein gestörtes Sucherlebnis.
           </p>
           <p>
-            Das ist kein Mangel an Zeichnung. Die Unsicherheit ist konstruiert. Dunkle Formen
-            tauchen an verschiedenen Stellen auf, während die Mitte von Licht und Wasser
-            überflutet wird. Das Auge springt, prüft, verliert und findet erneut.
+            Das ist kein Mangel an Zeichnung. Die Unsicherheit ist konstruiert. Dunkle
+            Formen tauchen an verschiedenen Stellen auf, während die Mitte von Licht und
+            Wasser überflutet wird. Das Auge springt, prüft, verliert und findet erneut.
           </p>
         </div>
       </section>
@@ -152,23 +158,27 @@ export default function WhalersPage() {
           </div>
           <div className="space-y-6 text-lg leading-8 text-[#241f18]/74">
             <p>
-              Mitte des 19. Jahrhunderts verband Walfang Fernhandel, gefährliche Arbeit und
-              die systematische Tötung großer Meeressäuger. Walöl wurde unter anderem für
-              Beleuchtung und industrielle Zwecke genutzt. Das Gemälde trägt diese Ökonomie
-              in sich, selbst wenn es keinen erklärenden Text mitliefert.
+              Mitte des 19. Jahrhunderts verband Walfang Fernhandel, gefährliche Arbeit
+              und die systematische Tötung großer Meeressäuger. Walöl wurde unter
+              anderem für Beleuchtung und industrielle Zwecke genutzt. Das Gemälde trägt
+              diese Ökonomie in sich, selbst wenn es keinen erklärenden Text mitliefert.
             </p>
             <p>
               Dadurch verändert sich auch das Erhabene. Die Menschen begegnen einer
               überwältigenden Natur nicht als passive Wanderer, sondern als Jäger und
-              Arbeiter. Sie riskieren ihr Leben und üben zugleich organisierte Gewalt aus.
-              Furcht, Bewunderung und moralische Distanz lassen sich nicht sauber trennen.
+              Arbeiter. Sie riskieren ihr Leben und üben zugleich organisierte Gewalt
+              aus. Furcht, Bewunderung und moralische Distanz lassen sich nicht sauber
+              trennen.
             </p>
           </div>
         </div>
 
         <div className="mt-14 grid gap-5 md:grid-cols-3">
           {readings.map((reading) => (
-            <article className="border border-[#241f18]/16 bg-white/25 p-7" key={reading.title}>
+            <article
+              className="border border-[#241f18]/16 bg-white/25 p-7"
+              key={reading.title}
+            >
               <h3 className="font-serif text-3xl font-medium tracking-[-0.03em]">
                 {reading.title}
               </h3>
@@ -191,13 +201,15 @@ export default function WhalersPage() {
           <div className="space-y-6 text-lg leading-8 text-[#fff5e4]/78">
             <p>
               Wer das Bild nur als Vorstufe moderner Abstraktion liest, verliert seinen
-              spezifischen Konflikt. Die Farbbewegung ist nicht unabhängig von Wal, Boot,
-              Arbeit und Gefahr. Sie macht erfahrbar, wie unsicher diese Situation ist.
+              spezifischen Konflikt. Die Farbbewegung ist nicht unabhängig von Wal,
+              Boot, Arbeit und Gefahr. Sie macht erfahrbar, wie unsicher diese Situation
+              ist.
             </p>
             <p>
-              Turner löst die Welt also nicht auf, um den Gegenstand hinter sich zu lassen.
-              Er löst sie auf, damit der Gegenstand körperlich und psychologisch unter Druck
-              gerät. Malweise und Erzählung sind nicht zwei Ebenen, sondern dasselbe Ereignis.
+              Turner löst die Welt also nicht auf, um den Gegenstand hinter sich zu
+              lassen. Er löst sie auf, damit der Gegenstand körperlich und psychologisch
+              unter Druck gerät. Malweise und Erzählung sind nicht zwei Ebenen, sondern
+              dasselbe Ereignis.
             </p>
           </div>
         </div>
@@ -208,17 +220,36 @@ export default function WhalersPage() {
           Weitersehen
         </p>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
-          <Link className="border border-[#241f18]/16 p-6 no-underline" href="/kuenstler/j-m-w-turner/">
-            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#744128]">Künstler</span>
-            <strong className="mt-4 block font-serif text-2xl">Turners Malerei verstehen</strong>
+          <Link
+            className="border border-[#241f18]/16 p-6 no-underline"
+            href="/kuenstler/j-m-w-turner/"
+          >
+            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#744128]">
+              Künstler
+            </span>
+            <strong className="mt-4 block font-serif text-2xl">
+              Turners Malerei verstehen
+            </strong>
           </Link>
-          <Link className="border border-[#241f18]/16 p-6 no-underline" href="/begriffe/das-erhabene/">
-            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#744128]">Begriff</span>
+          <Link
+            className="border border-[#241f18]/16 p-6 no-underline"
+            href="/begriffe/das-erhabene/"
+          >
+            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#744128]">
+              Begriff
+            </span>
             <strong className="mt-4 block font-serif text-2xl">Das Erhabene</strong>
           </Link>
-          <Link className="border border-[#241f18]/16 p-6 no-underline" href="/epochen/romantik/">
-            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#744128]">Epoche</span>
-            <strong className="mt-4 block font-serif text-2xl">Zur Romantik zurück</strong>
+          <Link
+            className="border border-[#241f18]/16 p-6 no-underline"
+            href="/epochen/romantik/"
+          >
+            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#744128]">
+              Epoche
+            </span>
+            <strong className="mt-4 block font-serif text-2xl">
+              Zur Romantik zurück
+            </strong>
           </Link>
         </div>
       </section>

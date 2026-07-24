@@ -395,7 +395,9 @@ export default function RomanticismPage() {
 
           <div className={styles.deepDiveHeading}>
             <p className={styles.sectionKicker}>Tiefer in den Silo</p>
-            <h3>Zwei Künstler, zwei Werke und zwei Arten, romantische Bilder zu lesen.</h3>
+            <h3>
+              Zwei Künstler, zwei Werke und zwei Arten, romantische Bilder zu lesen.
+            </h3>
           </div>
           <div className={styles.deepDiveGrid}>
             {deepDives.map((deepDive) => (

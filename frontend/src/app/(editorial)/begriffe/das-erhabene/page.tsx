@@ -80,8 +80,8 @@ export default function SublimePage() {
           </h1>
           <p className="mt-8 max-w-3xl text-lg leading-8 text-[#efe9dc]/72 sm:text-xl">
             Das Erhabene ist nicht einfach „etwas sehr Großes“. Es bezeichnet eine
-            widersprüchliche Erfahrung: Wir fühlen uns klein, gefährdet oder überfordert und
-            erleben gerade darin die Kraft unseres eigenen Bewusstseins.
+            widersprüchliche Erfahrung: Wir fühlen uns klein, gefährdet oder überfordert
+            und erleben gerade darin die Kraft unseres eigenen Bewusstseins.
           </p>
         </div>
       </header>
@@ -98,15 +98,17 @@ export default function SublimePage() {
           </div>
           <div className="max-w-2xl space-y-6 text-lg leading-8 text-[#1c2424]/74">
             <p>
-              In der europäischen Ästhetik des 18. Jahrhunderts wurde das Erhabene zu einem
-              zentralen Gegenbegriff des Schönen. Autoren wie Edmund Burke betonten Dunkelheit,
-              Unbestimmtheit, Macht und Furcht; Immanuel Kant fragte, wie eine Erfahrung, die
-              unsere Vorstellungskraft überfordert, dennoch geistige Erhebung auslösen kann.
+              In der europäischen Ästhetik des 18. Jahrhunderts wurde das Erhabene zu
+              einem zentralen Gegenbegriff des Schönen. Autoren wie Edmund Burke
+              betonten Dunkelheit, Unbestimmtheit, Macht und Furcht; Immanuel Kant
+              fragte, wie eine Erfahrung, die unsere Vorstellungskraft überfordert,
+              dennoch geistige Erhebung auslösen kann.
             </p>
             <p>
-              Für romantische Kunst wurde diese Spannung produktiv. Landschaft musste nicht
-              länger harmonisch und überschaubar sein. Sie konnte den Menschen konfrontieren,
-              seine Grenzen sichtbar machen und Wahrnehmung selbst destabilisieren.
+              Für romantische Kunst wurde diese Spannung produktiv. Landschaft musste
+              nicht länger harmonisch und überschaubar sein. Sie konnte den Menschen
+              konfrontieren, seine Grenzen sichtbar machen und Wahrnehmung selbst
+              destabilisieren.
             </p>
           </div>
         </div>
@@ -137,7 +139,10 @@ export default function SublimePage() {
 
           <div className="mt-12 grid gap-5 md:grid-cols-2">
             {mechanisms.map((mechanism) => (
-              <article className="border border-white/15 p-7 sm:p-9" key={mechanism.number}>
+              <article
+                className="border border-white/15 p-7 sm:p-9"
+                key={mechanism.number}
+              >
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#d1a75d]">
                   {mechanism.number}
                 </p>
@@ -160,15 +165,18 @@ export default function SublimePage() {
             Dasselbe Wort, drei verschiedene Bildprobleme.
           </h2>
           <p className="mt-6 text-lg leading-8 text-[#1c2424]/72">
-            „Erhaben“ beschreibt keinen einheitlichen Look. Der Begriff wird erst nützlich,
-            wenn sichtbar wird, wodurch ein konkretes Bild Maßstab, Unsicherheit oder Gefahr
-            erzeugt.
+            „Erhaben“ beschreibt keinen einheitlichen Look. Der Begriff wird erst
+            nützlich, wenn sichtbar wird, wodurch ein konkretes Bild Maßstab,
+            Unsicherheit oder Gefahr erzeugt.
           </p>
         </div>
 
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
           {cases.map((item) => (
-            <article className="flex flex-col border border-[#1c2424]/15 bg-white/28 p-7" key={item.artist}>
+            <article
+              className="flex flex-col border border-[#1c2424]/15 bg-white/28 p-7"
+              key={item.artist}
+            >
               <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#835035]">
                 {item.artist}
               </p>
@@ -196,15 +204,16 @@ export default function SublimePage() {
           </div>
           <div className="space-y-6 text-lg leading-8 text-[#251d14]/75">
             <p>
-              Ein Sturm, ein Abgrund oder ein großer Berg können spektakulär sein, ohne eine
-              erhabene Erfahrung zu erzeugen. Entscheidend ist, wie das Bild den Betrachter
-              positioniert: Gibt es einen sicheren Überblick? Bleibt das Ereignis lesbar?
-              Wird der Körper bedroht, die Vorstellungskraft überfordert oder beides?
+              Ein Sturm, ein Abgrund oder ein großer Berg können spektakulär sein, ohne
+              eine erhabene Erfahrung zu erzeugen. Entscheidend ist, wie das Bild den
+              Betrachter positioniert: Gibt es einen sicheren Überblick? Bleibt das
+              Ereignis lesbar? Wird der Körper bedroht, die Vorstellungskraft
+              überfordert oder beides?
             </p>
             <p>
               Deshalb ist der Begriff nur dann analytisch stark, wenn er an Komposition,
-              Licht, Maßstab und Blickführung gebunden wird. Sonst wird „erhaben“ zu einem
-              gehobenen Synonym für dramatisch.
+              Licht, Maßstab und Blickführung gebunden wird. Sonst wird „erhaben“ zu
+              einem gehobenen Synonym für dramatisch.
             </p>
           </div>
         </div>
@@ -215,16 +224,31 @@ export default function SublimePage() {
           Weiter im Romanticism-Silo
         </p>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
-          <Link className="border border-[#1c2424]/15 p-6 no-underline" href="/werke/whalers-turner/">
-            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#835035]">Werk</span>
+          <Link
+            className="border border-[#1c2424]/15 p-6 no-underline"
+            href="/werke/whalers-turner/"
+          >
+            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#835035]">
+              Werk
+            </span>
             <strong className="mt-4 block font-serif text-2xl">Whalers lesen</strong>
           </Link>
-          <Link className="border border-[#1c2424]/15 p-6 no-underline" href="/kuenstler/j-m-w-turner/">
-            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#835035]">Künstler</span>
+          <Link
+            className="border border-[#1c2424]/15 p-6 no-underline"
+            href="/kuenstler/j-m-w-turner/"
+          >
+            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#835035]">
+              Künstler
+            </span>
             <strong className="mt-4 block font-serif text-2xl">Turner verstehen</strong>
           </Link>
-          <Link className="border border-[#1c2424]/15 p-6 no-underline" href="/epochen/romantik/">
-            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#835035]">Epoche</span>
+          <Link
+            className="border border-[#1c2424]/15 p-6 no-underline"
+            href="/epochen/romantik/"
+          >
+            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#835035]">
+              Epoche
+            </span>
             <strong className="mt-4 block font-serif text-2xl">Zur Romantik</strong>
           </Link>
         </div>
