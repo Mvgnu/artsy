@@ -1,0 +1,65 @@
+name: Frontend CI
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/ci.yml"
+      - "frontend/**"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/ci.yml"
+      - "frontend/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: frontend-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Verify frontend
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NEXT_PUBLIC_SITE_URL: https://leerraum.ch
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.4.0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: pnpm --dir frontend install --no-frozen-lockfile
+
+      - name: Check formatting
+        run: pnpm --dir frontend format:check
+
+      - name: Typecheck
+        run: pnpm --dir frontend typecheck
+
+      - name: Lint
+        run: pnpm --dir frontend lint
+
+      - name: Run unit tests
+        run: pnpm --dir frontend test
+
+      - name: Run accessibility contract tests
+        run: pnpm --dir frontend test:a11y
+
+      - name: Run performance budget tests
+        run: pnpm --dir frontend test:performance
+
+      - name: Build production application
+        run: pnpm --dir frontend build
