@@ -41,7 +41,25 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        run: pnpm --dir frontend install --no-frozen-lockfile
+        id: install
+        shell: bash
+        run: |
+          set +e
+          pnpm --dir frontend install --no-frozen-lockfile > frontend/install.log 2>&1
+          status=$?
+          if [[ "$status" -ne 0 ]]; then
+            echo "Dependency installation failed; raw output is attached as a workflow artifact."
+          fi
+          exit "$status"
+
+      - name: Upload dependency installation log
+        if: failure() && steps.install.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-install-log
+          path: frontend/install.log
+          if-no-files-found: error
+          retention-days: 3
 
       - name: Check formatting
         run: pnpm --dir frontend format:check
