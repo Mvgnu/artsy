@@ -246,6 +246,34 @@
   text-decoration-color: rgb(198 169 107 / 0.7);
 }
 
+.termNote {
+  margin: 2rem 0 0;
+  padding: 1.1rem 1.25rem;
+  border-left: 2px solid var(--romantic-gold);
+  background: rgb(238 233 220 / 0.06);
+  color: rgb(238 233 220 / 0.7);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+.termNote strong {
+  color: var(--romantic-paper);
+}
+
+.friedrichSection {
+  background:
+    radial-gradient(circle at 78% 18%, rgb(222 213 178 / 0.16), transparent 18rem),
+    linear-gradient(145deg, #101718, #222a28 58%, #12191a);
+}
+
+.friedrichSection .imageFrame {
+  aspect-ratio: 1.255;
+}
+
+.friedrichSection .imageFrame img {
+  object-fit: contain;
+}
+
 .turnerSection {
   background:
     radial-gradient(circle at 64% 42%, rgb(241 225 183 / 0.2), transparent 25rem),
