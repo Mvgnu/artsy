@@ -14,9 +14,10 @@ function artwork(
     alt,
     artist,
     date,
-    image: `https://commons.wikimedia.org/wiki/Special:Redirect/file/${encoded}`,
+    imageUrl: `https://commons.wikimedia.org/wiki/Special:Redirect/file/${encoded}`,
     note,
-    source: `https://commons.wikimedia.org/wiki/File:${encoded}`,
+    rightsLabel: "Wikimedia Commons · Public Domain",
+    sourceUrl: `https://commons.wikimedia.org/wiki/File:${encoded}`,
     title,
   };
 }
