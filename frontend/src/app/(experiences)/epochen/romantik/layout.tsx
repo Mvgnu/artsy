@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 import { ArtworkStrip } from "@/components/experiences/ArtworkStrip";
+import { RomanticBlakeAxis } from "@/components/experiences/RomanticBlakeAxis";
 import {
   nightArtworks,
   ruinMemoryArtworks,
@@ -117,6 +118,7 @@ export default function RomanticismLayout({ children }: { children: ReactNode })
                 key={path.href}
                 style={{
                   border: "1px solid rgb(238 232 220 / .17)",
+                  color: "inherit",
                   display: "flex",
                   flexDirection: "column",
                   minHeight: "20rem",
@@ -171,6 +173,7 @@ export default function RomanticismLayout({ children }: { children: ReactNode })
           </div>
         </div>
       </aside>
+      <RomanticBlakeAxis />
     </>
   );
 }
