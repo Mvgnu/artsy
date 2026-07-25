@@ -89,13 +89,17 @@ export function RomanticGoyaAxis() {
             }}
           >
             Goya erweitert den Romantik-Silo um eine andere Krise der Moderne: Nicht die
-            Abwesenheit von Vernunft ist das Problem, sondern ihre Verflechtung mit Macht,
-            Verwaltung, Gewalt und verdrängter Fantasie. Öffentliche Erinnerung,
-            Druckserien und private Wandbilder zeigen drei verschiedene Räume dieser Krise.
+            Abwesenheit von Vernunft ist das Problem, sondern ihre Verflechtung mit
+            Macht, Verwaltung, Gewalt und verdrängter Fantasie. Öffentliche Erinnerung,
+            Druckserien und private Wandbilder zeigen drei verschiedene Räume dieser
+            Krise.
           </p>
         </div>
 
-        <ArtworkStrip items={axisArtworks} title="Exekution, Monster und leere Erwartung" />
+        <ArtworkStrip
+          items={axisArtworks}
+          title="Exekution, Monster und leere Erwartung"
+        />
 
         <div
           style={{
