@@ -66,23 +66,32 @@ export default function RealismPage() {
             marginTop: "5rem",
           }}
         >
-          <p style={{ fontSize: "clamp(1.2rem, 2.3vw, 1.65rem)", lineHeight: 1.65, margin: 0 }}>
+          <p
+            style={{
+              fontSize: "clamp(1.2rem, 2.3vw, 1.65rem)",
+              lineHeight: 1.65,
+              margin: 0,
+            }}
+          >
             Realismus bedeutet nicht, dass Kunst plötzlich aufhört auszuwählen, zu
-            komponieren oder zu erfinden. Neu verteilt werden vielmehr Größe, Aufmerksamkeit
-            und historische Würde. Arbeiter, Beerdigungen, Eisenbahnwagen und industrielle
-            Hallen beanspruchen nun Formate und formale Ernsthaftigkeit, die lange anderen
-            Gegenständen vorbehalten waren.
+            komponieren oder zu erfinden. Neu verteilt werden vielmehr Größe,
+            Aufmerksamkeit und historische Würde. Arbeiter, Beerdigungen, Eisenbahnwagen
+            und industrielle Hallen beanspruchen nun Formate und formale
+            Ernsthaftigkeit, die lange anderen Gegenständen vorbehalten waren.
           </p>
           <p style={{ fontSize: "1.05rem", lineHeight: 1.85, margin: 0 }}>
-            Die Epoche reagiert auf Revolutionen, Urbanisierung, neue Medien, soziale Konflikte
-            und industrielle Arbeit. Sie ist weder einheitlicher Stil noch bloße Gegenbewegung
-            zur Romantik. Courbet, Millet, Daumier und Menzel entwickeln unterschiedliche
-            Verfahren dafür, Gegenwart, Körper und Materie als geschichtlich wirksam zu zeigen.
+            Die Epoche reagiert auf Revolutionen, Urbanisierung, neue Medien, soziale
+            Konflikte und industrielle Arbeit. Sie ist weder einheitlicher Stil noch
+            bloße Gegenbewegung zur Romantik. Courbet, Millet, Daumier und Menzel
+            entwickeln unterschiedliche Verfahren dafür, Gegenwart, Körper und Materie
+            als geschichtlich wirksam zu zeigen.
           </p>
         </div>
       </section>
 
-      <section style={{ background: "#292a24", color: "#f1eadf", padding: "6rem 1.25rem" }}>
+      <section
+        style={{ background: "#292a24", color: "#f1eadf", padding: "6rem 1.25rem" }}
+      >
         <div style={{ margin: "0 auto", maxWidth: "94rem" }}>
           <ArtworkStrip
             items={realismPillarArtworks}
@@ -142,7 +151,14 @@ export default function RealismPage() {
                 {path.title}
               </strong>
               <p style={{ lineHeight: 1.75, margin: "1.25rem 0 0" }}>{path.text}</p>
-              <em style={{ fontStyle: "normal", fontWeight: 800, marginTop: "auto", paddingTop: "2rem" }}>
+              <em
+                style={{
+                  fontStyle: "normal",
+                  fontWeight: 800,
+                  marginTop: "auto",
+                  paddingTop: "2rem",
+                }}
+              >
                 Öffnen →
               </em>
             </Link>
@@ -170,18 +186,25 @@ export default function RealismPage() {
               margin: 0,
             }}
           >
-            Die Romantik verschwindet nicht. Ihre Fragen wechseln den gesellschaftlichen Ort.
+            Die Romantik verschwindet nicht. Ihre Fragen wechseln den gesellschaftlichen
+            Ort.
           </h2>
           <div style={{ alignSelf: "end" }}>
             <p style={{ fontSize: "1.12rem", lineHeight: 1.8, margin: 0 }}>
-              Monumentalität, Katastrophe, politische Gemeinschaft, Landschaft und subjektive
-              Erfahrung bleiben wichtig. Realistische Künstler prüfen jedoch stärker, wer in
-              diesen Bildern sichtbar wird, welche Arbeit Räume trägt und wie Gegenwart ohne
-              mythologischen oder historischen Abstand dargestellt werden kann.
+              Monumentalität, Katastrophe, politische Gemeinschaft, Landschaft und
+              subjektive Erfahrung bleiben wichtig. Realistische Künstler prüfen jedoch
+              stärker, wer in diesen Bildern sichtbar wird, welche Arbeit Räume trägt
+              und wie Gegenwart ohne mythologischen oder historischen Abstand
+              dargestellt werden kann.
             </p>
             <Link
               href="/epochen/romantik/"
-              style={{ color: "inherit", display: "inline-block", fontWeight: 800, marginTop: "2rem" }}
+              style={{
+                color: "inherit",
+                display: "inline-block",
+                fontWeight: 800,
+                marginTop: "2rem",
+              }}
             >
               Zur Romantik zurückblicken →
             </Link>

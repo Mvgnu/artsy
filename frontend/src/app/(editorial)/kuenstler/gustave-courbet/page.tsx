@@ -40,7 +40,15 @@ export default function GustaveCourbetPage() {
           padding: "clamp(7rem, 13vw, 12rem) 1.25rem clamp(5rem, 9vw, 8rem)",
         }}
       >
-        <p style={{ fontSize: ".72rem", fontWeight: 800, letterSpacing: ".2em", margin: 0, textTransform: "uppercase" }}>
+        <p
+          style={{
+            fontSize: ".72rem",
+            fontWeight: 800,
+            letterSpacing: ".2em",
+            margin: 0,
+            textTransform: "uppercase",
+          }}
+        >
           Künstlerprofil · Realismus
         </p>
         <h1
@@ -64,24 +72,36 @@ export default function GustaveCourbetPage() {
             marginTop: "5rem",
           }}
         >
-          <p style={{ fontSize: "clamp(1.2rem, 2.2vw, 1.6rem)", lineHeight: 1.65, margin: 0 }}>
-            Courbets Realismus besteht nicht darin, die Welt möglichst neutral abzuschreiben.
-            Er zwingt Gegenwart in Formate, Institutionen und Blickordnungen, die dafür nicht
-            vorgesehen waren. Lokale Trauergäste, Straßenarbeiter, Freunde, Modelle und der
-            Künstler selbst beanspruchen historische Sichtbarkeit.
+          <p
+            style={{
+              fontSize: "clamp(1.2rem, 2.2vw, 1.6rem)",
+              lineHeight: 1.65,
+              margin: 0,
+            }}
+          >
+            Courbets Realismus besteht nicht darin, die Welt möglichst neutral
+            abzuschreiben. Er zwingt Gegenwart in Formate, Institutionen und
+            Blickordnungen, die dafür nicht vorgesehen waren. Lokale Trauergäste,
+            Straßenarbeiter, Freunde, Modelle und der Künstler selbst beanspruchen
+            historische Sichtbarkeit.
           </p>
           <p style={{ fontSize: "1.05rem", lineHeight: 1.85, margin: 0 }}>
-            Deshalb ist Courbet zugleich Beobachter, Konstrukteur und Provokateur. Sichtbare
-            Materie, grobe Malweise und zeitgenössische Motive bilden keinen Gegensatz zu
-            Komposition oder Programm. Sie sind die Mittel, mit denen er die soziale Ordnung
-            des Bildes verändert.
+            Deshalb ist Courbet zugleich Beobachter, Konstrukteur und Provokateur.
+            Sichtbare Materie, grobe Malweise und zeitgenössische Motive bilden keinen
+            Gegensatz zu Komposition oder Programm. Sie sind die Mittel, mit denen er
+            die soziale Ordnung des Bildes verändert.
           </p>
         </div>
       </section>
 
-      <section style={{ background: "#292a24", color: "#f1eadf", padding: "6rem 1.25rem" }}>
+      <section
+        style={{ background: "#292a24", color: "#f1eadf", padding: "6rem 1.25rem" }}
+      >
         <div style={{ margin: "0 auto", maxWidth: "94rem" }}>
-          <ArtworkStrip items={courbetProfileArtworks} title="Selbstbild, Gemeinschaft, Arbeit und Programm" />
+          <ArtworkStrip
+            items={courbetProfileArtworks}
+            title="Selbstbild, Gemeinschaft, Arbeit und Programm"
+          />
         </div>
       </section>
 
@@ -98,7 +118,11 @@ export default function GustaveCourbetPage() {
         {phases.map((phase, index) => (
           <article
             key={phase.title}
-            style={{ borderTop: "1px solid rgb(33 31 27 / .3)", minHeight: "19rem", padding: "1.5rem 0" }}
+            style={{
+              borderTop: "1px solid rgb(33 31 27 / .3)",
+              minHeight: "19rem",
+              padding: "1.5rem 0",
+            }}
           >
             <span style={{ fontSize: ".72rem", fontWeight: 800 }}>0{index + 1}</span>
             <h2
@@ -128,24 +152,55 @@ export default function GustaveCourbetPage() {
             maxWidth: "94rem",
           }}
         >
-          <Link href="/werke/die-steinklopfer/" style={{ color: "inherit", textDecoration: "none" }}>
-            <strong style={{ display: "block", fontFamily: "var(--font-serif)", fontSize: "2.4rem", fontWeight: 500 }}>
+          <Link
+            href="/werke/die-steinklopfer/"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            <strong
+              style={{
+                display: "block",
+                fontFamily: "var(--font-serif)",
+                fontSize: "2.4rem",
+                fontWeight: 500,
+              }}
+            >
               Die Steinklopfer
             </strong>
             <span style={{ display: "block", lineHeight: 1.7, marginTop: "1rem" }}>
               Arbeit, Alter, Werkzeug und Material in einem verlorenen Hauptwerk lesen.
             </span>
           </Link>
-          <Link href="/begriffe/arbeit-und-materiale-realitaet/" style={{ color: "inherit", textDecoration: "none" }}>
-            <strong style={{ display: "block", fontFamily: "var(--font-serif)", fontSize: "2.4rem", fontWeight: 500 }}>
+          <Link
+            href="/begriffe/arbeit-und-materiale-realitaet/"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            <strong
+              style={{
+                display: "block",
+                fontFamily: "var(--font-serif)",
+                fontSize: "2.4rem",
+                fontWeight: 500,
+              }}
+            >
               Arbeit und materiale Realität
             </strong>
             <span style={{ display: "block", lineHeight: 1.7, marginTop: "1rem" }}>
-              Ein übertragbares Modell für Körper, Wiederholung, Widerstand und Infrastruktur.
+              Ein übertragbares Modell für Körper, Wiederholung, Widerstand und
+              Infrastruktur.
             </span>
           </Link>
-          <Link href="/epochen/realismus/" style={{ color: "inherit", textDecoration: "none" }}>
-            <strong style={{ display: "block", fontFamily: "var(--font-serif)", fontSize: "2.4rem", fontWeight: 500 }}>
+          <Link
+            href="/epochen/realismus/"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            <strong
+              style={{
+                display: "block",
+                fontFamily: "var(--font-serif)",
+                fontSize: "2.4rem",
+                fontWeight: 500,
+              }}
+            >
               Realismus
             </strong>
             <span style={{ display: "block", lineHeight: 1.7, marginTop: "1rem" }}>
