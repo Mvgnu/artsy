@@ -33,34 +33,133 @@ const paths = [
 export function RomanticIconicAxis() {
   return (
     <aside style={{ background: "#f1ece3", color: "#211d19" }}>
-      <div style={{ margin: "0 auto", maxWidth: "94rem", padding: "clamp(6rem, 12vw, 11rem) 1.25rem" }}>
-        <div style={{ display: "grid", gap: "3rem", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 24rem), 1fr))", marginBottom: "4rem" }}>
+      <div
+        style={{
+          margin: "0 auto",
+          maxWidth: "94rem",
+          padding: "clamp(6rem, 12vw, 11rem) 1.25rem",
+        }}
+      >
+        <div
+          style={{
+            display: "grid",
+            gap: "3rem",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 24rem), 1fr))",
+            marginBottom: "4rem",
+          }}
+        >
           <div>
-            <p style={{ color: "#9a4d32", fontSize: ".72rem", fontWeight: 800, letterSpacing: ".2em", margin: 0, textTransform: "uppercase" }}>
+            <p
+              style={{
+                color: "#9a4d32",
+                fontSize: ".72rem",
+                fontWeight: 800,
+                letterSpacing: ".2em",
+                margin: 0,
+                textTransform: "uppercase",
+              }}
+            >
               Ikonische Werke der Romantik
             </p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(3.4rem, 8vw, 7rem)", fontWeight: 500, letterSpacing: "-.055em", lineHeight: ".94", margin: "1rem 0 0", maxWidth: "13ch" }}>
+            <h2
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(3.4rem, 8vw, 7rem)",
+                fontWeight: 500,
+                letterSpacing: "-.055em",
+                lineHeight: ".94",
+                margin: "1rem 0 0",
+                maxWidth: "13ch",
+              }}
+            >
               Berühmt heißt noch nicht eindeutig.
             </h2>
           </div>
-          <p style={{ alignSelf: "end", color: "rgb(33 29 25 / .72)", fontSize: "clamp(1.08rem, 2vw, 1.35rem)", lineHeight: 1.8, margin: 0, maxWidth: "44rem" }}>
-            Diese vier Bilder sind zu Symbolen ihrer Epoche geworden. Die Decoder lesen gegen die verkürzte Reproduktion: Sie fragen nach Blickmacht, politischer Allegorie, technischem Übergang und privater Gewalt.
+          <p
+            style={{
+              alignSelf: "end",
+              color: "rgb(33 29 25 / .72)",
+              fontSize: "clamp(1.08rem, 2vw, 1.35rem)",
+              lineHeight: 1.8,
+              margin: 0,
+              maxWidth: "44rem",
+            }}
+          >
+            Diese vier Bilder sind zu Symbolen ihrer Epoche geworden. Die Decoder lesen
+            gegen die verkürzte Reproduktion: Sie fragen nach Blickmacht, politischer
+            Allegorie, technischem Übergang und privater Gewalt.
           </p>
         </div>
 
-        <ArtworkStrip items={iconicMasterpieceArtworks} title="Vier Ikonen, vier instabile Bedeutungsräume" />
+        <ArtworkStrip
+          items={iconicMasterpieceArtworks}
+          title="Vier Ikonen, vier instabile Bedeutungsräume"
+        />
 
-        <div style={{ display: "grid", gap: "1rem", gridTemplateColumns: "repeat(auto-fit, minmax(18rem, 1fr))", marginTop: "4rem" }}>
+        <div
+          style={{
+            display: "grid",
+            gap: "1rem",
+            gridTemplateColumns: "repeat(auto-fit, minmax(18rem, 1fr))",
+            marginTop: "4rem",
+          }}
+        >
           {paths.map((path) => (
-            <Link key={path.href} href={path.href} style={{ border: "1px solid rgb(33 29 25 / .2)", color: "inherit", display: "flex", flexDirection: "column", minHeight: "21rem", padding: "2rem", textDecoration: "none" }}>
-              <span style={{ color: "#9a4d32", fontSize: ".7rem", fontWeight: 800, letterSpacing: ".16em", textTransform: "uppercase" }}>
+            <Link
+              key={path.href}
+              href={path.href}
+              style={{
+                border: "1px solid rgb(33 29 25 / .2)",
+                color: "inherit",
+                display: "flex",
+                flexDirection: "column",
+                minHeight: "21rem",
+                padding: "2rem",
+                textDecoration: "none",
+              }}
+            >
+              <span
+                style={{
+                  color: "#9a4d32",
+                  fontSize: ".7rem",
+                  fontWeight: 800,
+                  letterSpacing: ".16em",
+                  textTransform: "uppercase",
+                }}
+              >
                 {path.eyebrow}
               </span>
-              <strong style={{ fontFamily: "var(--font-serif)", fontSize: "2.3rem", fontWeight: 500, letterSpacing: "-.04em", lineHeight: 1.02, marginTop: "2rem" }}>
+              <strong
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "2.3rem",
+                  fontWeight: 500,
+                  letterSpacing: "-.04em",
+                  lineHeight: 1.02,
+                  marginTop: "2rem",
+                }}
+              >
                 {path.title}
               </strong>
-              <p style={{ color: "rgb(33 29 25 / .68)", lineHeight: 1.72, margin: "1.25rem 0 0" }}>{path.text}</p>
-              <em style={{ fontStyle: "normal", fontWeight: 800, marginTop: "auto", paddingTop: "2rem" }}>Öffnen →</em>
+              <p
+                style={{
+                  color: "rgb(33 29 25 / .68)",
+                  lineHeight: 1.72,
+                  margin: "1.25rem 0 0",
+                }}
+              >
+                {path.text}
+              </p>
+              <em
+                style={{
+                  fontStyle: "normal",
+                  fontWeight: 800,
+                  marginTop: "auto",
+                  paddingTop: "2rem",
+                }}
+              >
+                Öffnen →
+              </em>
             </Link>
           ))}
         </div>
