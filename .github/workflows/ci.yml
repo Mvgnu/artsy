@@ -47,32 +47,14 @@ jobs:
       - name: Install dependencies
         run: pnpm --dir frontend install --frozen-lockfile
 
-      - name: Fix Blake static link tuples
+      - name: Remove Blake diagnostic artifact
         if: github.event_name == 'pull_request' && github.head_ref == 'agent/blake-visionary-mythology'
         shell: bash
         run: |
-          python - <<'PY'
-          from pathlib import Path
-
-          paths = [
-              Path("frontend/src/app/(editorial)/begriffe/vision-und-prophezeiung/page.tsx"),
-              Path("frontend/src/app/(editorial)/kuenstler/william-blake/page.tsx"),
-              Path("frontend/src/app/(editorial)/motive/nacht/layout.tsx"),
-              Path("frontend/src/app/(editorial)/werke/the-ancient-of-days/page.tsx"),
-          ]
-
-          for path in paths:
-              content = path.read_text()
-              updated = content.replace("href={href}", "href={href!}")
-              if updated == content:
-                  raise SystemExit(f"Expected href pattern not found in {path}")
-              path.write_text(updated)
-          PY
-          pnpm --dir frontend format
-          git add frontend
+          git rm -f frontend/typecheck-output.txt
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "fix: type Blake static link tuples"
+          git commit -m "chore: remove Blake typecheck diagnostic"
           git push origin "HEAD:${GITHUB_HEAD_REF}"
 
       - name: Check formatting
