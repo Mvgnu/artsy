@@ -92,9 +92,10 @@ export default function AncientOfDaysPage() {
             maxWidth: "46rem",
           }}
         >
-          Eine leuchtende Figur misst die Dunkelheit. Das klingt nach souveräner Schöpfung.
-          Doch Haltung, Bildrand und Buchkontext machen aus dem kosmischen Architekten eine
-          viel unsicherere Gestalt: Urizen ordnet die Welt, indem er sie begrenzt.
+          Eine leuchtende Figur misst die Dunkelheit. Das klingt nach souveräner
+          Schöpfung. Doch Haltung, Bildrand und Buchkontext machen aus dem kosmischen
+          Architekten eine viel unsicherere Gestalt: Urizen ordnet die Welt, indem er
+          sie begrenzt.
         </p>
       </header>
 
@@ -141,16 +142,16 @@ export default function AncientOfDaysPage() {
             </div>
             <div style={{ fontSize: "1.12rem", lineHeight: 1.85 }}>
               <p>
-                Blake entwarf das Motiv als Frontispiz zu <em>Europe: a Prophecy</em>. Der
-                heute geläufige Titel <em>The Ancient of Days</em> löst es leicht aus dieser
-                Funktion und lässt es wie ein selbstständiges Bild des biblischen
-                Schöpfergottes erscheinen.
+                Blake entwarf das Motiv als Frontispiz zu <em>Europe: a Prophecy</em>.
+                Der heute geläufige Titel <em>The Ancient of Days</em> löst es leicht
+                aus dieser Funktion und lässt es wie ein selbstständiges Bild des
+                biblischen Schöpfergottes erscheinen.
               </p>
               <p>
                 Innerhalb von Blakes Mythologie wird die Figur gewöhnlich als Urizen
-                verstanden: eine Macht von Gesetz, Abstraktion, Einteilung und erstarrter
-                Vernunft. Er ist weder schlicht böse noch ein stabiles Symbol. Seine Ordnung
-                ist produktiv und gefährlich zugleich.
+                verstanden: eine Macht von Gesetz, Abstraktion, Einteilung und
+                erstarrter Vernunft. Er ist weder schlicht böse noch ein stabiles
+                Symbol. Seine Ordnung ist produktiv und gefährlich zugleich.
               </p>
             </div>
           </div>
@@ -219,7 +220,13 @@ export default function AncientOfDaysPage() {
                 >
                   {observation.title}
                 </h3>
-                <p style={{ color: "rgb(242 234 223 / .7)", lineHeight: 1.75, margin: 0 }}>
+                <p
+                  style={{
+                    color: "rgb(242 234 223 / .7)",
+                    lineHeight: 1.75,
+                    margin: 0,
+                  }}
+                >
                   {observation.text}
                 </p>
               </section>
@@ -269,11 +276,14 @@ export default function AncientOfDaysPage() {
               maxWidth: "48rem",
             }}
           >
-            Albion, Newton und Adam zeigen keine drei Übersetzungen desselben Symbols. Sie
-            bilden ein Spannungsfeld: Befreiung, rationale Fixierung und die schmerzhafte
-            Verkörperung eines geschaffenen Menschen.
+            Albion, Newton und Adam zeigen keine drei Übersetzungen desselben Symbols.
+            Sie bilden ein Spannungsfeld: Befreiung, rationale Fixierung und die
+            schmerzhafte Verkörperung eines geschaffenen Menschen.
           </p>
-          <ArtworkStrip items={ancientOfDaysContextArtworks} title="Öffnung, Maß und Bindung" />
+          <ArtworkStrip
+            items={ancientOfDaysContextArtworks}
+            title="Öffnung, Maß und Bindung"
+          />
         </div>
       </section>
 
@@ -320,15 +330,16 @@ export default function AncientOfDaysPage() {
             </div>
             <div style={{ fontSize: "1.12rem", lineHeight: 1.85 }}>
               <p>
-                Blake verwirft Denken, Handwerk oder Form nicht. Sein eigenes Bild ist hoch
-                organisiert und technisch anspruchsvoll. Die Kritik richtet sich gegen ein
-                System, das seine Grenzen mit der ganzen Wirklichkeit verwechselt.
+                Blake verwirft Denken, Handwerk oder Form nicht. Sein eigenes Bild ist
+                hoch organisiert und technisch anspruchsvoll. Die Kritik richtet sich
+                gegen ein System, das seine Grenzen mit der ganzen Wirklichkeit
+                verwechselt.
               </p>
               <p>
-                Der Zirkel ist deshalb weder nur Werkzeug des Bösen noch eindeutiges Zeichen
-                göttlicher Harmonie. Er macht die politische und geistige Frage sichtbar,
-                wer Grenzen setzt, welche Welt dadurch entsteht und was jenseits des
-                gemessenen Kreises unsichtbar bleibt.
+                Der Zirkel ist deshalb weder nur Werkzeug des Bösen noch eindeutiges
+                Zeichen göttlicher Harmonie. Er macht die politische und geistige Frage
+                sichtbar, wer Grenzen setzt, welche Welt dadurch entsteht und was
+                jenseits des gemessenen Kreises unsichtbar bleibt.
               </p>
             </div>
           </div>
@@ -342,9 +353,21 @@ export default function AncientOfDaysPage() {
             }}
           >
             {[
-              ["/kuenstler/william-blake/", "William Blake", "Technik, Bücher und private Mythologie im gesamten Werk verfolgen."],
-              ["/begriffe/vision-und-prophezeiung/", "Vision und Prophezeiung", "Das Bild als Teil einer erfundenen Kosmologie und historischen Kritik lesen."],
-              ["/begriffe/das-erhabene/", "Das Erhabene", "Kosmischen Maßstab mit romantischer Überforderung und Distanz vergleichen."],
+              [
+                "/kuenstler/william-blake/",
+                "William Blake",
+                "Technik, Bücher und private Mythologie im gesamten Werk verfolgen.",
+              ],
+              [
+                "/begriffe/vision-und-prophezeiung/",
+                "Vision und Prophezeiung",
+                "Das Bild als Teil einer erfundenen Kosmologie und historischen Kritik lesen.",
+              ],
+              [
+                "/begriffe/das-erhabene/",
+                "Das Erhabene",
+                "Kosmischen Maßstab mit romantischer Überforderung und Distanz vergleichen.",
+              ],
             ].map(([href, title, text]) => (
               <Link
                 href={href}
@@ -359,11 +382,19 @@ export default function AncientOfDaysPage() {
                   textDecoration: "none",
                 }}
               >
-                <strong style={{ fontFamily: "var(--font-serif)", fontSize: "2rem", fontWeight: 500 }}>
+                <strong
+                  style={{
+                    fontFamily: "var(--font-serif)",
+                    fontSize: "2rem",
+                    fontWeight: 500,
+                  }}
+                >
                   {title}
                 </strong>
                 <p style={{ color: "rgb(33 26 23 / .7)", lineHeight: 1.7 }}>{text}</p>
-                <span style={{ fontWeight: 800, marginTop: "auto" }}>Weiterlesen →</span>
+                <span style={{ fontWeight: 800, marginTop: "auto" }}>
+                  Weiterlesen →
+                </span>
               </Link>
             ))}
           </div>

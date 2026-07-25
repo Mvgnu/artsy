@@ -81,7 +81,7 @@ export const ancientOfDaysContextArtworks = [
 
 export const visionProphecyArtworks = [
   artwork(
-    "William Blake - Songs of Innocence and of Experience, Plate 42, \"The Tyger\" (Bentley 42) - Google Art Project.jpg",
+    'William Blake - Songs of Innocence and of Experience, Plate 42, "The Tyger" (Bentley 42) - Google Art Project.jpg',
     "Songs of Experience: The Tyger",
     "1794",
     "Gedichtzeilen sind von Pflanzenformen und einem kleinen Tiger unterhalb des Textes umgeben.",

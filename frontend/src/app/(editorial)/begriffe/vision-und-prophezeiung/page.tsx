@@ -106,10 +106,10 @@ export default function VisionUndProphezeiungPage() {
             maxWidth: "47rem",
           }}
         >
-          Prophetische Kunst zeigt nicht einfach, was später geschehen wird. Sie baut einen
-          Abstand zur Gegenwart, in dem Macht, Religion, Vernunft und Begehren als Teile
-          eines anderen Systems sichtbar werden. William Blake macht diesen Abstand selbst
-          zum Medium seiner Kunst.
+          Prophetische Kunst zeigt nicht einfach, was später geschehen wird. Sie baut
+          einen Abstand zur Gegenwart, in dem Macht, Religion, Vernunft und Begehren als
+          Teile eines anderen Systems sichtbar werden. William Blake macht diesen
+          Abstand selbst zum Medium seiner Kunst.
         </p>
       </header>
 
@@ -217,11 +217,18 @@ export default function VisionUndProphezeiungPage() {
                 Er illustriert kein fertiges System. Er druckt eines in Bewegung.
               </h2>
             </div>
-            <div style={{ color: "rgb(242 234 223 / .72)", fontSize: "1.12rem", lineHeight: 1.85 }}>
+            <div
+              style={{
+                color: "rgb(242 234 223 / .72)",
+                fontSize: "1.12rem",
+                lineHeight: 1.85,
+              }}
+            >
               <p>
                 In Blakes illuminierten Büchern stehen Gedicht, Figur und Ornament auf
-                derselben Platte. Dadurch gibt es keinen neutralen Text, der später bebildert
-                wird. Leserichtung, Rand, Farbe und Schriftbild gehören zur Aussage.
+                derselben Platte. Dadurch gibt es keinen neutralen Text, der später
+                bebildert wird. Leserichtung, Rand, Farbe und Schriftbild gehören zur
+                Aussage.
               </p>
               <p>
                 Die eigenen Namen schaffen Distanz zu vertrauten politischen und
@@ -233,7 +240,10 @@ export default function VisionUndProphezeiungPage() {
           </div>
 
           <div style={{ marginTop: "5rem" }}>
-            <ArtworkStrip items={visionProphecyArtworks} title="Vier Formen visionärer Autorität" />
+            <ArtworkStrip
+              items={visionProphecyArtworks}
+              title="Vier Formen visionärer Autorität"
+            />
           </div>
         </div>
       </section>
@@ -365,10 +375,26 @@ export default function VisionUndProphezeiungPage() {
             }}
           >
             {[
-              ["/kuenstler/william-blake/", "William Blake", "Das technische und biografische Gerüst hinter der visionären Bildwelt kennenlernen."],
-              ["/werke/the-ancient-of-days/", "The Ancient of Days", "Urizen, Zirkel und Frontispiz als konkreten Testfall lesen."],
-              ["/motive/nacht/", "Die Nacht", "Visionäre Innenräume mit romantischer Dunkelheit, Mondlicht und eingeschränkter Wahrnehmung vergleichen."],
-              ["/begriffe/katastrophe-und-zeugenschaft/", "Katastrophe und Zeugenschaft", "Prüfen, wie prophetische Distanz und dokumentarischer Anspruch unterschiedlich Geschichte formen."],
+              [
+                "/kuenstler/william-blake/",
+                "William Blake",
+                "Das technische und biografische Gerüst hinter der visionären Bildwelt kennenlernen.",
+              ],
+              [
+                "/werke/the-ancient-of-days/",
+                "The Ancient of Days",
+                "Urizen, Zirkel und Frontispiz als konkreten Testfall lesen.",
+              ],
+              [
+                "/motive/nacht/",
+                "Die Nacht",
+                "Visionäre Innenräume mit romantischer Dunkelheit, Mondlicht und eingeschränkter Wahrnehmung vergleichen.",
+              ],
+              [
+                "/begriffe/katastrophe-und-zeugenschaft/",
+                "Katastrophe und Zeugenschaft",
+                "Prüfen, wie prophetische Distanz und dokumentarischer Anspruch unterschiedlich Geschichte formen.",
+              ],
             ].map(([href, title, text]) => (
               <Link
                 href={href}
@@ -383,7 +409,13 @@ export default function VisionUndProphezeiungPage() {
                   textDecoration: "none",
                 }}
               >
-                <strong style={{ fontFamily: "var(--font-serif)", fontSize: "2rem", fontWeight: 500 }}>
+                <strong
+                  style={{
+                    fontFamily: "var(--font-serif)",
+                    fontSize: "2rem",
+                    fontWeight: 500,
+                  }}
+                >
                   {title}
                 </strong>
                 <p style={{ color: "rgb(33 26 24 / .72)", lineHeight: 1.7 }}>{text}</p>

@@ -80,13 +80,16 @@ export function RomanticBlakeAxis() {
             }}
           >
             Friedrich, Turner und Géricault arbeiten vor allem über Gemälde und einzelne
-            Bildräume. Blake verschiebt die Romantik in eine andere Produktionsform: Text,
-            Ornament, Figur, Druckplatte und Handkolorierung bilden gemeinsam ein
+            Bildräume. Blake verschiebt die Romantik in eine andere Produktionsform:
+            Text, Ornament, Figur, Druckplatte und Handkolorierung bilden gemeinsam ein
             veränderliches System aus Vision, Kritik und eigener Mythologie.
           </p>
         </div>
 
-        <ArtworkStrip items={blakeAxisArtworks} title="Textseite, kosmisches Maß und apokalyptischer Körper" />
+        <ArtworkStrip
+          items={blakeAxisArtworks}
+          title="Textseite, kosmisches Maß und apokalyptischer Körper"
+        />
 
         <div
           style={{
@@ -133,10 +136,23 @@ export function RomanticBlakeAxis() {
               >
                 {path.title}
               </strong>
-              <p style={{ color: "rgb(242 233 220 / .7)", lineHeight: 1.72, margin: "1.25rem 0 0" }}>
+              <p
+                style={{
+                  color: "rgb(242 233 220 / .7)",
+                  lineHeight: 1.72,
+                  margin: "1.25rem 0 0",
+                }}
+              >
                 {path.text}
               </p>
-              <em style={{ fontStyle: "normal", fontWeight: 800, marginTop: "auto", paddingTop: "2rem" }}>
+              <em
+                style={{
+                  fontStyle: "normal",
+                  fontWeight: 800,
+                  marginTop: "auto",
+                  paddingTop: "2rem",
+                }}
+              >
                 Öffnen →
               </em>
             </Link>

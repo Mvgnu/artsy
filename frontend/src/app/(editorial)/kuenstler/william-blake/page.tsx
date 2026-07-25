@@ -101,10 +101,10 @@ export default function WilliamBlakePage() {
             maxWidth: "46rem",
           }}
         >
-          Blake war nicht einfach ein Dichter, der Bilder hinzufügte, und kein Maler, der
-          gelegentlich Verse schrieb. Er baute Bücher, Figuren und ganze Kosmologien, in
-          denen Drucktechnik, Sprache, Religion und politische Gegenwart untrennbar
-          zusammenarbeiten.
+          Blake war nicht einfach ein Dichter, der Bilder hinzufügte, und kein Maler,
+          der gelegentlich Verse schrieb. Er baute Bücher, Figuren und ganze
+          Kosmologien, in denen Drucktechnik, Sprache, Religion und politische Gegenwart
+          untrennbar zusammenarbeiten.
         </p>
       </header>
 
@@ -140,7 +140,11 @@ export default function WilliamBlakePage() {
           >
             Öffnung, Maß, Versenkung und apokalyptischer Druck.
           </h2>
-          <ArtworkStrip items={blakeProfileArtworks} light title="Blakes visuelle Systeme" />
+          <ArtworkStrip
+            items={blakeProfileArtworks}
+            light
+            title="Blakes visuelle Systeme"
+          />
         </div>
       </section>
 
@@ -185,18 +189,26 @@ export default function WilliamBlakePage() {
                 Vision war bei Blake handwerklich organisiert.
               </h2>
             </div>
-            <div style={{ color: "rgb(241 234 223 / .72)", fontSize: "1.12rem", lineHeight: 1.85 }}>
+            <div
+              style={{
+                color: "rgb(241 234 223 / .72)",
+                fontSize: "1.12rem",
+                lineHeight: 1.85,
+              }}
+            >
               <p>
-                Die populäre Erzählung vom unverstandenen Visionär übersieht, wie materiell
-                seine Arbeit war. Platten mussten vorbereitet, rückwärts beschriftet,
-                geätzt, eingefärbt, gedruckt und häufig von Hand koloriert werden. Blake
-                arbeitete dabei eng mit Catherine Blake zusammen und behielt ungewöhnlich
-                viel Kontrolle über Herstellung und Zusammenstellung seiner Bücher.
+                Die populäre Erzählung vom unverstandenen Visionär übersieht, wie
+                materiell seine Arbeit war. Platten mussten vorbereitet, rückwärts
+                beschriftet, geätzt, eingefärbt, gedruckt und häufig von Hand koloriert
+                werden. Blake arbeitete dabei eng mit Catherine Blake zusammen und
+                behielt ungewöhnlich viel Kontrolle über Herstellung und
+                Zusammenstellung seiner Bücher.
               </p>
               <p>
-                Seine Visionen erscheinen deshalb nicht trotz, sondern durch Technik. Die
-                wiederkehrenden Figuren bilden ein Labor, in dem Begriffe wie Gesetz,
-                Energie, Begehren und Freiheit immer wieder anders angeordnet werden.
+                Seine Visionen erscheinen deshalb nicht trotz, sondern durch Technik.
+                Die wiederkehrenden Figuren bilden ein Labor, in dem Begriffe wie
+                Gesetz, Energie, Begehren und Freiheit immer wieder anders angeordnet
+                werden.
               </p>
             </div>
           </div>
@@ -212,7 +224,10 @@ export default function WilliamBlakePage() {
             {phases.map((phase) => (
               <section
                 key={phase.period}
-                style={{ borderTop: "1px solid rgb(241 234 223 / .22)", padding: "2rem 0" }}
+                style={{
+                  borderTop: "1px solid rgb(241 234 223 / .22)",
+                  padding: "2rem 0",
+                }}
               >
                 <p style={{ color: "#d09b58", fontSize: ".74rem", fontWeight: 800 }}>
                   {phase.period}
@@ -228,7 +243,13 @@ export default function WilliamBlakePage() {
                 >
                   {phase.title}
                 </h3>
-                <p style={{ color: "rgb(241 234 223 / .68)", lineHeight: 1.75, margin: 0 }}>
+                <p
+                  style={{
+                    color: "rgb(241 234 223 / .68)",
+                    lineHeight: 1.75,
+                    margin: 0,
+                  }}
+                >
                   {phase.text}
                 </p>
               </section>
@@ -299,7 +320,13 @@ export default function WilliamBlakePage() {
                 >
                   {method.title}
                 </h3>
-                <p style={{ color: "rgb(241 234 223 / .7)", lineHeight: 1.75, margin: 0 }}>
+                <p
+                  style={{
+                    color: "rgb(241 234 223 / .7)",
+                    lineHeight: 1.75,
+                    margin: 0,
+                  }}
+                >
                   {method.text}
                 </p>
               </section>
@@ -336,10 +363,26 @@ export default function WilliamBlakePage() {
             }}
           >
             {[
-              ["/werke/the-ancient-of-days/", "The Ancient of Days", "Das Bild als Frontispiz, Druck und Konflikt zwischen Schöpfung und Begrenzung lesen."],
-              ["/begriffe/vision-und-prophezeiung/", "Vision und Prophezeiung", "Verstehen, wie erfundene Mythologie historische Gegenwart kritisiert, ohne einfache Zukunftsvorhersage zu sein."],
-              ["/motive/nacht/", "Die Nacht", "Von romantischer Dunkelheit zu Blakes innerem, apokalyptischem Bildraum weiterdenken."],
-              ["/epochen/romantik/", "Romantik", "Blake mit Friedrich, Turner, Cole, Delacroix und Géricault in Beziehung setzen."],
+              [
+                "/werke/the-ancient-of-days/",
+                "The Ancient of Days",
+                "Das Bild als Frontispiz, Druck und Konflikt zwischen Schöpfung und Begrenzung lesen.",
+              ],
+              [
+                "/begriffe/vision-und-prophezeiung/",
+                "Vision und Prophezeiung",
+                "Verstehen, wie erfundene Mythologie historische Gegenwart kritisiert, ohne einfache Zukunftsvorhersage zu sein.",
+              ],
+              [
+                "/motive/nacht/",
+                "Die Nacht",
+                "Von romantischer Dunkelheit zu Blakes innerem, apokalyptischem Bildraum weiterdenken.",
+              ],
+              [
+                "/epochen/romantik/",
+                "Romantik",
+                "Blake mit Friedrich, Turner, Cole, Delacroix und Géricault in Beziehung setzen.",
+              ],
             ].map(([href, title, text]) => (
               <Link
                 href={href}
@@ -354,7 +397,13 @@ export default function WilliamBlakePage() {
                   textDecoration: "none",
                 }}
               >
-                <strong style={{ fontFamily: "var(--font-serif)", fontSize: "2rem", fontWeight: 500 }}>
+                <strong
+                  style={{
+                    fontFamily: "var(--font-serif)",
+                    fontSize: "2rem",
+                    fontWeight: 500,
+                  }}
+                >
                   {title}
                 </strong>
                 <p style={{ color: "rgb(33 26 24 / .72)", lineHeight: 1.7 }}>{text}</p>

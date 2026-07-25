@@ -36,7 +36,8 @@ export default function NightLayout({ children }: { children: ReactNode }) {
               maxWidth: "13ch",
             }}
           >
-            Bei Blake wird Nacht nicht nur gesehen. Sie wird gedruckt, benannt und bevölkert.
+            Bei Blake wird Nacht nicht nur gesehen. Sie wird gedruckt, benannt und
+            bevölkert.
           </h2>
           <p
             style={{
@@ -49,8 +50,8 @@ export default function NightLayout({ children }: { children: ReactNode }) {
           >
             Friedrich und Turner verändern Wahrnehmung durch Dunkelheit, Mondlicht und
             unsichere Horizonte. Blake verschiebt dieselbe Frage in Bücher und eigene
-            Mythologien: Welche Kräfte erscheinen, wenn eine vertraute Ordnung nicht mehr
-            als einzige Wirklichkeit gilt?
+            Mythologien: Welche Kräfte erscheinen, wenn eine vertraute Ordnung nicht
+            mehr als einzige Wirklichkeit gilt?
           </p>
           <div
             style={{
@@ -99,7 +100,9 @@ export default function NightLayout({ children }: { children: ReactNode }) {
                 >
                   {title}
                 </strong>
-                <p style={{ color: "rgb(242 233 220 / .7)", lineHeight: 1.7 }}>{text}</p>
+                <p style={{ color: "rgb(242 233 220 / .7)", lineHeight: 1.7 }}>
+                  {text}
+                </p>
                 <span style={{ fontWeight: 800, marginTop: "auto" }}>Öffnen →</span>
               </Link>
             ))}
