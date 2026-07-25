@@ -218,7 +218,10 @@ export default function DarkRomanticismPage() {
           >
             Kritik, Masse, Verschlingen und Leere.
           </h2>
-          <ArtworkStrip items={darkRomanticismArtworks} title="Vier Formen des Dunklen" />
+          <ArtworkStrip
+            items={darkRomanticismArtworks}
+            title="Vier Formen des Dunklen"
+          />
         </div>
       </section>
 

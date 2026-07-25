@@ -101,10 +101,10 @@ export default function FranciscoGoyaPage() {
             maxWidth: "46rem",
           }}
         >
-          Goya bewegte sich zwischen Hof und Straße, Auftrag und privater Wand, Ölmalerei
-          und Druckgrafik. Seine Kunst zeigt nicht einfach den Sieg des Irrationalen über
-          die Vernunft. Sie untersucht, wie Vernunft, Macht, Aberglaube und Fantasie
-          ineinander kippen können.
+          Goya bewegte sich zwischen Hof und Straße, Auftrag und privater Wand,
+          Ölmalerei und Druckgrafik. Seine Kunst zeigt nicht einfach den Sieg des
+          Irrationalen über die Vernunft. Sie untersucht, wie Vernunft, Macht,
+          Aberglaube und Fantasie ineinander kippen können.
         </p>
       </header>
 
@@ -303,15 +303,15 @@ export default function FranciscoGoyaPage() {
           >
             <p>
               Er war Hofmaler und scharfer Beobachter höfischer Macht. Er arbeitete für
-              öffentliche Erinnerung und produzierte zugleich Bildfolgen, die erst später
-              vollständig publiziert wurden. Er malte religiöse und mythologische Stoffe,
-              ohne ihre Autorität einfach zu bestätigen.
+              öffentliche Erinnerung und produzierte zugleich Bildfolgen, die erst
+              später vollständig publiziert wurden. Er malte religiöse und mythologische
+              Stoffe, ohne ihre Autorität einfach zu bestätigen.
             </p>
             <p>
-              Gerade diese Übergänge machen Goya für die Romantik wichtig. Das Dunkle ist
-              bei ihm weder bloß Stimmung noch private Psychologie. Es entsteht dort, wo
-              politische Gewalt, soziale Rollen, Fantasie und institutionelle Vernunft
-              ihre Grenzen offenlegen.
+              Gerade diese Übergänge machen Goya für die Romantik wichtig. Das Dunkle
+              ist bei ihm weder bloß Stimmung noch private Psychologie. Es entsteht
+              dort, wo politische Gewalt, soziale Rollen, Fantasie und institutionelle
+              Vernunft ihre Grenzen offenlegen.
             </p>
           </div>
 
@@ -327,7 +327,10 @@ export default function FranciscoGoyaPage() {
             {[
               ["Der 3. Mai 1808 lesen", "/werke/der-dritte-mai-1808/"],
               ["Dunkle Romantik verstehen", "/begriffe/dunkle-romantik/"],
-              ["Katastrophe und Zeugenschaft", "/begriffe/katastrophe-und-zeugenschaft/"],
+              [
+                "Katastrophe und Zeugenschaft",
+                "/begriffe/katastrophe-und-zeugenschaft/",
+              ],
             ].map(([label, href]) => (
               <Link
                 href={href!}

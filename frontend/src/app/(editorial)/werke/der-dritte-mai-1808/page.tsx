@@ -149,7 +149,9 @@ export default function ThirdOfMayPage() {
                   padding: "1.5rem 0",
                 }}
               >
-                <p style={{ color: "#934a32", fontWeight: 800 }}>{observation.number}</p>
+                <p style={{ color: "#934a32", fontWeight: 800 }}>
+                  {observation.number}
+                </p>
                 <h2
                   style={{
                     fontFamily: "var(--font-serif)",
@@ -305,8 +307,9 @@ export default function ThirdOfMayPage() {
           >
             <p>
               Die Schützenreihe ist austauschbar, der Ablauf wiederholbar und das Licht
-              funktional. Gleichzeitig besteht die Opferseite aus individuellen Reaktionen:
-              Aufbegehren, Gebet, Verbergen, Erstarren und bereits eingetretenem Tod.
+              funktional. Gleichzeitig besteht die Opferseite aus individuellen
+              Reaktionen: Aufbegehren, Gebet, Verbergen, Erstarren und bereits
+              eingetretenem Tod.
             </p>
             <p>
               Diese ungleiche Verteilung von Individualität ist die politische Form des
@@ -327,7 +330,10 @@ export default function ThirdOfMayPage() {
             {[
               ["Francisco Goya kennenlernen", "/kuenstler/francisco-goya/"],
               ["Dunkle Romantik verstehen", "/begriffe/dunkle-romantik/"],
-              ["Katastrophe und Zeugenschaft", "/begriffe/katastrophe-und-zeugenschaft/"],
+              [
+                "Katastrophe und Zeugenschaft",
+                "/begriffe/katastrophe-und-zeugenschaft/",
+              ],
             ].map(([label, href]) => (
               <Link
                 href={href!}
