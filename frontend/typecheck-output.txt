@@ -1,0 +1,10 @@
+$ tsc --noEmit
+src/app/(editorial)/begriffe/vision-und-prophezeiung/page.tsx(400,17): error TS2322: Type 'string | undefined' is not assignable to type 'Url'.
+  Type 'undefined' is not assignable to type 'Url'.
+src/app/(editorial)/kuenstler/william-blake/page.tsx(388,17): error TS2322: Type 'string | undefined' is not assignable to type 'Url'.
+  Type 'undefined' is not assignable to type 'Url'.
+src/app/(editorial)/motive/nacht/layout.tsx(82,17): error TS2322: Type 'string | undefined' is not assignable to type 'Url'.
+  Type 'undefined' is not assignable to type 'Url'.
+src/app/(editorial)/werke/the-ancient-of-days/page.tsx(373,17): error TS2322: Type 'string | undefined' is not assignable to type 'Url'.
+  Type 'undefined' is not assignable to type 'Url'.
+[ELIFECYCLE] Command failed with exit code 2.
