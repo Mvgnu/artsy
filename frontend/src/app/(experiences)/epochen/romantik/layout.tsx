@@ -5,6 +5,7 @@ import { ArtworkStrip } from "@/components/experiences/ArtworkStrip";
 import { RomanticBlakeAxis } from "@/components/experiences/RomanticBlakeAxis";
 import { RomanticConstableAxis } from "@/components/experiences/RomanticConstableAxis";
 import { RomanticGoyaAxis } from "@/components/experiences/RomanticGoyaAxis";
+import { RomanticIconicAxis } from "@/components/experiences/RomanticIconicAxis";
 import { RomanticPsychologyAxis } from "@/components/experiences/RomanticPsychologyAxis";
 import {
   nightArtworks,
@@ -180,6 +181,7 @@ export default function RomanticismLayout({ children }: { children: ReactNode })
       <RomanticGoyaAxis />
       <RomanticConstableAxis />
       <RomanticPsychologyAxis />
+      <RomanticIconicAxis />
     </>
   );
 }
