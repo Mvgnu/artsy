@@ -1,0 +1,3 @@
+$ tsc --noEmit
+src/components/experiences/RomanticGoyaAxis.tsx(7,3): error TS6133: 'thirdOfMayContextArtworks' is declared but its value is never read.
+[ELIFECYCLE] Command failed with exit code 2.
