@@ -32,7 +32,7 @@ const phases = [
 
 const links = [
   ["Werk lesen", "/werke/der-wagen-dritter-klasse/", "The Third-Class Carriage"],
-  ["Begriff verstehen", "/begriffe/moderne-oeffentlichkeit-und-klasse/", "Moderne Öffentlichkeit"],
+  ["Begriff verstehen", "/begriffe/moderne-oeffentlichkeit/", "Moderne Öffentlichkeit"],
   ["Ruraler Vergleich", "/kuenstler/jean-francois-millet/", "Jean-François Millet"],
   ["Epoche", "/epochen/realismus/", "Realismus"],
 ] as const;
