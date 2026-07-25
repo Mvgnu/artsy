@@ -77,9 +77,9 @@ export default function RealismPage() {
             >
               Realismus bedeutet nicht, dass Kunst plötzlich aufhört auszuwählen, zu
               komponieren oder zu erfinden. Neu verteilt werden vielmehr Größe,
-              Aufmerksamkeit und historische Würde. Arbeiter, Beerdigungen, Eisenbahnwagen
-              und industrielle Hallen beanspruchen nun Formate und formale Ernsthaftigkeit,
-              die lange anderen Gegenständen vorbehalten waren.
+              Aufmerksamkeit und historische Würde. Arbeiter, Beerdigungen,
+              Eisenbahnwagen und industrielle Hallen beanspruchen nun Formate und
+              formale Ernsthaftigkeit, die lange anderen Gegenständen vorbehalten waren.
             </p>
             <p style={{ fontSize: "1.05rem", lineHeight: 1.85, margin: 0 }}>
               Die Epoche reagiert auf Revolutionen, Urbanisierung, neue Medien, soziale
@@ -188,16 +188,16 @@ export default function RealismPage() {
                 margin: 0,
               }}
             >
-              Die Romantik verschwindet nicht. Ihre Fragen wechseln den gesellschaftlichen
-              Ort.
+              Die Romantik verschwindet nicht. Ihre Fragen wechseln den
+              gesellschaftlichen Ort.
             </h2>
             <div style={{ alignSelf: "end" }}>
               <p style={{ fontSize: "1.12rem", lineHeight: 1.8, margin: 0 }}>
                 Monumentalität, Katastrophe, politische Gemeinschaft, Landschaft und
-                subjektive Erfahrung bleiben wichtig. Realistische Künstler prüfen jedoch
-                stärker, wer in diesen Bildern sichtbar wird, welche Arbeit Räume trägt
-                und wie Gegenwart ohne mythologischen oder historischen Abstand dargestellt
-                werden kann.
+                subjektive Erfahrung bleiben wichtig. Realistische Künstler prüfen
+                jedoch stärker, wer in diesen Bildern sichtbar wird, welche Arbeit Räume
+                trägt und wie Gegenwart ohne mythologischen oder historischen Abstand
+                dargestellt werden kann.
               </p>
               <Link
                 href="/epochen/romantik/"
