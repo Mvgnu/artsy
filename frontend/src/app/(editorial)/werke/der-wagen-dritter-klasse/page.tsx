@@ -32,7 +32,7 @@ const readings = [
 
 const links = [
   ["Künstler", "/kuenstler/honore-daumier/", "Honoré Daumier"],
-  ["Begriff", "/begriffe/moderne-oeffentlichkeit-und-klasse/", "Moderne Öffentlichkeit"],
+  ["Begriff", "/begriffe/moderne-oeffentlichkeit/", "Moderne Öffentlichkeit"],
   ["Ruraler Vergleich", "/werke/die-aehrenleserinnen/", "Die Ährenleserinnen"],
   ["Epoche", "/epochen/realismus/", "Realismus"],
 ] as const;
