@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { ArtworkStrip } from "@/components/experiences/ArtworkStrip";
 import { RealismMilletAxis } from "@/components/experiences/RealismMilletAxis";
+import { RealismRuralUrbanAxis } from "@/components/experiences/RealismRuralUrbanAxis";
 import { realismPillarArtworks } from "@/components/experiences/realismArtworkSets";
 
 const paths = [
@@ -215,6 +216,7 @@ export default function RealismPage() {
         </section>
       </main>
       <RealismMilletAxis />
+      <RealismRuralUrbanAxis />
     </>
   );
 }
