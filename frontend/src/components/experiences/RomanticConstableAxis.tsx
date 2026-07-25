@@ -89,9 +89,9 @@ export function RomanticConstableAxis() {
             }}
           >
             Turner macht Wetter häufig zur Grenze der Wahrnehmung. Constable bindet es
-            stärker an Ort, Dauer und wiederholte Beobachtung. Diese drei Wege zeigen, wie
-            ländliche Arbeit und lokale Erinnerung monumentale Bildwürdigkeit erhalten,
-            ohne in bloße Dokumentation oder harmlose Idylle zu zerfallen.
+            stärker an Ort, Dauer und wiederholte Beobachtung. Diese drei Wege zeigen,
+            wie ländliche Arbeit und lokale Erinnerung monumentale Bildwürdigkeit
+            erhalten, ohne in bloße Dokumentation oder harmlose Idylle zu zerfallen.
           </p>
         </div>
 

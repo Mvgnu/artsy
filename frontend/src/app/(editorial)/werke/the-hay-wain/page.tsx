@@ -245,7 +245,10 @@ export default function TheHayWainPage() {
             }}
           >
             {distinctions.map((item) => (
-              <article key={item.title} style={{ background: "#ece5d8", padding: "2rem" }}>
+              <article
+                key={item.title}
+                style={{ background: "#ece5d8", padding: "2rem" }}
+              >
                 <h2
                   style={{
                     fontFamily: "var(--font-serif)",
@@ -257,7 +260,9 @@ export default function TheHayWainPage() {
                 >
                   {item.title}
                 </h2>
-                <p style={{ color: "rgb(33 29 24 / .7)", lineHeight: 1.75 }}>{item.text}</p>
+                <p style={{ color: "rgb(33 29 24 / .7)", lineHeight: 1.75 }}>
+                  {item.text}
+                </p>
               </article>
             ))}
           </div>
@@ -293,7 +298,10 @@ export default function TheHayWainPage() {
           >
             {[
               ["John Constable kennenlernen", "/kuenstler/john-constable/"],
-              ["Die gewöhnliche Landschaft verstehen", "/begriffe/gewoehnliche-landschaft/"],
+              [
+                "Die gewöhnliche Landschaft verstehen",
+                "/begriffe/gewoehnliche-landschaft/",
+              ],
               ["Turners Wetter vergleichen", "/kuenstler/j-m-w-turner/"],
               ["Zur Romantik zurückkehren", "/epochen/romantik/"],
             ].map(([label, href]) => (

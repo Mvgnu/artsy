@@ -107,8 +107,9 @@ export default function OrdinaryLandscapePage() {
           }}
         >
           Gewöhnliche Landschaft ist nicht einfach eine unspektakuläre Landschaft. Sie
-          macht sichtbar, wie Alltag, Arbeit, Wetter und Erinnerung einen Ort formen – und
-          wie Malerei Bedeutung erzeugt, ohne dafür das Außergewöhnliche zu benötigen.
+          macht sichtbar, wie Alltag, Arbeit, Wetter und Erinnerung einen Ort formen –
+          und wie Malerei Bedeutung erzeugt, ohne dafür das Außergewöhnliche zu
+          benötigen.
         </p>
       </header>
 
@@ -140,7 +141,10 @@ export default function OrdinaryLandscapePage() {
             }}
           >
             {functions.map((item, index) => (
-              <section key={item.title} style={{ background: "rgb(255 255 255 / .045)", padding: "2rem" }}>
+              <section
+                key={item.title}
+                style={{ background: "rgb(255 255 255 / .045)", padding: "2rem" }}
+              >
                 <p
                   style={{
                     color: "#c8b870",
@@ -162,7 +166,9 @@ export default function OrdinaryLandscapePage() {
                 >
                   {item.title}
                 </h2>
-                <p style={{ color: "rgb(242 234 220 / .7)", lineHeight: 1.78 }}>{item.text}</p>
+                <p style={{ color: "rgb(242 234 220 / .7)", lineHeight: 1.78 }}>
+                  {item.text}
+                </p>
               </section>
             ))}
           </div>
@@ -292,7 +298,10 @@ export default function OrdinaryLandscapePage() {
             }}
           >
             {traps.map((trap) => (
-              <article key={trap.title} style={{ borderTop: "1px solid #8b8170", paddingTop: "1.5rem" }}>
+              <article
+                key={trap.title}
+                style={{ borderTop: "1px solid #8b8170", paddingTop: "1.5rem" }}
+              >
                 <h2
                   style={{
                     fontFamily: "var(--font-serif)",
@@ -304,7 +313,9 @@ export default function OrdinaryLandscapePage() {
                 >
                   {trap.title}
                 </h2>
-                <p style={{ color: "rgb(33 29 24 / .7)", lineHeight: 1.75 }}>{trap.text}</p>
+                <p style={{ color: "rgb(33 29 24 / .7)", lineHeight: 1.75 }}>
+                  {trap.text}
+                </p>
               </article>
             ))}
           </div>

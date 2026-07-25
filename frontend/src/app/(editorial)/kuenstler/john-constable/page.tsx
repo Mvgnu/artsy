@@ -240,7 +240,10 @@ export default function JohnConstablePage() {
             }}
           >
             {methods.map((method, index) => (
-              <article key={method.title} style={{ borderTop: "1px solid #817766", paddingTop: "1.5rem" }}>
+              <article
+                key={method.title}
+                style={{ borderTop: "1px solid #817766", paddingTop: "1.5rem" }}
+              >
                 <p
                   style={{
                     color: "#657357",
@@ -262,7 +265,9 @@ export default function JohnConstablePage() {
                 >
                   {method.title}
                 </h2>
-                <p style={{ color: "rgb(32 28 23 / .72)", lineHeight: 1.75 }}>{method.text}</p>
+                <p style={{ color: "rgb(32 28 23 / .72)", lineHeight: 1.75 }}>
+                  {method.text}
+                </p>
               </article>
             ))}
           </div>
@@ -298,7 +303,10 @@ export default function JohnConstablePage() {
           >
             {[
               ["The Hay Wain genau lesen", "/werke/the-hay-wain/"],
-              ["Die gewöhnliche Landschaft verstehen", "/begriffe/gewoehnliche-landschaft/"],
+              [
+                "Die gewöhnliche Landschaft verstehen",
+                "/begriffe/gewoehnliche-landschaft/",
+              ],
               ["J. M. W. Turner vergleichen", "/kuenstler/j-m-w-turner/"],
               ["Zur Romantik zurückkehren", "/epochen/romantik/"],
             ].map(([label, href]) => (
