@@ -120,9 +120,9 @@ export default function RuinAndMemoryPage() {
             maxWidth: "44rem",
           }}
         >
-          Eine Ruine ist mehr als ein altes Gebäude. Sie ist eine sichtbare Gegenwart von
-          etwas Abwesendem: Material bleibt, Nutzung verschwindet, und das Bild entscheidet,
-          welche Geschichte aus dieser Lücke entstehen soll.
+          Eine Ruine ist mehr als ein altes Gebäude. Sie ist eine sichtbare Gegenwart
+          von etwas Abwesendem: Material bleibt, Nutzung verschwindet, und das Bild
+          entscheidet, welche Geschichte aus dieser Lücke entstehen soll.
         </p>
       </header>
 
@@ -175,11 +175,11 @@ export default function RuinAndMemoryPage() {
                 kulturellem Wissen und aus den Erwartungen, die das Bild selbst erzeugt.
               </p>
               <p>
-                Deshalb ist eine Ruine nie nur Beweis. Sie ist auch Projektionsfläche. Ein
-                gotisches Fenster kann verlorenen Glauben, nationale Vergangenheit,
+                Deshalb ist eine Ruine nie nur Beweis. Sie ist auch Projektionsfläche.
+                Ein gotisches Fenster kann verlorenen Glauben, nationale Vergangenheit,
                 persönliche Trauer oder die Schönheit des Alters bedeuten. Welche Lesart
-                dominiert, hängt davon ab, wie Menschen, Pflanzen, Licht und Landschaft um
-                das Fragment angeordnet sind.
+                dominiert, hängt davon ab, wie Menschen, Pflanzen, Licht und Landschaft
+                um das Fragment angeordnet sind.
               </p>
             </div>
           </div>
@@ -194,7 +194,10 @@ export default function RuinAndMemoryPage() {
             }}
           >
             {distinctions.map((item) => (
-              <article key={item.term} style={{ background: "#e9e2d4", padding: "2rem" }}>
+              <article
+                key={item.term}
+                style={{ background: "#e9e2d4", padding: "2rem" }}
+              >
                 <h3
                   style={{
                     color: "#75583d",
@@ -206,7 +209,13 @@ export default function RuinAndMemoryPage() {
                 >
                   {item.term}
                 </h3>
-                <p style={{ color: "rgb(33 31 27 / .7)", lineHeight: 1.72, margin: "1.25rem 0 0" }}>
+                <p
+                  style={{
+                    color: "rgb(33 31 27 / .7)",
+                    lineHeight: 1.72,
+                    margin: "1.25rem 0 0",
+                  }}
+                >
                   {item.text}
                 </p>
               </article>
@@ -256,12 +265,16 @@ export default function RuinAndMemoryPage() {
               maxWidth: "47rem",
             }}
           >
-            Friedrich verbindet Ruine mit Ritual und montierter Landschaft. Hubert Robert
-            betrachtet ein modernes Museum aus einer imaginierten Zukunft. Cole setzt
-            Zerfall an das Ende einer politischen Zivilisationsfolge. Der Begriff wird erst
-            präzise, wenn diese verschiedenen Zeitordnungen auseinandergehalten werden.
+            Friedrich verbindet Ruine mit Ritual und montierter Landschaft. Hubert
+            Robert betrachtet ein modernes Museum aus einer imaginierten Zukunft. Cole
+            setzt Zerfall an das Ende einer politischen Zivilisationsfolge. Der Begriff
+            wird erst präzise, wenn diese verschiedenen Zeitordnungen
+            auseinandergehalten werden.
           </p>
-          <ArtworkStrip items={ruinMemoryArtworks} title="Vier Modelle romantischer Ruinenzeit" />
+          <ArtworkStrip
+            items={ruinMemoryArtworks}
+            title="Vier Modelle romantischer Ruinenzeit"
+          />
         </div>
       </section>
 
@@ -307,7 +320,10 @@ export default function RuinAndMemoryPage() {
             }}
           >
             {functions.map((item) => (
-              <article key={item.number} style={{ background: "#d2c4ae", minHeight: "23rem", padding: "2rem" }}>
+              <article
+                key={item.number}
+                style={{ background: "#d2c4ae", minHeight: "23rem", padding: "2rem" }}
+              >
                 <p style={{ color: "#6f4e35", fontWeight: 800 }}>{item.number}</p>
                 <h3
                   style={{
@@ -341,7 +357,14 @@ export default function RuinAndMemoryPage() {
           }}
         >
           <div>
-            <p style={{ fontSize: ".72rem", fontWeight: 800, letterSpacing: ".18em", textTransform: "uppercase" }}>
+            <p
+              style={{
+                fontSize: ".72rem",
+                fontWeight: 800,
+                letterSpacing: ".18em",
+                textTransform: "uppercase",
+              }}
+            >
               Praktisches Leseraster
             </p>
             <h2
@@ -373,7 +396,14 @@ export default function RuinAndMemoryPage() {
             padding: "clamp(6rem, 11vw, 9rem) 1.25rem",
           }}
         >
-          <p style={{ color: "#75583d", fontWeight: 800, letterSpacing: ".16em", textTransform: "uppercase" }}>
+          <p
+            style={{
+              color: "#75583d",
+              fontWeight: 800,
+              letterSpacing: ".16em",
+              textTransform: "uppercase",
+            }}
+          >
             Im Silo weitergehen
           </p>
           <h2
@@ -386,7 +416,8 @@ export default function RuinAndMemoryPage() {
               margin: "1rem 0 3rem",
             }}
           >
-            Die Ruine genau lesen, ihre Nacht betreten und ihre politischen Nachbilder verfolgen.
+            Die Ruine genau lesen, ihre Nacht betreten und ihre politischen Nachbilder
+            verfolgen.
           </h2>
           <div
             style={{
@@ -395,16 +426,28 @@ export default function RuinAndMemoryPage() {
               gridTemplateColumns: "repeat(auto-fit, minmax(16rem, 1fr))",
             }}
           >
-            <Link href="/werke/abtei-im-eichwald/" style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/werke/abtei-im-eichwald/"
+              style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}
+            >
               Abtei im Eichwald lesen →
             </Link>
-            <Link href="/motive/nacht/" style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/motive/nacht/"
+              style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}
+            >
               Nacht als Motiv →
             </Link>
-            <Link href="/begriffe/landschaft-und-nation/" style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/begriffe/landschaft-und-nation/"
+              style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}
+            >
               Landschaft und Nation →
             </Link>
-            <Link href="/epochen/romantik/" style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/epochen/romantik/"
+              style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}
+            >
               Zur Romantik-Epochenreise →
             </Link>
           </div>

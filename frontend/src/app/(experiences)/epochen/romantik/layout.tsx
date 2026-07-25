@@ -7,7 +7,11 @@ import {
   ruinMemoryArtworks,
 } from "@/components/experiences/romanticRuinsArtworkSets";
 
-const timeAxisArtworks = [ruinMemoryArtworks[0], nightArtworks[2], nightArtworks[3]] as const;
+const timeAxisArtworks = [
+  ruinMemoryArtworks[0],
+  nightArtworks[2],
+  nightArtworks[3],
+] as const;
 
 const paths = [
   {
@@ -94,7 +98,10 @@ export default function RomanticismLayout({ children }: { children: ReactNode })
             </p>
           </div>
 
-          <ArtworkStrip items={timeAxisArtworks} title="Ruine, Mondlicht und verwandelte Zeit" />
+          <ArtworkStrip
+            items={timeAxisArtworks}
+            title="Ruine, Mondlicht und verwandelte Zeit"
+          />
 
           <div
             style={{
@@ -149,7 +156,14 @@ export default function RomanticismLayout({ children }: { children: ReactNode })
                 >
                   {path.text}
                 </p>
-                <em style={{ fontStyle: "normal", fontWeight: 800, marginTop: "auto", paddingTop: "2rem" }}>
+                <em
+                  style={{
+                    fontStyle: "normal",
+                    fontWeight: 800,
+                    marginTop: "auto",
+                    paddingTop: "2rem",
+                  }}
+                >
                   Öffnen →
                 </em>
               </Link>

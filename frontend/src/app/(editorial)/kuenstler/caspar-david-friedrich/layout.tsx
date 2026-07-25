@@ -53,13 +53,22 @@ export default function FriedrichLayout({ children }: { children: ReactNode }) {
               gridTemplateColumns: "repeat(auto-fit, minmax(16rem, 1fr))",
             }}
           >
-            <Link href="/werke/abtei-im-eichwald/" style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/werke/abtei-im-eichwald/"
+              style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}
+            >
               Abtei im Eichwald lesen →
             </Link>
-            <Link href="/begriffe/ruine-und-erinnerung/" style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/begriffe/ruine-und-erinnerung/"
+              style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}
+            >
               Ruine und Erinnerung →
             </Link>
-            <Link href="/motive/nacht/" style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/motive/nacht/"
+              style={{ border: "1px solid rgb(33 31 27 / .18)", padding: "1.5rem" }}
+            >
               Die Nacht als Motiv →
             </Link>
           </div>

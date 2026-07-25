@@ -47,13 +47,15 @@ export default function MoonwatchersLayout({ children }: { children: ReactNode }
                 margin: "1rem 0 0",
               }}
             >
-              Was ändert sich, wenn nicht Friedrich, sondern die Nacht selbst im Mittelpunkt steht?
+              Was ändert sich, wenn nicht Friedrich, sondern die Nacht selbst im
+              Mittelpunkt steht?
             </h2>
           </div>
           <div style={{ alignSelf: "end" }}>
             <p style={{ color: "rgb(237 240 236 / .7)", lineHeight: 1.78, margin: 0 }}>
-              Der Motivweg vergleicht die Mondbetrachter mit Turner und Samuel Palmer und
-              trennt gemeinsame Versenkung von gefährlicher Arbeit und visionärer Fülle.
+              Der Motivweg vergleicht die Mondbetrachter mit Turner und Samuel Palmer
+              und trennt gemeinsame Versenkung von gefährlicher Arbeit und visionärer
+              Fülle.
             </p>
             <Link
               href="/motive/nacht/"

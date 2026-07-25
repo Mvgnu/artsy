@@ -116,9 +116,9 @@ export default function AbbeyInTheOakwoodPage() {
             }}
           >
             Ein Begräbniszug bewegt sich nicht in eine intakte Kirche, sondern in eine
-            Öffnung aus Stein, Bäumen und Dämmerung. Friedrich macht die Ruine zum Ort, an
-            dem persönliche Trauer, Glaubensgeschichte und verlorene Ordnung gleichzeitig
-            sichtbar werden.
+            Öffnung aus Stein, Bäumen und Dämmerung. Friedrich macht die Ruine zum Ort,
+            an dem persönliche Trauer, Glaubensgeschichte und verlorene Ordnung
+            gleichzeitig sichtbar werden.
           </p>
         </div>
 
@@ -145,7 +145,8 @@ export default function AbbeyInTheOakwoodPage() {
             }}
           >
             Caspar David Friedrich, <em>Abtei im Eichwald</em>, 1809–1810. Alte
-            Nationalgalerie, Berlin. <a href={heroSource}>Wikimedia Commons · Public Domain</a>
+            Nationalgalerie, Berlin.{" "}
+            <a href={heroSource}>Wikimedia Commons · Public Domain</a>
           </figcaption>
         </figure>
       </header>
@@ -194,17 +195,17 @@ export default function AbbeyInTheOakwoodPage() {
             <div style={{ fontSize: "1.08rem", lineHeight: 1.84 }}>
               <p>
                 Der Blick folgt dem Begräbniszug nach rechts und zugleich nach hinten in
-                das Bild. Doch der erwartete Innenraum fehlt. Hinter dem gotischen Portal
-                stehen weitere Bäume; durch das Maßwerk erscheint Himmel. Die Prozession
-                tritt nicht aus der Natur heraus, sondern tiefer in einen Raum ein, in dem
-                Natur und Architektur einander durchdringen.
+                das Bild. Doch der erwartete Innenraum fehlt. Hinter dem gotischen
+                Portal stehen weitere Bäume; durch das Maßwerk erscheint Himmel. Die
+                Prozession tritt nicht aus der Natur heraus, sondern tiefer in einen
+                Raum ein, in dem Natur und Architektur einander durchdringen.
               </p>
               <p>
-                Diese Verschiebung ist entscheidend. Friedrich malt keine pittoreske Ruine
-                als hübsches Zeichen vergangenen Alters. Die beschädigte Architektur
-                organisiert das gesamte Verhältnis von Lebenden, Toten und Geschichte.
-                Sie bewahrt eine Form, aber nicht mehr die Institution, die diese Form
-                einmal vollständig machte.
+                Diese Verschiebung ist entscheidend. Friedrich malt keine pittoreske
+                Ruine als hübsches Zeichen vergangenen Alters. Die beschädigte
+                Architektur organisiert das gesamte Verhältnis von Lebenden, Toten und
+                Geschichte. Sie bewahrt eine Form, aber nicht mehr die Institution, die
+                diese Form einmal vollständig machte.
               </p>
             </div>
           </div>
@@ -223,7 +224,9 @@ export default function AbbeyInTheOakwoodPage() {
                 key={observation.number}
                 style={{ background: "#e8e2d5", minHeight: "24rem", padding: "2rem" }}
               >
-                <p style={{ color: "#705944", fontWeight: 800 }}>{observation.number}</p>
+                <p style={{ color: "#705944", fontWeight: 800 }}>
+                  {observation.number}
+                </p>
                 <h3
                   style={{
                     fontFamily: "var(--font-serif)",
@@ -287,8 +290,9 @@ export default function AbbeyInTheOakwoodPage() {
           >
             Kreuz, ferne Kirche und Friedhofstor zeigen drei andere Arten, Religion in
             Landschaft zu übersetzen. Der Vergleich verhindert, dass die Abtei nur als
-            Bild von Tod gelesen wird: Sie gehört zu einer längeren Untersuchung darüber,
-            wie Glaube nach dem Verlust eines geschlossenen Bildraums erscheinen kann.
+            Bild von Tod gelesen wird: Sie gehört zu einer längeren Untersuchung
+            darüber, wie Glaube nach dem Verlust eines geschlossenen Bildraums
+            erscheinen kann.
           </p>
           <ArtworkStrip
             items={abbeyContextArtworks}
@@ -338,7 +342,10 @@ export default function AbbeyInTheOakwoodPage() {
             }}
           >
             {tensions.map((tension) => (
-              <article key={tension.title} style={{ border: "1px solid rgb(32 31 27 / .18)", padding: "2rem" }}>
+              <article
+                key={tension.title}
+                style={{ border: "1px solid rgb(32 31 27 / .18)", padding: "2rem" }}
+              >
                 <h3
                   style={{
                     color: "#6b4b36",
@@ -351,7 +358,13 @@ export default function AbbeyInTheOakwoodPage() {
                 >
                   {tension.title}
                 </h3>
-                <p style={{ color: "rgb(32 31 27 / .72)", lineHeight: 1.78, margin: "1.5rem 0 0" }}>
+                <p
+                  style={{
+                    color: "rgb(32 31 27 / .72)",
+                    lineHeight: 1.78,
+                    margin: "1.5rem 0 0",
+                  }}
+                >
                   {tension.text}
                 </p>
               </article>
@@ -368,7 +381,14 @@ export default function AbbeyInTheOakwoodPage() {
             padding: "clamp(6rem, 11vw, 9rem) 1.25rem",
           }}
         >
-          <p style={{ color: "#bca374", fontWeight: 800, letterSpacing: ".16em", textTransform: "uppercase" }}>
+          <p
+            style={{
+              color: "#bca374",
+              fontWeight: 800,
+              letterSpacing: ".16em",
+              textTransform: "uppercase",
+            }}
+          >
             Im Silo weitergehen
           </p>
           <h2
@@ -390,16 +410,28 @@ export default function AbbeyInTheOakwoodPage() {
               gridTemplateColumns: "repeat(auto-fit, minmax(16rem, 1fr))",
             }}
           >
-            <Link href="/begriffe/ruine-und-erinnerung/" style={{ border: "1px solid rgb(238 231 220 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/begriffe/ruine-und-erinnerung/"
+              style={{ border: "1px solid rgb(238 231 220 / .18)", padding: "1.5rem" }}
+            >
               Ruine und Erinnerung verstehen →
             </Link>
-            <Link href="/motive/nacht/" style={{ border: "1px solid rgb(238 231 220 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/motive/nacht/"
+              style={{ border: "1px solid rgb(238 231 220 / .18)", padding: "1.5rem" }}
+            >
               Die Nacht als Motiv lesen →
             </Link>
-            <Link href="/kuenstler/caspar-david-friedrich/" style={{ border: "1px solid rgb(238 231 220 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/kuenstler/caspar-david-friedrich/"
+              style={{ border: "1px solid rgb(238 231 220 / .18)", padding: "1.5rem" }}
+            >
               Caspar David Friedrich →
             </Link>
-            <Link href="/epochen/romantik/" style={{ border: "1px solid rgb(238 231 220 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/epochen/romantik/"
+              style={{ border: "1px solid rgb(238 231 220 / .18)", padding: "1.5rem" }}
+            >
               Zur Romantik-Epochenreise →
             </Link>
           </div>

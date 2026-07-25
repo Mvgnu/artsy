@@ -120,9 +120,9 @@ export default function NightMotifPage() {
             maxWidth: "44rem",
           }}
         >
-          Romantische Nacht ist nicht einfach ein dunkler Filter über der Landschaft. Sie
-          nimmt Sicherheit aus dem Blick, verändert Arbeit und Gemeinschaft und lässt
-          Mondlicht, Silhouetten und entfernte Zeichen eine eigene Ordnung bilden.
+          Romantische Nacht ist nicht einfach ein dunkler Filter über der Landschaft.
+          Sie nimmt Sicherheit aus dem Blick, verändert Arbeit und Gemeinschaft und
+          lässt Mondlicht, Silhouetten und entfernte Zeichen eine eigene Ordnung bilden.
         </p>
       </header>
 
@@ -171,14 +171,15 @@ export default function NightMotifPage() {
               <p>
                 Solche Deutungen können passen, werden aber oft zu früh aufgerufen. Zwei
                 Mondbetrachter stehen gemeinsam. Turners Fischer arbeiten unter realer
-                Gefahr. Palmers Felder wirken dicht, fruchtbar und fast festlich. Die Nacht
-                verändert jedes dieser Bilder, aber nicht auf dieselbe Weise.
+                Gefahr. Palmers Felder wirken dicht, fruchtbar und fast festlich. Die
+                Nacht verändert jedes dieser Bilder, aber nicht auf dieselbe Weise.
               </p>
               <p>
-                Analytisch stärker ist deshalb die Frage: Welche Beziehungen werden durch
-                geringe Sichtbarkeit neu organisiert? Manche Formen verschwinden, andere
-                werden zu Zeichen. Licht erhält Richtungsmacht. Entfernungen wirken größer
-                oder überraschend nah. Körper verlieren Individualität und gewinnen Haltung.
+                Analytisch stärker ist deshalb die Frage: Welche Beziehungen werden
+                durch geringe Sichtbarkeit neu organisiert? Manche Formen verschwinden,
+                andere werden zu Zeichen. Licht erhält Richtungsmacht. Entfernungen
+                wirken größer oder überraschend nah. Körper verlieren Individualität und
+                gewinnen Haltung.
               </p>
             </div>
           </div>
@@ -193,7 +194,10 @@ export default function NightMotifPage() {
             }}
           >
             {terms.map((item) => (
-              <article key={item.term} style={{ background: "#e4e2dc", padding: "2rem" }}>
+              <article
+                key={item.term}
+                style={{ background: "#e4e2dc", padding: "2rem" }}
+              >
                 <h3
                   style={{
                     color: "#755a36",
@@ -205,7 +209,13 @@ export default function NightMotifPage() {
                 >
                   {item.term}
                 </h3>
-                <p style={{ color: "rgb(26 34 38 / .7)", lineHeight: 1.72, margin: "1.25rem 0 0" }}>
+                <p
+                  style={{
+                    color: "rgb(26 34 38 / .7)",
+                    lineHeight: 1.72,
+                    margin: "1.25rem 0 0",
+                  }}
+                >
                   {item.text}
                 </p>
               </article>
@@ -255,13 +265,16 @@ export default function NightMotifPage() {
               maxWidth: "48rem",
             }}
           >
-            Die Auswahl bewegt sich bewusst über Friedrich hinaus. Turner nutzt Mondlicht,
-            um ein kleines Boot gegen eine fast unlesbare See zu behaupten. Samuel Palmer
-            verdichtet Kirche, Feld und Vegetation zu einer pastoralen Vision. Nacht ist
-            damit keine nationale oder stilistische Einheitsform, sondern ein flexibles
-            Verfahren zur Neuordnung der Welt.
+            Die Auswahl bewegt sich bewusst über Friedrich hinaus. Turner nutzt
+            Mondlicht, um ein kleines Boot gegen eine fast unlesbare See zu behaupten.
+            Samuel Palmer verdichtet Kirche, Feld und Vegetation zu einer pastoralen
+            Vision. Nacht ist damit keine nationale oder stilistische Einheitsform,
+            sondern ein flexibles Verfahren zur Neuordnung der Welt.
           </p>
-          <ArtworkStrip items={nightArtworks} title="Vier romantische Ordnungen der Nacht" />
+          <ArtworkStrip
+            items={nightArtworks}
+            title="Vier romantische Ordnungen der Nacht"
+          />
         </div>
       </section>
 
@@ -307,7 +320,10 @@ export default function NightMotifPage() {
             }}
           >
             {modes.map((item) => (
-              <article key={item.number} style={{ background: "#1b2931", minHeight: "23rem", padding: "2rem" }}>
+              <article
+                key={item.number}
+                style={{ background: "#1b2931", minHeight: "23rem", padding: "2rem" }}
+              >
                 <p style={{ color: "#cfb16b", fontWeight: 800 }}>{item.number}</p>
                 <h3
                   style={{
@@ -341,7 +357,14 @@ export default function NightMotifPage() {
           }}
         >
           <div>
-            <p style={{ fontSize: ".72rem", fontWeight: 800, letterSpacing: ".18em", textTransform: "uppercase" }}>
+            <p
+              style={{
+                fontSize: ".72rem",
+                fontWeight: 800,
+                letterSpacing: ".18em",
+                textTransform: "uppercase",
+              }}
+            >
               Praktisches Leseraster
             </p>
             <h2
@@ -373,7 +396,14 @@ export default function NightMotifPage() {
             padding: "clamp(6rem, 11vw, 9rem) 1.25rem",
           }}
         >
-          <p style={{ color: "#755a36", fontWeight: 800, letterSpacing: ".16em", textTransform: "uppercase" }}>
+          <p
+            style={{
+              color: "#755a36",
+              fontWeight: 800,
+              letterSpacing: ".16em",
+              textTransform: "uppercase",
+            }}
+          >
             Im Silo weitergehen
           </p>
           <h2
@@ -395,16 +425,28 @@ export default function NightMotifPage() {
               gridTemplateColumns: "repeat(auto-fit, minmax(16rem, 1fr))",
             }}
           >
-            <Link href="/werke/zwei-maenner-in-betrachtung-des-mondes/" style={{ border: "1px solid rgb(26 34 38 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/werke/zwei-maenner-in-betrachtung-des-mondes/"
+              style={{ border: "1px solid rgb(26 34 38 / .18)", padding: "1.5rem" }}
+            >
               Zwei Männer im Mondlicht →
             </Link>
-            <Link href="/werke/abtei-im-eichwald/" style={{ border: "1px solid rgb(26 34 38 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/werke/abtei-im-eichwald/"
+              style={{ border: "1px solid rgb(26 34 38 / .18)", padding: "1.5rem" }}
+            >
               Abtei im Eichwald →
             </Link>
-            <Link href="/begriffe/ruine-und-erinnerung/" style={{ border: "1px solid rgb(26 34 38 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/begriffe/ruine-und-erinnerung/"
+              style={{ border: "1px solid rgb(26 34 38 / .18)", padding: "1.5rem" }}
+            >
               Ruine und Erinnerung →
             </Link>
-            <Link href="/begriffe/das-erhabene/" style={{ border: "1px solid rgb(26 34 38 / .18)", padding: "1.5rem" }}>
+            <Link
+              href="/begriffe/das-erhabene/"
+              style={{ border: "1px solid rgb(26 34 38 / .18)", padding: "1.5rem" }}
+            >
               Das Erhabene →
             </Link>
           </div>
