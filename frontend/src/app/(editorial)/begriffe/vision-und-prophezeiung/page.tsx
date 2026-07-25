@@ -397,7 +397,7 @@ export default function VisionUndProphezeiungPage() {
               ],
             ].map(([href, title, text]) => (
               <Link
-                href={href}
+                href={href!}
                 key={href}
                 style={{
                   border: "1px solid rgb(33 26 24 / .2)",

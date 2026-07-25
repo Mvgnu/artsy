@@ -79,7 +79,7 @@ export default function NightLayout({ children }: { children: ReactNode }) {
               ],
             ].map(([href, title, text]) => (
               <Link
-                href={href}
+                href={href!}
                 key={href}
                 style={{
                   border: "1px solid rgb(242 233 220 / .17)",
