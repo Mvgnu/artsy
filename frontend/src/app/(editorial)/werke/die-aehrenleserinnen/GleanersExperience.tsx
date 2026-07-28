@@ -43,7 +43,7 @@ export function GleanersExperience({ imageUrl, sourceUrl }: GleanersExperiencePr
   const [activeGesture, setActiveGesture] = useState(0);
   const [horizon, setHorizon] = useState(43);
   const [imageFailed, setImageFailed] = useState(false);
-  const gesture = gestures[activeGesture];
+  const gesture = gestures[activeGesture] ?? gestures[0];
 
   const artwork = (
     <>
