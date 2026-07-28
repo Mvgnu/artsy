@@ -34,9 +34,9 @@ Do not begin by selecting existing components.
 
 ## Silo cohesion without page sameness
 
-An epoch or artist silo may share a visual atmosphere through typography, color families,
-material textures, navigation language, or recurring conceptual motifs. It should not
-share a fixed page silhouette.
+An epoch or artist silo may share a visual atmosphere through typography, color
+families, material textures, navigation language, or recurring conceptual motifs. It
+should not share a fixed page silhouette.
 
 Cohesion must not become:
 
@@ -53,8 +53,9 @@ recognizing each page from its silhouette alone.
 
 ## Artwork is an active material
 
-Artwork may control scale, crop, movement, sequence, color, spatial division, annotation,
-or interaction. It must not be inserted as a decorative gallery between prose blocks.
+Artwork may control scale, crop, movement, sequence, color, spatial division,
+annotation, or interaction. It must not be inserted as a decorative gallery between
+prose blocks.
 
 Every placement should have a specific job. Examples include following a gesture,
 revealing a spatial boundary, comparing two incompatible readings, changing scale to
@@ -66,9 +67,9 @@ examples, not reusable archetypes.
 An interaction is not required merely to create motion. When used, it must expose an
 argument that would be weaker without the visitor's action.
 
-A slider, scroll state, toggle, drag, hover, sound cue, or staged reveal must be designed
-for the particular page. Reusing the same interaction across unrelated subjects requires
-an explicit reason.
+A slider, scroll state, toggle, drag, hover, sound cue, or staged reveal must be
+designed for the particular page. Reusing the same interaction across unrelated subjects
+requires an explicit reason.
 
 Deliberate stillness is valid when it is itself part of the experience, but it must be a
 conscious stylistic choice rather than the absence of design.
@@ -86,18 +87,19 @@ conscious stylistic choice rather than the absence of design.
 
 Reject or redesign the page when any answer below is unfavorable:
 
-1. **Swap test:** Could the title, artist, and artwork data be replaced while leaving the
-   composition substantially unchanged?
-2. **Silhouette test:** Does the page look recognizably different from neighboring routes
-   when viewed without readable text?
+1. **Swap test:** Could the title, artist, and artwork data be replaced while leaving
+   the composition substantially unchanged?
+2. **Silhouette test:** Does the page look recognizably different from neighboring
+   routes when viewed without readable text?
 3. **Component-first test:** Can the design be explained mainly by listing shared
    components?
 4. **Meaning test:** Does each interaction reveal something specific about the subject?
-5. **Artwork test:** Does the artwork determine the page structure, or merely decorate it?
+5. **Artwork test:** Does the artwork determine the page structure, or merely decorate
+   it?
 6. **Journey test:** Does the visitor undergo a sequence of attention rather than scroll
    past alternating content blocks?
-7. **Reliability test:** Do every image, source link, contrast state, keyboard control, and
-   responsive layout work?
+7. **Reliability test:** Do every image, source link, contrast state, keyboard control,
+   and responsive layout work?
 
-`ArtworkStrip` and similar grid components remain available for minor supporting contexts.
-They are not page concepts and may not determine a route's primary experience.
+`ArtworkStrip` and similar grid components remain available for minor supporting
+contexts. They are not page concepts and may not determine a route's primary experience.
