@@ -1,34 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { ArtworkStrip } from "@/components/experiences/ArtworkStrip";
-import { gleanersContextArtworks } from "@/components/experiences/realismMilletArtworkSets";
+import { ArtworkMedia } from "@/components/experiences/ArtworkMedia";
 
 export const metadata: Metadata = {
   title: "Die Ährenleserinnen: Arbeit nach der Ernte",
   description:
-    "Eine Werkanalyse von Jean-François Millets The Gleaners über gebückte Körper, Erntereste, soziale Distanz, Horizont und monumentale Wiederholung.",
+    "Eine visuelle Werkanalyse von Jean-François Millets The Gleaners über Bewegung, Erntereste, soziale Distanz und monumentale Wiederholung.",
   alternates: { canonical: "/werke/die-aehrenleserinnen/" },
 };
 
-const readings = [
-  [
-    "Drei Körper, drei Phasen",
-    "Greifen, Aufrichten, Sammeln: Die Frauen bilden keinen eingefrorenen Chor, sondern eine Folge wiederholter Bewegungen. Das Bild macht Dauer sichtbar, ohne eine Handlung zum dramatischen Höhepunkt zu erklären.",
-  ],
-  [
-    "Arbeit am Rest",
-    "Gleaning beginnt nach der eigentlichen Ernte. Die Frauen sammeln, was auf dem Feld zurückbleibt. Diese Tätigkeit hängt von sozial geregeltem Zugang, knappen Resten und körperlicher Ausdauer ab.",
-  ],
-  [
-    "Der geteilte Raum",
-    "Vorn dominieren gebückte Körper und trockene Erde. Hinten liegen Wagen, Kornschober, Arbeiter, Tiere und Aufsicht. Der Horizont trennt nicht Natur und Mensch, sondern verschiedene Positionen innerhalb derselben Produktion.",
-  ],
-  [
-    "Monumental ohne Triumph",
-    "Die Figuren sind groß, aber nicht erhöht. Ihre Gesichter bleiben schwer lesbar, ihre Bewegung bleibt nach unten gerichtet. Monumentalität verleiht Sichtbarkeit, löst Abhängigkeit jedoch nicht auf.",
-  ],
-] as const;
+const source =
+  "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg";
+const image =
+  "https://commons.wikimedia.org/wiki/Special:Redirect/file/Jean-Fran%C3%A7ois%20Millet%20-%20Gleaners%20-%20Google%20Art%20Project%202.jpg";
 
 const links = [
   ["Künstler", "/kuenstler/jean-francois-millet/", "Jean-François Millet"],
@@ -43,64 +28,66 @@ const links = [
 
 export default function GleanersPage() {
   return (
-    <main style={{ background: "#e8dfc9", color: "#28261f" }}>
+    <main style={{ background: "#d9cfb8", color: "#211f19" }}>
       <section
         style={{
+          display: "grid",
+          gap: "3rem",
+          gridTemplateColumns: "minmax(0, 1.1fr) minmax(18rem, .55fr)",
           margin: "0 auto",
-          maxWidth: "92rem",
-          padding: "clamp(5rem, 12vw, 10rem) 1.25rem",
+          maxWidth: "100rem",
+          padding: "clamp(4rem, 9vw, 8rem) 1.25rem 3rem",
         }}
       >
+        <div>
+          <p
+            style={{
+              fontSize: ".72rem",
+              fontWeight: 800,
+              letterSpacing: ".2em",
+              margin: 0,
+              textTransform: "uppercase",
+            }}
+          >
+            Werkdecoder · Jean-François Millet · 1857
+          </p>
+          <h1
+            style={{
+              fontFamily: "var(--font-serif)",
+              fontSize: "clamp(4rem, 11vw, 9.5rem)",
+              fontWeight: 500,
+              letterSpacing: "-.07em",
+              lineHeight: ".84",
+              margin: "1.2rem 0 0",
+              maxWidth: "8ch",
+            }}
+          >
+            Nach der Ernte beginnt die Arbeit am Rest.
+          </h1>
+        </div>
         <p
           style={{
-            fontSize: ".72rem",
-            fontWeight: 800,
-            letterSpacing: ".2em",
+            alignSelf: "end",
+            fontSize: "clamp(1.1rem, 2vw, 1.45rem)",
+            lineHeight: 1.72,
             margin: 0,
-            textTransform: "uppercase",
           }}
         >
-          Werkdecoder · 1857
-        </p>
-        <h1
-          style={{
-            fontFamily: "var(--font-serif)",
-            fontSize: "clamp(4rem, 11vw, 9rem)",
-            fontWeight: 500,
-            letterSpacing: "-.065em",
-            lineHeight: ".9",
-            margin: "1rem 0",
-            maxWidth: "10ch",
-          }}
-        >
-          Die Ährenleserinnen
-        </h1>
-        <p
-          style={{
-            fontSize: "clamp(1.2rem, 2.2vw, 1.65rem)",
-            lineHeight: 1.65,
-            margin: "2rem 0 0",
-            maxWidth: "54rem",
-          }}
-        >
-          Drei Frauen sammeln einzelne Ähren, während die eigentliche Ernte fast
-          vollständig im Hintergrund stattfindet. Millets Bild macht soziale Ordnung
-          nicht durch eine Parole sichtbar, sondern durch Körperhöhe, Entfernung,
-          Restarbeit und die Verteilung des Raums.
+          Millet zeigt keine idyllische Feldszene. Er baut eine soziale Ordnung aus
+          Körperhöhe, Entfernung und Wiederholung: vorne drei Frauen, hinten der Ertrag,
+          dazwischen ein Horizont, der fast wie eine Grenze funktioniert.
         </p>
       </section>
 
-      <section
-        style={{
-          background: "#34372b",
-          color: "#f1ead9",
-          padding: "clamp(4rem, 9vw, 8rem) 1.25rem",
-        }}
-      >
-        <div style={{ margin: "0 auto", maxWidth: "92rem" }}>
-          <ArtworkStrip
-            items={gleanersContextArtworks}
-            title="Säen, sammeln und die Ästhetik ländlicher Arbeit"
+      <section style={{ padding: "0 1.25rem" }}>
+        <div style={{ margin: "0 auto", maxWidth: "100rem" }}>
+          <ArtworkMedia
+            alt="Drei Ährenleserinnen beugen sich auf einem abgeernteten Feld, während im Hintergrund die große Ernte eingebracht wird."
+            aspectRatio="16 / 8.5"
+            caption="Jean-François Millet, Die Ährenleserinnen, 1857. Das ganze Bild: drei gebückte Körper im Vordergrund, Überfluss und Organisation weit dahinter."
+            credit="Wikimedia Commons · Public Domain"
+            imageUrl={image}
+            sourceUrl={source}
           />
         </div>
       </section>
@@ -108,53 +95,202 @@ export default function GleanersPage() {
       <section
         style={{
           margin: "0 auto",
-          maxWidth: "78rem",
-          padding: "clamp(5rem, 10vw, 9rem) 1.25rem",
+          maxWidth: "100rem",
+          padding: "clamp(6rem, 12vw, 11rem) 1.25rem",
         }}
       >
         <div
           style={{
             display: "grid",
-            gap: "1rem",
-            gridTemplateColumns: "repeat(auto-fit, minmax(18rem, 1fr))",
+            gap: "clamp(3rem, 7vw, 7rem)",
+            gridTemplateColumns: "minmax(0, .7fr) minmax(0, 1.3fr)",
           }}
         >
-          {readings.map(([title, text], index) => (
-            <article
-              key={title}
+          <div style={{ position: "sticky", top: "2rem", alignSelf: "start" }}>
+            <p
               style={{
-                borderTop: "1px solid rgb(40 38 31 / .35)",
-                minHeight: "21rem",
-                padding: "1.5rem 0",
+                fontSize: ".7rem",
+                fontWeight: 800,
+                letterSpacing: ".18em",
+                textTransform: "uppercase",
               }}
             >
-              <span
-                style={{ fontSize: ".72rem", fontWeight: 800, letterSpacing: ".18em" }}
-              >
-                0{index + 1}
-              </span>
-              <h2
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  fontSize: "2.4rem",
-                  fontWeight: 500,
-                  letterSpacing: "-.04em",
-                  lineHeight: 1.02,
-                  margin: "2.5rem 0 1rem",
-                }}
-              >
-                {title}
-              </h2>
-              <p style={{ lineHeight: 1.78, margin: 0 }}>{text}</p>
-            </article>
-          ))}
+              01 · Eine Bewegung in drei Zeiten
+            </p>
+            <h2
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(3rem, 6vw, 5.5rem)",
+                fontWeight: 500,
+                letterSpacing: "-.055em",
+                lineHeight: ".95",
+                margin: "1rem 0",
+              }}
+            >
+              Greifen. Aufrichten. Sammeln.
+            </h2>
+            <p style={{ fontSize: "1.12rem", lineHeight: 1.82 }}>
+              Die drei Frauen bilden keinen dekorativen Chor. Ihre Körper zeigen aufeinander
+              folgende Phasen derselben Tätigkeit. Der Blick wandert von links nach rechts
+              und erlebt Arbeit als endlose Schleife statt als dramatischen Augenblick.
+            </p>
+          </div>
+
+          <div style={{ display: "grid", gap: "2rem" }}>
+            {[
+              ["20% center", "Die linke Figur greift tief nach unten. Der Rücken bildet fast eine horizontale Lastlinie."],
+              ["50% center", "Die mittlere Figur richtet sich nur teilweise auf. Entlastung bleibt ein Zwischenzustand."],
+              ["79% center", "Die rechte Figur sammelt die gefundenen Ähren. Das Ergebnis bleibt klein, die Bewegung beginnt erneut."],
+            ].map(([position, caption], index) => (
+              <ArtworkMedia
+                key={position}
+                alt={`Detail ${index + 1} aus Millets Die Ährenleserinnen`}
+                aspectRatio="3 / 2"
+                caption={caption}
+                credit="Wikimedia Commons · Public Domain"
+                imageUrl={image}
+                objectPosition={position}
+                sourceUrl={source}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ background: "#24271f", color: "#f0eadb" }}>
+        <div
+          style={{
+            display: "grid",
+            gap: "3rem",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 24rem), 1fr))",
+            margin: "0 auto",
+            maxWidth: "100rem",
+            padding: "clamp(6rem, 12vw, 10rem) 1.25rem",
+          }}
+        >
+          <div>
+            <p
+              style={{
+                color: "#c8ad6d",
+                fontSize: ".7rem",
+                fontWeight: 800,
+                letterSpacing: ".18em",
+                textTransform: "uppercase",
+              }}
+            >
+              02 · Der Horizont als soziale Trennlinie
+            </p>
+            <h2
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(3rem, 7vw, 6rem)",
+                fontWeight: 500,
+                letterSpacing: "-.055em",
+                lineHeight: ".95",
+                margin: "1rem 0",
+              }}
+            >
+              Vorne die Reste. Hinten der Ertrag.
+            </h2>
+          </div>
+          <div style={{ alignSelf: "end" }}>
+            <p style={{ color: "rgb(240 234 219 / .75)", fontSize: "1.15rem", lineHeight: 1.85 }}>
+              Wagen, Kornschober, Tiere und weitere Arbeiter liegen in der Ferne. Dort wird
+              die eigentliche Ernte organisiert. Die Frauen im Vordergrund arbeiten dagegen
+              an dem, was übrig bleibt. Perspektive wird so zum sozialen Argument.
+            </p>
+            <div
+              style={{
+                borderTop: "1px solid rgb(240 234 219 / .25)",
+                display: "grid",
+                gap: "1rem",
+                gridTemplateColumns: "1fr 1fr",
+                marginTop: "2.5rem",
+                paddingTop: "1.5rem",
+              }}
+            >
+              <div>
+                <strong style={{ display: "block", fontFamily: "var(--font-serif)", fontSize: "2rem" }}>
+                  Vordergrund
+                </strong>
+                <span style={{ color: "rgb(240 234 219 / .68)", lineHeight: 1.6 }}>
+                  gebückte Körper, trockene Erde, einzelne Ähren
+                </span>
+              </div>
+              <div>
+                <strong style={{ display: "block", fontFamily: "var(--font-serif)", fontSize: "2rem" }}>
+                  Hintergrund
+                </strong>
+                <span style={{ color: "rgb(240 234 219 / .68)", lineHeight: 1.6 }}>
+                  volle Wagen, Kornschober, Aufsicht, organisierter Überfluss
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section
-        style={{ background: "#b6a061", padding: "clamp(5rem, 10vw, 8rem) 1.25rem" }}
+        style={{
+          display: "grid",
+          gap: "clamp(3rem, 7vw, 7rem)",
+          gridTemplateColumns: "minmax(0, 1.1fr) minmax(18rem, .65fr)",
+          margin: "0 auto",
+          maxWidth: "100rem",
+          padding: "clamp(6rem, 12vw, 10rem) 1.25rem",
+        }}
       >
-        <div style={{ margin: "0 auto", maxWidth: "78rem" }}>
+        <ArtworkMedia
+          alt="Die Ährenleserinnen in einer engeren Ansicht, bei der die drei Frauen fast die gesamte Bildbreite tragen."
+          aspectRatio="4 / 3"
+          caption="Die Größe der Figuren verleiht ihnen Sichtbarkeit, doch ihre Haltung bleibt nach unten gezogen. Monumentalität bedeutet hier nicht Befreiung."
+          credit="Wikimedia Commons · Public Domain"
+          imageUrl={image}
+          objectPosition="center 58%"
+          sourceUrl={source}
+        />
+        <div style={{ alignSelf: "center" }}>
+          <p
+            style={{
+              fontSize: ".7rem",
+              fontWeight: 800,
+              letterSpacing: ".18em",
+              textTransform: "uppercase",
+            }}
+          >
+            03 · Monumental ohne Triumph
+          </p>
+          <h2
+            style={{
+              fontFamily: "var(--font-serif)",
+              fontSize: "clamp(3rem, 6vw, 5.5rem)",
+              fontWeight: 500,
+              letterSpacing: "-.055em",
+              lineHeight: ".95",
+              margin: "1rem 0",
+            }}
+          >
+            Würde und Abhängigkeit bleiben gleichzeitig sichtbar.
+          </h2>
+          <p style={{ fontSize: "1.12rem", lineHeight: 1.82 }}>
+            Millet vergrößert die Frauen, ohne sie aus ihrer Lage herauszumalen. Ihre Gesichter
+            bleiben schwer lesbar, ihre Arbeit bleibt niedrig am Boden, und der sichtbare
+            Überfluss gehört weiterhin einer anderen Zone des Bildes.
+          </p>
+        </div>
+      </section>
+
+      <section style={{ background: "#b19a62", color: "#211f19" }}>
+        <div
+          style={{
+            display: "grid",
+            gap: "2rem",
+            gridTemplateColumns: "minmax(0, .8fr) minmax(0, 1.2fr)",
+            margin: "0 auto",
+            maxWidth: "94rem",
+            padding: "clamp(5rem, 10vw, 8rem) 1.25rem",
+          }}
+        >
           <h2
             style={{
               fontFamily: "var(--font-serif)",
@@ -163,50 +299,40 @@ export default function GleanersPage() {
               letterSpacing: "-.055em",
               lineHeight: ".95",
               margin: 0,
-              maxWidth: "14ch",
             }}
           >
-            Würde und Abhängigkeit schließen einander nicht aus.
+            Das Bild ist keine Parole. Es ist eine organisierte Erfahrung von Ungleichheit.
           </h2>
-          <p
-            style={{
-              fontSize: "1.2rem",
-              lineHeight: 1.8,
-              margin: "2rem 0 0",
-              maxWidth: "50rem",
-            }}
-          >
-            Die Größe und rhythmische Klarheit der Frauen verleihen ihrer Tätigkeit
-            formale Bedeutung. Doch das Bild heroisiert sie nicht aus ihrer Lage heraus:
-            Sie bleiben auf Erntereste angewiesen, körperlich gebeugt und vom sichtbaren
-            Überfluss getrennt.
+          <p style={{ alignSelf: "end", fontSize: "1.2rem", lineHeight: 1.85, margin: 0 }}>
+            Seine politische Kraft liegt nicht in einer eindeutigen Botschaft, sondern darin,
+            dass wir den Abstand zwischen Arbeit und Ertrag körperlich mitsehen. Die Seite endet
+            deshalb nicht mit einer Bildergalerie, sondern mit der Frage, wie andere realistische
+            Werke soziale Ordnung über Räume, Werkzeuge und Körper verteilen.
           </p>
         </div>
       </section>
 
       <nav
         aria-label="Weiterführende Wege"
-        style={{
-          margin: "0 auto",
-          maxWidth: "92rem",
-          padding: "clamp(4rem, 9vw, 7rem) 1.25rem",
-        }}
+        style={{ margin: "0 auto", maxWidth: "94rem", padding: "clamp(4rem, 9vw, 7rem) 1.25rem" }}
       >
         <div
           style={{
             display: "grid",
-            gap: "1rem",
+            gap: "1px",
             gridTemplateColumns: "repeat(auto-fit, minmax(16rem, 1fr))",
+            background: "rgb(33 31 25 / .3)",
+            border: "1px solid rgb(33 31 25 / .3)",
           }}
         >
           {links.map(([eyebrow, href, title]) => (
             <Link
               key={href}
-              href={href!}
+              href={href}
               style={{
-                border: "1px solid rgb(40 38 31 / .3)",
+                background: "#d9cfb8",
                 color: "inherit",
-                minHeight: "13rem",
+                minHeight: "12rem",
                 padding: "1.5rem",
                 textDecoration: "none",
               }}
@@ -231,7 +357,7 @@ export default function GleanersPage() {
                   marginTop: "2rem",
                 }}
               >
-                {title}
+                {title} →
               </strong>
             </Link>
           ))}
