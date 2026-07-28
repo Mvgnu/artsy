@@ -102,7 +102,13 @@
 
 .heroImage::after {
   background:
-    linear-gradient(90deg, rgb(19 17 14 / 0.18), transparent 22%, transparent 78%, rgb(19 17 14 / 0.18)),
+    linear-gradient(
+      90deg,
+      rgb(19 17 14 / 0.18),
+      transparent 22%,
+      transparent 78%,
+      rgb(19 17 14 / 0.18)
+    ),
     linear-gradient(0deg, rgb(19 17 14 / 0.36), transparent 38%);
   content: "";
   inset: 0;
@@ -205,7 +211,9 @@
   justify-content: space-between;
   padding: 1rem 0;
   text-align: left;
-  transition: padding 180ms ease, background 180ms ease;
+  transition:
+    padding 180ms ease,
+    background 180ms ease;
   width: 100%;
 }
 
