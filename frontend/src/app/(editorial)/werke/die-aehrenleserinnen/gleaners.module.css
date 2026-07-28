@@ -1,0 +1,671 @@
+.page {
+  --earth: #31291f;
+  --field: #d7c49a;
+  --grain: #d6ad4d;
+  --ink: #211c16;
+  --night: #171a15;
+  --paper: #eee5ce;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgb(65 48 27 / 0.035) 0,
+      rgb(65 48 27 / 0.035) 1px,
+      transparent 1px,
+      transparent 11px
+    ),
+    var(--paper);
+  color: var(--ink);
+  overflow: clip;
+}
+
+.opening {
+  min-height: 100svh;
+  padding: clamp(1rem, 2vw, 2rem);
+  position: relative;
+}
+
+.opening::before {
+  border: 1px solid rgb(33 28 22 / 0.24);
+  content: "";
+  inset: clamp(1rem, 2vw, 2rem);
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.openingCopy {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.42fr);
+  margin: 0 auto;
+  max-width: 104rem;
+  padding: clamp(2rem, 6vw, 6rem) clamp(1rem, 4vw, 4rem) clamp(3rem, 7vw, 7rem);
+  position: relative;
+  z-index: 3;
+}
+
+.eyebrow,
+.sectionNumber {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.21em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.openingCopy h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(4.4rem, 13vw, 13rem);
+  font-weight: 500;
+  grid-column: 1 / -1;
+  letter-spacing: -0.08em;
+  line-height: 0.7;
+  margin: clamp(2rem, 6vw, 6rem) 0 0;
+  max-width: 8ch;
+  position: relative;
+  z-index: 2;
+}
+
+.openingCopy h1 span {
+  display: block;
+}
+
+.openingCopy h1 span:last-child {
+  margin-left: clamp(1rem, 10vw, 11rem);
+}
+
+.lead {
+  align-self: end;
+  font-size: clamp(1.05rem, 2vw, 1.45rem);
+  grid-column: 2;
+  line-height: 1.72;
+  margin: -4rem 0 0;
+  max-width: 38rem;
+}
+
+.heroFigure {
+  margin: -1rem auto 0;
+  max-width: 104rem;
+  position: relative;
+}
+
+.heroImage {
+  aspect-ratio: 16 / 8.7;
+  background: #6e634e;
+  overflow: hidden;
+  position: relative;
+}
+
+.heroImage img {
+  object-fit: cover;
+}
+
+.heroImage::after {
+  background:
+    linear-gradient(90deg, rgb(19 17 14 / 0.18), transparent 22%, transparent 78%, rgb(19 17 14 / 0.18)),
+    linear-gradient(0deg, rgb(19 17 14 / 0.36), transparent 38%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.heroCoordinates {
+  bottom: 13%;
+  display: flex;
+  justify-content: space-around;
+  left: 5%;
+  pointer-events: none;
+  position: absolute;
+  right: 5%;
+  z-index: 2;
+}
+
+.heroCoordinates span {
+  align-items: center;
+  background: rgb(239 229 206 / 0.92);
+  border: 1px solid rgb(33 28 22 / 0.5);
+  border-radius: 50%;
+  display: flex;
+  font-size: 0.68rem;
+  font-weight: 800;
+  height: 2.6rem;
+  justify-content: center;
+  width: 2.6rem;
+}
+
+.heroFigure figcaption {
+  align-items: start;
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: 700;
+  gap: 2rem;
+  justify-content: space-between;
+  letter-spacing: 0.04em;
+  padding: 0.85rem 0;
+}
+
+.heroFigure figcaption a,
+.sourceLink {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25rem;
+}
+
+.gestureSection {
+  display: grid;
+  gap: clamp(3rem, 8vw, 9rem);
+  grid-template-columns: minmax(18rem, 0.58fr) minmax(0, 1.42fr);
+  margin: 0 auto;
+  max-width: 104rem;
+  padding: clamp(7rem, 14vw, 14rem) clamp(1rem, 4vw, 4rem);
+}
+
+.gestureCopy {
+  align-self: start;
+  position: sticky;
+  top: 2rem;
+}
+
+.gestureCopy h2,
+.horizonHeader h2,
+.accountingCopy h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 7vw, 7rem);
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+  margin: 1rem 0 1.6rem;
+}
+
+.gestureCopy > p:last-of-type,
+.horizonHeader > p:last-of-type,
+.accountingCopy > p {
+  font-size: clamp(1.05rem, 1.6vw, 1.28rem);
+  line-height: 1.78;
+  max-width: 38rem;
+}
+
+.gestureControls {
+  border-bottom: 1px solid rgb(33 28 22 / 0.28);
+  margin-top: 3rem;
+}
+
+.gestureControls button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid rgb(33 28 22 / 0.28);
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  font-size: 1.05rem;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem 0;
+  text-align: left;
+  transition: padding 180ms ease, background 180ms ease;
+  width: 100%;
+}
+
+.gestureControls button span {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.gestureControls button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+  padding-inline: 1rem;
+}
+
+.gestureControls button:focus-visible,
+.exit a:focus-visible,
+.heroFigure a:focus-visible,
+.sourceLink:focus-visible {
+  outline: 3px solid var(--grain);
+  outline-offset: 4px;
+}
+
+.gestureStage {
+  min-width: 0;
+}
+
+.gestureImage {
+  aspect-ratio: 4 / 5;
+  background: #726851;
+  overflow: hidden;
+  position: relative;
+}
+
+.gestureImage img {
+  object-fit: cover;
+  transform: scale(2.25);
+  transition: object-position 620ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.gestureReticle {
+  border: 1px solid rgb(246 232 198 / 0.9);
+  border-radius: 50%;
+  height: min(24vw, 16rem);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(24vw, 16rem);
+}
+
+.gestureReticle::before,
+.gestureReticle::after {
+  background: rgb(246 232 198 / 0.8);
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gestureReticle::before {
+  height: 1px;
+  width: 130%;
+}
+
+.gestureReticle::after {
+  height: 130%;
+  width: 1px;
+}
+
+.gestureReading {
+  border-left: 1px solid rgb(33 28 22 / 0.35);
+  margin: -4rem 0 0 clamp(1rem, 8vw, 8rem);
+  min-height: 17rem;
+  padding: 5.5rem clamp(1.25rem, 4vw, 3rem) 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.gestureReading > span {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.gestureReading h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+  margin: 0.8rem 0;
+}
+
+.gestureReading p {
+  line-height: 1.75;
+  max-width: 43rem;
+}
+
+.horizonSection {
+  background: var(--night);
+  color: #f2ead7;
+  padding: clamp(7rem, 13vw, 13rem) clamp(1rem, 4vw, 4rem);
+}
+
+.horizonHeader,
+.horizonInstrument {
+  margin-inline: auto;
+  max-width: 104rem;
+}
+
+.horizonHeader {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.48fr);
+  margin-bottom: clamp(3rem, 7vw, 7rem);
+}
+
+.horizonHeader h2 {
+  grid-column: 1;
+  margin-bottom: 0;
+}
+
+.horizonHeader > p:last-of-type {
+  align-self: end;
+  grid-column: 2;
+  margin: 0;
+}
+
+.horizonInstrument {
+  border: 1px solid rgb(242 234 215 / 0.22);
+  padding: clamp(0.8rem, 2vw, 1.5rem);
+}
+
+.horizonImage {
+  aspect-ratio: 16 / 8.5;
+  background: #655c49;
+  overflow: hidden;
+  position: relative;
+}
+
+.horizonImage img {
+  filter: saturate(0.74) contrast(1.06);
+  object-fit: cover;
+}
+
+.foregroundWash {
+  background: rgb(179 113 39 / 0.42);
+  inset: 0;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  position: absolute;
+}
+
+.horizonLine {
+  align-items: center;
+  border-top: 2px solid #f2d66f;
+  display: flex;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: top 120ms linear;
+}
+
+.horizonLine span {
+  background: #f2d66f;
+  color: #171a15;
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  padding: 0.5rem 0.8rem;
+  text-transform: uppercase;
+}
+
+.horizonControl {
+  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: auto 1fr;
+  padding: 1.5rem 0.25rem 0.8rem;
+}
+
+.horizonControl span {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.horizonControl input {
+  accent-color: #f2d66f;
+  cursor: ew-resize;
+  width: 100%;
+}
+
+.fieldLedger {
+  border-top: 1px solid rgb(242 234 215 / 0.22);
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+}
+
+.fieldLedger > div {
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.fieldLedger > div + div {
+  border-left: 1px solid rgb(242 234 215 / 0.22);
+}
+
+.fieldLedger span {
+  color: rgb(242 234 215 / 0.68);
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.fieldLedger strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 6vw, 6rem);
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+  margin-top: 1rem;
+}
+
+.fieldLedger p {
+  color: rgb(242 234 215 / 0.72);
+  line-height: 1.65;
+  max-width: 31rem;
+}
+
+.accountingSection {
+  background: var(--grain);
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(20rem, 1.2fr);
+  min-height: 100svh;
+  overflow: hidden;
+  position: relative;
+}
+
+.accountingWord {
+  align-self: center;
+  color: rgb(33 28 22 / 0.12);
+  font-family: var(--font-serif);
+  font-size: clamp(12rem, 37vw, 44rem);
+  font-weight: 700;
+  letter-spacing: -0.11em;
+  line-height: 0.55;
+  margin-left: -0.12em;
+  pointer-events: none;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+
+.accountingCopy {
+  align-self: center;
+  padding: clamp(5rem, 10vw, 10rem) clamp(1.5rem, 7vw, 7rem) clamp(5rem, 10vw, 10rem) 0;
+  position: relative;
+  z-index: 2;
+}
+
+.accountingCopy h2 {
+  font-size: clamp(3.2rem, 7vw, 7.5rem);
+}
+
+.accountingCopy blockquote {
+  border-bottom: 1px solid rgb(33 28 22 / 0.45);
+  border-top: 1px solid rgb(33 28 22 / 0.45);
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 3.2rem);
+  line-height: 1.18;
+  margin: 3rem 0 0;
+  padding: 2rem 0;
+}
+
+.exit {
+  background: #211c16;
+  color: #eee5ce;
+  padding: clamp(5rem, 10vw, 9rem) clamp(1rem, 4vw, 4rem);
+}
+
+.exit > p,
+.exit nav,
+.exit > a {
+  margin-inline: auto;
+  max-width: 104rem;
+}
+
+.exit > p {
+  color: rgb(238 229 206 / 0.68);
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 5rem);
+  line-height: 1;
+}
+
+.exit nav {
+  border-bottom: 1px solid rgb(238 229 206 / 0.22);
+  margin-top: 4rem;
+}
+
+.exit nav a {
+  align-items: center;
+  border-top: 1px solid rgb(238 229 206 / 0.22);
+  color: inherit;
+  display: flex;
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 3vw, 3rem);
+  justify-content: space-between;
+  padding: 1.2rem 0;
+  text-decoration: none;
+}
+
+.exit nav a:hover span {
+  transform: translate(0.35rem, -0.35rem);
+}
+
+.exit nav a span {
+  transition: transform 160ms ease;
+}
+
+.sourceLink {
+  display: block;
+  margin-top: 3rem;
+  width: fit-content;
+}
+
+.imageFallback {
+  align-items: center;
+  background: #27231c;
+  color: #f0e6cf;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  inset: 0;
+  justify-content: center;
+  padding: 2rem;
+  position: absolute;
+  text-align: center;
+}
+
+.imageFallback a {
+  color: #f2d66f;
+  font-weight: 800;
+}
+
+@media (max-width: 850px) {
+  .openingCopy,
+  .gestureSection,
+  .horizonHeader,
+  .accountingSection {
+    grid-template-columns: 1fr;
+  }
+
+  .openingCopy h1 {
+    font-size: clamp(4rem, 20vw, 8rem);
+  }
+
+  .openingCopy h1 span:last-child {
+    margin-left: 0.45em;
+  }
+
+  .lead {
+    grid-column: 1;
+    margin: 1rem 0 0;
+  }
+
+  .heroImage,
+  .horizonImage {
+    aspect-ratio: 4 / 3;
+  }
+
+  .heroFigure figcaption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .gestureCopy {
+    position: static;
+  }
+
+  .gestureImage {
+    aspect-ratio: 3 / 4;
+  }
+
+  .gestureReticle {
+    height: 11rem;
+    width: 11rem;
+  }
+
+  .horizonHeader > p:last-of-type {
+    grid-column: 1;
+  }
+
+  .fieldLedger {
+    grid-template-columns: 1fr;
+  }
+
+  .fieldLedger > div + div {
+    border-left: 0;
+    border-top: 1px solid rgb(242 234 215 / 0.22);
+  }
+
+  .accountingWord {
+    font-size: 42vw;
+    line-height: 0.7;
+    margin: -0.2em 0;
+    transform: none;
+  }
+
+  .accountingCopy {
+    padding: 2rem 1.25rem 6rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .opening {
+    padding: 0.65rem;
+  }
+
+  .opening::before {
+    inset: 0.65rem;
+  }
+
+  .openingCopy {
+    padding: 2.5rem 1rem 3rem;
+  }
+
+  .heroCoordinates {
+    bottom: 18%;
+  }
+
+  .gestureSection,
+  .horizonSection,
+  .exit {
+    padding-inline: 1rem;
+  }
+
+  .gestureReading {
+    margin-left: 0.5rem;
+    padding-inline: 1rem;
+  }
+
+  .horizonControl {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gestureImage img,
+  .gestureControls button,
+  .horizonLine,
+  .exit nav a span {
+    transition: none;
+  }
+}
