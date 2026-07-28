@@ -75,9 +75,10 @@ export function GleanersExperience({ imageUrl, sourceUrl }: GleanersExperiencePr
             <span>leserinnen</span>
           </h1>
           <p className={styles.lead}>
-            Nach der Ernte beginnt die Arbeit am Rest. Dieses Bild erklärt soziale Ordnung
-            nicht mit einer Parole, sondern mit drei gebückten Körpern, einem weit entfernten
-            Ertrag und einer Linie, die das Feld in zwei Wirklichkeiten teilt.
+            Nach der Ernte beginnt die Arbeit am Rest. Dieses Bild erklärt soziale
+            Ordnung nicht mit einer Parole, sondern mit drei gebückten Körpern, einem
+            weit entfernten Ertrag und einer Linie, die das Feld in zwei Wirklichkeiten
+            teilt.
           </p>
         </div>
 
@@ -100,11 +101,14 @@ export function GleanersExperience({ imageUrl, sourceUrl }: GleanersExperiencePr
           <p className={styles.sectionNumber}>I · Die Schleife</p>
           <h2 id="gesture-title">Drei Frauen zeigen nicht drei Tätigkeiten.</h2>
           <p>
-            Sie zeigen drei Zeitpunkte derselben Tätigkeit. Wähle eine Figur und beobachte,
-            wie der Körper die Arbeit weitergibt.
+            Sie zeigen drei Zeitpunkte derselben Tätigkeit. Wähle eine Figur und
+            beobachte, wie der Körper die Arbeit weitergibt.
           </p>
 
-          <div className={styles.gestureControls} aria-label="Bewegungsphasen auswählen">
+          <div
+            className={styles.gestureControls}
+            aria-label="Bewegungsphasen auswählen"
+          >
             {gestures.map((item, index) => (
               <button
                 aria-pressed={activeGesture === index}
@@ -150,8 +154,8 @@ export function GleanersExperience({ imageUrl, sourceUrl }: GleanersExperiencePr
           <p className={styles.sectionNumber}>II · Die Grenze</p>
           <h2 id="horizon-title">Zieh die Linie durch das Feld.</h2>
           <p>
-            Der Horizont ist hier keine neutrale Landschaftslinie. Er trennt die Arbeit am
-            Rest von der Organisation des Ertrags.
+            Der Horizont ist hier keine neutrale Landschaftslinie. Er trennt die Arbeit
+            am Rest von der Organisation des Ertrags.
           </p>
         </div>
 
@@ -214,21 +218,26 @@ export function GleanersExperience({ imageUrl, sourceUrl }: GleanersExperiencePr
         </div>
         <div className={styles.accountingCopy}>
           <p className={styles.sectionNumber}>III · Die Bilanz</p>
-          <h2>Monumentalität verändert die Sichtbarkeit. Nicht die Besitzverhältnisse.</h2>
+          <h2>
+            Monumentalität verändert die Sichtbarkeit. Nicht die Besitzverhältnisse.
+          </h2>
           <p>
             Millet gibt den Frauen die Größe anspruchsvoller Salonmalerei, aber keinen
-            Triumph. Ihre Gesichter bleiben schwer lesbar, die Bewegung bleibt am Boden und
-            der sichtbare Überfluss bleibt räumlich getrennt.
+            Triumph. Ihre Gesichter bleiben schwer lesbar, die Bewegung bleibt am Boden
+            und der sichtbare Überfluss bleibt räumlich getrennt.
           </p>
           <blockquote>
-            Drei große Körper. Eine kleine Ausbeute. Kein Anteil am Ertrag, den das Bild im
-            Hintergrund vollständig sichtbar macht.
+            Drei große Körper. Eine kleine Ausbeute. Kein Anteil am Ertrag, den das Bild
+            im Hintergrund vollständig sichtbar macht.
           </blockquote>
         </div>
       </section>
 
       <footer className={styles.exit}>
-        <p>Der Blick verlässt das Feld nicht über ein Kartenraster, sondern über vier Wege.</p>
+        <p>
+          Der Blick verlässt das Feld nicht über ein Kartenraster, sondern über vier
+          Wege.
+        </p>
         <nav aria-label="Weiterführende Wege">
           {links.map(([label, href]) => (
             <Link href={href} key={href}>
