@@ -49,10 +49,19 @@ export function ArtworkMedia({
             }}
           >
             <div>
-              <strong style={{ display: "block", fontFamily: "var(--font-serif)", fontSize: "1.8rem" }}>
+              <strong
+                style={{
+                  display: "block",
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "1.8rem",
+                }}
+              >
                 Bild konnte nicht geladen werden
               </strong>
-              <a href={sourceUrl} style={{ color: "inherit", display: "inline-block", marginTop: "1rem" }}>
+              <a
+                href={sourceUrl}
+                style={{ color: "inherit", display: "inline-block", marginTop: "1rem" }}
+              >
                 Originalquelle öffnen →
               </a>
             </div>

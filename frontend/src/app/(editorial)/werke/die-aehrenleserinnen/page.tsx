@@ -130,17 +130,27 @@ export default function GleanersPage() {
               Greifen. Aufrichten. Sammeln.
             </h2>
             <p style={{ fontSize: "1.12rem", lineHeight: 1.82 }}>
-              Die drei Frauen bilden keinen dekorativen Chor. Ihre Körper zeigen aufeinander
-              folgende Phasen derselben Tätigkeit. Der Blick wandert von links nach rechts
-              und erlebt Arbeit als endlose Schleife statt als dramatischen Augenblick.
+              Die drei Frauen bilden keinen dekorativen Chor. Ihre Körper zeigen
+              aufeinander folgende Phasen derselben Tätigkeit. Der Blick wandert von
+              links nach rechts und erlebt Arbeit als endlose Schleife statt als
+              dramatischen Augenblick.
             </p>
           </div>
 
           <div style={{ display: "grid", gap: "2rem" }}>
             {[
-              ["20% center", "Die linke Figur greift tief nach unten. Der Rücken bildet fast eine horizontale Lastlinie."],
-              ["50% center", "Die mittlere Figur richtet sich nur teilweise auf. Entlastung bleibt ein Zwischenzustand."],
-              ["79% center", "Die rechte Figur sammelt die gefundenen Ähren. Das Ergebnis bleibt klein, die Bewegung beginnt erneut."],
+              [
+                "20% center",
+                "Die linke Figur greift tief nach unten. Der Rücken bildet fast eine horizontale Lastlinie.",
+              ],
+              [
+                "50% center",
+                "Die mittlere Figur richtet sich nur teilweise auf. Entlastung bleibt ein Zwischenzustand.",
+              ],
+              [
+                "79% center",
+                "Die rechte Figur sammelt die gefundenen Ähren. Das Ergebnis bleibt klein, die Bewegung beginnt erneut.",
+              ],
             ].map(([position, caption], index) => (
               <ArtworkMedia
                 key={position}
@@ -194,10 +204,17 @@ export default function GleanersPage() {
             </h2>
           </div>
           <div style={{ alignSelf: "end" }}>
-            <p style={{ color: "rgb(240 234 219 / .75)", fontSize: "1.15rem", lineHeight: 1.85 }}>
-              Wagen, Kornschober, Tiere und weitere Arbeiter liegen in der Ferne. Dort wird
-              die eigentliche Ernte organisiert. Die Frauen im Vordergrund arbeiten dagegen
-              an dem, was übrig bleibt. Perspektive wird so zum sozialen Argument.
+            <p
+              style={{
+                color: "rgb(240 234 219 / .75)",
+                fontSize: "1.15rem",
+                lineHeight: 1.85,
+              }}
+            >
+              Wagen, Kornschober, Tiere und weitere Arbeiter liegen in der Ferne. Dort
+              wird die eigentliche Ernte organisiert. Die Frauen im Vordergrund arbeiten
+              dagegen an dem, was übrig bleibt. Perspektive wird so zum sozialen
+              Argument.
             </p>
             <div
               style={{
@@ -210,7 +227,13 @@ export default function GleanersPage() {
               }}
             >
               <div>
-                <strong style={{ display: "block", fontFamily: "var(--font-serif)", fontSize: "2rem" }}>
+                <strong
+                  style={{
+                    display: "block",
+                    fontFamily: "var(--font-serif)",
+                    fontSize: "2rem",
+                  }}
+                >
                   Vordergrund
                 </strong>
                 <span style={{ color: "rgb(240 234 219 / .68)", lineHeight: 1.6 }}>
@@ -218,7 +241,13 @@ export default function GleanersPage() {
                 </span>
               </div>
               <div>
-                <strong style={{ display: "block", fontFamily: "var(--font-serif)", fontSize: "2rem" }}>
+                <strong
+                  style={{
+                    display: "block",
+                    fontFamily: "var(--font-serif)",
+                    fontSize: "2rem",
+                  }}
+                >
                   Hintergrund
                 </strong>
                 <span style={{ color: "rgb(240 234 219 / .68)", lineHeight: 1.6 }}>
@@ -273,9 +302,9 @@ export default function GleanersPage() {
             Würde und Abhängigkeit bleiben gleichzeitig sichtbar.
           </h2>
           <p style={{ fontSize: "1.12rem", lineHeight: 1.82 }}>
-            Millet vergrößert die Frauen, ohne sie aus ihrer Lage herauszumalen. Ihre Gesichter
-            bleiben schwer lesbar, ihre Arbeit bleibt niedrig am Boden, und der sichtbare
-            Überfluss gehört weiterhin einer anderen Zone des Bildes.
+            Millet vergrößert die Frauen, ohne sie aus ihrer Lage herauszumalen. Ihre
+            Gesichter bleiben schwer lesbar, ihre Arbeit bleibt niedrig am Boden, und
+            der sichtbare Überfluss gehört weiterhin einer anderen Zone des Bildes.
           </p>
         </div>
       </section>
@@ -301,20 +330,33 @@ export default function GleanersPage() {
               margin: 0,
             }}
           >
-            Das Bild ist keine Parole. Es ist eine organisierte Erfahrung von Ungleichheit.
+            Das Bild ist keine Parole. Es ist eine organisierte Erfahrung von
+            Ungleichheit.
           </h2>
-          <p style={{ alignSelf: "end", fontSize: "1.2rem", lineHeight: 1.85, margin: 0 }}>
-            Seine politische Kraft liegt nicht in einer eindeutigen Botschaft, sondern darin,
-            dass wir den Abstand zwischen Arbeit und Ertrag körperlich mitsehen. Die Seite endet
-            deshalb nicht mit einer Bildergalerie, sondern mit der Frage, wie andere realistische
-            Werke soziale Ordnung über Räume, Werkzeuge und Körper verteilen.
+          <p
+            style={{
+              alignSelf: "end",
+              fontSize: "1.2rem",
+              lineHeight: 1.85,
+              margin: 0,
+            }}
+          >
+            Seine politische Kraft liegt nicht in einer eindeutigen Botschaft, sondern
+            darin, dass wir den Abstand zwischen Arbeit und Ertrag körperlich mitsehen.
+            Die Seite endet deshalb nicht mit einer Bildergalerie, sondern mit der
+            Frage, wie andere realistische Werke soziale Ordnung über Räume, Werkzeuge
+            und Körper verteilen.
           </p>
         </div>
       </section>
 
       <nav
         aria-label="Weiterführende Wege"
-        style={{ margin: "0 auto", maxWidth: "94rem", padding: "clamp(4rem, 9vw, 7rem) 1.25rem" }}
+        style={{
+          margin: "0 auto",
+          maxWidth: "94rem",
+          padding: "clamp(4rem, 9vw, 7rem) 1.25rem",
+        }}
       >
         <div
           style={{
