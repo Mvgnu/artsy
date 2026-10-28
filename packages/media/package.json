@@ -1,0 +1,10 @@
+{
+  "name": "@artsy/media",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc -p ../../tsconfig.engine.json --noEmit",
+    "test": "tsc -p ../../tsconfig.engine.json && node --test test/*.test.mjs"
+  }
+}

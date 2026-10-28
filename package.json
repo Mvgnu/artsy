@@ -1,0 +1,13 @@
+{
+  "name": "artsy-graph", "private": true, "type": "module",
+  "packageManager": "pnpm@11.4.0", "engines": { "node": ">=22.0.0" },
+  "scripts": {
+    "check": "tsc -p tsconfig.engine.json --noEmit",
+    "compile": "tsc -p tsconfig.engine.json",
+    "test": "npm run compile && node --test packages/*/test/*.test.mjs",
+    "test:architecture": "node --test test/architecture/*.test.mjs",
+    "build": "npm run compile && node ops/build.mjs",
+    "verify": "npm run check && npm test && npm run test:architecture && npm run build"
+  },
+  "devDependencies": { "typescript": "5.8.3" }
+}

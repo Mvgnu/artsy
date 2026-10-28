@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", "module": "NodeNext", "moduleResolution": "NodeNext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"], "strict": true,
+    "noUncheckedIndexedAccess": true, "exactOptionalPropertyTypes": true,
+    "noUnusedLocals": true, "noUnusedParameters": true,
+    "verbatimModuleSyntax": true, "outDir": ".build", "rootDir": ".",
+    "declaration": true, "skipLibCheck": true
+  },
+  "include": ["packages/*/src/**/*.ts", "sites/*/src/**/*.ts"]
+}

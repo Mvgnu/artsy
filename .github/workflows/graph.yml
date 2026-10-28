@@ -1,0 +1,22 @@
+name: Evidence graph
+on:
+  push:
+    paths: ['packages/**', 'sites/**', 'data/**', 'specs/**', 'ops/**', 'test/**', 'package.json', 'tsconfig.engine.json', '.github/workflows/graph.yml']
+  pull_request:
+    paths: ['packages/**', 'sites/**', 'data/**', 'specs/**', 'ops/**', 'test/**', 'package.json', 'tsconfig.engine.json', '.github/workflows/graph.yml']
+permissions:
+  contents: read
+jobs:
+  engine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --ignore-scripts --package-lock=false
+      - run: npm run verify
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artsy-demo
+          path: sites/demo/out

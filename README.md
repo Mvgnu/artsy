@@ -1,64 +1,11 @@
-# Leerraum
+# Artsy — an explorable atlas of art
 
-`leerraum.ch` is a German-language visual art-history publication and discovery product.
+Pick a thread and follow it through artworks, makers, periods, subjects, patrons, materials and places. The relationship and its evidence are the product—not a pile of generated biography pages.
 
-The project is built around a simple thesis:
+**Start with [START_HERE.md](START_HERE.md).** It contains run commands, the working seed, scope limits and the agent handoff.
 
-> Art history should feel like entering a visual world, not reading a stack of interchangeable encyclopedia pages.
+This branch adds an evidence-first TypeScript engine, a static exploration prototype, researched source registry, and package/site-scoped Lop + Gauntlet specifications. The existing `frontend/` and `docs/product/` are preserved as legacy reference; their editorial-page model is not the architecture of the new engine.
 
-Each major period, movement, or editorial topic is treated as a deliberately composed experience. Shared navigation, typography, media, citations, and accessibility primitives keep the product coherent; the flagship pages themselves may use custom TSX compositions, pacing, interactions, and visual language.
+Read [the engine contract](specs/00_engine.md), [source research](specs/01_sources.md), [global coverage programme](specs/02_coverage.md) and [verification record](reviews/2026-10-28.md). Domain specifications live in `packages/*/SPEC.md`; independent critic instructions live in `.agent/workflows/gauntlet.md`.
 
-## Product pillars
-
-1. **Period and movement experiences** — bespoke long-form entry points into Romanticism, Impressionism, Surrealism, and later topics.
-2. **Artwork decoders** — visual explanations of composition, symbols, technique, context, and interpretation.
-3. **Artists, motifs, and techniques** — structured child pages that deepen each editorial silo.
-4. **Discovery** — browse real artworks by subject, mood, colour, place, period, and visual relationship.
-5. **Provenance-first media** — every published image carries a source, rights status, credit line, and review record.
-
-## Current phase
-
-The project is in **Phase 1 — Foundation**.
-
-The PM bootstrap is complete. Implementation is now establishing:
-
-- the strict Next.js application and deployment shell;
-- automated type, lint, format, test, accessibility, performance, and build gates;
-- validated content and artwork-media contracts;
-- global platform and editorial primitives;
-- an empty route structure that does not expose thin editorial pages.
-
-Implementation must not begin in a domain until its spec exists and the owning paths, exports, dependencies, and verification commands are understood.
-
-## Stack
-
-- Next.js App Router
-- React Server Components by default
-- TypeScript in strict mode
-- Tailwind CSS
-- Zod validation at authored-content and external-data boundaries
-- Static generation for evergreen editorial pages; server rendering only where request-time behaviour is genuinely required
-- First-party content stored in the repository for the MVP
-- pnpm, ESLint, Prettier, Vitest, and GitHub Actions release checks
-
-The stack is deliberately database-free until a validated feature requires mutable user or editorial state.
-
-## Documentation
-
-- [`docs/product/product-brief.md`](docs/product/product-brief.md)
-- [`docs/product/information-architecture.md`](docs/product/information-architecture.md)
-- [`docs/product/content-rights-policy.md`](docs/product/content-rights-policy.md)
-- [`docs/product/roadmap.md`](docs/product/roadmap.md)
-- [`frontend/specs/`](frontend/specs/)
-- [`frontend/README.md`](frontend/README.md)
-
-## Working rules
-
-- German is the launch language.
-- Editorial usefulness outranks page count.
-- No arbitrary Google Images ingestion.
-- No image is publishable without provenance and rights metadata.
-- Flagship experiences may be custom-built; factual entities remain structured and reusable.
-- Shared primitives must not force every movement into the same visual template.
-- Empty, thin, or generated combinations are not indexable.
-- Accessibility and performance are release requirements, not later polish.
+**Status:** implemented foundation and small researched seed. Not an exhaustive art-history catalogue, not independently reviewed, not a production replacement. The prototype is English; multilingual labels are supported by the data model. No claim is made that the legacy German frontend has been rebuilt or tested by these new checks.
