@@ -54,7 +54,7 @@ Browser assertions cover a real loaded image, horizontal overflow, study/final/m
 
 The local browser used a test-only HTTPS override because this execution environment intercepts external HTTPS. No application TLS or request policy was weakened; CI does not enable the override. The AIC image host returned HTTP 403 in a separate trusted-HTTPS probe. Metadata and traversal remain usable through the image-unavailable state. That observation does not establish an outage for other clients.
 
-The new GitHub workflow repeats fixture replay, technical gates and browser checks, then uploads the static export and browser evidence. A local pass is not a claim that remote CI has run. The legacy frontend's separate tests/build were not part of this foundation verification.
+The new GitHub workflow repeats fixture replay, technical gates and browser checks, then uploads the static export and browser evidence. Its first clean GitHub run passed installation, replay and every `pnpm verify` gate, but browser installation stopped because `ubuntu-latest` selected Ubuntu 26.04, unsupported by the pinned Playwright 1.56.1. The workflow now pins Ubuntu 24.04 and retains the same browser assertions. The PR's latest workflow result is the authority for remote CI status; local passes alone do not establish it. The legacy frontend's separate tests/build were not part of this foundation verification.
 
 ## Independent Gauntlet results
 
