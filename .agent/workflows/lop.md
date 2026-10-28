@@ -1,154 +1,91 @@
 ---
-description: Domain-scoped development using Løp (bubble agent) pattern
+description: Package- and site-scoped development using Lop bubbles in the Artsy pnpm monorepo
 ---
 
-# Løp Workflow: Domain-Scoped Development
+# Lop workflow — package- and site-scoped development
 
-## Overview
+Lop ("Loop" in Norwegian) gives each domain a spec and scoped write permissions. An Artsy domain is a source package under `packages/<name>/` or a thin static-export site under `sites/<id>/`. An agent reconstructs its local intent from its spec and read-only context. It does not rewrite the repo's world state.
 
-Løp ("Loop" in Norwegian) is a multi-agent pattern for monorepo development. Each "domain" (vertical slice) gets its own agent with **scoped write permissions**.
+The engine contract lives at `specs/00_engine.md`; package specs at `packages/<name>/SPEC.md`; site specs at `specs/sites/<id>.md`; work sequencing at `specs/engine-plan.md`.
 
-**Core Insight**: The world state is never materialized. Only routing rules exist. Each agent reconstructs its local view from its spec + injected events + read access to everything else.
+## Lop is half the process
 
----
+**Read `gauntlet.md` too.** Lop establishes conformance to a description. Gauntlet compares the real artifact to an external standard using a fresh critic. Green technical gates are entry conditions for judgment, not completion.
 
-## When to Use This Workflow
+## When to use this workflow
 
-Use Løp when:
-- Working on a **specific vertical slice** (e.g., `equipment`, `experiments`, `protocols`)
-- The task is **scoped to one domain** and doesn't require cross-cutting changes
-- You want to enforce **hard boundaries** on what files you can modify
+Use a bubble for one known package/site task inside its ownership and contracts. Creating/redefining domains, changing contracts, cross-package refactors and PM-owned files are PM work: update the engine/specs first, then split implementation into independent cycles.
 
-Do NOT use Løp when:
-- Creating a new domain (use PM mode instead)
-- Performing cross-domain refactors
-- Modifying shared infrastructure (`lib/`, `prisma/schema.prisma`)
-
----
-
-## Spec Structure
-
-Each domain has a spec file at `frontend/specs/<domain>.spec.md` with YAML frontmatter:
+## Spec format
 
 ```yaml
 ---
-name: equipment
-description: "Unified device and instrumentation management"
+name: graph
+description: "Evidence-bearing bidirectional traversal and reproducible walks"
+status: foundation
 paths:
-  types: frontend/lib/zod/equipment.ts
-  service: frontend/server/api/routers/equipment_core.ts
-  components: frontend/app/components/equipment/
-  tests: frontend/app/components/equipment/__tests__/
+  owned:
+    - packages/graph/src/  # except every contract.ts
+  tests:
+    - packages/graph/test/
 exports:
-  - EquipmentMetadataSchema
-  - InstrumentReservation
-  - processMeasurement
+  - neighbors
+  - explain
 consumes:
-  - experiments.experiment_runs
-  - prisma.equipment
+  - core.Corpus
 verification:
-  typecheck: "npx tsc --noEmit"
-  test: "vitest run frontend/app/components/equipment/"
-  lint: "eslint frontend/server/api/routers/equipment_core.ts"
+  check: "pnpm --filter @artsy/graph check"
+  test: "pnpm --filter @artsy/graph test"
+  build: "pnpm --filter @site/demo build"
+bar:
+  reference: "Getty AAT hierarchy and associative relationships"
+  property: "Explain an edge and follow it either way without changing its evidence."
 ---
-
-# Equipment Domain
-
-[Extended context, rationale, examples, gotchas...]
 ```
 
----
+`status: planned` means no executable package/site exists yet. Its commands are targets for provisioning and **cannot count as passing**. `foundation` marks an implemented, bounded slice; full acceptance still applies to later release. Every body names inputs/outputs, invariants, adversarial cases, real artifacts and the concrete Gauntlet task.
 
-## Hard Rules (Write Gate)
+## Hard write gate
 
-When operating as a Bubble Agent for domain X:
+Allowed: files under the current spec's `paths.owned`, its `paths.tests`, and the domain spec itself to update exports/consumes/verification and record gaps.
 
-### ✅ CAN WRITE
-- Files listed in `paths.*` of the domain spec
-- Test files within the domain's test directory
-- The spec file itself (to update exports/consumes)
+Forbidden even inside an owned directory:
 
-### ❌ CANNOT WRITE
-- Any file outside the domain's `paths`
-- Prisma schema (requires PM mode)
-- Shared libraries (`lib/utils/`, `lib/trpc/`)
-- Other domain's files
+- Root `package.json`, `pnpm-workspace.yaml`, `pnpm-lock.yaml`, `tsconfig.base.json`, `vitest.config.ts` and shared test/tool configuration.
+- Every package/site `package.json`, `next.config.*`, and `contract.ts`.
+- `test/architecture/**`, `scripts/**`, `.github/**`, `.agent/**`, `AGENTS.md`, root `README.md`, `specs/00_engine.md`, `specs/engine-plan.md`, PM rulings and review records.
+- Another domain's paths; output (`out/`, `.next/`, generated bundles); the legacy `frontend/` unless the PM explicitly assigns a separate legacy task.
 
-### 👁️ CAN READ (Everything)
-- All files in the repo (for context)
-- Other domain specs (to understand interfaces)
-- Prisma schema (to understand data model)
+Read access: the repository and its references. Do not import from legacy code or neighboring repositories. Root `data/` is not shared mutable space: the ingest spec explicitly owns its raw/source/seed subdirectories. Shared write directories are a structural defect, not a convenient shortcut.
 
----
+A domain may request a contract change; it may not quietly widen its ownership or weaken the bar. Generated outputs are produced by their commands, never hand-edited to make tests pass.
 
-## Workflow Steps
+## Cycle
 
-### 1. Load the Spec
-```
-Read frontend/specs/<domain>.spec.md
-Parse the YAML frontmatter
-Understand what you OWN and what you CONSUME
-```
+1. Read the domain spec, its bar, `specs/00_engine.md`, relevant PM rulings and consumed contracts. Identify the real artifact and adversarial state before building.
+2. Work in a separate git branch/worktree. The PM supplies the base commit and merges at milestones. Use disjoint write scopes even when two agents need the same read-only source.
+3. Implement within the gate. Keep meaningful regression tests with the domain. Validate external JSON at the boundary; import canonical types.
+4. Run the spec's check, test and integration build plus `pnpm test:architecture` and `pnpm spec:check`. Run `pnpm scope:check --domain <name> --base <base-sha>` for the bubble's changes. Missing scripts, fixtures or tests are failures, not successful no-ops.
+5. Update exports/consumes when the public surface changes; PM approves any contract or ownership change first.
+6. Report disagreements plainly. If a contract cannot express the needed truth, stop that affected work and describe the missing capability. Do not fork the type or fake a passing fixture. Continue unaffected scoped work.
+7. End with four parts: **changed paths; actual commands/results; disagreements; remaining breakage**. Never claim a check you did not run.
+8. Hand the built artifact to a fresh read-only critic using the Gauntlet packet. Builder prose is not part of that packet.
 
-### 2. Paste Canonical Types
-Before making any changes, paste the domain's types into your context:
-```
-Read paths.types file
-This is the CANONICAL type. Use it exactly.
-```
+PM integration checks may span domains. A bootstrap that creates package/contract ownership is a PM task, not evidence of a completed independent bubble/worktree cycle. The foundation's execution exceptions are recorded in `specs/decisions/0001-foundation.md`.
 
-### 3. Implement to Spec
-Work within your domain boundaries. If a change requires modifying files outside your spec:
-- STOP
-- Document what cross-domain change is needed
-- Request PM escalation
+## Anti-patterns
 
-### 4. Verify Before Done
-// turbo
-```bash
-npx tsc --noEmit
-```
-Run the verification commands from the spec before marking complete.
-
-### 5. Update Spec if Needed
-If you added new exports or new consumes, update the spec frontmatter.
-
----
-
-## Event Propagation
-
-When you modify `exports` in your domain:
-
-1. The system detects type changes
-2. Looks up which domains `consume` from you
-3. Auto-creates issues for dependent domains
-
-**Example**: If `equipment` changes `InstrumentReservation`, and `experiments` consumes `equipment.InstrumentReservation`, an issue is auto-created for `experiments`.
-
----
-
-## Anti-Patterns (Slop Prevention)
-
-| Anti-Pattern | Why It's Bad | What To Do Instead |
-|--------------|--------------|---------------------|
-| Writing outside spec | Breaks domain boundaries | Request Use escalation |
-| Guessing types | Leads to runtime errors | Read canonical types.ts |
-| Skipping verification | Ships broken code | Always run `npx tsc --noEmit` |
-| Ignoring consumes | Breaks dependents silently | Check who consumes your exports |
-| Manual type definitions | Creates drift from Prisma | Use `z.infer<>` or generated types |
-
----
-
-## Integration with Biolab
-
-For Biolab specifically, domains map to:
-
-| Domain | Router | Types | Components |
-|--------|--------|-------|------------|
-| `equipment` | `equipment_core.ts` | `lib/zod/equipment.ts` | `components/equipment/` |
-| `experiments` | `experiments_core.ts` | Prisma generated | `components/experiments/` |
-| `protocols` | `protocols_core.ts` | Prisma generated | `components/protocols/` |
-| `iot` | `iot_core.ts` | `lib/zod/equipment.ts` | `components/equipment/console/` |
-| `inventory` | `inventory_core.ts` | Prisma generated | `components/inventory/` |
-
-Each domain's spec file lives at `frontend/specs/<domain>.spec.md`.
+| Failure | Required response |
+|---|---|
+| Write outside a bubble | Split work; ask the PM to change the spec before editing |
+| Site identity/data embedded in reusable code | Pass configuration or validated corpus through the public surface |
+| Parallel shapes of core facts | Import the lower contract; request the missing capability |
+| Module singleton with site-specific state | Pass an instance, slice or factory |
+| Unchecked JSON, `any`, unsafe casts | Parse at the boundary and narrow the result |
+| Date overlap becomes period/influence | Preserve separate semantics and evidence |
+| Title-based object merging | Use source IDs and reviewed identity links |
+| Reachable image treated as licensed | Require the asset's explicit rights evidence and capability decision |
+| Counts/facts typed into UI prose | Derive them from the pinned corpus |
+| No tests / missing domain filtered out | Fail the gate; planned domains stay visibly planned |
+| Builder grades itself | Spawn a fresh critic without builder history |
+| Twelve critical gaps in one round | Pick the largest independently fixable gap |

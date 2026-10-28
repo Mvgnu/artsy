@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "adapterVersion": "m0-pinned-replay-1",
+  "requests": [
+    {
+      "sourceId": "met",
+      "recordId": "437658",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437658",
+      "path": "data/raw/met/437658.json",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "httpStatus": 200,
+      "sha256": "4f5ce0246dc17240abe7c13b1d976d70543f25cb0c9972dd58df1769a0eb3f0b"
+    },
+    {
+      "sourceId": "met",
+      "recordId": "72381",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/72381",
+      "path": "data/raw/met/72381.json",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "httpStatus": 200,
+      "sha256": "fe57520c9d9b0253284039d1f77104f269f1aa629c9926ea72fa46d8b5b06a42"
+    },
+    {
+      "sourceId": "met",
+      "recordId": "38198",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/38198",
+      "path": "data/raw/met/38198.json",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "httpStatus": 200,
+      "sha256": "e3fe45a1436fe696f266f834cc14718e79f3d872f7790f403f036a2b5ebb451f"
+    },
+    {
+      "sourceId": "met",
+      "recordId": "56353",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/56353",
+      "path": "data/raw/met/56353.json",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "httpStatus": 200,
+      "sha256": "582e2a921fd45d83ca1825dbcc790b346d897bcc2cad96029fbf02f5a66ecffe"
+    },
+    {
+      "sourceId": "met",
+      "recordId": "544227",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/544227",
+      "path": "data/raw/met/544227.json",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "httpStatus": 200,
+      "sha256": "51bad84b9ef8ee7e666792657f6977f1166296f03f98ddf5a253750662fde095"
+    },
+    {
+      "sourceId": "artic",
+      "recordId": "27992",
+      "url": "https://api.artic.edu/api/v1/artworks/27992?fields=id,title,date_display,date_start,date_end,artist_id,artist_ids,artist_title,artist_display,place_of_origin,style_ids,style_titles,material_ids,material_titles,technique_ids,technique_titles,subject_ids,subject_titles,medium_display,credit_line,image_id,is_public_domain,thumbnail,main_reference_number",
+      "path": "data/raw/artic/27992.json",
+      "retrievedAt": "2026-10-28T20:24:51Z",
+      "httpStatus": 200,
+      "sha256": "60a1e08550ed13c9e27fe95a8e1ba53b493a72a536809993d07134f381f49001"
+    },
+    {
+      "sourceId": "artic",
+      "recordId": "artist/40810",
+      "url": "https://api.artic.edu/api/v1/artists/40810?fields=id,title,birth_date,death_date,ulan_id,wikidata_id",
+      "path": "data/raw/artic/artist-40810.json",
+      "retrievedAt": "2026-10-28T20:25:53Z",
+      "httpStatus": 200,
+      "sha256": "e60eb91796cd75a265310a381ddd83069c393655a47a38cacee1d19c48d1fff0"
+    },
+    {
+      "sourceId": "wikidata",
+      "recordId": "Q34013",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q34013.json",
+      "path": "data/raw/wikidata/Q34013.json",
+      "retrievedAt": "2026-10-28T20:25:53Z",
+      "httpStatus": 200,
+      "sha256": "6b0714a44f3fb0b4c5c2061e0ae1b98a897fa3ec9fc6880f1e481c95101018e0"
+    }
+  ]
+}

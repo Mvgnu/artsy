@@ -1,0 +1,657 @@
+{
+  "schemaVersion": 1,
+  "description": "M0 reviewed context and factual paraphrases. Museum essays are not stored. Provider JSON fields are replayed separately; these typed additions carry individual locators.",
+  "sources": [
+    {
+      "id": "met",
+      "name": "The Metropolitan Museum of Art — Collection API",
+      "url": "https://www.metmuseum.org/",
+      "metadataLicense": "CC0-1.0 for Open Access API metadata",
+      "documentationUrl": "https://metmuseum.github.io/"
+    },
+    {
+      "id": "artic",
+      "name": "Art Institute of Chicago — public API",
+      "url": "https://www.artic.edu/",
+      "metadataLicense": "CC0-1.0 for selected fields; artwork description is CC BY 4.0 and excluded",
+      "documentationUrl": "https://api.artic.edu/docs/"
+    },
+    {
+      "id": "wikidata",
+      "name": "Wikidata — pinned identity statement",
+      "url": "https://www.wikidata.org/",
+      "metadataLicense": "CC0-1.0 for structured entity data",
+      "documentationUrl": "https://www.wikidata.org/wiki/Wikidata:Data_access"
+    },
+    {
+      "id": "met-text",
+      "name": "The Met — cited curatorial records and scholarship",
+      "url": "https://www.metmuseum.org/",
+      "metadataLicense": "Source prose remains subject to museum terms; only original factual paraphrases are retained here",
+      "documentationUrl": "https://www.metmuseum.org/essays/georges-seurat-1859-1891-and-neo-impressionism"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "met-text:study-for",
+      "sourceId": "met-text",
+      "url": "https://www.metmuseum.org/art/collection/search/437658",
+      "retrievedAt": "2026-10-28T20:28:42Z",
+      "locator": "Overview, first paragraph; Audio 6342, first paragraph",
+      "note": "The Met identifies this canvas as the final preparatory study for the monumental painting held by the Art Institute of Chicago."
+    },
+    {
+      "id": "met-text:72381:gesture",
+      "sourceId": "met-text",
+      "url": "https://www.metmuseum.org/art/collection/search/72381",
+      "retrievedAt": "2026-10-28T20:28:42Z",
+      "locator": "Overview, first paragraph, sentence identifying the right-hand gesture",
+      "note": "The seated figure holds its right hand in abhaya mudra; the museum interprets the gesture as approachability."
+    },
+    {
+      "id": "met-text:38198:gesture",
+      "sourceId": "met-text",
+      "url": "https://www.metmuseum.org/art/collection/search/38198",
+      "retrievedAt": "2026-10-28T20:28:42Z",
+      "locator": "Overview, first paragraph, sentence describing the missing right hand",
+      "note": "The museum identifies the figure's original gesture as abhaya mudra. The right hand is now missing; the gesture is a curatorial reconstruction, not visible intact anatomy."
+    },
+    {
+      "id": "met-text:neo-definition",
+      "sourceId": "met-text",
+      "url": "https://www.metmuseum.org/essays/georges-seurat-1859-1891-and-neo-impressionism",
+      "retrievedAt": "2026-10-28T20:28:42Z",
+      "locator": "Dita Amory, October 2004; first body paragraph and paragraph about the 1886 exhibition",
+      "note": "Amory describes Neo-Impressionism as flourishing principally in France during 1886–1906, led by Seurat, and identifies the Chicago painting as a defining example. This is one sourced movement definition."
+    },
+    {
+      "id": "met-text:72381:production",
+      "sourceId": "met-text",
+      "url": "https://www.metmuseum.org/art/collection/search/72381",
+      "retrievedAt": "2026-10-28T20:28:42Z",
+      "locator": "Audio 7904, Seated Buddha Part 1; paragraph beginning In fact",
+      "note": "The museum audio explicitly locates manufacture in Gandhara. The ancient region is not equated with a present national boundary."
+    },
+    {
+      "id": "met-text:437658:depicted-place",
+      "sourceId": "met-text",
+      "url": "https://www.metmuseum.org/art/collection/search/437658",
+      "retrievedAt": "2026-10-28T20:28:42Z",
+      "locator": "Overview, first paragraph; Audio 6342, second paragraph",
+      "note": "The study and final painting represent leisure on La Grande Jatte, an island in the Seine near Paris. This is a depicted location, not the place where the canvases were painted."
+    }
+  ],
+  "entities": [
+    {
+      "id": "concept:oil-paint",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Oil paint"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:437658:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:canvas",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Canvas"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:437658:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:bronze",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Bronze"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:72381:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:gold-leaf",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Gold leaf"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:72381:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:red-sandstone",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Red sandstone"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:38198:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:woodblock-printing",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Woodblock printing"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:56353:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:faience",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Faience"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:544227:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:abhaya-mudra",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Abhaya mudra — gesture of reassurance"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met-text:72381:gesture",
+        "met-text:38198:gesture"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "institution:met",
+      "kind": "institution",
+      "labels": [
+        {
+          "language": "en",
+          "text": "The Metropolitan Museum of Art"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:437658:custody"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "institution:artic",
+      "kind": "institution",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Art Institute of Chicago"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "artic:27992:custody"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "place:france",
+      "kind": "place",
+      "labels": [
+        {
+          "language": "en",
+          "text": "France"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "artic:27992:origin",
+        "met-text:neo-definition"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "place:gandhara",
+      "kind": "place",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Gandhara — ancient region"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met-text:72381:production"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "place:grande-jatte",
+      "kind": "place",
+      "labels": [
+        {
+          "language": "en",
+          "text": "La Grande Jatte — depicted island"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met-text:437658:depicted-place"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "place:meir",
+      "kind": "place",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Meir — archaeological findspot"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:544227:findspot"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "place:egypt",
+      "kind": "place",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Egypt"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:544227:findspot"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "period:neo-impressionism-met-amory2004",
+      "kind": "period",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Neo-Impressionism"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met-text:neo-definition"
+      ],
+      "externalIds": [],
+      "period": {
+        "scheme": "Dita Amory, The Met Heilbrunn Timeline, October 2004",
+        "spatialScope": "Principally France, as defined in this essay"
+      }
+    },
+    {
+      "id": "period:gupta-met",
+      "kind": "period",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Gupta period (4th–6th century)"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:38198:period"
+      ],
+      "externalIds": [],
+      "period": {
+        "scheme": "The Met collection catalogue, object 38198",
+        "spatialScope": "India; Mathura context of this catalogue record"
+      }
+    },
+    {
+      "id": "period:edo-met",
+      "kind": "period",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Edo period (1615–1868)"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:56353:period"
+      ],
+      "externalIds": [],
+      "period": {
+        "scheme": "The Met collection catalogue, object 56353",
+        "spatialScope": "Japan, as catalogued for this impression"
+      }
+    },
+    {
+      "id": "period:middle-kingdom-met",
+      "kind": "period",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Middle Kingdom"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:544227:period"
+      ],
+      "externalIds": [],
+      "period": {
+        "scheme": "The Met collection catalogue, object 544227",
+        "spatialScope": "Egypt, as catalogued for this object"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "met:437658:study-for",
+      "subject": "met:437658",
+      "predicate": "study_for",
+      "object": {
+        "type": "entity",
+        "id": "artic:27992"
+      },
+      "evidenceIds": [
+        "met-text:study-for",
+        "artic:27992:title"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "explanation": "The Met explicitly names the final canvas and its Chicago holding institution."
+      }
+    },
+    {
+      "id": "met:72381:gesture",
+      "subject": "met:72381",
+      "predicate": "depicts",
+      "object": {
+        "type": "entity",
+        "id": "concept:abhaya-mudra"
+      },
+      "evidenceIds": [
+        "met-text:72381:gesture"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "hand gesture"
+      }
+    },
+    {
+      "id": "met:38198:gesture",
+      "subject": "met:38198",
+      "predicate": "depicts",
+      "object": {
+        "type": "entity",
+        "id": "concept:abhaya-mudra"
+      },
+      "evidenceIds": [
+        "met-text:38198:gesture"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "original hand gesture",
+        "explanation": "The right hand is now missing. The catalogue reconstructs the original gesture."
+      }
+    },
+    {
+      "id": "met:72381:produced-at",
+      "subject": "met:72381",
+      "predicate": "produced_at",
+      "object": {
+        "type": "entity",
+        "id": "place:gandhara"
+      },
+      "evidenceIds": [
+        "met-text:72381:production"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "production place"
+      }
+    },
+    {
+      "id": "met:437658:depicted-place",
+      "subject": "met:437658",
+      "predicate": "depicts",
+      "object": {
+        "type": "entity",
+        "id": "place:grande-jatte"
+      },
+      "evidenceIds": [
+        "met-text:437658:depicted-place"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "depicted place"
+      }
+    },
+    {
+      "id": "artic:27992:depicted-place",
+      "subject": "artic:27992",
+      "predicate": "depicts",
+      "object": {
+        "type": "entity",
+        "id": "place:grande-jatte"
+      },
+      "evidenceIds": [
+        "met-text:437658:depicted-place"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "depicted place"
+      }
+    },
+    {
+      "id": "artic:27992:neo",
+      "subject": "artic:27992",
+      "predicate": "classified_as",
+      "object": {
+        "type": "entity",
+        "id": "period:neo-impressionism-met-amory2004"
+      },
+      "evidenceIds": [
+        "met-text:neo-definition"
+      ],
+      "status": "asserted",
+      "basis": "scholarship",
+      "qualifiers": {
+        "scheme": "Amory 2004",
+        "explanation": "An explicit association in the cited essay; no period membership inferred from date overlap."
+      }
+    },
+    {
+      "id": "person:seurat:neo",
+      "subject": "person:seurat",
+      "predicate": "classified_as",
+      "object": {
+        "type": "entity",
+        "id": "period:neo-impressionism-met-amory2004"
+      },
+      "evidenceIds": [
+        "met-text:neo-definition"
+      ],
+      "status": "asserted",
+      "basis": "scholarship",
+      "qualifiers": {
+        "scheme": "Amory 2004"
+      }
+    },
+    {
+      "id": "period:neo:france",
+      "subject": "period:neo-impressionism-met-amory2004",
+      "predicate": "period_in",
+      "object": {
+        "type": "entity",
+        "id": "place:france"
+      },
+      "evidenceIds": [
+        "met-text:neo-definition"
+      ],
+      "status": "asserted",
+      "basis": "scholarship",
+      "qualifiers": {
+        "explanation": "Principally France in this source; this does not deny activity elsewhere."
+      }
+    },
+    {
+      "id": "place:meir:egypt",
+      "subject": "place:meir",
+      "predicate": "part_of",
+      "object": {
+        "type": "entity",
+        "id": "place:egypt"
+      },
+      "evidenceIds": [
+        "met:544227:findspot"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "catalogue geography"
+      }
+    },
+    {
+      "id": "period:middle:egypt",
+      "subject": "period:middle-kingdom-met",
+      "predicate": "period_in",
+      "object": {
+        "type": "entity",
+        "id": "place:egypt"
+      },
+      "evidenceIds": [
+        "met:544227:period",
+        "met:544227:findspot"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "source-scoped geographical context"
+      }
+    },
+    {
+      "id": "period:neo:dated",
+      "subject": "period:neo-impressionism-met-amory2004",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "1886–1906, principally France",
+          "earliest": 1886,
+          "latest": 1906,
+          "qualifier": "range",
+          "semantics": "duration",
+          "sourceCalendar": "CE; calendar unspecified",
+          "precision": "year"
+        }
+      },
+      "evidenceIds": [
+        "met-text:neo-definition"
+      ],
+      "status": "asserted",
+      "basis": "scholarship",
+      "qualifiers": {
+        "role": "period definition"
+      }
+    },
+    {
+      "id": "period:gupta:dated",
+      "subject": "period:gupta-met",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "4th–6th century CE (catalogue definition)",
+          "earliest": 301,
+          "latest": 600,
+          "qualifier": "range",
+          "semantics": "duration",
+          "sourceCalendar": "CE; calendar unspecified",
+          "precision": "century"
+        }
+      },
+      "evidenceIds": [
+        "met:38198:period"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "period definition"
+      }
+    },
+    {
+      "id": "period:edo:dated",
+      "subject": "period:edo-met",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "1615–1868 (catalogue definition)",
+          "earliest": 1615,
+          "latest": 1868,
+          "qualifier": "range",
+          "semantics": "duration",
+          "sourceCalendar": "CE; calendar unspecified",
+          "precision": "year"
+        }
+      },
+      "evidenceIds": [
+        "met:56353:period"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "period definition"
+      }
+    }
+  ]
+}

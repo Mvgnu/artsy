@@ -1,0 +1,19 @@
+{
+  "name": "@site/demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "next build",
+    "dev": "next dev",
+    "test": "vitest run --config ../../vitest.config.ts packages/explorer/test"
+  },
+  "dependencies": {
+    "@artsy/core": "workspace:*",
+    "@artsy/explorer": "workspace:*",
+    "next": "16.2.9",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  }
+}

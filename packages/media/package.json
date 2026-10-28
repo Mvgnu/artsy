@@ -1,0 +1,17 @@
+{
+  "name": "@artsy/media",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./contract": "./src/contract.ts"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "vitest run --config ../../vitest.config.ts packages/media/test"
+  },
+  "dependencies": {
+    "@artsy/core": "workspace:*"
+  }
+}

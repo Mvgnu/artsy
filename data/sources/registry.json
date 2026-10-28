@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 1,
+  "researchedAt": "2026-10-28",
+  "statusMeaning": "Documentation verification is distinct from a successful bounded probe, and neither means a production adapter exists. Configured rates are proposed ArtSy settings, not provider rules.",
+  "sources": [
+    {
+      "id": "met",
+      "name": "The Metropolitan Museum of Art",
+      "tier": "launch",
+      "documentationUrls": [
+        "https://metmuseum.github.io/",
+        "https://github.com/metmuseum/openaccess"
+      ],
+      "documentationCheckedAt": "2026-10-28",
+      "metadataRights": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "mediaRights": {
+        "policy": "Per-object public-domain flag and supplied image; no blanket permission for all media",
+        "fields": [
+          "isPublicDomain",
+          "primaryImage",
+          "rightsAndReproduction"
+        ]
+      },
+      "authentication": "none",
+      "endpoints": {
+        "object": "https://collectionapi.metmuseum.org/public/collection/v1/objects/{id}",
+        "enumerate": "https://collectionapi.metmuseum.org/public/collection/v1/objects",
+        "search": "https://collectionapi.metmuseum.org/public/collection/v1.1/search"
+      },
+      "verification": {
+        "documentation": "verified",
+        "liveProbe": "passed",
+        "probes": [
+          {
+            "recordId": "437658",
+            "status": 200,
+            "retrievedAt": "2026-10-28T20:24:50Z",
+            "path": "data/raw/met/437658.json",
+            "sha256": "4f5ce0246dc17240abe7c13b1d976d70543f25cb0c9972dd58df1769a0eb3f0b"
+          },
+          {
+            "recordId": "72381",
+            "status": 200,
+            "retrievedAt": "2026-10-28T20:24:50Z",
+            "path": "data/raw/met/72381.json",
+            "sha256": "fe57520c9d9b0253284039d1f77104f269f1aa629c9926ea72fa46d8b5b06a42"
+          },
+          {
+            "recordId": "38198",
+            "status": 200,
+            "retrievedAt": "2026-10-28T20:24:50Z",
+            "path": "data/raw/met/38198.json",
+            "sha256": "e3fe45a1436fe696f266f834cc14718e79f3d872f7790f403f036a2b5ebb451f"
+          },
+          {
+            "recordId": "56353",
+            "status": 200,
+            "retrievedAt": "2026-10-28T20:24:50Z",
+            "path": "data/raw/met/56353.json",
+            "sha256": "582e2a921fd45d83ca1825dbcc790b346d897bcc2cad96029fbf02f5a66ecffe"
+          },
+          {
+            "recordId": "544227",
+            "status": 200,
+            "retrievedAt": "2026-10-28T20:24:50Z",
+            "path": "data/raw/met/544227.json",
+            "sha256": "51bad84b9ef8ee7e666792657f6977f1166296f03f98ddf5a253750662fde095"
+          }
+        ]
+      },
+      "implementation": "bounded-pinned-replay",
+      "documentedRate": {
+        "requests": 80,
+        "intervalSeconds": 1
+      },
+      "configuredRate": {
+        "requests": 1,
+        "intervalSeconds": 1
+      },
+      "deprecations": [
+        {
+          "endpoint": "/public/collection/v1/search",
+          "documentedRetirementDate": "2026-10-01"
+        }
+      ]
+    },
+    {
+      "id": "artic",
+      "name": "Art Institute of Chicago",
+      "tier": "launch",
+      "documentationUrls": [
+        "https://api.artic.edu/docs/"
+      ],
+      "documentationCheckedAt": "2026-10-28",
+      "metadataRights": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "fieldOverrides": {
+          "artworks.description": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "excludedFields": [
+          "artworks.description"
+        ]
+      },
+      "mediaRights": {
+        "policy": "Require is_public_domain and image_id; construct URLs using response config.iiif_url",
+        "fields": [
+          "is_public_domain",
+          "image_id",
+          "config.iiif_url"
+        ]
+      },
+      "authentication": "none",
+      "endpoints": {
+        "artworks": "https://api.artic.edu/api/v1/artworks",
+        "artists": "https://api.artic.edu/api/v1/artists"
+      },
+      "verification": {
+        "documentation": "verified",
+        "liveProbe": "passed",
+        "probes": [
+          {
+            "recordId": "27992",
+            "status": 200,
+            "retrievedAt": "2026-10-28T20:24:51Z",
+            "path": "data/raw/artic/27992.json",
+            "sha256": "60a1e08550ed13c9e27fe95a8e1ba53b493a72a536809993d07134f381f49001"
+          },
+          {
+            "recordId": "artist/40810",
+            "status": 200,
+            "retrievedAt": "2026-10-28T20:25:53Z",
+            "path": "data/raw/artic/artist-40810.json",
+            "sha256": "e60eb91796cd75a265310a381ddd83069c393655a47a38cacee1d19c48d1fff0"
+          }
+        ]
+      },
+      "implementation": "bounded-pinned-replay",
+      "documentedRate": {
+        "requests": 60,
+        "intervalSeconds": 60
+      },
+      "configuredRate": {
+        "requests": 30,
+        "intervalSeconds": 60
+      },
+      "limits": {
+        "pageSize": 100,
+        "searchWindow": 1000
+      },
+      "requestedHeader": "AIC-User-Agent"
+    },
+    {
+      "id": "cleveland",
+      "name": "Cleveland Museum of Art",
+      "tier": "launch",
+      "documentationUrls": [
+        "https://openaccess-api.clevelandart.org/",
+        "https://github.com/ClevelandMuseumArt/openaccess"
+      ],
+      "documentationCheckedAt": "2026-10-28",
+      "metadataRights": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "mediaRights": {
+        "policy": "Images admitted only when share_license_status equals CC0",
+        "fields": [
+          "share_license_status",
+          "images"
+        ]
+      },
+      "authentication": "none-documented",
+      "endpoints": {
+        "artworks": "https://openaccess-api.clevelandart.org/api/artworks/",
+        "creators": "https://openaccess-api.clevelandart.org/api/creators/",
+        "exhibitions": "https://openaccess-api.clevelandart.org/api/exhibitions/"
+      },
+      "verification": {
+        "documentation": "verified",
+        "liveProbe": "not-run",
+        "probes": []
+      },
+      "implementation": "planned",
+      "documentedRate": null,
+      "configuredRate": {
+        "requests": 1,
+        "intervalSeconds": 1
+      },
+      "limits": {
+        "artworkPageSize": 1000
+      }
+    },
+    {
+      "id": "wikidata",
+      "name": "Wikidata",
+      "tier": "launch",
+      "documentationUrls": [
+        "https://www.wikidata.org/wiki/Wikidata:Data_access",
+        "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual"
+      ],
+      "documentationCheckedAt": "2026-10-28",
+      "metadataRights": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "scope": "Structured entity namespaces only"
+      },
+      "mediaRights": {
+        "policy": "No media imported; image pointers never establish license"
+      },
+      "authentication": "public-read",
+      "endpoints": {
+        "entity": "https://www.wikidata.org/wiki/Special:EntityData/{id}.json",
+        "sparql": "https://query.wikidata.org/sparql"
+      },
+      "verification": {
+        "documentation": "verified",
+        "liveProbe": "passed",
+        "probes": [
+          {
+            "recordId": "Q34013",
+            "status": 200,
+            "retrievedAt": "2026-10-28T20:25:53Z",
+            "path": "data/raw/wikidata/Q34013.json",
+            "sha256": "6b0714a44f3fb0b4c5c2061e0ae1b98a897fa3ec9fc6880f1e481c95101018e0"
+          }
+        ]
+      },
+      "implementation": "bounded-pinned-replay",
+      "queryService": {
+        "timeoutSeconds": 60,
+        "maxParallelQueriesPerIp": 5,
+        "notAProductionDependency": true
+      }
+    },
+    {
+      "id": "getty",
+      "name": "Getty AAT / ULAN / TGN",
+      "tier": "authority",
+      "documentationUrls": [
+        "https://www.getty.edu/research-conservation/tools-databases/vocabularies/data-services/",
+        "https://www.getty.edu/research/tools/vocabularies/lod/index.html"
+      ],
+      "documentationCheckedAt": "2026-10-28",
+      "metadataRights": {
+        "license": "ODC-By-1.0",
+        "licenseUrl": "https://opendatacommons.org/licenses/by/1-0/",
+        "credit": "Getty Research Institute, named vocabulary, contributor and cited sources as applicable"
+      },
+      "mediaRights": {
+        "policy": "Vocabulary records do not grant artwork-image permission"
+      },
+      "authentication": "public-read",
+      "endpoints": {
+        "sparql": "https://vocab.getty.edu/sparql"
+      },
+      "verification": {
+        "documentation": "verified",
+        "liveProbe": "not-run",
+        "probes": []
+      },
+      "implementation": "planned",
+      "deprecations": [
+        {
+          "service": "XML services and XML/relational releases",
+          "finalArchiveDate": "2026-01-30"
+        }
+      ],
+      "documentedRate": null
+    },
+    {
+      "id": "periodo",
+      "name": "PeriodO",
+      "tier": "authority",
+      "documentationUrls": [
+        "https://perio.do/technical-overview/",
+        "https://perio.do/license/"
+      ],
+      "documentationCheckedAt": "2026-10-28",
+      "metadataRights": {
+        "license": "public-domain-dedication",
+        "licenseUrl": "https://perio.do/license/"
+      },
+      "mediaRights": {
+        "policy": "No media"
+      },
+      "authentication": "public-read",
+      "endpoints": {
+        "dataset": "http://n2t.net/ark:/99152/p0d.json"
+      },
+      "verification": {
+        "documentation": "verified",
+        "liveProbe": "not-run",
+        "probes": []
+      },
+      "implementation": "planned",
+      "dateConvention": "astronomical years; 0000 = 1 BCE",
+      "documentedRate": null
+    },
+    {
+      "id": "commons",
+      "name": "Wikimedia Commons",
+      "tier": "enrichment",
+      "documentationUrls": [
+        "https://commons.wikimedia.org/wiki/Commons:Machine-readable_data",
+        "https://foundation.wikimedia.org/wiki/Legal:Wikimedia_Developer_App_Guidelines"
+      ],
+      "documentationCheckedAt": "2026-10-28",
+      "metadataRights": {
+        "license": "Varies by namespace and content; retain source policy"
+      },
+      "mediaRights": {
+        "policy": "Per-file license, artist, credit and license URL from imageinfo extmetadata; unresolved rights are link-only"
+      },
+      "authentication": "public-read",
+      "endpoints": {
+        "actionApi": "https://commons.wikimedia.org/w/api.php"
+      },
+      "verification": {
+        "documentation": "verified",
+        "liveProbe": "not-run",
+        "probes": []
+      },
+      "implementation": "planned",
+      "documentedRate": null
+    },
+    {
+      "id": "rijksmuseum",
+      "name": "Rijksmuseum",
+      "tier": "expansion",
+      "documentationUrls": [
+        "https://data.rijksmuseum.nl/docs/",
+        "https://data.rijksmuseum.nl/docs/search",
+        "https://data.rijksmuseum.nl/docs/data-dumps/",
+        "https://data.rijksmuseum.nl/policy"
+      ],
+      "documentationCheckedAt": "2026-10-28",
+      "metadataRights": {
+        "license": "Per-record public domain, CC0 or CC BY as indicated",
+        "policyUrl": "https://data.rijksmuseum.nl/policy"
+      },
+      "mediaRights": {
+        "policy": "Per-record notice; restricted media is not open"
+      },
+      "authentication": "none for current search API",
+      "endpoints": {
+        "search": "https://data.rijksmuseum.nl/search/collection"
+      },
+      "verification": {
+        "documentation": "verified",
+        "liveProbe": "not-run",
+        "probes": []
+      },
+      "implementation": "planned",
+      "documentedRate": null,
+      "acquisitionOptions": [
+        "Linked Art search and resolver",
+        "LDES",
+        "OAI-PMH",
+        "bulk N-Triples",
+        "IIIF"
+      ]
+    },
+    {
+      "id": "smithsonian",
+      "name": "Smithsonian",
+      "tier": "expansion",
+      "documentationUrls": [
+        "https://www.si.edu/openaccess/devtools",
+        "https://www.si.edu/openaccess/faq",
+        "https://edan.si.edu/openaccess/apidocs/",
+        "https://github.com/Smithsonian/OpenAccess"
+      ],
+      "documentationCheckedAt": "2026-10-28",
+      "metadataRights": {
+        "license": "CC0-1.0 for designated open metadata",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "mediaRights": {
+        "policy": "Use asset-level CC0 designation; restricted items can have metadata without reusable images"
+      },
+      "authentication": "api.data.gov key for API; public bulk alternative",
+      "endpoints": {
+        "bulk": "https://github.com/Smithsonian/OpenAccess"
+      },
+      "verification": {
+        "documentation": "verified",
+        "liveProbe": "not-run",
+        "probes": []
+      },
+      "implementation": "planned",
+      "documentedRate": null,
+      "documentationFetchNote": "Developer-tools content verified in search index; direct web fetch returned 404 in research run."
+    },
+    {
+      "id": "europeana",
+      "name": "Europeana",
+      "tier": "expansion",
+      "documentationUrls": [
+        "https://europeana.atlassian.net/wiki/spaces/EF/pages/2462351393/Accessing+the+APIs",
+        "https://europeana.atlassian.net/wiki/spaces/EF/pages/2360508417",
+        "https://europeana.atlassian.net/wiki/spaces/EF/pages/2704146433"
+      ],
+      "documentationCheckedAt": "2026-10-28",
+      "metadataRights": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "mediaRights": {
+        "policy": "Check edm:rights/europeana:rights for provider media"
+      },
+      "authentication": "Personal/project key; prefer X-Api-Key header",
+      "endpoints": {
+        "portal": "https://api.europeana.eu/en"
+      },
+      "verification": {
+        "documentation": "verified",
+        "liveProbe": "not-run",
+        "probes": []
+      },
+      "implementation": "planned",
+      "documentedRate": null,
+      "deprecations": [
+        {
+          "mechanism": "URL wskey parameter",
+          "replacement": "X-Api-Key header"
+        }
+      ]
+    },
+    {
+      "id": "japan-search",
+      "name": "Japan Search",
+      "tier": "expansion",
+      "documentationUrls": [
+        "https://jpsearch.go.jp/static/developer/en.html",
+        "https://jpsearch.go.jp/static/developer/introduction/en.html",
+        "https://jpsearch.go.jp/rdf/sparql-explain/"
+      ],
+      "documentationCheckedAt": "2026-10-28",
+      "metadataRights": {
+        "license": "Provider-authorized API metadata; preserve declared terms"
+      },
+      "mediaRights": {
+        "policy": "schema:license in access information; provider and license version matter"
+      },
+      "authentication": "Public endpoint documented; operational limits unprobed",
+      "endpoints": {
+        "sparql": "https://jpsearch.go.jp/rdf/sparql/"
+      },
+      "verification": {
+        "documentation": "verified",
+        "liveProbe": "not-run",
+        "probes": []
+      },
+      "implementation": "planned",
+      "documentedRate": null
+    },
+    {
+      "id": "te-papa",
+      "name": "Te Papa",
+      "tier": "expansion",
+      "documentationUrls": [
+        "https://www.tepapa.govt.nz/learn/research/datasets/collections-api/api-terms-of-use",
+        "https://data.tepapa.govt.nz/docs/register.html"
+      ],
+      "documentationCheckedAt": "2026-10-28",
+      "metadataRights": {
+        "license": "CC-BY-4.0 with attribution waived",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "mediaRights": {
+        "policy": "Per-media legal and cultural terms; preserve caption and rights"
+      },
+      "authentication": "Registered key for sustained use; guest key for 30-minute evaluation",
+      "endpoints": {
+        "registration": "https://data.tepapa.govt.nz/docs/register.html"
+      },
+      "verification": {
+        "documentation": "verified",
+        "liveProbe": "not-run",
+        "probes": []
+      },
+      "implementation": "planned",
+      "documentedRate": {
+        "requests": 10,
+        "intervalSeconds": 1
+      },
+      "retentionGuidanceDays": 28
+    }
+  ]
+}
