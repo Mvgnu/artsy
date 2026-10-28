@@ -1,0 +1,39 @@
+name: Art atlas foundation
+on:
+  pull_request:
+    paths: ['packages/**', 'sites/**', 'data/**', 'specs/**', 'scripts/**', 'test/**', '.agent/**', 'AGENTS.md', 'package.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml', 'tsconfig.base.json', 'vitest.config.ts', '.github/workflows/atlas.yml']
+  push:
+    branches: [main]
+    paths: ['packages/**', 'sites/**', 'data/**', 'specs/**', 'scripts/**', 'test/**', 'package.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml', 'tsconfig.base.json', 'vitest.config.ts', '.github/workflows/atlas.yml']
+permissions:
+  contents: read
+concurrency:
+  group: art-atlas-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  foundation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # pnpm 11 requires Node >=22.13; install the runtime first.
+      - run: npm install --global pnpm@11.25.0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm fixtures:build
+      - name: Ensure deterministic fixture replay
+        run: git diff --exit-code -- data/seed/
+      - run: pnpm verify
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test:browser
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artsy-static-demo
+          path: sites/demo/out/
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence
+          path: artifacts/browser/

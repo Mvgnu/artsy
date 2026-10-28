@@ -1,0 +1,30 @@
+[
+  {
+    "sourceId": "met",
+    "received": 5,
+    "accepted": 5,
+    "quarantined": 0,
+    "warnings": [
+      "Bounded pinned replay only; no pagination or live refresh.",
+      "Hokusai and century-worded sculpture bounds are typed index-window, excluded from historical temporal-overlap reasoning; original display dates are retained."
+    ]
+  },
+  {
+    "sourceId": "artic",
+    "received": 2,
+    "accepted": 2,
+    "quarantined": 0,
+    "warnings": [
+      "One artwork and one artist record. Artwork description field deliberately excluded."
+    ]
+  },
+  {
+    "sourceId": "wikidata",
+    "received": 1,
+    "accepted": 1,
+    "quarantined": 0,
+    "warnings": [
+      "Only the explicit AIC artist identity is consumed; remaining Wikidata claims are not imported."
+    ]
+  }
+]

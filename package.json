@@ -1,0 +1,31 @@
+{
+  "name": "artsy-workspace",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "check": "pnpm -r --filter './packages/**' --filter './sites/**' check",
+    "test": "vitest run packages",
+    "test:architecture": "vitest run test/architecture",
+    "spec:check": "node scripts/check-specs.mjs",
+    "build": "pnpm --filter @site/demo build",
+    "demo": "pnpm --filter @site/demo dev",
+    "fixtures:build": "node --import tsx packages/ingest/src/cli.ts",
+    "scope:check": "node scripts/check-scope.mjs",
+    "test:browser": "node scripts/smoke-browser.mjs",
+    "verify": "pnpm spec:check && pnpm check && pnpm test && pnpm test:architecture && pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "playwright": "1.56.1",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vitest": "4.1.10",
+    "yaml": "2.8.1"
+  }
+}

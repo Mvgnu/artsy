@@ -1,0 +1,2115 @@
+{
+  "schemaVersion": "0.1",
+  "datasetVersion": "m0-2026-10-28.2",
+  "sources": [
+    {
+      "id": "artic",
+      "name": "Art Institute of Chicago — public API",
+      "url": "https://www.artic.edu/",
+      "metadataLicense": "CC0-1.0 for selected fields; artwork description is CC BY 4.0 and excluded",
+      "documentationUrl": "https://api.artic.edu/docs/"
+    },
+    {
+      "id": "met",
+      "name": "The Metropolitan Museum of Art — Collection API",
+      "url": "https://www.metmuseum.org/",
+      "metadataLicense": "CC0-1.0 for Open Access API metadata",
+      "documentationUrl": "https://metmuseum.github.io/"
+    },
+    {
+      "id": "met-text",
+      "name": "The Met — cited curatorial records and scholarship",
+      "url": "https://www.metmuseum.org/",
+      "metadataLicense": "Source prose remains subject to museum terms; only original factual paraphrases are retained here",
+      "documentationUrl": "https://www.metmuseum.org/essays/georges-seurat-1859-1891-and-neo-impressionism"
+    },
+    {
+      "id": "wikidata",
+      "name": "Wikidata — pinned identity statement",
+      "url": "https://www.wikidata.org/",
+      "metadataLicense": "CC0-1.0 for structured entity data",
+      "documentationUrl": "https://www.wikidata.org/wiki/Wikidata:Data_access"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "artic:27992:custody",
+      "sourceId": "artic",
+      "url": "https://api.artic.edu/api/v1/artworks/27992?fields=id,title,date_display,date_start,date_end,artist_id,artist_ids,artist_title,artist_display,place_of_origin,style_ids,style_titles,material_ids,material_titles,technique_ids,technique_titles,subject_ids,subject_titles,medium_display,credit_line,image_id,is_public_domain,thumbnail,main_reference_number",
+      "retrievedAt": "2026-10-28T20:24:51Z",
+      "recordId": "27992",
+      "locator": "/data/main_reference_number; /data/credit_line; /config/website_url",
+      "note": "The Art Institute of Chicago holds this catalogued collection object.",
+      "snapshotSha256": "60a1e08550ed13c9e27fe95a8e1ba53b493a72a536809993d07134f381f49001"
+    },
+    {
+      "id": "artic:27992:date",
+      "sourceId": "artic",
+      "url": "https://api.artic.edu/api/v1/artworks/27992?fields=id,title,date_display,date_start,date_end,artist_id,artist_ids,artist_title,artist_display,place_of_origin,style_ids,style_titles,material_ids,material_titles,technique_ids,technique_titles,subject_ids,subject_titles,medium_display,credit_line,image_id,is_public_domain,thumbnail,main_reference_number",
+      "retrievedAt": "2026-10-28T20:24:51Z",
+      "recordId": "27992",
+      "locator": "/data/date_display; /data/date_start; /data/date_end",
+      "note": "Main execution is indexed as 1884–86. The full display additionally identifies a border added in 1888–89; that event has its own dated claim.",
+      "snapshotSha256": "60a1e08550ed13c9e27fe95a8e1ba53b493a72a536809993d07134f381f49001"
+    },
+    {
+      "id": "artic:27992:image-rights",
+      "sourceId": "artic",
+      "url": "https://api.artic.edu/api/v1/artworks/27992?fields=id,title,date_display,date_start,date_end,artist_id,artist_ids,artist_title,artist_display,place_of_origin,style_ids,style_titles,material_ids,material_titles,technique_ids,technique_titles,subject_ids,subject_titles,medium_display,credit_line,image_id,is_public_domain,thumbnail,main_reference_number",
+      "retrievedAt": "2026-10-28T20:24:51Z",
+      "recordId": "27992",
+      "locator": "/data/is_public_domain; /data/image_id; /config/iiif_url; /data/credit_line",
+      "note": "The record marks the work public domain. The IIIF image URL is constructed using the base and identifier returned by this response.",
+      "snapshotSha256": "60a1e08550ed13c9e27fe95a8e1ba53b493a72a536809993d07134f381f49001"
+    },
+    {
+      "id": "artic:27992:maker",
+      "sourceId": "artic",
+      "url": "https://api.artic.edu/api/v1/artworks/27992?fields=id,title,date_display,date_start,date_end,artist_id,artist_ids,artist_title,artist_display,place_of_origin,style_ids,style_titles,material_ids,material_titles,technique_ids,technique_titles,subject_ids,subject_titles,medium_display,credit_line,image_id,is_public_domain,thumbnail,main_reference_number",
+      "retrievedAt": "2026-10-28T20:24:51Z",
+      "recordId": "27992",
+      "locator": "/data/artist_id; /data/artist_title",
+      "note": "AIC credits Georges Seurat; his source-specific ID is explicitly reconciled through the separate Wikidata assertion.",
+      "snapshotSha256": "60a1e08550ed13c9e27fe95a8e1ba53b493a72a536809993d07134f381f49001"
+    },
+    {
+      "id": "artic:27992:medium",
+      "sourceId": "artic",
+      "url": "https://api.artic.edu/api/v1/artworks/27992?fields=id,title,date_display,date_start,date_end,artist_id,artist_ids,artist_title,artist_display,place_of_origin,style_ids,style_titles,material_ids,material_titles,technique_ids,technique_titles,subject_ids,subject_titles,medium_display,credit_line,image_id,is_public_domain,thumbnail,main_reference_number",
+      "retrievedAt": "2026-10-28T20:24:51Z",
+      "recordId": "27992",
+      "locator": "/data/medium_display; /data/material_titles",
+      "note": "AIC lists oil on canvas and identifies oil paint and canvas in its material terms.",
+      "snapshotSha256": "60a1e08550ed13c9e27fe95a8e1ba53b493a72a536809993d07134f381f49001"
+    },
+    {
+      "id": "artic:27992:origin",
+      "sourceId": "artic",
+      "url": "https://api.artic.edu/api/v1/artworks/27992?fields=id,title,date_display,date_start,date_end,artist_id,artist_ids,artist_title,artist_display,place_of_origin,style_ids,style_titles,material_ids,material_titles,technique_ids,technique_titles,subject_ids,subject_titles,medium_display,credit_line,image_id,is_public_domain,thumbnail,main_reference_number",
+      "retrievedAt": "2026-10-28T20:24:51Z",
+      "recordId": "27992",
+      "locator": "/data/place_of_origin",
+      "note": "The object record supplies France as place of origin; no more precise production coordinates are inferred.",
+      "snapshotSha256": "60a1e08550ed13c9e27fe95a8e1ba53b493a72a536809993d07134f381f49001"
+    },
+    {
+      "id": "artic:27992:title",
+      "sourceId": "artic",
+      "url": "https://api.artic.edu/api/v1/artworks/27992?fields=id,title,date_display,date_start,date_end,artist_id,artist_ids,artist_title,artist_display,place_of_origin,style_ids,style_titles,material_ids,material_titles,technique_ids,technique_titles,subject_ids,subject_titles,medium_display,credit_line,image_id,is_public_domain,thumbnail,main_reference_number",
+      "retrievedAt": "2026-10-28T20:24:51Z",
+      "recordId": "27992",
+      "locator": "/data/id; /data/title; /data/main_reference_number",
+      "note": "The AIC record identifies the final painting and its accession number.",
+      "snapshotSha256": "60a1e08550ed13c9e27fe95a8e1ba53b493a72a536809993d07134f381f49001"
+    },
+    {
+      "id": "artic:artist/40810:identity",
+      "sourceId": "artic",
+      "url": "https://api.artic.edu/api/v1/artists/40810?fields=id,title,birth_date,death_date,ulan_id,wikidata_id",
+      "retrievedAt": "2026-10-28T20:25:53Z",
+      "recordId": "artist/40810",
+      "locator": "/data/id; /data/title; /data/birth_date; /data/death_date",
+      "note": "The AIC artist identity and lifespan corroborate the bounded cross-source reconciliation; the explicit identifier is in the separate Wikidata evidence.",
+      "snapshotSha256": "e60eb91796cd75a265310a381ddd83069c393655a47a38cacee1d19c48d1fff0"
+    },
+    {
+      "id": "met-text:38198:gesture",
+      "sourceId": "met-text",
+      "url": "https://www.metmuseum.org/art/collection/search/38198",
+      "retrievedAt": "2026-10-28T20:28:42Z",
+      "locator": "Overview, first paragraph, sentence describing the missing right hand",
+      "note": "The museum identifies the figure's original gesture as abhaya mudra. The right hand is now missing; the gesture is a curatorial reconstruction, not visible intact anatomy."
+    },
+    {
+      "id": "met-text:437658:depicted-place",
+      "sourceId": "met-text",
+      "url": "https://www.metmuseum.org/art/collection/search/437658",
+      "retrievedAt": "2026-10-28T20:28:42Z",
+      "locator": "Overview, first paragraph; Audio 6342, second paragraph",
+      "note": "The study and final painting represent leisure on La Grande Jatte, an island in the Seine near Paris. This is a depicted location, not the place where the canvases were painted."
+    },
+    {
+      "id": "met-text:72381:gesture",
+      "sourceId": "met-text",
+      "url": "https://www.metmuseum.org/art/collection/search/72381",
+      "retrievedAt": "2026-10-28T20:28:42Z",
+      "locator": "Overview, first paragraph, sentence identifying the right-hand gesture",
+      "note": "The seated figure holds its right hand in abhaya mudra; the museum interprets the gesture as approachability."
+    },
+    {
+      "id": "met-text:72381:production",
+      "sourceId": "met-text",
+      "url": "https://www.metmuseum.org/art/collection/search/72381",
+      "retrievedAt": "2026-10-28T20:28:42Z",
+      "locator": "Audio 7904, Seated Buddha Part 1; paragraph beginning In fact",
+      "note": "The museum audio explicitly locates manufacture in Gandhara. The ancient region is not equated with a present national boundary."
+    },
+    {
+      "id": "met-text:neo-definition",
+      "sourceId": "met-text",
+      "url": "https://www.metmuseum.org/essays/georges-seurat-1859-1891-and-neo-impressionism",
+      "retrievedAt": "2026-10-28T20:28:42Z",
+      "locator": "Dita Amory, October 2004; first body paragraph and paragraph about the 1886 exhibition",
+      "note": "Amory describes Neo-Impressionism as flourishing principally in France during 1886–1906, led by Seurat, and identifies the Chicago painting as a defining example. This is one sourced movement definition."
+    },
+    {
+      "id": "met-text:study-for",
+      "sourceId": "met-text",
+      "url": "https://www.metmuseum.org/art/collection/search/437658",
+      "retrievedAt": "2026-10-28T20:28:42Z",
+      "locator": "Overview, first paragraph; Audio 6342, first paragraph",
+      "note": "The Met identifies this canvas as the final preparatory study for the monumental painting held by the Art Institute of Chicago."
+    },
+    {
+      "id": "met:38198:custody",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/38198",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "38198",
+      "locator": "/repository; /objectURL",
+      "note": "This record belongs to The Met collection. Custody is not a claim about historical ownership or production location.",
+      "snapshotSha256": "e3fe45a1436fe696f266f834cc14718e79f3d872f7790f403f036a2b5ebb451f"
+    },
+    {
+      "id": "met:38198:date",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/38198",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "38198",
+      "locator": "/objectDate; /objectBeginDate; /objectEndDate",
+      "note": "The museum supplies numeric indexing endpoints for a century-worded date. The source's prose date is retained; these precise endpoints are not promoted to historical occurrence bounds.",
+      "snapshotSha256": "e3fe45a1436fe696f266f834cc14718e79f3d872f7790f403f036a2b5ebb451f"
+    },
+    {
+      "id": "met:38198:identity",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/38198",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "38198",
+      "locator": "/objectWikidata_URL",
+      "note": "The Met record supplies this external object identifier; it is not a title-based merge.",
+      "snapshotSha256": "e3fe45a1436fe696f266f834cc14718e79f3d872f7790f403f036a2b5ebb451f"
+    },
+    {
+      "id": "met:38198:image-rights",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/38198",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "38198",
+      "locator": "/isPublicDomain; /primaryImage; /primaryImageSmall; /rightsAndReproduction; /creditLine",
+      "note": "The museum marks this work public domain and supplies its Open Access image URL. This decision is independent of metadata licensing.",
+      "snapshotSha256": "e3fe45a1436fe696f266f834cc14718e79f3d872f7790f403f036a2b5ebb451f"
+    },
+    {
+      "id": "met:38198:medium",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/38198",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "38198",
+      "locator": "/medium",
+      "note": "The catalogue medium is Red sandstone.",
+      "snapshotSha256": "e3fe45a1436fe696f266f834cc14718e79f3d872f7790f403f036a2b5ebb451f"
+    },
+    {
+      "id": "met:38198:period",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/38198",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "38198",
+      "locator": "/period",
+      "note": "The museum explicitly classifies this object within the named period; this was not inferred from the object's date.",
+      "snapshotSha256": "e3fe45a1436fe696f266f834cc14718e79f3d872f7790f403f036a2b5ebb451f"
+    },
+    {
+      "id": "met:38198:title",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/38198",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "38198",
+      "locator": "/title; /objectID; /accessionNumber",
+      "note": "The museum identifies this physical collection object by its own ID and accession number.",
+      "snapshotSha256": "e3fe45a1436fe696f266f834cc14718e79f3d872f7790f403f036a2b5ebb451f"
+    },
+    {
+      "id": "met:437658:artist-dates",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437658",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "437658",
+      "locator": "/artistBeginDate; /artistEndDate; /artistDisplayBio",
+      "note": "The museum's biographical display supplies the artist's lifespan.",
+      "snapshotSha256": "4f5ce0246dc17240abe7c13b1d976d70543f25cb0c9972dd58df1769a0eb3f0b"
+    },
+    {
+      "id": "met:437658:custody",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437658",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "437658",
+      "locator": "/repository; /objectURL",
+      "note": "This record belongs to The Met collection. Custody is not a claim about historical ownership or production location.",
+      "snapshotSha256": "4f5ce0246dc17240abe7c13b1d976d70543f25cb0c9972dd58df1769a0eb3f0b"
+    },
+    {
+      "id": "met:437658:date",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437658",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "437658",
+      "locator": "/objectDate; /objectBeginDate; /objectEndDate",
+      "note": "The display date and the museum's numeric indexing bounds are retained independently.",
+      "snapshotSha256": "4f5ce0246dc17240abe7c13b1d976d70543f25cb0c9972dd58df1769a0eb3f0b"
+    },
+    {
+      "id": "met:437658:identity",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437658",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "437658",
+      "locator": "/objectWikidata_URL",
+      "note": "The Met record supplies this external object identifier; it is not a title-based merge.",
+      "snapshotSha256": "4f5ce0246dc17240abe7c13b1d976d70543f25cb0c9972dd58df1769a0eb3f0b"
+    },
+    {
+      "id": "met:437658:image-rights",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437658",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "437658",
+      "locator": "/isPublicDomain; /primaryImage; /primaryImageSmall; /rightsAndReproduction; /creditLine",
+      "note": "The museum marks this work public domain and supplies its Open Access image URL. This decision is independent of metadata licensing.",
+      "snapshotSha256": "4f5ce0246dc17240abe7c13b1d976d70543f25cb0c9972dd58df1769a0eb3f0b"
+    },
+    {
+      "id": "met:437658:maker",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437658",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "437658",
+      "locator": "/artistDisplayName; /artistWikidata_URL; /artistULAN_URL; /artistRole",
+      "note": "The museum supplies the named artist and external identifiers; absence of an artist on other objects does not create a shared anonymous person.",
+      "snapshotSha256": "4f5ce0246dc17240abe7c13b1d976d70543f25cb0c9972dd58df1769a0eb3f0b"
+    },
+    {
+      "id": "met:437658:medium",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437658",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "437658",
+      "locator": "/medium",
+      "note": "The catalogue medium is Oil on canvas.",
+      "snapshotSha256": "4f5ce0246dc17240abe7c13b1d976d70543f25cb0c9972dd58df1769a0eb3f0b"
+    },
+    {
+      "id": "met:437658:title",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437658",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "437658",
+      "locator": "/title; /objectID; /accessionNumber",
+      "note": "The museum identifies this physical collection object by its own ID and accession number.",
+      "snapshotSha256": "4f5ce0246dc17240abe7c13b1d976d70543f25cb0c9972dd58df1769a0eb3f0b"
+    },
+    {
+      "id": "met:544227:custody",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/544227",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "544227",
+      "locator": "/repository; /objectURL",
+      "note": "This record belongs to The Met collection. Custody is not a claim about historical ownership or production location.",
+      "snapshotSha256": "51bad84b9ef8ee7e666792657f6977f1166296f03f98ddf5a253750662fde095"
+    },
+    {
+      "id": "met:544227:date",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/544227",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "544227",
+      "locator": "/objectDate; /objectBeginDate; /objectEndDate",
+      "note": "The provider's signed historical BCE years are converted to astronomical years by adding one to negative values; the original display survives.",
+      "snapshotSha256": "51bad84b9ef8ee7e666792657f6977f1166296f03f98ddf5a253750662fde095"
+    },
+    {
+      "id": "met:544227:findspot",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/544227",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "544227",
+      "locator": "/geographyType; /country; /subregion; /locale; /locus; /excavation",
+      "note": "The recorded excavation/tomb context is at Meir in Egypt. This is a findspot, not a demonstrated place of manufacture.",
+      "snapshotSha256": "51bad84b9ef8ee7e666792657f6977f1166296f03f98ddf5a253750662fde095"
+    },
+    {
+      "id": "met:544227:identity",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/544227",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "544227",
+      "locator": "/objectWikidata_URL",
+      "note": "The Met record supplies this external object identifier; it is not a title-based merge.",
+      "snapshotSha256": "51bad84b9ef8ee7e666792657f6977f1166296f03f98ddf5a253750662fde095"
+    },
+    {
+      "id": "met:544227:image-rights",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/544227",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "544227",
+      "locator": "/isPublicDomain; /primaryImage; /primaryImageSmall; /rightsAndReproduction; /creditLine",
+      "note": "The museum marks this work public domain and supplies its Open Access image URL. This decision is independent of metadata licensing.",
+      "snapshotSha256": "51bad84b9ef8ee7e666792657f6977f1166296f03f98ddf5a253750662fde095"
+    },
+    {
+      "id": "met:544227:medium",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/544227",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "544227",
+      "locator": "/medium",
+      "note": "The catalogue medium is Faience.",
+      "snapshotSha256": "51bad84b9ef8ee7e666792657f6977f1166296f03f98ddf5a253750662fde095"
+    },
+    {
+      "id": "met:544227:period",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/544227",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "544227",
+      "locator": "/period",
+      "note": "The museum explicitly classifies this object within the named period; this was not inferred from the object's date.",
+      "snapshotSha256": "51bad84b9ef8ee7e666792657f6977f1166296f03f98ddf5a253750662fde095"
+    },
+    {
+      "id": "met:544227:title",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/544227",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "544227",
+      "locator": "/title; /objectID; /accessionNumber",
+      "note": "The museum identifies this physical collection object by its own ID and accession number.",
+      "snapshotSha256": "51bad84b9ef8ee7e666792657f6977f1166296f03f98ddf5a253750662fde095"
+    },
+    {
+      "id": "met:56353:artist-dates",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/56353",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "56353",
+      "locator": "/artistBeginDate; /artistEndDate; /artistDisplayBio",
+      "note": "The museum's biographical display supplies the artist's lifespan.",
+      "snapshotSha256": "582e2a921fd45d83ca1825dbcc790b346d897bcc2cad96029fbf02f5a66ecffe"
+    },
+    {
+      "id": "met:56353:custody",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/56353",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "56353",
+      "locator": "/repository; /objectURL",
+      "note": "This record belongs to The Met collection. Custody is not a claim about historical ownership or production location.",
+      "snapshotSha256": "582e2a921fd45d83ca1825dbcc790b346d897bcc2cad96029fbf02f5a66ecffe"
+    },
+    {
+      "id": "met:56353:date",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/56353",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "56353",
+      "locator": "/objectDate; /objectBeginDate; /objectEndDate",
+      "note": "The display date is ca. 1830–32; the museum's search bounds are 1820–1842. Both are preserved. The wider interval is not a new dating claim.",
+      "snapshotSha256": "582e2a921fd45d83ca1825dbcc790b346d897bcc2cad96029fbf02f5a66ecffe"
+    },
+    {
+      "id": "met:56353:image-rights",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/56353",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "56353",
+      "locator": "/isPublicDomain; /primaryImage; /primaryImageSmall; /rightsAndReproduction; /creditLine",
+      "note": "The museum marks this work public domain and supplies its Open Access image URL. This decision is independent of metadata licensing.",
+      "snapshotSha256": "582e2a921fd45d83ca1825dbcc790b346d897bcc2cad96029fbf02f5a66ecffe"
+    },
+    {
+      "id": "met:56353:maker",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/56353",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "56353",
+      "locator": "/artistDisplayName; /artistWikidata_URL; /artistULAN_URL; /artistRole",
+      "note": "The museum supplies the named artist and external identifiers; absence of an artist on other objects does not create a shared anonymous person.",
+      "snapshotSha256": "582e2a921fd45d83ca1825dbcc790b346d897bcc2cad96029fbf02f5a66ecffe"
+    },
+    {
+      "id": "met:56353:medium",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/56353",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "56353",
+      "locator": "/medium",
+      "note": "The catalogue medium is Woodblock print.",
+      "snapshotSha256": "582e2a921fd45d83ca1825dbcc790b346d897bcc2cad96029fbf02f5a66ecffe"
+    },
+    {
+      "id": "met:56353:period",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/56353",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "56353",
+      "locator": "/period",
+      "note": "The museum explicitly classifies this object within the named period; this was not inferred from the object's date.",
+      "snapshotSha256": "582e2a921fd45d83ca1825dbcc790b346d897bcc2cad96029fbf02f5a66ecffe"
+    },
+    {
+      "id": "met:56353:title",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/56353",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "56353",
+      "locator": "/title; /objectID; /accessionNumber",
+      "note": "The museum identifies this physical collection object by its own ID and accession number.",
+      "snapshotSha256": "582e2a921fd45d83ca1825dbcc790b346d897bcc2cad96029fbf02f5a66ecffe"
+    },
+    {
+      "id": "met:72381:custody",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/72381",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "72381",
+      "locator": "/repository; /objectURL",
+      "note": "This record belongs to The Met collection. Custody is not a claim about historical ownership or production location.",
+      "snapshotSha256": "fe57520c9d9b0253284039d1f77104f269f1aa629c9926ea72fa46d8b5b06a42"
+    },
+    {
+      "id": "met:72381:date",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/72381",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "72381",
+      "locator": "/objectDate; /objectBeginDate; /objectEndDate",
+      "note": "The museum supplies numeric indexing endpoints for a century-worded date. The source's prose date is retained; these precise endpoints are not promoted to historical occurrence bounds.",
+      "snapshotSha256": "fe57520c9d9b0253284039d1f77104f269f1aa629c9926ea72fa46d8b5b06a42"
+    },
+    {
+      "id": "met:72381:identity",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/72381",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "72381",
+      "locator": "/objectWikidata_URL",
+      "note": "The Met record supplies this external object identifier; it is not a title-based merge.",
+      "snapshotSha256": "fe57520c9d9b0253284039d1f77104f269f1aa629c9926ea72fa46d8b5b06a42"
+    },
+    {
+      "id": "met:72381:image-rights",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/72381",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "72381",
+      "locator": "/isPublicDomain; /primaryImage; /primaryImageSmall; /rightsAndReproduction; /creditLine",
+      "note": "The museum marks this work public domain and supplies its Open Access image URL. This decision is independent of metadata licensing.",
+      "snapshotSha256": "fe57520c9d9b0253284039d1f77104f269f1aa629c9926ea72fa46d8b5b06a42"
+    },
+    {
+      "id": "met:72381:medium",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/72381",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "72381",
+      "locator": "/medium",
+      "note": "The catalogue medium is Bronze with traces of gold leaf.",
+      "snapshotSha256": "fe57520c9d9b0253284039d1f77104f269f1aa629c9926ea72fa46d8b5b06a42"
+    },
+    {
+      "id": "met:72381:title",
+      "sourceId": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/72381",
+      "retrievedAt": "2026-10-28T20:24:50Z",
+      "recordId": "72381",
+      "locator": "/title; /objectID; /accessionNumber",
+      "note": "The museum identifies this physical collection object by its own ID and accession number.",
+      "snapshotSha256": "fe57520c9d9b0253284039d1f77104f269f1aa629c9926ea72fa46d8b5b06a42"
+    },
+    {
+      "id": "wikidata:Q34013:aic-artist-identity",
+      "sourceId": "wikidata",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q34013.json",
+      "retrievedAt": "2026-10-28T20:25:53Z",
+      "recordId": "Q34013",
+      "locator": "/entities/Q34013/claims/P6295; statement Q34013$72AC62D2-41D6-4916-BA32-1F91DED8633A; revision 2561607084",
+      "note": "This Wikidata statement connects Q34013 with AIC artist 40810; rank normal, 1 recorded reference(s). The community assertion is retained for identity review.",
+      "snapshotSha256": "6b0714a44f3fb0b4c5c2061e0ae1b98a897fa3ec9fc6880f1e481c95101018e0"
+    }
+  ],
+  "entities": [
+    {
+      "id": "artic:27992",
+      "kind": "artwork",
+      "labels": [
+        {
+          "language": "en",
+          "text": "A Sunday on La Grande Jatte — 1884"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "artic:27992:title"
+      ],
+      "externalIds": [
+        {
+          "scheme": "artic-artwork",
+          "value": "27992",
+          "evidenceIds": [
+            "artic:27992:title"
+          ]
+        },
+        {
+          "scheme": "artic-accession",
+          "value": "1926.224",
+          "evidenceIds": [
+            "artic:27992:title"
+          ]
+        }
+      ],
+      "workLevel": "physical-object"
+    },
+    {
+      "id": "concept:abhaya-mudra",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Abhaya mudra — gesture of reassurance"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met-text:72381:gesture",
+        "met-text:38198:gesture"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:bronze",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Bronze"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:72381:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:canvas",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Canvas"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:437658:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:faience",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Faience"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:544227:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:gold-leaf",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Gold leaf"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:72381:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:oil-paint",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Oil paint"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:437658:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:red-sandstone",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Red sandstone"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:38198:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "concept:woodblock-printing",
+      "kind": "concept",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Woodblock printing"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:56353:medium"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "institution:artic",
+      "kind": "institution",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Art Institute of Chicago"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "artic:27992:custody"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "institution:met",
+      "kind": "institution",
+      "labels": [
+        {
+          "language": "en",
+          "text": "The Metropolitan Museum of Art"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:437658:custody"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "met:38198",
+      "kind": "artwork",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Standing Buddha Offering Protection"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:38198:title"
+      ],
+      "externalIds": [
+        {
+          "scheme": "met-object",
+          "value": "38198",
+          "evidenceIds": [
+            "met:38198:title"
+          ]
+        },
+        {
+          "scheme": "met-accession",
+          "value": "1979.6",
+          "evidenceIds": [
+            "met:38198:title"
+          ]
+        },
+        {
+          "scheme": "wikidata-url",
+          "value": "https://www.wikidata.org/wiki/Q29383265",
+          "evidenceIds": [
+            "met:38198:identity"
+          ]
+        }
+      ],
+      "workLevel": "physical-object"
+    },
+    {
+      "id": "met:437658",
+      "kind": "artwork",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Study for \"A Sunday on La Grande Jatte\""
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:437658:title"
+      ],
+      "externalIds": [
+        {
+          "scheme": "met-object",
+          "value": "437658",
+          "evidenceIds": [
+            "met:437658:title"
+          ]
+        },
+        {
+          "scheme": "met-accession",
+          "value": "51.112.6",
+          "evidenceIds": [
+            "met:437658:title"
+          ]
+        },
+        {
+          "scheme": "wikidata-url",
+          "value": "https://www.wikidata.org/wiki/Q3976307",
+          "evidenceIds": [
+            "met:437658:identity"
+          ]
+        }
+      ],
+      "workLevel": "physical-object"
+    },
+    {
+      "id": "met:544227",
+      "kind": "artwork",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Hippopotamus (\"William\")"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:544227:title"
+      ],
+      "externalIds": [
+        {
+          "scheme": "met-object",
+          "value": "544227",
+          "evidenceIds": [
+            "met:544227:title"
+          ]
+        },
+        {
+          "scheme": "met-accession",
+          "value": "17.9.1",
+          "evidenceIds": [
+            "met:544227:title"
+          ]
+        },
+        {
+          "scheme": "wikidata-url",
+          "value": "https://www.wikidata.org/wiki/Q137836",
+          "evidenceIds": [
+            "met:544227:identity"
+          ]
+        }
+      ],
+      "workLevel": "physical-object"
+    },
+    {
+      "id": "met:56353",
+      "kind": "artwork",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:56353:title"
+      ],
+      "externalIds": [
+        {
+          "scheme": "met-object",
+          "value": "56353",
+          "evidenceIds": [
+            "met:56353:title"
+          ]
+        },
+        {
+          "scheme": "met-accession",
+          "value": "JP2972",
+          "evidenceIds": [
+            "met:56353:title"
+          ]
+        }
+      ],
+      "workLevel": "physical-object"
+    },
+    {
+      "id": "met:72381",
+      "kind": "artwork",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Seated Buddha"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:72381:title"
+      ],
+      "externalIds": [
+        {
+          "scheme": "met-object",
+          "value": "72381",
+          "evidenceIds": [
+            "met:72381:title"
+          ]
+        },
+        {
+          "scheme": "met-accession",
+          "value": "2003.593.1",
+          "evidenceIds": [
+            "met:72381:title"
+          ]
+        },
+        {
+          "scheme": "wikidata-url",
+          "value": "https://www.wikidata.org/wiki/Q83562721",
+          "evidenceIds": [
+            "met:72381:identity"
+          ]
+        }
+      ],
+      "workLevel": "physical-object"
+    },
+    {
+      "id": "period:edo-met",
+      "kind": "period",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Edo period (1615–1868)"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:56353:period"
+      ],
+      "externalIds": [],
+      "period": {
+        "scheme": "The Met collection catalogue, object 56353",
+        "spatialScope": "Japan, as catalogued for this impression"
+      }
+    },
+    {
+      "id": "period:gupta-met",
+      "kind": "period",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Gupta period (4th–6th century)"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:38198:period"
+      ],
+      "externalIds": [],
+      "period": {
+        "scheme": "The Met collection catalogue, object 38198",
+        "spatialScope": "India; Mathura context of this catalogue record"
+      }
+    },
+    {
+      "id": "period:middle-kingdom-met",
+      "kind": "period",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Middle Kingdom"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:544227:period"
+      ],
+      "externalIds": [],
+      "period": {
+        "scheme": "The Met collection catalogue, object 544227",
+        "spatialScope": "Egypt, as catalogued for this object"
+      }
+    },
+    {
+      "id": "period:neo-impressionism-met-amory2004",
+      "kind": "period",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Neo-Impressionism"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met-text:neo-definition"
+      ],
+      "externalIds": [],
+      "period": {
+        "scheme": "Dita Amory, The Met Heilbrunn Timeline, October 2004",
+        "spatialScope": "Principally France, as defined in this essay"
+      }
+    },
+    {
+      "id": "person:hokusai",
+      "kind": "person",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Katsushika Hokusai"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:56353:maker"
+      ],
+      "externalIds": [
+        {
+          "scheme": "wikidata-url",
+          "value": "https://www.wikidata.org/wiki/Q5586",
+          "evidenceIds": [
+            "met:56353:maker"
+          ]
+        },
+        {
+          "scheme": "ulan-url",
+          "value": "http://vocab.getty.edu/page/ulan/500060426",
+          "evidenceIds": [
+            "met:56353:maker"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "person:seurat",
+      "kind": "person",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Georges Seurat"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:437658:maker"
+      ],
+      "externalIds": [
+        {
+          "scheme": "wikidata-url",
+          "value": "https://www.wikidata.org/wiki/Q34013",
+          "evidenceIds": [
+            "met:437658:maker"
+          ]
+        },
+        {
+          "scheme": "ulan-url",
+          "value": "http://vocab.getty.edu/page/ulan/500008873",
+          "evidenceIds": [
+            "met:437658:maker"
+          ]
+        },
+        {
+          "scheme": "artic-artist",
+          "value": "40810",
+          "evidenceIds": [
+            "wikidata:Q34013:aic-artist-identity",
+            "artic:artist/40810:identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "place:egypt",
+      "kind": "place",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Egypt"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:544227:findspot"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "place:france",
+      "kind": "place",
+      "labels": [
+        {
+          "language": "en",
+          "text": "France"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "artic:27992:origin",
+        "met-text:neo-definition"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "place:gandhara",
+      "kind": "place",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Gandhara — ancient region"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met-text:72381:production"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "place:grande-jatte",
+      "kind": "place",
+      "labels": [
+        {
+          "language": "en",
+          "text": "La Grande Jatte — depicted island"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met-text:437658:depicted-place"
+      ],
+      "externalIds": []
+    },
+    {
+      "id": "place:meir",
+      "kind": "place",
+      "labels": [
+        {
+          "language": "en",
+          "text": "Meir — archaeological findspot"
+        }
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "met:544227:findspot"
+      ],
+      "externalIds": []
+    }
+  ],
+  "claims": [
+    {
+      "id": "artic:27992:border-dated",
+      "subject": "artic:27992",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "border added 1888–89",
+          "earliest": 1888,
+          "latest": 1889,
+          "qualifier": "range",
+          "semantics": "occurrence-window",
+          "sourceCalendar": "AIC catalogue CE; calendar unspecified",
+          "precision": "year"
+        }
+      },
+      "evidenceIds": [
+        "artic:27992:date"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "border addition"
+      }
+    },
+    {
+      "id": "artic:27992:dated",
+      "subject": "artic:27992",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "1884–86, border added 1888–89",
+          "earliest": 1884,
+          "latest": 1886,
+          "qualifier": "range",
+          "semantics": "occurrence-window",
+          "sourceCalendar": "AIC catalogue CE; calendar unspecified",
+          "precision": "year"
+        }
+      },
+      "evidenceIds": [
+        "artic:27992:date"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "main execution",
+        "explanation": "These bounds index the main painting; the later border is separately recorded."
+      }
+    },
+    {
+      "id": "artic:27992:depicted-place",
+      "subject": "artic:27992",
+      "predicate": "depicts",
+      "object": {
+        "type": "entity",
+        "id": "place:grande-jatte"
+      },
+      "evidenceIds": [
+        "met-text:437658:depicted-place"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "depicted place"
+      }
+    },
+    {
+      "id": "artic:27992:held-by",
+      "subject": "artic:27992",
+      "predicate": "held_by",
+      "object": {
+        "type": "entity",
+        "id": "institution:artic"
+      },
+      "evidenceIds": [
+        "artic:27992:custody"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "artic:27992:made-of:concept:canvas",
+      "subject": "artic:27992",
+      "predicate": "made_of",
+      "object": {
+        "type": "entity",
+        "id": "concept:canvas"
+      },
+      "evidenceIds": [
+        "artic:27992:medium"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "artic:27992:made-of:concept:oil-paint",
+      "subject": "artic:27992",
+      "predicate": "made_of",
+      "object": {
+        "type": "entity",
+        "id": "concept:oil-paint"
+      },
+      "evidenceIds": [
+        "artic:27992:medium"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "artic:27992:maker",
+      "subject": "artic:27992",
+      "predicate": "made_by",
+      "object": {
+        "type": "entity",
+        "id": "person:seurat"
+      },
+      "evidenceIds": [
+        "artic:27992:maker",
+        "wikidata:Q34013:aic-artist-identity"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "attribution": "accepted",
+        "role": "artist"
+      }
+    },
+    {
+      "id": "artic:27992:neo",
+      "subject": "artic:27992",
+      "predicate": "classified_as",
+      "object": {
+        "type": "entity",
+        "id": "period:neo-impressionism-met-amory2004"
+      },
+      "evidenceIds": [
+        "met-text:neo-definition"
+      ],
+      "status": "asserted",
+      "basis": "scholarship",
+      "qualifiers": {
+        "scheme": "Amory 2004",
+        "explanation": "An explicit association in the cited essay; no period membership inferred from date overlap."
+      }
+    },
+    {
+      "id": "artic:27992:origin",
+      "subject": "artic:27992",
+      "predicate": "produced_at",
+      "object": {
+        "type": "entity",
+        "id": "place:france"
+      },
+      "evidenceIds": [
+        "artic:27992:origin"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:38198:dated",
+      "subject": "met:38198",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "late 5th century",
+          "earliest": 467,
+          "latest": 499,
+          "qualifier": "range",
+          "semantics": "index-window",
+          "sourceCalendar": "Met catalogue CE/BCE; calendar unspecified",
+          "precision": "century"
+        }
+      },
+      "evidenceIds": [
+        "met:38198:date"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "creation-date indexing",
+        "explanation": "Search bounds supplied by the museum; read the display date for its dating statement. These bounds cannot establish temporal overlap."
+      }
+    },
+    {
+      "id": "met:38198:gesture",
+      "subject": "met:38198",
+      "predicate": "depicts",
+      "object": {
+        "type": "entity",
+        "id": "concept:abhaya-mudra"
+      },
+      "evidenceIds": [
+        "met-text:38198:gesture"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "original hand gesture",
+        "explanation": "The right hand is now missing. The catalogue reconstructs the original gesture."
+      }
+    },
+    {
+      "id": "met:38198:held-by",
+      "subject": "met:38198",
+      "predicate": "held_by",
+      "object": {
+        "type": "entity",
+        "id": "institution:met"
+      },
+      "evidenceIds": [
+        "met:38198:custody"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:38198:made-of:concept:red-sandstone",
+      "subject": "met:38198",
+      "predicate": "made_of",
+      "object": {
+        "type": "entity",
+        "id": "concept:red-sandstone"
+      },
+      "evidenceIds": [
+        "met:38198:medium"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:38198:period",
+      "subject": "met:38198",
+      "predicate": "classified_as",
+      "object": {
+        "type": "entity",
+        "id": "period:gupta-met"
+      },
+      "evidenceIds": [
+        "met:38198:period"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "scheme": "The Met collection catalogue"
+      }
+    },
+    {
+      "id": "met:437658:dated",
+      "subject": "met:437658",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "1884",
+          "earliest": 1884,
+          "latest": 1884,
+          "qualifier": "exact",
+          "semantics": "occurrence-window",
+          "sourceCalendar": "Met catalogue CE/BCE; calendar unspecified",
+          "precision": "year"
+        }
+      },
+      "evidenceIds": [
+        "met:437658:date"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "creation",
+        "explanation": "Museum occurrence window; not a continuous duration."
+      }
+    },
+    {
+      "id": "met:437658:depicted-place",
+      "subject": "met:437658",
+      "predicate": "depicts",
+      "object": {
+        "type": "entity",
+        "id": "place:grande-jatte"
+      },
+      "evidenceIds": [
+        "met-text:437658:depicted-place"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "depicted place"
+      }
+    },
+    {
+      "id": "met:437658:held-by",
+      "subject": "met:437658",
+      "predicate": "held_by",
+      "object": {
+        "type": "entity",
+        "id": "institution:met"
+      },
+      "evidenceIds": [
+        "met:437658:custody"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:437658:made-of:concept:canvas",
+      "subject": "met:437658",
+      "predicate": "made_of",
+      "object": {
+        "type": "entity",
+        "id": "concept:canvas"
+      },
+      "evidenceIds": [
+        "met:437658:medium"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:437658:made-of:concept:oil-paint",
+      "subject": "met:437658",
+      "predicate": "made_of",
+      "object": {
+        "type": "entity",
+        "id": "concept:oil-paint"
+      },
+      "evidenceIds": [
+        "met:437658:medium"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:437658:maker",
+      "subject": "met:437658",
+      "predicate": "made_by",
+      "object": {
+        "type": "entity",
+        "id": "person:seurat"
+      },
+      "evidenceIds": [
+        "met:437658:maker"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "attribution": "accepted",
+        "role": "artist"
+      }
+    },
+    {
+      "id": "met:437658:study-for",
+      "subject": "met:437658",
+      "predicate": "study_for",
+      "object": {
+        "type": "entity",
+        "id": "artic:27992"
+      },
+      "evidenceIds": [
+        "met-text:study-for",
+        "artic:27992:title"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "explanation": "The Met explicitly names the final canvas and its Chicago holding institution."
+      }
+    },
+    {
+      "id": "met:544227:dated",
+      "subject": "met:544227",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "ca. 1961–1878 B.C.",
+          "earliest": -1960,
+          "latest": -1877,
+          "qualifier": "circa",
+          "semantics": "occurrence-window",
+          "sourceCalendar": "Met catalogue CE/BCE; calendar unspecified",
+          "precision": "year"
+        }
+      },
+      "evidenceIds": [
+        "met:544227:date"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "creation",
+        "explanation": "Museum occurrence window; not a continuous duration."
+      }
+    },
+    {
+      "id": "met:544227:findspot",
+      "subject": "met:544227",
+      "predicate": "found_at",
+      "object": {
+        "type": "entity",
+        "id": "place:meir"
+      },
+      "evidenceIds": [
+        "met:544227:findspot"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "archaeological findspot"
+      }
+    },
+    {
+      "id": "met:544227:held-by",
+      "subject": "met:544227",
+      "predicate": "held_by",
+      "object": {
+        "type": "entity",
+        "id": "institution:met"
+      },
+      "evidenceIds": [
+        "met:544227:custody"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:544227:made-of:concept:faience",
+      "subject": "met:544227",
+      "predicate": "made_of",
+      "object": {
+        "type": "entity",
+        "id": "concept:faience"
+      },
+      "evidenceIds": [
+        "met:544227:medium"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:544227:period",
+      "subject": "met:544227",
+      "predicate": "classified_as",
+      "object": {
+        "type": "entity",
+        "id": "period:middle-kingdom-met"
+      },
+      "evidenceIds": [
+        "met:544227:period"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "scheme": "The Met collection catalogue"
+      }
+    },
+    {
+      "id": "met:56353:dated",
+      "subject": "met:56353",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "ca. 1830–32",
+          "earliest": 1820,
+          "latest": 1842,
+          "qualifier": "circa",
+          "semantics": "index-window",
+          "sourceCalendar": "Met catalogue CE/BCE; calendar unspecified",
+          "precision": "year"
+        }
+      },
+      "evidenceIds": [
+        "met:56353:date"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "creation-date indexing",
+        "explanation": "Search bounds supplied by the museum; read the display date for its dating statement. These bounds cannot establish temporal overlap."
+      }
+    },
+    {
+      "id": "met:56353:held-by",
+      "subject": "met:56353",
+      "predicate": "held_by",
+      "object": {
+        "type": "entity",
+        "id": "institution:met"
+      },
+      "evidenceIds": [
+        "met:56353:custody"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:56353:maker",
+      "subject": "met:56353",
+      "predicate": "made_by",
+      "object": {
+        "type": "entity",
+        "id": "person:hokusai"
+      },
+      "evidenceIds": [
+        "met:56353:maker"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "attribution": "accepted",
+        "role": "artist"
+      }
+    },
+    {
+      "id": "met:56353:period",
+      "subject": "met:56353",
+      "predicate": "classified_as",
+      "object": {
+        "type": "entity",
+        "id": "period:edo-met"
+      },
+      "evidenceIds": [
+        "met:56353:period"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "scheme": "The Met collection catalogue"
+      }
+    },
+    {
+      "id": "met:56353:woodblock",
+      "subject": "met:56353",
+      "predicate": "uses_technique",
+      "object": {
+        "type": "entity",
+        "id": "concept:woodblock-printing"
+      },
+      "evidenceIds": [
+        "met:56353:medium"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:72381:dated",
+      "subject": "met:72381",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "1st to mid-2nd century",
+          "earliest": 1,
+          "latest": 150,
+          "qualifier": "range",
+          "semantics": "index-window",
+          "sourceCalendar": "Met catalogue CE/BCE; calendar unspecified",
+          "precision": "century"
+        }
+      },
+      "evidenceIds": [
+        "met:72381:date"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "creation-date indexing",
+        "explanation": "Search bounds supplied by the museum; read the display date for its dating statement. These bounds cannot establish temporal overlap."
+      }
+    },
+    {
+      "id": "met:72381:gesture",
+      "subject": "met:72381",
+      "predicate": "depicts",
+      "object": {
+        "type": "entity",
+        "id": "concept:abhaya-mudra"
+      },
+      "evidenceIds": [
+        "met-text:72381:gesture"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "hand gesture"
+      }
+    },
+    {
+      "id": "met:72381:held-by",
+      "subject": "met:72381",
+      "predicate": "held_by",
+      "object": {
+        "type": "entity",
+        "id": "institution:met"
+      },
+      "evidenceIds": [
+        "met:72381:custody"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:72381:made-of:concept:bronze",
+      "subject": "met:72381",
+      "predicate": "made_of",
+      "object": {
+        "type": "entity",
+        "id": "concept:bronze"
+      },
+      "evidenceIds": [
+        "met:72381:medium"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:72381:made-of:concept:gold-leaf",
+      "subject": "met:72381",
+      "predicate": "made_of",
+      "object": {
+        "type": "entity",
+        "id": "concept:gold-leaf"
+      },
+      "evidenceIds": [
+        "met:72381:medium"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {}
+    },
+    {
+      "id": "met:72381:produced-at",
+      "subject": "met:72381",
+      "predicate": "produced_at",
+      "object": {
+        "type": "entity",
+        "id": "place:gandhara"
+      },
+      "evidenceIds": [
+        "met-text:72381:production"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "production place"
+      }
+    },
+    {
+      "id": "period:edo:dated",
+      "subject": "period:edo-met",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "1615–1868 (catalogue definition)",
+          "earliest": 1615,
+          "latest": 1868,
+          "qualifier": "range",
+          "semantics": "duration",
+          "sourceCalendar": "CE; calendar unspecified",
+          "precision": "year"
+        }
+      },
+      "evidenceIds": [
+        "met:56353:period"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "period definition"
+      }
+    },
+    {
+      "id": "period:gupta:dated",
+      "subject": "period:gupta-met",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "4th–6th century CE (catalogue definition)",
+          "earliest": 301,
+          "latest": 600,
+          "qualifier": "range",
+          "semantics": "duration",
+          "sourceCalendar": "CE; calendar unspecified",
+          "precision": "century"
+        }
+      },
+      "evidenceIds": [
+        "met:38198:period"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "period definition"
+      }
+    },
+    {
+      "id": "period:middle:egypt",
+      "subject": "period:middle-kingdom-met",
+      "predicate": "period_in",
+      "object": {
+        "type": "entity",
+        "id": "place:egypt"
+      },
+      "evidenceIds": [
+        "met:544227:period",
+        "met:544227:findspot"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "source-scoped geographical context"
+      }
+    },
+    {
+      "id": "period:neo:dated",
+      "subject": "period:neo-impressionism-met-amory2004",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "1886–1906, principally France",
+          "earliest": 1886,
+          "latest": 1906,
+          "qualifier": "range",
+          "semantics": "duration",
+          "sourceCalendar": "CE; calendar unspecified",
+          "precision": "year"
+        }
+      },
+      "evidenceIds": [
+        "met-text:neo-definition"
+      ],
+      "status": "asserted",
+      "basis": "scholarship",
+      "qualifiers": {
+        "role": "period definition"
+      }
+    },
+    {
+      "id": "period:neo:france",
+      "subject": "period:neo-impressionism-met-amory2004",
+      "predicate": "period_in",
+      "object": {
+        "type": "entity",
+        "id": "place:france"
+      },
+      "evidenceIds": [
+        "met-text:neo-definition"
+      ],
+      "status": "asserted",
+      "basis": "scholarship",
+      "qualifiers": {
+        "explanation": "Principally France in this source; this does not deny activity elsewhere."
+      }
+    },
+    {
+      "id": "person:hokusai:lifespan",
+      "subject": "person:hokusai",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "1760–1849",
+          "earliest": 1760,
+          "latest": 1849,
+          "qualifier": "range",
+          "semantics": "lifespan",
+          "sourceCalendar": "CE; calendar unspecified",
+          "precision": "year"
+        }
+      },
+      "evidenceIds": [
+        "met:56353:artist-dates"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "lifespan"
+      }
+    },
+    {
+      "id": "person:seurat:lifespan",
+      "subject": "person:seurat",
+      "predicate": "dated",
+      "object": {
+        "type": "time",
+        "value": {
+          "display": "1859–1891",
+          "earliest": 1859,
+          "latest": 1891,
+          "qualifier": "range",
+          "semantics": "lifespan",
+          "sourceCalendar": "CE; calendar unspecified",
+          "precision": "year"
+        }
+      },
+      "evidenceIds": [
+        "met:437658:artist-dates"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "lifespan"
+      }
+    },
+    {
+      "id": "person:seurat:neo",
+      "subject": "person:seurat",
+      "predicate": "classified_as",
+      "object": {
+        "type": "entity",
+        "id": "period:neo-impressionism-met-amory2004"
+      },
+      "evidenceIds": [
+        "met-text:neo-definition"
+      ],
+      "status": "asserted",
+      "basis": "scholarship",
+      "qualifiers": {
+        "scheme": "Amory 2004"
+      }
+    },
+    {
+      "id": "place:meir:egypt",
+      "subject": "place:meir",
+      "predicate": "part_of",
+      "object": {
+        "type": "entity",
+        "id": "place:egypt"
+      },
+      "evidenceIds": [
+        "met:544227:findspot"
+      ],
+      "status": "asserted",
+      "basis": "catalogue",
+      "qualifiers": {
+        "role": "catalogue geography"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "artic:27992:image",
+      "artworkId": "artic:27992",
+      "url": "https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg",
+      "thumbnailUrl": "https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg",
+      "alt": "Large painting of people in a crowded park, brushstrokes are dots.",
+      "rights": {
+        "status": "open",
+        "license": "CC0-1.0",
+        "rightsUrl": "https://api.artic.edu/docs/#copyright",
+        "credit": "Art Institute of Chicago. Helen Birch Bartlett Memorial Collection",
+        "verifiedAt": "2026-10-28T20:24:51Z",
+        "evidenceIds": [
+          "artic:27992:image-rights"
+        ],
+        "display": true,
+        "cache": true,
+        "derivatives": true
+      }
+    },
+    {
+      "id": "met:38198:image",
+      "artworkId": "met:38198",
+      "url": "https://images.metmuseum.org/CRDImages/as/original/DT237.jpg",
+      "thumbnailUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DT237.jpg",
+      "alt": "Standing Buddha Offering Protection",
+      "rights": {
+        "status": "open",
+        "license": "Public Domain",
+        "rightsUrl": "https://www.metmuseum.org/art/collection/search/38198",
+        "credit": "The Metropolitan Museum of Art. Purchase, Enid A. Haupt Gift, 1979",
+        "verifiedAt": "2026-10-28T20:24:50Z",
+        "evidenceIds": [
+          "met:38198:image-rights"
+        ],
+        "display": true,
+        "cache": true,
+        "derivatives": true
+      }
+    },
+    {
+      "id": "met:437658:image",
+      "artworkId": "met:437658",
+      "url": "https://images.metmuseum.org/CRDImages/ep/original/DP259921.jpg",
+      "thumbnailUrl": "https://images.metmuseum.org/CRDImages/ep/web-large/DP259921.jpg",
+      "alt": "Study for \"A Sunday on La Grande Jatte\"",
+      "rights": {
+        "status": "open",
+        "license": "Public Domain",
+        "rightsUrl": "https://www.metmuseum.org/art/collection/search/437658",
+        "credit": "The Metropolitan Museum of Art. Bequest of Sam A. Lewisohn, 1951",
+        "verifiedAt": "2026-10-28T20:24:50Z",
+        "evidenceIds": [
+          "met:437658:image-rights"
+        ],
+        "display": true,
+        "cache": true,
+        "derivatives": true
+      }
+    },
+    {
+      "id": "met:544227:image",
+      "artworkId": "met:544227",
+      "url": "https://images.metmuseum.org/CRDImages/eg/original/DP248993.jpg",
+      "thumbnailUrl": "https://images.metmuseum.org/CRDImages/eg/web-large/DP248993.jpg",
+      "alt": "Hippopotamus (\"William\")",
+      "rights": {
+        "status": "open",
+        "license": "Public Domain",
+        "rightsUrl": "https://www.metmuseum.org/art/collection/search/544227",
+        "credit": "The Metropolitan Museum of Art. Gift of Edward S. Harkness, 1917",
+        "verifiedAt": "2026-10-28T20:24:50Z",
+        "evidenceIds": [
+          "met:544227:image-rights"
+        ],
+        "display": true,
+        "cache": true,
+        "derivatives": true
+      }
+    },
+    {
+      "id": "met:56353:image",
+      "artworkId": "met:56353",
+      "url": "https://images.metmuseum.org/CRDImages/as/original/DP141067.jpg",
+      "thumbnailUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP141067.jpg",
+      "alt": "Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+      "rights": {
+        "status": "open",
+        "license": "Public Domain",
+        "rightsUrl": "https://www.metmuseum.org/art/collection/search/56353",
+        "credit": "The Metropolitan Museum of Art. Henry L. Phillips Collection, Bequest of Henry L. Phillips, 1939",
+        "verifiedAt": "2026-10-28T20:24:50Z",
+        "evidenceIds": [
+          "met:56353:image-rights"
+        ],
+        "display": true,
+        "cache": true,
+        "derivatives": true
+      }
+    },
+    {
+      "id": "met:72381:image",
+      "artworkId": "met:72381",
+      "url": "https://images.metmuseum.org/CRDImages/as/original/DP123364.jpg",
+      "thumbnailUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP123364.jpg",
+      "alt": "Seated Buddha",
+      "rights": {
+        "status": "open",
+        "license": "Public Domain",
+        "rightsUrl": "https://www.metmuseum.org/art/collection/search/72381",
+        "credit": "The Metropolitan Museum of Art. Gift of Muneichi Nitta, 2003",
+        "verifiedAt": "2026-10-28T20:24:50Z",
+        "evidenceIds": [
+          "met:72381:image-rights"
+        ],
+        "display": true,
+        "cache": true,
+        "derivatives": true
+      }
+    }
+  ]
+}
