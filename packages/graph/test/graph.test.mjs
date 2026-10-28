@@ -1,0 +1,16 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
+import {parseAtlas} from '../../../.build/packages/knowledge/src/index.js';
+import {neighbors,findPath,parseTrail,validateTrail} from '../../../.build/packages/graph/src/index.js';
+const a=parseAtlas(JSON.parse(readFileSync(new URL('../../../data/seed.json',import.meta.url))));
+const golden=JSON.parse(readFileSync(new URL('../../../data/golden-trail.json',import.meta.url)));
+test('six-hop evidence-backed trail replays',()=>{assert.equal(parseTrail(golden,a).steps.length,6);assert.equal(golden.steps.at(-1).to,'place:rome');});
+test('inverse traversal preserves the claim and explicit direction',()=>{const n=neighbors(a,'person:botticelli').find(n=>n.entity.id==='work:met-435728');assert.equal(n.step.reversed,true);assert.equal(n.claim.subject,'work:met-435728');assert.equal(n.label,'created');});
+test('qualified origin is not silently treated as certain',()=>{assert(!neighbors(a,'work:nga-24').some(n=>n.claim.id==='claim:nga-place'));assert(neighbors(a,'work:nga-24',{includeUncertain:true}).some(n=>n.claim.id==='claim:nga-place'));});
+test('supports bounded path finding',()=>{assert.equal(findPath(a,'person:filippino-lippi','person:fra-angelico').status,'found');assert.equal(findPath(a,'person:filippino-lippi','person:fra-angelico',{},0).status,'limit-reached');});
+test('no eligible path is distinct from a budget limit',()=>{assert.equal(findPath(a,'work:nga-24','material:silk',{predicates:['createdBy']}).status,'no-path');assert.equal(findPath(a,'work:nga-24','material:silk',{},8,1).status,'limit-reached');});
+test('same-node path is empty',()=>assert.deepEqual(findPath(a,'person:botticelli','person:botticelli'),{status:'found',steps:[]}));
+test('bad endpoints and negative budgets fail',()=>{assert.throws(()=>findPath(a,'missing','place:rome'));assert.throws(()=>findPath(a,'place:rome','place:rome',{},-1));});
+test('withdrawn assertions cannot be replayed',()=>{const b=structuredClone(a);b.claims.find(c=>c.id===golden.steps[0].claimId).status='retracted';assert.throws(()=>validateTrail(b,golden));});
+for(const [name,change] of [['revision',t=>t.revision='old'],['direction',t=>t.steps[0].reversed=true],['start',t=>t.start='place:rome'],['malformed',t=>t.steps=[null]],['too long',t=>t.steps=Array(65).fill(t.steps[0])]])test(`rejects bad trail ${name}`,()=>{const t=structuredClone(golden);change(t);assert.throws(()=>parseTrail(t,a));});
+test('neighborhood order is stable under claim input permutation',()=>{const b={...a,claims:[...a.claims].reverse()};assert.deepEqual(neighbors(a,'person:botticelli'),neighbors(b,'person:botticelli'));});
+test('the seed makes no unsupported influence assertions',()=>assert.equal(a.claims.filter(c=>c.predicate==='influencedBy').length,0));

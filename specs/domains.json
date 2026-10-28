@@ -1,0 +1,137 @@
+{
+  "knowledge": {
+    "owned": [
+      "packages/knowledge/src/"
+    ],
+    "tests": [
+      "packages/knowledge/test/"
+    ],
+    "spec": "packages/knowledge/SPEC.md",
+    "consumes": [],
+    "status": "implemented"
+  },
+  "chronology": {
+    "owned": [
+      "packages/chronology/src/"
+    ],
+    "tests": [
+      "packages/chronology/test/"
+    ],
+    "spec": "packages/chronology/SPEC.md",
+    "consumes": [
+      "knowledge"
+    ],
+    "status": "implemented-partial"
+  },
+  "geography": {
+    "owned": [
+      "packages/geography/src/"
+    ],
+    "tests": [
+      "packages/geography/test/"
+    ],
+    "spec": "packages/geography/SPEC.md",
+    "consumes": [
+      "knowledge"
+    ],
+    "status": "contract-only"
+  },
+  "sources": {
+    "owned": [
+      "packages/sources/src/",
+      "data/sources.json"
+    ],
+    "tests": [
+      "packages/sources/test/"
+    ],
+    "spec": "packages/sources/SPEC.md",
+    "consumes": [
+      "knowledge"
+    ],
+    "status": "implemented-partial"
+  },
+  "reconciliation": {
+    "owned": [
+      "packages/reconciliation/src/"
+    ],
+    "tests": [
+      "packages/reconciliation/test/"
+    ],
+    "spec": "packages/reconciliation/SPEC.md",
+    "consumes": [
+      "knowledge",
+      "sources"
+    ],
+    "status": "contract-only"
+  },
+  "graph": {
+    "owned": [
+      "packages/graph/src/"
+    ],
+    "tests": [
+      "packages/graph/test/"
+    ],
+    "spec": "packages/graph/SPEC.md",
+    "consumes": [
+      "knowledge"
+    ],
+    "status": "implemented"
+  },
+  "media": {
+    "owned": [
+      "packages/media/src/"
+    ],
+    "tests": [
+      "packages/media/test/"
+    ],
+    "spec": "packages/media/SPEC.md",
+    "consumes": [
+      "knowledge"
+    ],
+    "status": "implemented-partial"
+  },
+  "exploration": {
+    "owned": [
+      "packages/exploration/src/"
+    ],
+    "tests": [
+      "packages/exploration/test/"
+    ],
+    "spec": "packages/exploration/SPEC.md",
+    "consumes": [
+      "knowledge",
+      "graph",
+      "media"
+    ],
+    "status": "implemented-partial"
+  },
+  "learning": {
+    "owned": [
+      "packages/learning/src/"
+    ],
+    "tests": [
+      "packages/learning/test/"
+    ],
+    "spec": "packages/learning/SPEC.md",
+    "consumes": [
+      "knowledge",
+      "graph"
+    ],
+    "status": "contract-only"
+  },
+  "site-demo": {
+    "owned": [
+      "sites/demo/src/",
+      "sites/demo/index.html"
+    ],
+    "tests": [
+      "sites/demo/test/"
+    ],
+    "spec": "specs/sites/demo.md",
+    "consumes": [
+      "knowledge",
+      "exploration"
+    ],
+    "status": "implemented"
+  }
+}

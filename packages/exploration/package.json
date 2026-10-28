@@ -1,0 +1,9 @@
+{
+  "name": "@artsy/exploration",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc -p ../../tsconfig.engine.json --noEmit"
+  }
+}

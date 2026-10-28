@@ -1,0 +1,12 @@
+import { readFileSync, mkdirSync, rmSync, cpSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { parseAtlas } from '../.build/packages/knowledge/src/index.js';
+import { parseTrail } from '../.build/packages/graph/src/index.js';
+const raw=readFileSync('data/seed.json');
+const atlas=parseAtlas(JSON.parse(raw));
+parseTrail(JSON.parse(readFileSync('data/golden-trail.json','utf8')),atlas);
+const out='sites/demo/out';rmSync(out,{recursive:true,force:true});mkdirSync(out,{recursive:true});
+cpSync('.build/packages',`${out}/packages`,{recursive:true});cpSync('.build/sites',`${out}/sites`,{recursive:true});
+mkdirSync(`${out}/data`);for(const file of ['seed.json','golden-trail.json','sources.json'])cpSync(`data/${file}`,`${out}/data/${file}`);cpSync('sites/demo/index.html',`${out}/index.html`);cpSync('packages/exploration/src/style.css',`${out}/style.css`);
+writeFileSync(`${out}/manifest.json`,JSON.stringify({revision:atlas.revision,sha256:createHash('sha256').update(raw).digest('hex'),entities:atlas.entities.length,claims:atlas.claims.length,sources:atlas.sources.length},null,2)+'\n');
+console.log(`Exported ${out}: ${atlas.entities.length} entities, ${atlas.claims.length} claims.`);
